@@ -1,0 +1,1521 @@
+[
+  {
+    "name": "Amlodipin",
+    "class": "CCB (dihydropyridine)",
+    "smartDose": "5–10 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục vào ngày phẫu thuật.",
+    "interactions": [
+      "Potentiates hypotension with induction agents — be cautious with propofol bolus."
+    ]
+  },
+  {
+    "name": "Nifedipin",
+    "class": "CCB (dihydropyridine)",
+    "smartDose": "30–90 mg PO một lần mỗi ngày (phóng thích điều chỉnh)",
+    "periop": "Tiếp tục vào ngày phẫu thuật.",
+    "interactions": [
+      "Reflex tachycardia possible."
+    ]
+  },
+  {
+    "name": "Diltiazem",
+    "class": "CCB (non-dihydropyridine)",
+    "smartDose": "120–360 mg uống hàng ngày",
+    "periop": "Tiếp tục vào ngày phẫu thuật.",
+    "interactions": [
+      "Bradycardia / AV block risk with volatiles, opioids, and beta-blockers."
+    ]
+  },
+  {
+    "name": "Verapamil",
+    "class": "CCB (non-dihydropyridine)",
+    "smartDose": "120–480 mg uống hàng ngày",
+    "periop": "Tiếp tục vào ngày phẫu thuật.",
+    "interactions": [
+      "AV block risk; avoid IV beta-blockers; potentiates NMBs."
+    ]
+  },
+  {
+    "name": "Lisinopril",
+    "class": "ACE inhibitor",
+    "smartDose": "5–40 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật đối với phẫu thuật có nguy cơ cao ở bệnh nhân chỉ có HTN (2024 ACC/AHA, Loại IIb). TIẾP TỤC trong HF (bảo vệ tim mạch). Khởi động lại càng sớm càng tốt sau phẫu thuật.",
+    "interactions": [
+      "Refractory hypotension risk at induction (POISE-3, Stop-or-Not trials) — have vasopressin available."
+    ]
+  },
+  {
+    "name": "Ramipril",
+    "class": "ACE inhibitor",
+    "smartDose": "2,5–10 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Enalapril",
+    "class": "ACE inhibitor",
+    "smartDose": "5–40 mg uống hàng ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Perindopril",
+    "class": "ACE inhibitor",
+    "smartDose": "4–8 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Captopril",
+    "class": "ACE inhibitor",
+    "smartDose": "25–150 mg PO mỗi ngày (chia)",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Losartan",
+    "class": "ARB",
+    "smartDose": "50–100 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension; vasopressin may be needed."
+    ]
+  },
+  {
+    "name": "Valsartan",
+    "class": "ARB",
+    "smartDose": "80–320 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Telmisartan",
+    "class": "ARB",
+    "smartDose": "40–80 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Irbesartan",
+    "class": "ARB",
+    "smartDose": "150–300 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Candesartan",
+    "class": "ARB",
+    "smartDose": "8–32 mg uống một lần mỗi ngày",
+    "periop": "XEM XÉT GIỮ 24 giờ trước phẫu thuật (2024 ACC/AHA Loại IIb) nếu HTN đơn thuần + phẫu thuật có nguy cơ cao. Tiếp tục nếu HF.",
+    "interactions": [
+      "Refractory hypotension risk."
+    ]
+  },
+  {
+    "name": "Hydrochlorothiazide",
+    "class": "Thiazide diuretic",
+    "smartDose": "12,5–50 mg uống một lần mỗi ngày",
+    "periop": "Giữ nguyên ngày phẫu thuật (tránh tình trạng giảm thể tích máu/hạ kali máu trong phẫu thuật).",
+    "interactions": [
+      "Hypokalaemia → arrhythmia risk; check K+ pre-op."
+    ]
+  },
+  {
+    "name": "Indapamid",
+    "class": "Thiazide-like diuretic",
+    "smartDose": "1,5–2,5 mg uống một lần mỗi ngày",
+    "periop": "Chờ ngày phẫu thuật.",
+    "interactions": [
+      "Hypokalaemia → arrhythmia risk."
+    ]
+  },
+  {
+    "name": "Furosemide",
+    "class": "Loop diuretic",
+    "smartDose": "20–80 mg uống một lần mỗi ngày",
+    "periop": "Giữ nguyên ngày phẫu thuật trừ khi bị suy tim.",
+    "interactions": [
+      "Hypovolaemia + hypokalaemia; titrate IV fluids carefully."
+    ]
+  },
+  {
+    "name": "Spironolacton",
+    "class": "Aldosterone antagonist",
+    "smartDose": "25–100 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục nếu HF/xơ gan; giữ nếu HTN thuần túy. Kiểm tra K+.",
+    "interactions": [
+      "Hyperkalaemia risk — caution with succinylcholine."
+    ]
+  },
+  {
+    "name": "Eplerenone",
+    "class": "Aldosterone antagonist",
+    "smartDose": "25–50 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục nếu sau MI HF.",
+    "interactions": [
+      "Hyperkalaemia risk."
+    ]
+  },
+  {
+    "name": "doxazosin",
+    "class": "Alpha-1 blocker",
+    "smartDose": "1–8 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục (cần thiết cho u tế bào ưa crom).",
+    "interactions": [
+      "Hypotension on induction."
+    ]
+  },
+  {
+    "name": "Prazosin",
+    "class": "Alpha-1 blocker",
+    "smartDose": "1–10 mg PO hàng ngày (chia)",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Hypotension on induction."
+    ]
+  },
+  {
+    "name": "Phenoxybenzamin",
+    "class": "Non-selective alpha blocker",
+    "smartDose": "10–40 mg PO BD (chuẩn độ)",
+    "periop": "TIẾP TỤC phẫu thuật tiền u tủy thượng thận.",
+    "interactions": [
+      "Profound vasodilation; phenylephrine may be ineffective — use vasopressin/noradrenaline."
+    ]
+  },
+  {
+    "name": "Methyldopa",
+    "class": "Central alpha-2 agonist",
+    "smartDose": "250–500 mg PO TDS",
+    "periop": "Tiếp tục (đặc biệt là trong thời kỳ mang thai).",
+    "interactions": [
+      "Sedation; reduce GA dose requirements."
+    ]
+  },
+  {
+    "name": "clonidin",
+    "class": "Central alpha-2 agonist",
+    "smartDose": "0,1–0,3 mg PO BD",
+    "periop": "TIẾP TỤC - ngừng thuốc đột ngột gây tăng huyết áp dội ngược.",
+    "interactions": [
+      "Reduces MAC by 30–50%; potentiates opioids; bradycardia."
+    ]
+  },
+  {
+    "name": "Hydralazine",
+    "class": "Direct vasodilator",
+    "smartDose": "25–100 mg PO QDS",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Reflex tachycardia."
+    ]
+  },
+  {
+    "name": "Metoprolol",
+    "class": "Beta-1 selective blocker",
+    "smartDose": "25–200 mg PO BD",
+    "periop": "TIẾP TỤC vào ngày phẫu thuật (thử POISE - không bắt đầu mới).",
+    "interactions": [
+      "Bradycardia; masks hypoglycaemia signs."
+    ]
+  },
+  {
+    "name": "Atenolol",
+    "class": "Beta-1 selective blocker",
+    "smartDose": "25–100 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC vào ngày phẫu thuật.",
+    "interactions": [
+      "Bradycardia; renal accumulation."
+    ]
+  },
+  {
+    "name": "Bisoprolol",
+    "class": "Beta-1 selective blocker",
+    "smartDose": "2,5–10 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC vào ngày phẫu thuật.",
+    "interactions": [
+      "Bradycardia; HF benefit."
+    ]
+  },
+  {
+    "name": "Nebivolol",
+    "class": "Beta-1 selective + NO",
+    "smartDose": "2,5–10 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Bradycardia."
+    ]
+  },
+  {
+    "name": "Carvedilol",
+    "class": "Non-selective beta + alpha-1",
+    "smartDose": "3,125–25 mg PO BD",
+    "periop": "TIẾP TỤC (phúc lợi HF).",
+    "interactions": [
+      "Profound bradycardia + hypotension on induction."
+    ]
+  },
+  {
+    "name": "Propranolol",
+    "class": "Non-selective beta blocker",
+    "smartDose": "40–160 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Bronchospasm risk; bradycardia."
+    ]
+  },
+  {
+    "name": "Sotalol",
+    "class": "Class III antiarrhythmic + beta blocker",
+    "smartDose": "80–160 mg PO BD",
+    "periop": "Tiếp tục. Kiểm tra QT.",
+    "interactions": [
+      "QT prolongation — avoid concurrent QT-prolonging drugs (ondansetron caution)."
+    ]
+  },
+  {
+    "name": "Labetalol",
+    "class": "Alpha + beta blocker",
+    "smartDose": "100–400 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Useful for intra-op HTN; bradycardia."
+    ]
+  },
+  {
+    "name": "Aspirin",
+    "class": "Antiplatelet (COX-1)",
+    "smartDose": "75–100 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục phẫu thuật tim/mạch máu; cân nhắc giữ 5–7 ngày đối với phẫu thuật có nguy cơ chảy máu cao.",
+    "interactions": [
+      "Increased bleeding; neuraxial: continue per ASRA — generally safe."
+    ]
+  },
+  {
+    "name": "clopidogrel",
+    "class": "P2Y12 inhibitor",
+    "smartDose": "75 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 5–7 ngày trước phẫu thuật (ASRA: 7 ngày đối với trục thần kinh).",
+    "interactions": [
+      "Bleeding risk; neuraxial CONTRAINDICATED until 7 d off."
+    ]
+  },
+  {
+    "name": "Prasugrel",
+    "class": "P2Y12 inhibitor",
+    "smartDose": "10 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 7–10 ngày trước phẫu thuật (ASRA: 7–10 ngày đối với trục thần kinh).",
+    "interactions": [
+      "Bleeding risk; neuraxial CONTRAINDICATED until 7–10 d off."
+    ]
+  },
+  {
+    "name": "Ticagrelor",
+    "class": "P2Y12 inhibitor (reversible)",
+    "smartDose": "90 mg PO BD",
+    "periop": "GIỮ 5 ngày trước phẫu thuật (ASRA: 5–7 ngày đối với trục thần kinh).",
+    "interactions": [
+      "Bleeding risk; neuraxial after ≥5 d off."
+    ]
+  },
+  {
+    "name": "Warfarin",
+    "class": "Vitamin K antagonist",
+    "smartDose": "Biến - theo hướng dẫn INR",
+    "periop": "DỪNG 5 ngày trước khi phẫu thuật; kiểm tra INR ngày hôm trước. Cầu nối LMWH nếu nguy cơ huyết khối cao.",
+    "interactions": [
+      "Reverse with vit K + PCC if urgent surgery; neuraxial requires INR ≤1.4."
+    ]
+  },
+  {
+    "name": "apixaban",
+    "class": "DOAC (factor Xa)",
+    "smartDose": "2,5–5 mg PO BD",
+    "periop": "GIỮ 24–48 giờ trước phẫu thuật (nguy cơ chảy máu thấp/trung bình); 48–72 h (nguy cơ chảy máu cao hoặc CrCl<50).",
+    "interactions": [
+      "Neuraxial: 72 h off; reversal — andexanet alfa or PCC."
+    ]
+  },
+  {
+    "name": "Rivaroxaban",
+    "class": "DOAC (factor Xa)",
+    "smartDose": "15–20 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 24 giờ (nguy cơ chảy máu thấp) đến 48 giờ (nguy cơ chảy máu cao hoặc CrCl<50).",
+    "interactions": [
+      "Neuraxial: 72 h off; reversal — andexanet alfa or PCC."
+    ]
+  },
+  {
+    "name": "Dabigatran",
+    "class": "DOAC (direct thrombin)",
+    "smartDose": "110–150 mg PO BD",
+    "periop": "GIỮ 48 h (CrCl ≥50) hoặc 72–96 h (CrCl<50).",
+    "interactions": [
+      "Idarucizumab reversal; neuraxial: 72 h off."
+    ]
+  },
+  {
+    "name": "Edoxaban",
+    "class": "DOAC (factor Xa)",
+    "smartDose": "60 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 24–48 giờ trước phẫu thuật.",
+    "interactions": [
+      "Neuraxial: 72 h off."
+    ]
+  },
+  {
+    "name": "Enoxaparin",
+    "class": "LMWH",
+    "smartDose": "Dự phòng 40 mg SC một lần mỗi ngày; điều trị 1 mg/kg BD",
+    "periop": "Liều dự phòng cuối cùng ≥12 giờ trước phẫu thuật; liều điều trị ≥24 giờ trước phẫu thuật.",
+    "interactions": [
+      "Neuraxial: 12 h prophylactic / 24 h therapeutic per ASRA."
+    ]
+  },
+  {
+    "name": "Heparin (UFH)",
+    "class": "Unfractionated heparin",
+    "smartDose": "Biến IV/SC",
+    "periop": "Dừng SC 4–6 giờ trước phẫu thuật; Dừng IV 4h trước phẫu thuật + kiểm tra aPTT.",
+    "interactions": [
+      "Reverse with protamine; HIT screen if thrombocytopenic."
+    ]
+  },
+  {
+    "name": "Fondaparinux",
+    "class": "Synthetic factor Xa inhibitor",
+    "smartDose": "2,5 mg SC một lần mỗi ngày",
+    "periop": "GIỮ 36–42 giờ trước phẫu thuật.",
+    "interactions": [
+      "Neuraxial NOT recommended."
+    ]
+  },
+  {
+    "name": "Dipyridamole",
+    "class": "Antiplatelet",
+    "smartDose": "200 mg PO BD (phiên bản sửa đổi)",
+    "periop": "Giữ 1–2 ngày trước khi phẫu thuật cho cuộc phẫu thuật lớn.",
+    "interactions": [
+      "Bleeding; coronary steal with adenosine."
+    ]
+  },
+  {
+    "name": "Atorvastatin",
+    "class": "Statin",
+    "smartDose": "10–80 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC chu phẫu (bảo vệ tim mạch).",
+    "interactions": [
+      "Rare rhabdomyolysis if high-dose + immobilisation."
+    ]
+  },
+  {
+    "name": "Simvastatin",
+    "class": "Statin",
+    "smartDose": "10–40 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Myopathy if combined with amiodarone or fibrates."
+    ]
+  },
+  {
+    "name": "rosuvastatin",
+    "class": "Statin",
+    "smartDose": "5–40 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Rare rhabdomyolysis."
+    ]
+  },
+  {
+    "name": "Pravastatin",
+    "class": "Statin",
+    "smartDose": "20–80 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Ezetimibe",
+    "class": "Cholesterol absorption inhibitor",
+    "smartDose": "10 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Fenofibrate",
+    "class": "Fibrate",
+    "smartDose": "160–200 mg uống một lần mỗi ngày",
+    "periop": "Giữ ngày phẫu thuật.",
+    "interactions": [
+      "Myopathy + statin combination."
+    ]
+  },
+  {
+    "name": "metformin",
+    "class": "Biguanide",
+    "smartDose": "500–1000 mg PO BD/TDS",
+    "periop": "Giữ buổi sáng phẫu thuật; khởi động lại khi ăn + chức năng thận ổn định.",
+    "interactions": [
+      "Lactic acidosis risk if AKI / contrast load; check creatinine."
+    ]
+  },
+  {
+    "name": "Gliclazide",
+    "class": "Sulfonylurea",
+    "smartDose": "40–160 mg uống hàng ngày",
+    "periop": "GIỮ vào buổi sáng phẫu thuật (nguy cơ hạ đường huyết).",
+    "interactions": [
+      "Hypoglycaemia masked by GA; check BG hourly."
+    ]
+  },
+  {
+    "name": "Glibenclamid",
+    "class": "Sulfonylurea",
+    "smartDose": "2,5–15 mg uống hàng ngày",
+    "periop": "GIỮ vào buổi sáng ngày phẫu thuật.",
+    "interactions": [
+      "Prolonged hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Glimepirid",
+    "class": "Sulfonylurea",
+    "smartDose": "1–6 mg uống một lần mỗi ngày",
+    "periop": "GIỮ vào buổi sáng ngày phẫu thuật.",
+    "interactions": [
+      "Hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Sitagliptin",
+    "class": "DPP-4 inhibitor",
+    "smartDose": "100 mg uống một lần mỗi ngày",
+    "periop": "Có thể tiếp tục; giữ nếu NBM > 1 ngày.",
+    "interactions": []
+  },
+  {
+    "name": "Linagliptin",
+    "class": "DPP-4 inhibitor",
+    "smartDose": "5 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Empagliflozin",
+    "class": "SGLT-2 inhibitor",
+    "smartDose": "10–25 mg uống một lần mỗi ngày",
+    "periop": "GIỮ trước khi phẫu thuật — thời gian đang được tranh luận: FDA 2020 = 3 ngày; Sự đồng thuận của Vương quốc Anh (El-Boghdadly và cộng sự, Gây mê 2025) = 1 ngày; ADS/ANZCA 2022 của Úc = 2 ngày. Sử dụng 1–3 ngày dựa trên nguy cơ của bệnh nhân + phác đồ tại địa phương. Chỉ khởi động lại sau khi ăn + uống đủ nước sau phẫu thuật. Ở những bệnh nhân HF được kê đơn vì lợi ích tim mạch, hãy cân nhắc nguy cơ DKA với sự hồi phục của HF (BJA 2024 — ngày càng có nhiều bằng chứng chống lại việc trì hoãn kéo dài).",
+    "interactions": [
+      "Euglycaemic DKA: check ketones if any unexplained acidosis (even with normal glucose). Reassess hold strategy in heart failure patients."
+    ]
+  },
+  {
+    "name": "Dapagliflozin",
+    "class": "SGLT-2 inhibitor",
+    "smartDose": "10 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 1–3 ngày trước khi phẫu thuật (xem mục Empagliflozin để biết lý do). Bắt đầu lại sau phẫu thuật sau khi uống + thể tích máu bình thường.",
+    "interactions": [
+      "Euglycaemic DKA risk; check ketones if acidotic intra-op regardless of glucose."
+    ]
+  },
+  {
+    "name": "Canagliflozin",
+    "class": "SGLT-2 inhibitor",
+    "smartDose": "100–300 mg uống một lần mỗi ngày",
+    "periop": "GIỮ 1–3 ngày trước khi phẫu thuật. Thời gian bán hủy của tác dụng dược lý (~10–13 giờ) hỗ trợ mức cao hơn của phạm vi này đối với phẫu thuật lớn hoặc chuẩn bị ruột.",
+    "interactions": [
+      "Euglycaemic DKA risk; check ketones if acidotic intra-op."
+    ]
+  },
+  {
+    "name": "Liraglutide",
+    "class": "GLP-1 agonist",
+    "smartDose": "0,6–1,8 mg SC một lần mỗi ngày",
+    "periop": "Sự đồng thuận của nhiều xã hội (ASA + AGA + ASMBS + ISPCOP + SAGES, tháng 10 năm 2024): KHÔNG cần phải tổ chức trước khi hoạt động thường xuyên. Ra quyết định chung - tiếp tục nếu không có triệu chứng và dùng liều ổn định; xem xét chế độ ăn chỉ có chất lỏng trong 24 giờ nếu có nguy cơ làm rỗng dạ dày chậm (tăng liều, triệu chứng tiêu hóa, công thức hàng tuần). Siêu âm dạ dày trước khi cảm ứng nếu có; biện pháp phòng ngừa đầy bụng (RSI) nếu vẫn còn lo ngại.",
+    "interactions": [
+      "Delayed gastric emptying possible; suction ready; videolaryngoscopy preferred."
+    ]
+  },
+  {
+    "name": "Semaglutide",
+    "class": "GLP-1 agonist",
+    "smartDose": "0,5–2 mg SC hàng tuần",
+    "periop": "Sự đồng thuận của nhiều xã hội (ASA + AGA + ASMBS + ISPCOP + SAGES, tháng 10 năm 2024): KHÔNG cần phải tổ chức trước khi hoạt động thường xuyên. Sự đồng thuận của Vương quốc Anh (Phó bác sĩ gây mê/RCoA 2025) cũng ủng hộ việc tiếp tục trong suốt thời gian chu phẫu. Nguy cơ làm rỗng dạ dày chậm hơn với công thức hàng tuần + liều tăng gần đây + các triệu chứng GI - xem xét chế độ ăn chỉ có chất lỏng trong 24 giờ HOẶC siêu âm dạ dày + RSI trong nhóm này. Tránh thường xuyên giữ lại ≥ 1 tuần trừ khi có nguy cơ cao.",
+    "interactions": [
+      "Delayed gastric emptying may persist for weeks; videolaryngoscopy + suction ready."
+    ]
+  },
+  {
+    "name": "Tirzepatide",
+    "class": "GLP-1 / GIP dual agonist",
+    "smartDose": "2,5–15 mg SC hàng tuần",
+    "periop": "Áp dụng sự đồng thuận đa xã hội (tháng 10 năm 2024): chia sẻ việc ra quyết định, không phải tạm dừng 1 tuần theo thông lệ. Khả năng gây nôn cao hơn mono-GLP-1; ngưỡng thấp hơn để siêu âm dạ dày, chuẩn bị chế độ ăn lỏng hoặc RSI cho bất kỳ triệu chứng GI nào.",
+    "interactions": [
+      "Marked delayed gastric emptying with GI symptoms; full-stomach precautions recommended in this subgroup."
+    ]
+  },
+  {
+    "name": "insulin glargine",
+    "class": "Long-acting insulin",
+    "smartDose": "Đơn vị dành riêng cho bệnh nhân SC",
+    "periop": "Cho 80% liều thông thường vào buổi tối trước/sáng phẫu thuật; theo dõi CBG hàng giờ.",
+    "interactions": [
+      "Hypoglycaemia; start variable-rate insulin infusion if major surgery."
+    ]
+  },
+  {
+    "name": "Insulin NPH (isophane / Humulin N / Insulatard)",
+    "class": "Intermediate-acting insulin (protamine-containing)",
+    "smartDose": "Đơn vị dành riêng cho bệnh nhân SC",
+    "periop": "50% liều thông thường vào buổi tối trước phẫu thuật; giữ liều buổi sáng nếu NBM. ⚠ CẢNH BÁO PHẪU THUẬT TIM: chứa protamine - bệnh nhân mắc NPH mạn tính có nguy cơ mắc phản ứng qua trung gian IgE đe dọa tính mạng đối với protamine qua đường tĩnh mạch sau CPB tăng ~15× (Weiss 1989 NEJM). Giấy tờ rõ ràng. Sử dụng truyền protamine chậm + liều thử + thuốc vận mạch mồi + máy theo dõi TOE cho RV. Xem xét dùng thuốc trước H1+H2+steroid hoặc chiến lược đảo ngược thay thế.",
+    "interactions": [
+      "Hypoglycaemia; protamine cross-reactivity (cardiac surgery risk)."
+    ]
+  },
+  {
+    "name": "Insulin aspart",
+    "class": "Rapid-acting insulin",
+    "smartDose": "Đơn vị dành riêng cho bệnh nhân SC trước bữa ăn",
+    "periop": "Giữ pre-op nếu NBM; tiếp tục với bữa ăn đầu tiên sau phẫu thuật.",
+    "interactions": [
+      "Hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Detemir insulin",
+    "class": "Long-acting insulin",
+    "smartDose": "Đơn vị dành riêng cho bệnh nhân SC",
+    "periop": "80% liều thông thường vào đêm trước phẫu thuật.",
+    "interactions": [
+      "Hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Insulin lispro",
+    "class": "Rapid-acting insulin",
+    "smartDose": "Đơn vị dành riêng cho bệnh nhân SC trước bữa ăn",
+    "periop": "Giữ pre-op nếu NBM.",
+    "interactions": [
+      "Hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Pioglitazon",
+    "class": "Thiazolidinedione",
+    "smartDose": "15–45 mg uống một lần mỗi ngày",
+    "periop": "Giữ ngày phẫu thuật.",
+    "interactions": [
+      "Fluid retention — caution in HF."
+    ]
+  },
+  {
+    "name": "Amiodaron",
+    "class": "Class III antiarrhythmic",
+    "smartDose": "100–400 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC.",
+    "interactions": [
+      "Bradycardia, AV block; pulmonary toxicity (caution high FiO2); QT prolongation."
+    ]
+  },
+  {
+    "name": "Digoxin",
+    "class": "Cardiac glycoside",
+    "smartDose": "62,5–250 µg PO một lần mỗi ngày",
+    "periop": "Tiếp tục. Kiểm tra mức độ + K+.",
+    "interactions": [
+      "Hypokalaemia → toxicity; bradycardia; arrhythmias."
+    ]
+  },
+  {
+    "name": "Flecainide",
+    "class": "Class IC antiarrhythmic",
+    "smartDose": "50–150 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Negative inotropy; QRS widening."
+    ]
+  },
+  {
+    "name": "Ivabradine",
+    "class": "If channel inhibitor",
+    "smartDose": "5–7,5 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Bradycardia; visual disturbances."
+    ]
+  },
+  {
+    "name": "Salbutamol (inh)",
+    "class": "Short-acting β2 agonist",
+    "smartDose": "Ống hít PRN 100–200 µg",
+    "periop": "TIẾP TỤC - mang ống hít đến rạp.",
+    "interactions": [
+      "Tachycardia, hypokalaemia with high doses."
+    ]
+  },
+  {
+    "name": "Salmeterol (inh)",
+    "class": "Long-acting β2 agonist",
+    "smartDose": "ống hít BD 50 µg",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Tachycardia."
+    ]
+  },
+  {
+    "name": "Tiotropium (inh)",
+    "class": "LAMA",
+    "smartDose": "Ống hít 18 µg mỗi ngày một lần",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Ipratropium (inh)",
+    "class": "SAMA",
+    "smartDose": "Ống hít 20–40 µg QDS",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Beclometasone (inh)",
+    "class": "Inhaled corticosteroid",
+    "smartDose": "Ống hít 100–400 µg BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Local oropharyngeal effects only at usual doses."
+    ]
+  },
+  {
+    "name": "Fluticasone (inh)",
+    "class": "Inhaled corticosteroid",
+    "smartDose": "Ống hít BD 100–500 µg",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Budesonide (inh)",
+    "class": "Inhaled corticosteroid",
+    "smartDose": "Ống hít 200–800 µg BD",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Montelukast",
+    "class": "Leukotriene receptor antagonist",
+    "smartDose": "10 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Theophyllin",
+    "class": "Methylxanthine",
+    "smartDose": "200–400 mg PO BD (phóng thích đã điều chỉnh)",
+    "periop": "Tiếp tục. Kiểm tra cấp độ trước khi hoạt động.",
+    "interactions": [
+      "Tachyarrhythmias; narrow therapeutic window."
+    ]
+  },
+  {
+    "name": "Roflumilast",
+    "class": "PDE-4 inhibitor",
+    "smartDose": "500 µg PO một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Omeprazol",
+    "class": "PPI",
+    "smartDose": "20–40 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC - hữu ích cho việc điều trị dự phòng sặc.",
+    "interactions": [
+      "Reduces clopidogrel activation (esp. omeprazole/esomeprazole)."
+    ]
+  },
+  {
+    "name": "Pantoprazol",
+    "class": "PPI",
+    "smartDose": "20–40 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC.",
+    "interactions": [
+      "Less interaction with clopidogrel than omeprazole."
+    ]
+  },
+  {
+    "name": "Lansoprazol",
+    "class": "PPI",
+    "smartDose": "15–30 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Esomeprazole",
+    "class": "PPI",
+    "smartDose": "20–40 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Reduces clopidogrel activation."
+    ]
+  },
+  {
+    "name": "Ranitidine",
+    "class": "H2 blocker",
+    "smartDose": "150 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Famotidin",
+    "class": "H2 blocker",
+    "smartDose": "20–40 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Metoclopramide",
+    "class": "Prokinetic / antiemetic",
+    "smartDose": "10 mg PO TDS",
+    "periop": "Tiếp tục (có thể tiêm tĩnh mạch trước phẫu thuật nếu có nguy cơ hít phải).",
+    "interactions": [
+      "Extrapyramidal effects; QT prolongation."
+    ]
+  },
+  {
+    "name": "Mesalazin",
+    "class": "5-ASA",
+    "smartDose": "1,5–4 g uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Sertralin",
+    "class": "SSRI",
+    "smartDose": "50–200 mg uống một lần mỗi ngày",
+    "periop": "TIẾP TỤC (rút tiền đột ngột gây ra hội chứng ngừng thuốc).",
+    "interactions": [
+      "Serotonin syndrome with tramadol, pethidine, fentanyl, methylene blue, MAOIs, linezolid."
+    ]
+  },
+  {
+    "name": "Fluoxetin",
+    "class": "SSRI",
+    "smartDose": "20–60 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Long half-life; serotonin syndrome with tramadol/pethidine/methylene blue."
+    ]
+  },
+  {
+    "name": "Citalopram",
+    "class": "SSRI",
+    "smartDose": "10–40 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation; serotonin syndrome with tramadol."
+    ]
+  },
+  {
+    "name": "Escitalopram",
+    "class": "SSRI",
+    "smartDose": "5–20 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation; serotonin syndrome."
+    ]
+  },
+  {
+    "name": "Paroxetin",
+    "class": "SSRI",
+    "smartDose": "20–50 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Serotonin syndrome."
+    ]
+  },
+  {
+    "name": "Venlafaxine",
+    "class": "SNRI",
+    "smartDose": "75–225 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Serotonin syndrome; hypertension at high doses."
+    ]
+  },
+  {
+    "name": "Duloxetine",
+    "class": "SNRI",
+    "smartDose": "30–120 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Serotonin syndrome."
+    ]
+  },
+  {
+    "name": "Mirtazapin",
+    "class": "NaSSA",
+    "smartDose": "15–45 mg uống vào ban đêm",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Sedation potentiated by GA agents."
+    ]
+  },
+  {
+    "name": "Amitriptylin",
+    "class": "TCA",
+    "smartDose": "10–150 mg uống vào ban đêm",
+    "periop": "Tiếp tục (tránh rút tiền đột ngột).",
+    "interactions": [
+      "QT prolongation; anticholinergic effects; arrhythmias."
+    ]
+  },
+  {
+    "name": "Nortriptyline",
+    "class": "TCA",
+    "smartDose": "25–150 mg uống vào ban đêm",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation; anticholinergic effects."
+    ]
+  },
+  {
+    "name": "Liti",
+    "class": "Mood stabiliser",
+    "smartDose": "400–1200 mg PO mỗi ngày (theo mức độ hướng dẫn)",
+    "periop": "GIỮ 24–72 giờ trước cuộc phẫu thuật lớn; tiếp tục phẫu thuật nhỏ Kiểm tra cấp độ + U&E.",
+    "interactions": [
+      "Prolongs NMB action; toxicity if dehydrated or NSAIDs given."
+    ]
+  },
+  {
+    "name": "Natri valproat",
+    "class": "Anticonvulsant / mood stabiliser",
+    "smartDose": "600–2500 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Thrombocytopenia; hepatotoxicity; potentiates CNS depressants."
+    ]
+  },
+  {
+    "name": "Phenelzine",
+    "class": "MAOI",
+    "smartDose": "15–60 mg uống mỗi ngày",
+    "periop": "Thảo luận với tâm thần học. Lời khuyên hiện đại: tiếp tục + tránh pethidine, tramadol, thuốc giao cảm gián tiếp.",
+    "interactions": [
+      "CONTRAINDICATED: pethidine, tramadol, ephedrine, methylene blue. Use morphine + phenylephrine."
+    ]
+  },
+  {
+    "name": "Tranylcypromin",
+    "class": "MAOI",
+    "smartDose": "10–30 mg uống mỗi ngày",
+    "periop": "Tiếp tục + tránh pethidine, tramadol, thuốc giao cảm gián tiếp.",
+    "interactions": [
+      "CONTRAINDICATED: pethidine, tramadol, ephedrine."
+    ]
+  },
+  {
+    "name": "Olanzapin",
+    "class": "Atypical antipsychotic",
+    "smartDose": "5–20 mg uống vào ban đêm",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Sedation; QT prolongation; metabolic effects."
+    ]
+  },
+  {
+    "name": "Risperidone",
+    "class": "Atypical antipsychotic",
+    "smartDose": "0,5–6 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation; orthostatic hypotension."
+    ]
+  },
+  {
+    "name": "quetiapin",
+    "class": "Atypical antipsychotic",
+    "smartDose": "25–800 mg uống mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Sedation; QT prolongation."
+    ]
+  },
+  {
+    "name": "Haloperidol",
+    "class": "Typical antipsychotic",
+    "smartDose": "0,5–10 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation; extrapyramidal effects; NMS risk."
+    ]
+  },
+  {
+    "name": "clozapin",
+    "class": "Atypical antipsychotic",
+    "smartDose": "25–600 mg uống hàng ngày",
+    "periop": "Tiếp tục + kiểm tra FBC (nguy cơ mất bạch cầu hạt). Tránh sự dừng lại.",
+    "interactions": [
+      "Sedation; hypotension; QT; sialorrhoea."
+    ]
+  },
+  {
+    "name": "Diazepam",
+    "class": "Long-acting benzodiazepine",
+    "smartDose": "2–10 mg PO TDS",
+    "periop": "Tiếp tục (tránh rút tiền).",
+    "interactions": [
+      "Synergistic CNS depression with GA agents."
+    ]
+  },
+  {
+    "name": "Alprazolam",
+    "class": "Short-acting benzodiazepine",
+    "smartDose": "0,25–4 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Synergistic CNS depression."
+    ]
+  },
+  {
+    "name": "clonazepam",
+    "class": "Long-acting benzodiazepine",
+    "smartDose": "0,5–4 mg uống hàng ngày",
+    "periop": "Tiếp tục (cũng là điều trị dự phòng co giật).",
+    "interactions": [
+      "Synergistic CNS depression."
+    ]
+  },
+  {
+    "name": "Levetiracetam",
+    "class": "Anticonvulsant",
+    "smartDose": "500–1500 mg PO BD",
+    "periop": "TIẾP TỤC - IV khả dụng nếu NBM.",
+    "interactions": []
+  },
+  {
+    "name": "phenytoin",
+    "class": "Anticonvulsant",
+    "smartDose": "200–500 mg uống mỗi ngày",
+    "periop": "Tiếp tục. Kiểm tra mức độ.",
+    "interactions": [
+      "Induces hepatic enzymes — increased NMB requirements; hypotension on rapid IV."
+    ]
+  },
+  {
+    "name": "Carbamazepin",
+    "class": "Anticonvulsant",
+    "smartDose": "200–1200 mg uống mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Induces hepatic enzymes; hyponatraemia (SIADH)."
+    ]
+  },
+  {
+    "name": "Lamotrigine",
+    "class": "Anticonvulsant",
+    "smartDose": "100–400 mg uống mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "topiramat",
+    "class": "Anticonvulsant",
+    "smartDose": "50–400 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Metabolic acidosis; nephrolithiasis."
+    ]
+  },
+  {
+    "name": "Gabapentin",
+    "class": "Gabapentinoid",
+    "smartDose": "300–1200 mg PO TDS",
+    "periop": "Tiếp tục (cũng hữu ích cho việc giảm đau tiết kiệm opioid).",
+    "interactions": [
+      "Sedation; respiratory depression with opioids."
+    ]
+  },
+  {
+    "name": "Pregabalin",
+    "class": "Gabapentinoid",
+    "smartDose": "75–300 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Sedation; respiratory depression with opioids."
+    ]
+  },
+  {
+    "name": "Levodopa/Carbidopa",
+    "class": "Dopamine precursor",
+    "smartDose": "100/25 mg–250/25 mg PO TDS",
+    "periop": "TIẾP TỤC - cho liều buổi sáng 30 phút trước khi khởi phát; tiếp tục lại càng sớm càng tốt sau phẫu thuật.",
+    "interactions": [
+      "Avoid metoclopramide, droperidol, haloperidol — worsen Parkinson."
+    ]
+  },
+  {
+    "name": "Pyridostigmin",
+    "class": "AChE inhibitor (myasthenia)",
+    "smartDose": "60–120 mg PO QDS",
+    "periop": "Tiếp tục (quản lý bệnh nhược cơ). Sử dụng NMB một cách thận trọng - bệnh nhược cơ rất nhạy cảm.",
+    "interactions": [
+      "Reduce NMB dose by 50–75%; avoid sux; sugammadex preferred for rocuronium."
+    ]
+  },
+  {
+    "name": "Riluzole",
+    "class": "ALS treatment",
+    "smartDose": "50 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Memantine",
+    "class": "NMDA antagonist",
+    "smartDose": "5–20 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Synergy with ketamine — caution."
+    ]
+  },
+  {
+    "name": "Donepezil",
+    "class": "AChE inhibitor (dementia)",
+    "smartDose": "5–10 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Bradycardia; prolongs sux action."
+    ]
+  },
+  {
+    "name": "Paracetamol",
+    "class": "Analgesic",
+    "smartDose": "500–1000 mg PO QDS (tối đa 4 g/ngày)",
+    "periop": "Tiếp tục/cho dùng thuốc trước phẫu thuật (giảm đau đa phương thức).",
+    "interactions": [
+      "Hepatotoxicity if liver disease + high dose."
+    ]
+  },
+  {
+    "name": "Ibuprofen",
+    "class": "NSAID",
+    "smartDose": "400 mg PO TDS",
+    "periop": "Giữ 24 giờ trước khi phẫu thuật lớn (chảy máu, AKI).",
+    "interactions": [
+      "Bleeding; AKI; avoid in renal impairment."
+    ]
+  },
+  {
+    "name": "Diclofenac",
+    "class": "NSAID",
+    "smartDose": "50 mg PO TDS",
+    "periop": "Giữ 24 giờ trước khi phẫu thuật.",
+    "interactions": [
+      "Bleeding; AKI; CV risk."
+    ]
+  },
+  {
+    "name": "Naproxen",
+    "class": "NSAID",
+    "smartDose": "500 mg PO BD",
+    "periop": "Giữ 24–48 giờ trước phẫu thuật.",
+    "interactions": [
+      "Bleeding; AKI."
+    ]
+  },
+  {
+    "name": "Celecoxib",
+    "class": "COX-2 inhibitor",
+    "smartDose": "200 mg uống một lần mỗi ngày",
+    "periop": "Có thể tiếp tục (ít nguy cơ chảy máu hơn các NSAID không chọn lọc).",
+    "interactions": [
+      "CV risk; AKI."
+    ]
+  },
+  {
+    "name": "Tramadol",
+    "class": "Weak opioid + SNRI",
+    "smartDose": "50–100 mg PO QDS",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "SEROTONIN SYNDROME with SSRIs/SNRIs/MAOIs; seizure threshold lowering."
+    ]
+  },
+  {
+    "name": "codein",
+    "class": "Weak opioid",
+    "smartDose": "30–60 mg PO QDS",
+    "periop": "Tiếp tục (tránh ở trẻ <12 tuổi; tránh sau cắt amiđan ở <18 tuổi).",
+    "interactions": [
+      "CYP2D6 ultra-rapid metabolisers → opioid toxicity."
+    ]
+  },
+  {
+    "name": "Morphine SR",
+    "class": "Strong opioid",
+    "smartDose": "10–60 mg PO BD (dạng phóng thích đã điều chỉnh)",
+    "periop": "Tiếp tục (đau mãn tính - tránh rút tiền). Thêm thuốc opioid đường tĩnh mạch vào phần trên cùng của phẫu thuật.",
+    "interactions": [
+      "Tolerance — usual doses inadequate intra-op; multimodal needed."
+    ]
+  },
+  {
+    "name": "Oxycodone SR",
+    "class": "Strong opioid",
+    "smartDose": "5–40 mg PO BD (dạng phóng thích đã điều chỉnh)",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Tolerance."
+    ]
+  },
+  {
+    "name": "Buprenorphine (miếng dán)",
+    "class": "Partial opioid agonist",
+    "smartDose": "5–20 µg/giờ qua da hàng tuần",
+    "periop": "Tiếp tục vá lỗi; tiêm tĩnh mạch đầy đủ chất chủ vận (có thể cần liều cao).",
+    "interactions": [
+      "Antagonises full agonists — discuss with chronic pain team if patch >70 µg/h."
+    ]
+  },
+  {
+    "name": "Methadone",
+    "class": "Strong opioid",
+    "smartDose": "PO dành riêng cho bệnh nhân một lần mỗi ngày",
+    "periop": "Tiếp tục liều duy trì.",
+    "interactions": [
+      "QT prolongation; long half-life; tolerance."
+    ]
+  },
+  {
+    "name": "Naltrexone",
+    "class": "Opioid antagonist",
+    "smartDose": "50 mg uống một lần mỗi ngày",
+    "periop": "DỪNG 72 giờ trước phẫu thuật (chặn opioid trong phẫu thuật).",
+    "interactions": [
+      "Renders opioids ineffective — need ketamine, regional, or non-opioid technique."
+    ]
+  },
+  {
+    "name": "Levothyroxin",
+    "class": "Thyroid hormone",
+    "smartDose": "25–200 µg PO một lần mỗi ngày",
+    "periop": "Tiếp tục (thời gian bán hủy dài - có thể bỏ qua 1 ngày nếu cần).",
+    "interactions": []
+  },
+  {
+    "name": "Carbimazole",
+    "class": "Antithyroid",
+    "smartDose": "5–40 mg uống hàng ngày",
+    "periop": "Tiếp tục (cần thiết cho phẫu thuật tuyến giáp).",
+    "interactions": [
+      "Agranulocytosis risk — check FBC."
+    ]
+  },
+  {
+    "name": "Propylthiouracil",
+    "class": "Antithyroid",
+    "smartDose": "50–600 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Hepatotoxicity; agranulocytosis."
+    ]
+  },
+  {
+    "name": "Prednisolone",
+    "class": "Glucocorticoid",
+    "smartDose": "5–60 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục + Liều lượng căng thẳng cho cuộc phẫu thuật lớn (ví dụ: hydrocortisone 50–100 mg IV lúc khởi đầu, sau đó 6–8 giờ).",
+    "interactions": [
+      "Adrenal suppression if >5 mg/day for >3 weeks; gastric ulceration with NSAIDs."
+    ]
+  },
+  {
+    "name": "Hydrocortison",
+    "class": "Glucocorticoid",
+    "smartDose": "15–30 mg PO mỗi ngày (chia)",
+    "periop": "TIẾP TỤC + liều căng thẳng cho cuộc phẫu thuật lớn.",
+    "interactions": [
+      "Adrenal suppression — perioperative crisis if missed."
+    ]
+  },
+  {
+    "name": "Dexamethason",
+    "class": "Glucocorticoid",
+    "smartDose": "0,5–4 mg uống hàng ngày",
+    "periop": "Tiếp tục + liều stress nếu có Cushingoid.",
+    "interactions": [
+      "Hyperglycaemia."
+    ]
+  },
+  {
+    "name": "Fludrocortison",
+    "class": "Mineralocorticoid",
+    "smartDose": "50–200 µg PO một lần mỗi ngày",
+    "periop": "Tiếp tục (bệnh Addison).",
+    "interactions": [
+      "Hypokalaemia."
+    ]
+  },
+  {
+    "name": "Desmopressin",
+    "class": "Synthetic ADH",
+    "smartDose": "100–800 µg PO mỗi ngày",
+    "periop": "Tiếp tục (DI / von Willebrand).",
+    "interactions": [
+      "Hyponatraemia; fluid retention."
+    ]
+  },
+  {
+    "name": "Bromocriptine",
+    "class": "Dopamine agonist",
+    "smartDose": "2,5–15 mg uống hàng ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Hypotension."
+    ]
+  },
+  {
+    "name": "Cabergoline",
+    "class": "Dopamine agonist",
+    "smartDose": "0,25–1 mg PO hai lần mỗi tuần",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Cardiac valve fibrosis (long-term)."
+    ]
+  },
+  {
+    "name": "Allopurinol",
+    "class": "Xanthine oxidase inhibitor",
+    "smartDose": "100–600 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Increases azathioprine toxicity."
+    ]
+  },
+  {
+    "name": "Colchicine",
+    "class": "Anti-gout",
+    "smartDose": "500 µg PO BD/TDS",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Myopathy; GI side effects."
+    ]
+  },
+  {
+    "name": "Methotrexat",
+    "class": "DMARD / immunosuppressant",
+    "smartDose": "7,5–25 mg uống một lần mỗi tuần",
+    "periop": "Tiếp tục (liều RA); giữ cho nhiễm trùng hoạt động.",
+    "interactions": [
+      "Bone marrow suppression; hepatotoxicity."
+    ]
+  },
+  {
+    "name": "Hydroxychloroquine",
+    "class": "DMARD",
+    "smartDose": "200–400 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "QT prolongation."
+    ]
+  },
+  {
+    "name": "Sulfasalazine",
+    "class": "DMARD",
+    "smartDose": "500–3000 mg uống mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "G6PD haemolysis; folate deficiency."
+    ]
+  },
+  {
+    "name": "Azathioprine",
+    "class": "Immunosuppressant",
+    "smartDose": "50–250 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Myelosuppression with allopurinol; NMB potentiation."
+    ]
+  },
+  {
+    "name": "Tacrolimus",
+    "class": "Calcineurin inhibitor",
+    "smartDose": "PO BD dành riêng cho bệnh nhân",
+    "periop": "Tiếp tục. Kiểm tra mức độ + creatinine.",
+    "interactions": [
+      "Nephrotoxicity; QT; hyperkalaemia."
+    ]
+  },
+  {
+    "name": "Ciclosporin",
+    "class": "Calcineurin inhibitor",
+    "smartDose": "PO BD dành riêng cho bệnh nhân",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Nephrotoxicity; HTN; hypomagnesaemia → arrhythmias."
+    ]
+  },
+  {
+    "name": "Mycophenolat",
+    "class": "Immunosuppressant",
+    "smartDose": "500–1500 mg PO BD",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Myelosuppression."
+    ]
+  },
+  {
+    "name": "Tamsulosin",
+    "class": "Alpha-1A blocker",
+    "smartDose": "400 µg PO một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": [
+      "Intra-operative floppy iris syndrome — alert ophthalmologist."
+    ]
+  },
+  {
+    "name": "Finasteride",
+    "class": "5-alpha reductase inhibitor",
+    "smartDose": "5 mg uống một lần mỗi ngày",
+    "periop": "Tiếp tục.",
+    "interactions": []
+  },
+  {
+    "name": "Sildenafil",
+    "class": "PDE-5 inhibitor",
+    "smartDose": "25–100 mg PO PRN",
+    "periop": "Giữ 24 giờ trước phẫu thuật (hạ huyết áp nặng do nitrat).",
+    "interactions": [
+      "CONTRAINDICATED with nitrates; profound vasodilation."
+    ]
+  },
+  {
+    "name": "tadalafil",
+    "class": "PDE-5 inhibitor",
+    "smartDose": "5–20 mg uống hàng ngày/PRN",
+    "periop": "Giữ 48 giờ trước khi phẫu thuật.",
+    "interactions": [
+      "Long half-life; hypotension with nitrates."
+    ]
+  },
+  {
+    "name": "OCP kết hợp",
+    "class": "Oral contraceptive",
+    "smartDose": "PO dành riêng cho bệnh nhân một lần mỗi ngày",
+    "periop": "GIỮ 4 tuần trước khi phẫu thuật lớn theo chương trình (nguy cơ VTE); tiếp tục nếu phẫu thuật nhỏ + biện pháp tránh thai thay thế được sắp xếp.",
+    "interactions": [
+      "VTE risk increased."
+    ]
+  },
+  {
+    "name": "HRT (estrogen)",
+    "class": "Hormone replacement",
+    "smartDose": "Bệnh nhân cụ thể",
+    "periop": "Giữ 4 tuần trước khi phẫu thuật lớn (VTE).",
+    "interactions": [
+      "VTE risk."
+    ]
+  },
+  {
+    "name": "Tamoxifen",
+    "class": "SERM",
+    "smartDose": "20 mg uống một lần mỗi ngày",
+    "periop": "Giữ 2–4 tuần trước khi phẫu thuật (nguy cơ VTE).",
+    "interactions": [
+      "VTE risk."
+    ]
+  },
+  {
+    "name": "Adalimumab",
+    "class": "Anti-TNF biologic",
+    "smartDose": "40 mg SC mỗi 2 tuần",
+    "periop": "Giữ cho cuộc phẫu thuật lớn - thời gian cho mỗi lời khuyên về bệnh thấp khớp.",
+    "interactions": [
+      "Infection risk."
+    ]
+  },
+  {
+    "name": "Infliximab",
+    "class": "Anti-TNF biologic",
+    "smartDose": "3–10 mg/kg IV mỗi 8 tuần",
+    "periop": "Giữ theo lời khuyên về bệnh thấp khớp.",
+    "interactions": [
+      "Infection risk."
+    ]
+  },
+  {
+    "name": "Rituximab",
+    "class": "Anti-CD20 biologic",
+    "smartDose": "Biến IV",
+    "periop": "Lên kế hoạch phẫu thuật lớn 4–6 tháng sau liều.",
+    "interactions": [
+      "Infection; infusion reactions."
+    ]
+  },
+  {
+    "name": "St John's wort",
+    "class": "Herbal antidepressant",
+    "smartDose": "Biến",
+    "periop": "DỪNG 5 ngày trước khi phẫu thuật.",
+    "interactions": [
+      "Enzyme induction → ↓ effect of warfarin, OCP, ciclosporin, etc."
+    ]
+  },
+  {
+    "name": "Thực phẩm bổ sung tỏi",
+    "class": "Herbal",
+    "smartDose": "Biến",
+    "periop": "Dừng 7 ngày trước khi phẫu thuật.",
+    "interactions": [
+      "Bleeding risk."
+    ]
+  },
+  {
+    "name": "bạch quả",
+    "class": "Herbal",
+    "smartDose": "Biến",
+    "periop": "Dừng 36 giờ trước phẫu thuật.",
+    "interactions": [
+      "Bleeding risk."
+    ]
+  },
+  {
+    "name": "Nhân sâm",
+    "class": "Herbal",
+    "smartDose": "Biến",
+    "periop": "Dừng 7 ngày trước khi phẫu thuật.",
+    "interactions": [
+      "Bleeding; hypoglycaemia."
+    ]
+  },
+  {
+    "name": "Vitamin E (liều cao)",
+    "class": "Vitamin",
+    "smartDose": "Biến",
+    "periop": "Dừng 7 ngày trước phẫu thuật nếu >400 IU/ngày.",
+    "interactions": [
+      "Bleeding risk."
+    ]
+  },
+  {
+    "name": "Dầu cá (liều cao)",
+    "class": "Supplement",
+    "smartDose": "Biến",
+    "periop": "Dừng 7 ngày trước phẫu thuật đối với phẫu thuật có nguy cơ chảy máu cao.",
+    "interactions": [
+      "Bleeding risk."
+    ]
+  }
+]

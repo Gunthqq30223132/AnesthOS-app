@@ -1,0 +1,1503 @@
+[
+  {
+    "id": "htn",
+    "name": "Hypertension",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk"
+    ]
+  },
+  {
+    "id": "cad",
+    "name": "Coronary artery disease / Ischaemic heart disease",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "antiplatelet",
+      "avoid-tachycardia"
+    ]
+  },
+  {
+    "id": "mi-recent",
+    "name": "Recent MI (<6 months)",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "high-risk",
+      "antiplatelet"
+    ]
+  },
+  {
+    "id": "hf",
+    "name": "Heart failure",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "fluid-restriction",
+      "avoid-negative-inotropes"
+    ]
+  },
+  {
+    "id": "af",
+    "name": "Atrial fibrillation",
+    "category": "Cardiovascular",
+    "aliases": [
+      "AF",
+      "a-fib",
+      "arrhythmia",
+      "irregular pulse"
+    ],
+    "flags": [
+      "anticoagulation",
+      "rate-control"
+    ]
+  },
+  {
+    "id": "valvular-stenosis",
+    "name": "Aortic / mitral stenosis",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "avoid-hypotension",
+      "avoid-tachycardia",
+      "fixed-cardiac-output"
+    ]
+  },
+  {
+    "id": "valvular-regurg",
+    "name": "Aortic / mitral regurgitation",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk"
+    ]
+  },
+  {
+    "id": "pacemaker-icd",
+    "name": "Pacemaker or ICD",
+    "category": "Cardiovascular",
+    "flags": [
+      "diathermy-caution",
+      "device-check"
+    ]
+  },
+  {
+    "id": "phtn",
+    "name": "Pulmonary hypertension",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "avoid-hypoxia",
+      "avoid-hypercarbia",
+      "avoid-acidosis"
+    ]
+  },
+  {
+    "id": "pvd",
+    "name": "Peripheral vascular disease",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk"
+    ]
+  },
+  {
+    "id": "copd",
+    "name": "COPD",
+    "category": "Respiratory",
+    "flags": [
+      "pulmonary-risk",
+      "avoid-high-fio2",
+      "bronchodilator"
+    ]
+  },
+  {
+    "id": "asthma",
+    "name": "Asthma",
+    "category": "Respiratory",
+    "flags": [
+      "pulmonary-risk",
+      "bronchospasm-risk",
+      "bronchodilator"
+    ]
+  },
+  {
+    "id": "osa",
+    "name": "Obstructive sleep apnoea",
+    "category": "Respiratory",
+    "flags": [
+      "airway-risk",
+      "opioid-caution",
+      "post-op-monitoring"
+    ]
+  },
+  {
+    "id": "restrictive-lung",
+    "name": "Restrictive lung disease",
+    "category": "Respiratory",
+    "flags": [
+      "pulmonary-risk"
+    ]
+  },
+  {
+    "id": "smoker",
+    "name": "Current smoker",
+    "category": "Respiratory",
+    "flags": [
+      "pulmonary-risk"
+    ]
+  },
+  {
+    "id": "recent-uri",
+    "name": "Recent URI (<2 weeks)",
+    "category": "Respiratory",
+    "flags": [
+      "airway-reactivity",
+      "postpone-elective"
+    ]
+  },
+  {
+    "id": "dm1",
+    "name": "Diabetes mellitus - Type 1",
+    "category": "Endocrine",
+    "flags": [
+      "glucose-monitor",
+      "insulin-dependent"
+    ]
+  },
+  {
+    "id": "dm2",
+    "name": "Diabetes mellitus - Type 2",
+    "category": "Endocrine",
+    "flags": [
+      "glucose-monitor"
+    ]
+  },
+  {
+    "id": "thyroid-hyper",
+    "name": "Hyperthyroidism",
+    "category": "Endocrine",
+    "flags": [
+      "avoid-tachycardia",
+      "thyroid-storm-risk"
+    ]
+  },
+  {
+    "id": "thyroid-hypo",
+    "name": "Hypothyroidism",
+    "category": "Endocrine",
+    "flags": [
+      "sensitivity-to-opioids",
+      "cardiac-depression"
+    ]
+  },
+  {
+    "id": "adrenal-insuff",
+    "name": "Adrenal insufficiency",
+    "category": "Endocrine",
+    "flags": [
+      "steroid-cover"
+    ]
+  },
+  {
+    "id": "pheochromocytoma",
+    "name": "Pheochromocytoma",
+    "category": "Endocrine",
+    "aliases": [
+      "phaeochromocytoma",
+      "pheo",
+      "phaeo"
+    ],
+    "flags": [
+      "haemodynamic-swings",
+      "alpha-block-needed",
+      "avoid-histamine-releasers"
+    ]
+  },
+  {
+    "id": "obesity",
+    "name": "Obesity (BMI ≥ 30)",
+    "category": "Endocrine",
+    "flags": [
+      "airway-risk",
+      "osa-screen",
+      "ibw-dosing"
+    ]
+  },
+  {
+    "id": "pcos",
+    "name": "Polycystic ovary syndrome (PCOS)",
+    "aliases": [
+      "PCOS",
+      "polycystic ovaries",
+      "Stein-Leventhal"
+    ],
+    "category": "Endocrine",
+    "flags": [
+      "metabolic-syndrome",
+      "cardiac-risk-modifier",
+      "osa-screen"
+    ]
+  },
+  {
+    "id": "ckd",
+    "name": "Chronic kidney disease",
+    "category": "Renal",
+    "flags": [
+      "renal-dosing",
+      "avoid-nephrotoxic",
+      "k-monitor"
+    ]
+  },
+  {
+    "id": "esrd-dialysis",
+    "name": "ESRD on dialysis",
+    "category": "Renal",
+    "flags": [
+      "renal-dosing",
+      "avoid-nephrotoxic",
+      "k-monitor",
+      "fluid-balance"
+    ]
+  },
+  {
+    "id": "dka",
+    "name": "Diabetic ketoacidosis (DKA)",
+    "category": "Acute / metabolic",
+    "flags": [
+      "acidosis",
+      "hyperglycaemia",
+      "k-monitor",
+      "fluid-resuscitation",
+      "full-stomach"
+    ]
+  },
+  {
+    "id": "hhs",
+    "name": "Hyperosmolar hyperglycaemic state (HHS)",
+    "category": "Acute / metabolic",
+    "flags": [
+      "hyperglycaemia",
+      "hyperosmolar",
+      "fluid-resuscitation",
+      "dehydration"
+    ]
+  },
+  {
+    "id": "sepsis",
+    "name": "Sepsis / septic shock",
+    "category": "Acute / metabolic",
+    "flags": [
+      "sepsis",
+      "fluid-resuscitation",
+      "vasopressor-likely",
+      "lactate-monitor",
+      "source-control"
+    ]
+  },
+  {
+    "id": "burns",
+    "name": "Burn injury",
+    "category": "Acute / metabolic",
+    "flags": [
+      "burns",
+      "fluid-resuscitation",
+      "airway-risk",
+      "hypothermia-risk",
+      "succinylcholine-risk"
+    ]
+  },
+  {
+    "id": "trauma-major",
+    "name": "Major trauma / polytrauma",
+    "category": "Acute / metabolic",
+    "aliases": [
+      "polytrauma",
+      "MVA",
+      "RTA"
+    ],
+    "flags": [
+      "trauma",
+      "blood-loss-risk",
+      "full-stomach",
+      "c-spine-precautions",
+      "hypothermia-risk",
+      "coagulopathy-risk",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "tbi",
+    "name": "Traumatic brain injury",
+    "category": "Acute / metabolic",
+    "aliases": [
+      "TBI",
+      "head injury"
+    ],
+    "flags": [
+      "raised-icp",
+      "avoid-ketamine",
+      "avoid-hypotension",
+      "avoid-hypoxia",
+      "avoid-hypercarbia",
+      "c-spine-precautions",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "active-bleeding",
+    "name": "Active haemorrhage",
+    "aliases": [
+      "ongoing bleeding",
+      "massive haemorrhage",
+      "massive bleeding"
+    ],
+    "category": "Acute / metabolic",
+    "flags": [
+      "blood-loss-risk",
+      "massive-transfusion-prepare",
+      "coagulopathy-risk",
+      "hypothermia-risk",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "cirrhosis",
+    "name": "Liver cirrhosis",
+    "category": "Hepatic",
+    "flags": [
+      "hepatic-dosing",
+      "coagulopathy",
+      "avoid-hepatotoxic"
+    ]
+  },
+  {
+    "id": "hepatitis-active",
+    "name": "Active hepatitis",
+    "category": "Hepatic",
+    "flags": [
+      "hepatic-dosing",
+      "avoid-hepatotoxic"
+    ]
+  },
+  {
+    "id": "masld",
+    "name": "MASLD / NAFLD (metabolic-associated steatotic liver disease)",
+    "aliases": [
+      "MASLD",
+      "NAFLD",
+      "non-alcoholic fatty liver",
+      "MAFLD",
+      "fatty liver",
+      "steatotic liver"
+    ],
+    "category": "Hepatic",
+    "flags": [
+      "avoid-hepatotoxic",
+      "metabolic-syndrome",
+      "cardiac-risk-modifier"
+    ]
+  },
+  {
+    "id": "anticoag-warfarin",
+    "name": "On warfarin",
+    "category": "Haematology",
+    "flags": [
+      "bleeding-risk",
+      "inr-check",
+      "bridge-needed"
+    ]
+  },
+  {
+    "id": "anticoag-doac",
+    "name": "On direct oral anticoagulant (DOAC)",
+    "category": "Haematology",
+    "flags": [
+      "bleeding-risk",
+      "timing-critical"
+    ]
+  },
+  {
+    "id": "antiplatelet-aspirin",
+    "name": "On aspirin",
+    "category": "Haematology",
+    "flags": [
+      "bleeding-risk"
+    ]
+  },
+  {
+    "id": "antiplatelet-dapt",
+    "name": "On dual antiplatelet therapy",
+    "category": "Haematology",
+    "flags": [
+      "bleeding-risk",
+      "stent-caution"
+    ]
+  },
+  {
+    "id": "anaemia",
+    "name": "Anaemia",
+    "category": "Haematology",
+    "flags": [
+      "transfusion-risk"
+    ]
+  },
+  {
+    "id": "sickle-cell",
+    "name": "Sickle cell disease",
+    "category": "Haematology",
+    "flags": [
+      "avoid-hypoxia",
+      "avoid-hypothermia",
+      "avoid-acidosis",
+      "avoid-dehydration"
+    ]
+  },
+  {
+    "id": "thrombocytopenia",
+    "name": "Thrombocytopenia",
+    "category": "Haematology",
+    "flags": [
+      "bleeding-risk",
+      "neuraxial-caution"
+    ]
+  },
+  {
+    "id": "stroke-prior",
+    "name": "Prior stroke / TIA",
+    "category": "Neurological",
+    "flags": [
+      "cerebrovascular-risk"
+    ]
+  },
+  {
+    "id": "epilepsy",
+    "name": "Epilepsy",
+    "category": "Neurological",
+    "aliases": [
+      "epilepsy",
+      "seizure disorder",
+      "seizures",
+      "fits",
+      "صرع"
+    ],
+    "flags": [
+      "avoid-proconvulsant",
+      "continue-aeds"
+    ]
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine / chronic headache",
+    "category": "Neurological",
+    "aliases": [
+      "migraine",
+      "headache",
+      "chronic headache",
+      "صداع",
+      "صداع نصفي"
+    ],
+    "flags": [
+      "ponv-risk",
+      "migraine-triggers-consider"
+    ]
+  },
+  {
+    "id": "chronic-pain-opioid",
+    "name": "Chronic pain / opioid tolerance",
+    "category": "Neurological",
+    "aliases": [
+      "chronic pain",
+      "opioid tolerant",
+      "opioid tolerance",
+      "opioid dependent",
+      "on long-term opioids",
+      "fibromyalgia",
+      "chronic back pain",
+      "ألم مزمن"
+    ],
+    "flags": [
+      "opioid-tolerant",
+      "chronic-pain",
+      "multimodal-essential",
+      "regional-preferred"
+    ]
+  },
+  {
+    "id": "myasthenia",
+    "name": "Myasthenia gravis",
+    "category": "Neurological",
+    "flags": [
+      "nmb-sensitivity",
+      "avoid-nmb-if-possible",
+      "postop-ventilation-risk"
+    ]
+  },
+  {
+    "id": "parkinson",
+    "name": "Parkinson disease",
+    "category": "Neurological",
+    "flags": [
+      "continue-levodopa",
+      "avoid-metoclopramide",
+      "avoid-haloperidol"
+    ]
+  },
+  {
+    "id": "raised-icp",
+    "name": "Raised intracranial pressure",
+    "category": "Neurological",
+    "flags": [
+      "neuro-anaesthesia",
+      "avoid-ketamine",
+      "avoid-n2o"
+    ]
+  },
+  {
+    "id": "mh-susceptible",
+    "name": "Malignant hyperthermia susceptibility (personal or family)",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "avoid-volatiles",
+      "avoid-suxamethonium",
+      "trigger-free-anaesthesia"
+    ]
+  },
+  {
+    "id": "duchenne",
+    "name": "Duchenne / muscular dystrophy",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "avoid-volatiles",
+      "avoid-suxamethonium",
+      "hyperkalaemia-risk"
+    ]
+  },
+  {
+    "id": "cholinesterase-def",
+    "name": "Pseudocholinesterase deficiency",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "avoid-suxamethonium",
+      "avoid-mivacurium"
+    ]
+  },
+  {
+    "id": "pregnancy",
+    "name": "Pregnancy",
+    "category": "Obstetric",
+    "flags": [
+      "pregnancy",
+      "aspiration-risk",
+      "avoid-teratogens",
+      "left-lateral-tilt"
+    ]
+  },
+  {
+    "id": "pre-eclampsia",
+    "name": "Pre-eclampsia",
+    "category": "Obstetric",
+    "flags": [
+      "bp-control",
+      "magnesium",
+      "thrombocytopenia-risk"
+    ]
+  },
+  {
+    "id": "hellp",
+    "name": "HELLP syndrome",
+    "aliases": [
+      "HELLP",
+      "Haemolysis Elevated Liver enzymes Low Platelets",
+      "severe pre-eclampsia with HELLP"
+    ],
+    "category": "Obstetric",
+    "flags": [
+      "bp-control",
+      "magnesium",
+      "thrombocytopenia-risk",
+      "thrombocytopenia-severe",
+      "coagulopathy",
+      "blood-loss-risk",
+      "avoid-hepatotoxic",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "gord",
+    "name": "GORD / full stomach risk",
+    "category": "Other",
+    "aliases": [
+      "GORD",
+      "GERD",
+      "reflux",
+      "acid reflux",
+      "gastro-oesophageal reflux",
+      "gastroesophageal reflux",
+      "heartburn",
+      "hiatus hernia",
+      "ارتجاع"
+    ],
+    "flags": [
+      "aspiration-risk",
+      "rsi-consider"
+    ]
+  },
+  {
+    "id": "glaucoma",
+    "name": "Glaucoma",
+    "category": "Other",
+    "aliases": [
+      "glaucoma",
+      "raised eye pressure",
+      "high IOP",
+      "ocular hypertension",
+      "جلوكوما",
+      "مياه زرقاء"
+    ],
+    "flags": [
+      "raised-iop",
+      "avoid-iop-rise",
+      "continue-eye-drops"
+    ]
+  },
+  {
+    "id": "ponv-history",
+    "name": "History of PONV / motion sickness",
+    "category": "Other",
+    "aliases": [
+      "PONV",
+      "post-operative nausea",
+      "postoperative nausea",
+      "motion sickness",
+      "travel sickness",
+      "sick after anaesthetic",
+      "nausea vomiting history",
+      "غثيان بعد التخدير"
+    ],
+    "flags": [
+      "ponv-high-risk",
+      "tiva-consider"
+    ]
+  },
+  {
+    "id": "difficult-airway-hx",
+    "name": "Known difficult airway",
+    "category": "Other",
+    "flags": [
+      "airway-risk",
+      "awake-techniques"
+    ]
+  },
+  {
+    "id": "latex-allergy",
+    "name": "Latex allergy",
+    "category": "Other",
+    "flags": [
+      "latex-free"
+    ]
+  },
+  {
+    "id": "dyslipidaemia",
+    "name": "Dyslipidaemia / Hyperlipidaemia",
+    "category": "Cardiovascular",
+    "aliases": [
+      "high cholesterol",
+      "hypercholesterolaemia",
+      "hypercholesterolemia",
+      "dyslipidemia",
+      "hyperlipidemia"
+    ],
+    "flags": [
+      "cardiac-risk-modifier"
+    ]
+  },
+  {
+    "id": "cardiomyopathy-dilated",
+    "name": "Dilated cardiomyopathy",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "low-ef"
+    ]
+  },
+  {
+    "id": "cardiomyopathy-hypertrophic",
+    "name": "Hypertrophic cardiomyopathy (HCM)",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "avoid-tachycardia",
+      "avoid-hypovolaemia",
+      "avoid-vasodilation"
+    ]
+  },
+  {
+    "id": "cardiac-transplant",
+    "name": "Heart transplant recipient",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "immunosuppression",
+      "denervated-heart",
+      "avoid-atropine-glycopyrrolate"
+    ]
+  },
+  {
+    "id": "congenital-heart",
+    "name": "Congenital heart disease (adult)",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "endocarditis-prophylaxis-consider"
+    ]
+  },
+  {
+    "id": "aaa",
+    "name": "Abdominal aortic aneurysm",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "bp-control"
+    ]
+  },
+  {
+    "id": "dvt-pe-history",
+    "name": "History of DVT / PE",
+    "category": "Cardiovascular",
+    "flags": [
+      "vte-risk-high",
+      "dvt-prophylaxis"
+    ]
+  },
+  {
+    "id": "tb-active",
+    "name": "Active tuberculosis",
+    "category": "Respiratory",
+    "flags": [
+      "airborne-precautions",
+      "isolate"
+    ]
+  },
+  {
+    "id": "cf",
+    "name": "Cystic fibrosis",
+    "category": "Respiratory",
+    "flags": [
+      "airway-risk",
+      "sputum",
+      "antibiotic-coverage"
+    ]
+  },
+  {
+    "id": "ild",
+    "name": "Interstitial lung disease / pulmonary fibrosis",
+    "category": "Respiratory",
+    "flags": [
+      "restrictive-lung",
+      "low-fio2-target"
+    ]
+  },
+  {
+    "id": "lung-transplant",
+    "name": "Lung transplant recipient",
+    "category": "Respiratory",
+    "flags": [
+      "immunosuppression",
+      "airway-risk"
+    ]
+  },
+  {
+    "id": "thyroid-storm",
+    "name": "Thyroid storm (acute)",
+    "category": "Endocrine",
+    "flags": [
+      "thyroid-storm",
+      "avoid-tachycardia",
+      "urgent-stabilise"
+    ]
+  },
+  {
+    "id": "addisonian-crisis",
+    "name": "Addisonian crisis",
+    "category": "Endocrine",
+    "flags": [
+      "adrenal-crisis",
+      "steroid-stress-dose",
+      "vasopressor-likely"
+    ]
+  },
+  {
+    "id": "cushings",
+    "name": "Cushing's syndrome",
+    "category": "Endocrine",
+    "flags": [
+      "glucose-monitor",
+      "hypertension",
+      "osteoporosis"
+    ]
+  },
+  {
+    "id": "panhypopituitarism",
+    "name": "Panhypopituitarism",
+    "category": "Endocrine",
+    "flags": [
+      "steroid-stress-dose",
+      "thyroid-replacement"
+    ]
+  },
+  {
+    "id": "carcinoid",
+    "name": "Carcinoid syndrome",
+    "category": "Endocrine",
+    "flags": [
+      "carcinoid-crisis",
+      "octreotide",
+      "avoid-histamine-releasers",
+      "avoid-catecholamines"
+    ]
+  },
+  {
+    "id": "aki",
+    "name": "Acute kidney injury",
+    "category": "Renal",
+    "flags": [
+      "renal-dosing",
+      "k-monitor",
+      "fluid-balance",
+      "avoid-nephrotoxic"
+    ]
+  },
+  {
+    "id": "kidney-transplant",
+    "name": "Kidney transplant recipient",
+    "category": "Renal",
+    "flags": [
+      "immunosuppression",
+      "renal-dosing",
+      "avoid-nephrotoxic"
+    ]
+  },
+  {
+    "id": "liver-transplant",
+    "name": "Liver transplant recipient",
+    "category": "Hepatic",
+    "flags": [
+      "immunosuppression",
+      "hepatic-dosing"
+    ]
+  },
+  {
+    "id": "portal-htn",
+    "name": "Portal hypertension / varices",
+    "category": "Hepatic",
+    "flags": [
+      "hepatic-dosing",
+      "coagulopathy",
+      "aspiration-risk"
+    ]
+  },
+  {
+    "id": "anticoag-lmwh",
+    "name": "On therapeutic LMWH",
+    "category": "Haematology",
+    "flags": [
+      "anticoagulated",
+      "neuraxial-timing"
+    ]
+  },
+  {
+    "id": "haemophilia",
+    "name": "Haemophilia A / B",
+    "category": "Haematology",
+    "flags": [
+      "coagulopathy",
+      "factor-replacement",
+      "avoid-im",
+      "avoid-nsaids"
+    ]
+  },
+  {
+    "id": "vwd",
+    "name": "von Willebrand disease",
+    "category": "Haematology",
+    "flags": [
+      "coagulopathy",
+      "desmopressin",
+      "factor-replacement"
+    ]
+  },
+  {
+    "id": "haemoglobinopathy",
+    "name": "Thalassaemia / haemoglobinopathy",
+    "category": "Haematology",
+    "flags": [
+      "anaemia",
+      "transfusion-likely"
+    ]
+  },
+  {
+    "id": "g6pd",
+    "name": "G6PD deficiency",
+    "category": "Haematology",
+    "flags": [
+      "avoid-prilocaine",
+      "avoid-methylene-blue"
+    ]
+  },
+  {
+    "id": "anxiety",
+    "name": "Anxiety disorder",
+    "category": "Neurological",
+    "aliases": [
+      "anxiety",
+      "generalised anxiety",
+      "generalized anxiety",
+      "GAD",
+      "panic disorder",
+      "anxious patient",
+      "preoperative anxiety",
+      "preop anxiety",
+      "قلق",
+      "توتر"
+    ],
+    "flags": [
+      "anxiolysis-consider",
+      "ssri-snri-consider"
+    ]
+  },
+  {
+    "id": "depression",
+    "name": "Depression",
+    "category": "Neurological",
+    "aliases": [
+      "depression",
+      "depressed",
+      "MDD",
+      "major depressive disorder",
+      "اكتئاب"
+    ],
+    "flags": [
+      "ssri-snri-consider"
+    ]
+  },
+  {
+    "id": "bipolar",
+    "name": "Bipolar disorder",
+    "category": "Neurological",
+    "flags": [
+      "lithium-consider"
+    ]
+  },
+  {
+    "id": "schizophrenia",
+    "name": "Schizophrenia",
+    "category": "Neurological",
+    "flags": [
+      "antipsychotic-consider",
+      "qt-prolongation"
+    ]
+  },
+  {
+    "id": "multiple-sclerosis",
+    "name": "Multiple sclerosis",
+    "category": "Neurological",
+    "flags": [
+      "avoid-temperature-rise",
+      "neuraxial-relative-caution"
+    ]
+  },
+  {
+    "id": "guillain-barre",
+    "name": "Guillain-Barré syndrome",
+    "category": "Neurological",
+    "flags": [
+      "succinylcholine-risk",
+      "autonomic-instability"
+    ]
+  },
+  {
+    "id": "als",
+    "name": "Amyotrophic lateral sclerosis (ALS / MND)",
+    "category": "Neurological",
+    "flags": [
+      "succinylcholine-risk",
+      "nmb-sensitive",
+      "respiratory-risk"
+    ]
+  },
+  {
+    "id": "spinal-cord-injury",
+    "name": "Spinal cord injury (chronic)",
+    "category": "Neurological",
+    "flags": [
+      "succinylcholine-risk",
+      "autonomic-dysreflexia"
+    ]
+  },
+  {
+    "id": "dementia",
+    "name": "Dementia / cognitive impairment",
+    "category": "Neurological",
+    "flags": [
+      "delirium-risk",
+      "reduce-dose-elderly",
+      "avoid-benzodiazepines"
+    ]
+  },
+  {
+    "id": "substance-abuse",
+    "name": "Active substance abuse",
+    "category": "Neurological",
+    "flags": [
+      "withdrawal-risk",
+      "tolerance",
+      "full-stomach"
+    ]
+  },
+  {
+    "id": "rheumatoid-arthritis",
+    "name": "Rheumatoid arthritis",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "airway-risk",
+      "c-spine-instability",
+      "steroid-stress-dose"
+    ]
+  },
+  {
+    "id": "ankylosing-spondylitis",
+    "name": "Ankylosing spondylitis",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "airway-risk",
+      "difficult-neuraxial",
+      "c-spine-rigid"
+    ]
+  },
+  {
+    "id": "scleroderma",
+    "name": "Scleroderma / systemic sclerosis",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "airway-risk",
+      "difficult-iv",
+      "aspiration-risk"
+    ]
+  },
+  {
+    "id": "sle",
+    "name": "Systemic lupus erythematosus (SLE)",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "steroid-stress-dose",
+      "renal-monitor",
+      "antiphospholipid-consider"
+    ]
+  },
+  {
+    "id": "down-syndrome",
+    "name": "Down syndrome (Trisomy 21)",
+    "category": "Musculoskeletal / Genetic",
+    "flags": [
+      "airway-risk",
+      "c-spine-instability",
+      "cardiac-risk"
+    ]
+  },
+  {
+    "id": "acromegaly",
+    "name": "Acromegaly",
+    "category": "Musculoskeletal / Genetic",
+    "aliases": [
+      "acromegaly",
+      "growth hormone excess",
+      "pituitary tumour GH",
+      "تضخم الأطراف"
+    ],
+    "flags": [
+      "airway-risk",
+      "difficult-airway-possible",
+      "awake-fibreoptic-possible",
+      "osa-screen",
+      "cardiac-risk",
+      "glucose-monitor"
+    ]
+  },
+  {
+    "id": "marfan",
+    "name": "Marfan syndrome",
+    "category": "Musculoskeletal / Genetic",
+    "aliases": [
+      "marfan",
+      "marfans",
+      "connective tissue disorder",
+      "متلازمة مارفان"
+    ],
+    "flags": [
+      "cardiac-risk",
+      "aortic-aneurysm",
+      "avoid-tachycardia",
+      "avoid-hypertension",
+      "pneumothorax-risk",
+      "careful-positioning"
+    ]
+  },
+  {
+    "id": "ehlers-danlos",
+    "name": "Ehlers-Danlos syndrome",
+    "category": "Musculoskeletal / Genetic",
+    "aliases": [
+      "ehlers danlos",
+      "EDS",
+      "hypermobility syndrome",
+      "connective tissue laxity"
+    ],
+    "flags": [
+      "bleeding-tendency",
+      "careful-positioning",
+      "cardiac-risk",
+      "fragile-tissues",
+      "difficult-iv"
+    ]
+  },
+  {
+    "id": "amyloidosis",
+    "name": "Amyloidosis",
+    "category": "Musculoskeletal / Genetic",
+    "aliases": [
+      "amyloid",
+      "amyloidosis",
+      "cardiac amyloid",
+      "AL amyloidosis"
+    ],
+    "flags": [
+      "cardiac-risk",
+      "restrictive-cardiomyopathy",
+      "airway-risk",
+      "autonomic-dysfunction",
+      "avoid-hypotension",
+      "renal-dosing"
+    ]
+  },
+  {
+    "id": "kyphoscoliosis",
+    "name": "Kyphoscoliosis / severe spinal deformity",
+    "category": "Musculoskeletal / Genetic",
+    "aliases": [
+      "kyphoscoliosis",
+      "scoliosis",
+      "spinal deformity",
+      "restrictive chest",
+      "تقوس العمود الفقري"
+    ],
+    "flags": [
+      "restrictive-lung",
+      "pulmonary-risk",
+      "difficult-neuraxial",
+      "phtn-screen",
+      "careful-positioning"
+    ]
+  },
+  {
+    "id": "placenta-praevia",
+    "name": "Placenta praevia",
+    "category": "Obstetric",
+    "flags": [
+      "blood-loss-risk",
+      "massive-transfusion-prepare"
+    ]
+  },
+  {
+    "id": "placenta-accreta",
+    "name": "Placenta accreta spectrum",
+    "category": "Obstetric",
+    "flags": [
+      "blood-loss-risk",
+      "massive-transfusion-prepare",
+      "interventional-radiology"
+    ]
+  },
+  {
+    "id": "preterm-labour",
+    "name": "Preterm labour",
+    "category": "Obstetric",
+    "flags": [
+      "neonatal-team",
+      "tocolysis"
+    ]
+  },
+  {
+    "id": "multiple-pregnancy",
+    "name": "Multiple pregnancy",
+    "category": "Obstetric",
+    "flags": [
+      "pph-risk",
+      "aortocaval-compression"
+    ]
+  },
+  {
+    "id": "hiv",
+    "name": "HIV / AIDS",
+    "category": "Other",
+    "flags": [
+      "immunosuppression",
+      "antiretroviral-interactions"
+    ]
+  },
+  {
+    "id": "organ-donor",
+    "name": "Brain-stem dead donor",
+    "category": "Other",
+    "flags": [
+      "donor-management",
+      "autonomic-instability"
+    ]
+  },
+  {
+    "id": "eisenmenger",
+    "name": "Eisenmenger syndrome",
+    "category": "Cardiovascular",
+    "aliases": [
+      "eisenmengers",
+      "congenital right-to-left shunt"
+    ],
+    "flags": [
+      "cardiac-risk",
+      "high-risk",
+      "avoid-hypotension",
+      "avoid-hypoxia",
+      "avoid-hypercarbia",
+      "avoid-acidosis",
+      "pulmonary-hypertension",
+      "right-to-left-shunt",
+      "air-bubble-precautions"
+    ]
+  },
+  {
+    "id": "long-qt",
+    "name": "Long QT syndrome",
+    "category": "Cardiovascular",
+    "aliases": [
+      "LQTS",
+      "prolonged QT",
+      "congenital long QT"
+    ],
+    "flags": [
+      "cardiac-risk",
+      "qt-prolongation",
+      "avoid-qt-prolonging-drugs",
+      "avoid-sympathetic-stimulation",
+      "sudden-cardiac-death-risk"
+    ]
+  },
+  {
+    "id": "brugada",
+    "name": "Brugada syndrome",
+    "category": "Cardiovascular",
+    "flags": [
+      "cardiac-risk",
+      "avoid-sodium-channel-blockers",
+      "avoid-fever",
+      "sudden-cardiac-death-risk",
+      "avoid-bupivacaine-high-dose"
+    ]
+  },
+  {
+    "id": "bronchiectasis",
+    "name": "Bronchiectasis",
+    "category": "Respiratory",
+    "flags": [
+      "pulmonary-risk",
+      "sputum",
+      "antibiotic-coverage",
+      "bronchodilator"
+    ]
+  },
+  {
+    "id": "pe-recent",
+    "name": "Recent pulmonary embolism (<3 months)",
+    "category": "Respiratory",
+    "aliases": [
+      "recent PE",
+      "recent pulmonary thromboembolism",
+      "VTE recent"
+    ],
+    "flags": [
+      "anticoagulation",
+      "vte-risk-high",
+      "cardiac-risk",
+      "avoid-hypoxia",
+      "right-heart-strain",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "mitochondrial-disease",
+    "name": "Mitochondrial disease",
+    "category": "Endocrine",
+    "aliases": [
+      "MELAS",
+      "MERRF",
+      "Leigh syndrome",
+      "mitochondrial myopathy"
+    ],
+    "flags": [
+      "avoid-propofol-prolonged",
+      "avoid-lactate-solutions",
+      "minimal-fasting",
+      "temperature-sensitive",
+      "nmb-sensitive"
+    ]
+  },
+  {
+    "id": "porphyria",
+    "name": "Acute intermittent porphyria",
+    "category": "Endocrine",
+    "aliases": [
+      "AIP",
+      "porphyria acute",
+      "hereditary porphyria"
+    ],
+    "flags": [
+      "avoid-thiopental",
+      "avoid-etomidate",
+      "avoid-ketamine",
+      "avoid-ropivacaine",
+      "avoid-barbiturates",
+      "glucose-infusion-may-help"
+    ]
+  },
+  {
+    "id": "renal-artery-stenosis",
+    "name": "Renal artery stenosis",
+    "category": "Renal",
+    "flags": [
+      "cardiac-risk",
+      "renal-dosing",
+      "avoid-nephrotoxic",
+      "bp-control",
+      "acei-caution"
+    ]
+  },
+  {
+    "id": "aps",
+    "name": "Antiphospholipid syndrome (APS)",
+    "category": "Haematology",
+    "aliases": [
+      "APLA",
+      "lupus anticoagulant",
+      "Hughes syndrome"
+    ],
+    "flags": [
+      "anticoagulation",
+      "vte-risk-high",
+      "bleeding-risk",
+      "aptt-prolonged-misleading",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "hit",
+    "name": "Heparin-induced thrombocytopenia (HIT)",
+    "category": "Haematology",
+    "aliases": [
+      "HITT",
+      "heparin-induced thrombocytopenia type II"
+    ],
+    "flags": [
+      "avoid-heparin",
+      "avoid-lmwh",
+      "bleeding-risk",
+      "thrombocytopenia",
+      "alternative-anticoagulant-required",
+      "high-risk"
+    ]
+  },
+  {
+    "id": "cerebral-palsy",
+    "name": "Cerebral palsy",
+    "category": "Neurological",
+    "aliases": [
+      "CP",
+      "spastic diplegia",
+      "spastic quadriplegia"
+    ],
+    "flags": [
+      "aspiration-risk",
+      "positioning-care",
+      "seizure-risk",
+      "communication-needs",
+      "temperature-sensitive"
+    ]
+  },
+  {
+    "id": "autism",
+    "name": "Autism spectrum disorder",
+    "category": "Neurological",
+    "aliases": [
+      "ASD",
+      "Asperger",
+      "autistic"
+    ],
+    "flags": [
+      "premed-consider",
+      "sensory-sensitivity",
+      "communication-needs",
+      "parental-presence-helpful"
+    ]
+  },
+  {
+    "id": "covid-recent",
+    "name": "Recent COVID-19 infection (<7 weeks)",
+    "category": "Other",
+    "aliases": [
+      "recent SARS-CoV-2",
+      "recent coronavirus",
+      "post-COVID"
+    ],
+    "flags": [
+      "pulmonary-risk",
+      "cardiac-risk",
+      "vte-risk-high",
+      "postpone-elective-consider",
+      "airway-reactivity"
+    ]
+  },
+  {
+    "id": "frailty",
+    "name": "Clinical frailty",
+    "category": "Other",
+    "aliases": [
+      "frail elderly",
+      "CFS-5+",
+      "frailty syndrome"
+    ],
+    "flags": [
+      "high-risk",
+      "elderly",
+      "reduce-dose-elderly",
+      "delirium-risk",
+      "cardiac-risk",
+      "pulmonary-risk",
+      "fall-risk"
+    ]
+  },
+  {
+    "id": "eating-disorder",
+    "name": "Eating disorder (anorexia / bulimia nervosa)",
+    "category": "Other",
+    "aliases": [
+      "anorexia nervosa",
+      "bulimia",
+      "AN",
+      "BN"
+    ],
+    "flags": [
+      "electrolyte-abnormalities",
+      "qt-prolongation",
+      "low-ef",
+      "cardiac-risk",
+      "refeeding-syndrome-risk",
+      "hypoglycaemia-risk"
+    ]
+  }
+]

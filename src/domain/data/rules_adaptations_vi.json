@@ -1,0 +1,691 @@
+[
+  {
+    "id": "cardiac-risk-monitoring",
+    "triggerFlags": [
+      "cardiac-risk"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Nâng cấp theo dõi tim mạch: Theo dõi điện tim 5 đạo trình với phân tích đoạn ST, cân nhắc huyết áp động mạch xâm lấn (IBP), chuẩn bị sẵn sàng xét nghiệm troponin."
+  },
+  {
+    "id": "avoid-tachycardia",
+    "triggerFlags": [
+      "avoid-tachycardia"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Tránh nhịp nhanh: Tránh sử dụng ketamine và pancuronium; duy trì nhịp tim gần mức nền; xử trí nhịp nhanh sớm bằng thuốc chẹn beta tác dụng ngắn."
+  },
+  {
+    "id": "avoid-hypotension",
+    "triggerFlags": [
+      "avoid-hypotension",
+      "fixed-cardiac-output"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Tránh hạ huyết áp: Giảm liều thuốc khởi mê, chuẩn bị sẵn thuốc vận mạch, duy trì huyết áp trung bình (MAP) ≥ 70–75 mmHg."
+  },
+  {
+    "id": "low-ef",
+    "triggerFlags": [
+      "low-ef",
+      "avoid-negative-inotropes"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Chức năng thất trái giảm: Khởi mê chuẩn độ chậm (etomidate / propofol rất thận trọng), tránh thuốc ức chế cơ tim, chuẩn bị sẵn thuốc vận mạch."
+  },
+  {
+    "id": "antiplatelet",
+    "triggerFlags": [
+      "antiplatelet"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Sử dụng thuốc chống ngưng tập tiểu cầu: Tiếp tục aspirin chu phẫu trừ khi có chống chỉ định rõ ràng; thảo luận nguy cơ chảy máu do phẫu thuật."
+  },
+  {
+    "id": "anticoagulation",
+    "triggerFlags": [
+      "anticoagulation"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Dùng thuốc chống đông: Xác nhận kế hoạch bắc cầu (dừng DOACs 24-48 giờ, xác nhận INR nếu dùng warfarin) và xác định thuốc đối kháng dự phòng."
+  },
+  {
+    "id": "pacemaker-icd",
+    "triggerFlags": [
+      "diathermy-caution",
+      "device-check"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Thiết bị cấy ghép tim mạch (ICD/Pacemaker): Đã kiểm tra thiết bị trước mổ, cài đặt dao điện sang chế độ lưỡng cực (bipolar), nam châm luôn có sẵn."
+  },
+  {
+    "id": "pulmonary-risk",
+    "triggerFlags": [
+      "pulmonary-risk"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Nguy cơ hô hấp: Áp dụng chiến lược thông khí bảo vệ phổi (Vt 6-8 mL/kg IBW, PEEP 5-8 cmH2O), làm thủ thuật huy động phế nang (recruitment), sẵn sàng máy thở CPAP sau mổ."
+  },
+  {
+    "id": "bronchospasm-risk",
+    "triggerFlags": [
+      "bronchospasm-risk",
+      "bronchodilator"
+    ],
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "Nguy cơ co thắt phế quản: Chuẩn bị sẵn salbutamol, đào sâu gây mê trước khi thao tác đường thở, ưu tiên gây tê vùng / đặt LMA thay vì ống nội khí quản nếu phù hợp."
+  },
+  {
+    "id": "osa",
+    "triggerFlags": [
+      "airway-risk",
+      "opioid-caution",
+      "post-op-monitoring"
+    ],
+    "matchAll": true,
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "Phác đồ Ngưng thở khi ngủ (OSA): Ưu tiên kỹ thuật tiết kiệm opioid, giảm đau đa phương thức, theo dõi PACU kéo dài với SpO2 liên tục; sử dụng máy thở CPAP tại phòng hồi tỉnh nếu bệnh nhân dùng ở nhà."
+  },
+  {
+    "id": "avoid-high-fio2",
+    "triggerFlags": [
+      "avoid-high-fio2"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Tránh dùng FiO2 cao kéo dài: Chuẩn độ để SpO2 ở mức 92-96% nhằm giảm thiểu nguy cơ ứ đọng CO2."
+  },
+  {
+    "id": "recent-uri",
+    "triggerFlags": [
+      "airway-reactivity",
+      "postpone-elective"
+    ],
+    "matchAll": true,
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "Nhiễm trùng hô hấp trên gần đây: Cân nhắc hoãn phẫu thuật chương trình; nếu bắt buộc, rút ống khi mê sâu, chuẩn bị sẵn salbutamol, áp dụng phác đồ SAFE-T ở trẻ em."
+  },
+  {
+    "id": "renal-dosing",
+    "triggerFlags": [
+      "renal-dosing"
+    ],
+    "category": "Renal",
+    "severity": "high",
+    "action": "Điều chỉnh liều cho suy thận: Tránh dùng morphin và pethidin (chất chuyển hóa hoạt tính tích tụ); ưu tiên fentanyl/remifentanil; TRÁNH dùng NSAIDs."
+  },
+  {
+    "id": "avoid-nephrotoxic",
+    "triggerFlags": [
+      "avoid-nephrotoxic"
+    ],
+    "category": "Renal",
+    "severity": "medium",
+    "action": "Tránh các thuốc độc thận: Giảm thiểu tối đa NSAIDs, kháng sinh nhóm aminoglycoside và thuốc cản quang; duy trì truyền dịch tinh thể đẳng trương; theo dõi lượng nước tiểu."
+  },
+  {
+    "id": "k-monitor",
+    "triggerFlags": [
+      "k-monitor"
+    ],
+    "category": "Renal",
+    "severity": "high",
+    "action": "Theo dõi Kali: Kiểm tra nồng độ K+ trước mổ; tránh dùng suxamethonium nếu K+ >= 5.0 mmol/L; theo dõi ECG liên tục tìm dấu hiệu sóng T cao nhọn."
+  },
+  {
+    "id": "hepatic-dosing",
+    "triggerFlags": [
+      "hepatic-dosing"
+    ],
+    "category": "Hepatic",
+    "severity": "high",
+    "action": "Điều chỉnh liều cho bệnh gan: Giảm liều thuốc khởi mê 30-50%; hạn chế benzodiazepine; ưu tiên dùng cisatracurium (chuyển hóa không phụ thuộc vào cơ quan)."
+  },
+  {
+    "id": "coagulopathy",
+    "triggerFlags": [
+      "coagulopathy"
+    ],
+    "category": "Hepatic",
+    "severity": "high",
+    "action": "Rối loạn đông máu mắc phải: Xác nhận PT/INR và số lượng tiểu cầu trước mổ; chuẩn bị Vitamin K / Huyết tương tươi đông lạnh (FFP) / Tiểu cầu theo chỉ định; đánh giá lại kỹ thuật gây tê trục não tủy."
+  },
+  {
+    "id": "avoid-hepatotoxic",
+    "triggerFlags": [
+      "avoid-hepatotoxic"
+    ],
+    "category": "Hepatic",
+    "severity": "medium",
+    "action": "Tránh thuốc độc gan: Giảm liều paracetamol, tránh halothane, ưu tiên sevoflurane thay vì isoflurane."
+  },
+  {
+    "id": "glucose-monitor",
+    "triggerFlags": [
+      "glucose-monitor"
+    ],
+    "category": "Endocrine",
+    "severity": "medium",
+    "action": "Theo dõi đường huyết: Đo đường huyết mao mạch mỗi giờ trong mổ; truyền tĩnh mạch insulin biến thiên nếu đường huyết > 10 mmol/L; tránh dùng Lactated Ringer nếu đường huyết tăng đáng kể."
+  },
+  {
+    "id": "insulin-dependent",
+    "triggerFlags": [
+      "insulin-dependent"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Đái tháo đường Type 1: Tiếp tục dùng insulin tác dụng kéo dài nhưng giảm liều; bỏ qua insulin tác dụng ngắn vào ngày mổ; kiểm tra ceton máu nếu đường huyết > 14 mmol/L."
+  },
+  {
+    "id": "steroid-cover",
+    "triggerFlags": [
+      "steroid-cover"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Bao phủ Steroid: Tiêm hydrocortisone 50-100 mg tĩnh mạch lúc khởi mê; liều bổ sung đối với phẫu thuật lớn; tiếp tục dùng liều thuốc uống thường ngày sau mổ."
+  },
+  {
+    "id": "thyroid-storm-risk",
+    "triggerFlags": [
+      "thyroid-storm-risk"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Nguy cơ Cơn bão giáp: Đảm bảo chức năng tuyến giáp bình thường trước phẫu thuật chương trình; tiếp tục dùng thuốc chẹn beta; tránh kích thích giao cảm; chuẩn bị sẵn hydrocortisone, propylthiouracil, propranolol."
+  },
+  {
+    "id": "haemodynamic-swings",
+    "triggerFlags": [
+      "haemodynamic-swings",
+      "alpha-block-needed"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Phaeochromocytoma (U tủy thượng thận): Đã xác nhận việc dùng thuốc chẹn alpha trước mổ; thiết lập đường truyền động mạch (A-line) TRƯỚC KHI khởi mê; chuẩn bị sẵn phentolamine, magiê, esmolol, GTN."
+  },
+  {
+    "id": "airway-risk",
+    "triggerFlags": [
+      "airway-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Xác định nguy cơ đường thở khó: Chuẩn bị sẵn sàng và kiểm tra dụng cụ đặt đường thở khó (đèn nội khí quản có camera, bougie, các loại mask thanh quản, bộ dụng cụ mở khí quản cấp cứu); kéo dài thời gian thở oxy trước mổ (pre-oxygenation)."
+  },
+  {
+    "id": "ibw-dosing",
+    "triggerFlags": [
+      "ibw-dosing"
+    ],
+    "category": "Airway",
+    "severity": "medium",
+    "action": "Liều lượng theo cân nặng (Béo phì): Thuốc khởi mê (propofol, thiopental) tính theo cân nặng cơ thể nạc (LBW); thuốc giãn cơ tính theo cân nặng lý tưởng (IBW); opioid thường tính theo cân nặng điều chỉnh (ABW); kháng sinh theo cân nặng thực tế (TBW). Luôn chuẩn độ theo đáp ứng lâm sàng."
+  },
+  {
+    "id": "sepsis",
+    "triggerFlags": [
+      "sepsis",
+      "vasopressor-likely"
+    ],
+    "matchAll": true,
+    "category": "Other",
+    "severity": "high",
+    "action": "Phác đồ Nhiễm trùng huyết (Sepsis): Thực hiện gói Surviving Sepsis Bundle; theo dõi lactate máu; hồi sức dịch tinh thể cân bằng; noradrenaline là thuốc vận mạch lựa chọn đầu tay."
+  },
+  {
+    "id": "fluid-resuscitation",
+    "triggerFlags": [
+      "fluid-resuscitation"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Cần bù dịch hồi sức: Bơm tĩnh mạch (bolus) dịch tinh thể cân bằng ban đầu (10–20 mL/kg) chuẩn độ theo các chỉ số động (PPV, độ thanh thải lactate, thời gian đổ đầy mao mạch) và đánh giá lại thường xuyên. Tránh các phác đồ truyền dịch cố định ở bệnh nhân có nguy cơ quá tải dịch."
+  },
+  {
+    "id": "full-stomach",
+    "triggerFlags": [
+      "full-stomach"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Phòng ngừa dạ dày đầy: Khởi mê nối tiếp nhanh (RSI), cân nhắc ấn sụn nhẫn, hút xẹp dạ dày qua sonde dạ dày (NG tube) nếu có chỉ định, xem xét đặt ống nội khí quản thức tỉnh (awake intubation) nếu có kèm theo đường thở khó."
+  },
+  {
+    "id": "trauma-major",
+    "triggerFlags": [
+      "trauma"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Chấn thương nặng: Hồi sức kiểm soát tổn thương (Damage control resuscitation), hạ huyết áp cho phép (SBP 80–90 mmHg cho đến khi kiểm soát được chảy máu, TRỪ trường hợp chấn thương sọ não TBI cần MAP ≥ 80), truyền máu tỉ lệ 1:1:1 PRBC:FFP:Tiểu cầu, tiêm acid tranexamic 1g trong vòng 3 giờ đầu (CRASH-2/3), giữ ấm bệnh nhân."
+  },
+  {
+    "id": "tbi-management",
+    "triggerFlags": [
+      "raised-icp"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Tăng áp lực nội sọ (ICP) / Chấn thương sọ não (TBI): Ưu tiên gây mê tĩnh mạch toàn lưu (TIVA với propofol + remifentanil), tránh ketamine và N₂O, kê cao đầu 15–30°, duy trì đẳng cacbon (PaCO₂ 35–40), MAP ≥ 80 (CPP > 60), tránh giảm oxy máu, khởi mê và thoát mê êm dịu để tránh tăng vọt áp lực nội sọ."
+  },
+  {
+    "id": "c-spine",
+    "triggerFlags": [
+      "c-spine-precautions",
+      "c-spine-instability"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Đề phòng chấn thương cột sống cổ / Cột sống cổ mất vững: Cố định thẳng trục bằng tay (MILS) trong quá trình đặt ống, ưu tiên đèn đặt nội khí quản có camera (Videolaryngoscope), cân nhắc đặt ống bằng ống soi mềm thức tỉnh (awake fibreoptic) nếu mất vững nghiêm trọng, hạn chế cử động cổ, duy trì nẹp cổ cứng cho đến khi được loại trừ tổn thương."
+  },
+  {
+    "id": "c-spine-rigid",
+    "triggerFlags": [
+      "c-spine-rigid"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Cột sống cổ cứng/bất động (Viêm cột sống dính khớp): Dự đoán đặt nội khí quản khó do biến dạng gập cổ cố định - đặt nội khí quản thức tỉnh bằng ống soi mềm thường là lựa chọn an toàn nhất, KHÔNG cố ép cổ vào tư thế \"ngửi hoa\", chuẩn bị thiết bị đường thở khó. Lưu ý nguy cơ gây tê trục não tủy khó và bệnh lý van động mạch chủ/phổi hạn chế kèm theo."
+  },
+  {
+    "id": "active-haemorrhage",
+    "triggerFlags": [
+      "massive-transfusion-prepare"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Xuất huyết đang hoạt động: Kích hoạt Phác đồ Truyền máu khối lượng lớn (MHP 1:1:1 PRBC:FFP:Tiểu cầu), thiết lập 2 đường truyền IV tĩnh mạch lớn, chuẩn bị máy truyền dịch tốc độ cao, sử dụng máy truyền máu hoàn hồi (Cell Saver) nếu có, tiêm TXA 1g IV (trong 3h), giữ ấm, làm xét nghiệm đông máu tại chỗ (TEG/ROTEM) nếu có, duy trì fibrinogen ≥ 1.5 g/L (2 g/L trong sản khoa)."
+  },
+  {
+    "id": "coagulopathy-acute",
+    "triggerFlags": [
+      "coagulopathy-risk"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Nguy cơ rối loạn đông máu mắc phải: Làm xét nghiệm nền PT/APTT/Fibrinogen + Tiểu cầu, tránh gây tê trục não tủy cho đến khi điều chỉnh xong, chuẩn bị thuốc đối kháng nếu đang dùng thuốc chống đông (PCC cho warfarin, idarucizumab cho dabigatran, andexanet alfa cho nhóm ức chế Xa)."
+  },
+  {
+    "id": "hypothermia-prevention",
+    "triggerFlags": [
+      "hypothermia-risk"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Dự phòng hạ thân nhiệt: Sử dụng máy thổi khí ấm (Bair Hugger) trước và trong mổ, máy làm ấm dịch truyền, nhiệt độ phòng mổ ≥ 21 °C, mục tiêu nhiệt độ lõi ≥ 36 °C. Hạ thân nhiệt làm trầm trọng thêm rối loạn đông máu và tăng chảy máu."
+  },
+  {
+    "id": "pregnancy",
+    "triggerFlags": [
+      "pregnancy"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Thai kỳ: Dự phòng hít sặc (Natri citrate ± ranitidine/PPI), nằm nghiêng trái 15°, tránh các thuốc gây quái thai, theo dõi tim thai phù hợp với tuổi thai."
+  },
+  {
+    "id": "pre-eclampsia",
+    "triggerFlags": [
+      "pre-eclampsia"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Tiền sản giật: Kiểm soát huyết áp + Dự phòng co giật bằng Magiê sulphate + Quản lý dịch chặt chẽ (≤ 80 mL/h để tránh phù phổi) + Kiểm tra số lượng tiểu cầu trước khi gây tê trục não tủy. Tránh dùng ergometrine và NSAIDs."
+  },
+  {
+    "id": "hellp-overall",
+    "triggerFlags": [
+      "hellp"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Hội chứng HELLP: Cấp cứu sản khoa khẩn cấp. Cần sự hội chẩn của Sản khoa, Gây mê và Huyết học. Theo dõi tim thai liên tục. Chuẩn bị mổ lấy thai - cách điều trị triệt để duy nhất là lấy thai và nhau thai. Cần giường ICU/HDU sau sinh. Chức năng gan thay đổi (AST/ALT 70-150 U/L) - chuẩn độ thuốc mê nhưng thường không cần giảm 30-50% liều trừ khi suy gan nặng."
+  },
+  {
+    "id": "severe-thrombocytopenia",
+    "triggerFlags": [
+      "thrombocytopenia-severe"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Giảm tiểu cầu nặng: Làm xét nghiệm Công thức máu (CBC) và xu hướng tiểu cầu trong vòng 6 giờ trước quyết định gây tê trục não tủy. Ngưỡng SOAP 2021: Tê tủy sống/Ngoại màng cứng chấp nhận được nếu tiểu cầu ≥ 70 × 10⁹/L và ổn định; 50–70 cần cá thể hóa nguy cơ-lợi ích; < 50 chống chỉ định. Dùng ROTEM/TEG nếu có. Dự trù và chéo máu 4 đơn vị."
+  },
+  {
+    "id": "neuraxial-bleeding-caution",
+    "triggerFlags": [
+      "neuraxial-caution",
+      "bleeding-risk"
+    ],
+    "category": "Regional",
+    "severity": "high",
+    "action": "Thận trọng gây tê trục não tủy/Vùng do nguy cơ chảy máu: KIỂM TRA tiểu cầu và đông máu (PT/APTT/fibrinogen) TRƯỚC KHI thực hiện. Hướng dẫn chung: Chấp nhận khi tiểu cầu ≥ 70–80 × 10⁹/L và đông máu bình thường; 50–70 cần cân nhắc cá thể hóa; < 50 nhìn chung là chống chỉ định. Chú ý thời gian dừng thuốc chống đông theo Guideline (ASRA/AAGBI). Ưu tiên tê tủy sống hơn tê ngoài màng cứng (kim nhỏ hơn, thể tích máu tụ thấp hơn)."
+  },
+  {
+    "id": "severe-hypertension",
+    "triggerFlags": [
+      "bp-control"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Kiểm soát Tăng huyết áp nặng (Tiền sản giật/HELLP): Labetalol 10–20 mg IV (lặp lại mỗi 10 phút, tối đa 300 mg) HOẶC hydralazine 5–10 mg IV (mỗi 15 phút, tối đa 30 mg) HOẶC nifedipine uống 10 mg. Mục tiêu HA 140–150 / 90–100 mmHg (KHÔNG hạ áp quá nhanh - gây giảm tưới máu nhau thai). Đặt đường truyền động mạch (A-line) theo dõi liên tục."
+  },
+  {
+    "id": "magnesium-therapy",
+    "triggerFlags": [
+      "magnesium"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Dự phòng co giật bằng Magnesium sulphate: Liều tải 4g IV trong 5-10 phút, sau đó duy trì 1g/h trong 24h sau sinh. Theo dõi độc tính: phản xạ gân sâu (DTR) mỗi giờ; nhịp thở; nồng độ Mg máu nếu thiểu niệu. Giải độc: Canxi gluconate 1g IV chậm. Lưu ý: Magiê làm tăng tác dụng thuốc giãn cơ không khử cực — giảm liều giãn cơ đi 25–50%."
+  },
+  {
+    "id": "hellp-haemorrhage",
+    "triggerFlags": [
+      "hellp",
+      "blood-loss-risk"
+    ],
+    "matchAll": true,
+    "category": "Other",
+    "severity": "high",
+    "action": "Chuẩn bị Xuất huyết do HELLP: Hai đường truyền IV lớn, dự trù 4 đơn vị máu chéo, chuẩn bị sẵn Fibrinogen và FFP, máy truyền máu hoàn hồi. Dự đoán Băng huyết sau sinh PPH (đờ tử cung do magie) và nguy cơ vỡ bao gan hiếm gặp. Tiêm TXA 1g IV ngay khi có dấu hiệu PPH."
+  },
+  {
+    "id": "anxiolysis",
+    "triggerFlags": [
+      "anxiolysis-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Lo âu chu phẫu: Cân nhắc thuốc tiền mê giải lo âu (ví dụ: midazolam 0.02–0.04 mg/kg IV hoặc 7.5 mg uống 30 phút trước mổ) cân bằng với nguy cơ ngưng thở lúc ngủ (OSA). Môi trường yên tĩnh; giải thích rõ ràng. Tránh an thần quá mức ở người cao tuổi (nguy cơ sảng)."
+  },
+  {
+    "id": "ssri-snri",
+    "triggerFlags": [
+      "ssri-snri-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Đang dùng thuốc SSRI/SNRI: Tránh phối hợp các thuốc cường serotonin (pethidine, tramadol, xanh methylene, ondansetron liều cao) để giảm nguy cơ hội chứng Serotonin. Lưu ý nguy cơ chảy máu nhẹ do tiểu cầu. Không ngừng thuốc chống trầm cảm đột ngột (hội chứng cai) — tiếp tục dùng trừ khi có chống chỉ định đặc biệt."
+  },
+  {
+    "id": "opioid-tolerant",
+    "triggerFlags": [
+      "opioid-tolerant",
+      "chronic-pain"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Dung nạp Opioid / Đau mãn tính: Tiếp tục opioid nền (chuyển sang liều IV tương đương nếu cần nhịn ăn NBM). Dự kiến nhu cầu opioid trong và sau mổ cao hơn nhiều — chuẩn độ theo hiệu quả, không dùng thiếu liều. Ưu tiên giảm đau đa thức (multimodal) và gây tê vùng (paracetamol, NSAID nếu an toàn, ketamine, catheter vùng). Mời hội chẩn đội ngũ Giảm đau cấp tính (APS)."
+  },
+  {
+    "id": "multimodal-essential",
+    "triggerFlags": [
+      "multimodal-essential"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Giảm đau đa thức là bắt buộc: Kết hợp Paracetamol + NSAID/COX-2 (nếu không có chống chỉ định) + Gây tê vùng + Các thuốc bổ trợ tiết kiệm Opioid (Ketamine, Dexamethasone, Đồng vận Alpha-2) để giảm thiểu lượng Opioid."
+  },
+  {
+    "id": "raised-iop",
+    "triggerFlags": [
+      "raised-iop",
+      "avoid-iop-rise"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Glaucoma / Tăng nhãn áp (IOP): Tránh tăng nhãn áp kéo dài — khởi mê và thoát mê êm dịu (tránh ho/rặn), cân nhắc tránh dùng Suxamethonium (làm tăng IOP thoáng qua), hạn chế tư thế dốc đầu sâu, đảm bảo mê đủ sâu trước khi đặt đèn nội khí quản. Tiếp tục nhỏ mắt thuốc trị Glaucoma."
+  },
+  {
+    "id": "continue-eye-drops",
+    "triggerFlags": [
+      "continue-eye-drops"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Tiếp tục thuốc nhỏ mắt trị Glaucoma vào ngày phẫu thuật. Lưu ý thuốc nhỏ mắt timolol có thể gây nhịp chậm/co thắt phế quản và nhóm kháng cholinesterase (echothiophate) làm kéo dài tác dụng của Suxamethonium."
+  },
+  {
+    "id": "ponv-high-risk-adapt",
+    "triggerFlags": [
+      "ponv-high-risk"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Nguy cơ PONV cao (tiền sử PONV / say xe): Dự phòng bằng nhiều nhóm thuốc (VD: Dexamethasone lúc khởi mê + Ondansetron lúc kết thúc + cân nhắc nhóm thứ 3 như chất đối kháng NK-1 hoặc Droperidol), ưu tiên gây mê tĩnh mạch TIVA với Propofol, hạn chế Opioid và tránh N₂O, đảm bảo đủ dịch."
+  },
+  {
+    "id": "migraine-triggers",
+    "triggerFlags": [
+      "migraine-triggers-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Tiền sử đau nửa đầu (Migraine): Duy trì cung cấp dịch và tránh các yếu tố kích hoạt (nhịn đói kéo dài, hạ đường huyết, hạ huyết áp). Lưu ý tương tác thuốc nếu bệnh nhân đang dùng Triptans/Ergots. Cân nhắc dự phòng chống nôn (PONV)."
+  },
+  {
+    "id": "osa-screen",
+    "triggerFlags": [
+      "osa-screen"
+    ],
+    "category": "Respiratory",
+    "severity": "low",
+    "action": "Tầm soát Ngưng thở lúc ngủ (OSA) (ví dụ bảng điểm STOP-BANG): Nếu dương tính dương, áp dụng giảm đau đa thức tiết kiệm Opioid, kéo dài thời gian theo dõi SpO₂ sau mổ, chuẩn bị sẵn máy CPAP, và thận trọng khi dùng thuốc an thần."
+  },
+  {
+    "id": "avoid-hypertension",
+    "triggerFlags": [
+      "avoid-hypertension"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Tránh các cơn tăng huyết áp vọt (VD: Bệnh lý động mạch chủ/Marfan, Tăng ICP): Đảm bảo độ mê sâu và giảm đau tốt trước các kích thích (laryngoscopy, rạch da, rút ống), cắt phản xạ tăng áp (remifentanil/esmolol/lidocaine), kiểm soát huyết áp sát mức nền."
+  },
+  {
+    "id": "pneumothorax-risk",
+    "triggerFlags": [
+      "pneumothorax-risk"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Nguy cơ tràn khí màng phổi (Bóng khí / Bệnh mô liên kết phổi): Áp dụng chiến lược thông khí bảo vệ phổi với áp lực đỉnh/bình nguyên thấp, TRÁNH N₂O, luôn cảnh giác cao độ với tràn khí màng phổi áp lực khi bệnh nhân đột ngột giảm oxy máu/tụt huyết áp/tăng áp lực đường thở."
+  },
+  {
+    "id": "careful-positioning",
+    "triggerFlags": [
+      "careful-positioning"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Cẩn trọng khi thay đổi tư thế (Khớp tăng động / Mô mỏng manh / Biến dạng cột sống): Lót nệm đệm kỹ ở các điểm tỳ đè, tránh các tư thế gập duỗi khớp cực độ (nguy cơ trật khớp/bán trật khớp), di chuyển bệnh nhân đang mê một cách chậm rãi với nhiều nhân sự hỗ trợ, ghi hồ sơ đánh giá mạch máu thần kinh."
+  },
+  {
+    "id": "bleeding-tendency",
+    "triggerFlags": [
+      "bleeding-tendency"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Xu hướng chảy máu/bầm tím (Ehlers-Danlos, mô mỏng manh): Thao tác đường thở và đặt đường truyền cực kỳ nhẹ nhàng (mạch máu dễ rách), kiểm tra chức năng đông máu/tiểu cầu, chuẩn bị sẵn máu, cân nhắc Acid Tranexamic, tránh các kỹ thuật gây tê vùng có nguy cơ chấn thương tĩnh mạch."
+  },
+  {
+    "id": "fragile-tissues",
+    "triggerFlags": [
+      "fragile-tissues",
+      "difficult-iv"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Mô mỏng manh / Khó thiết lập đường truyền (Bệnh mô liên kết): Sử dụng siêu âm dẫn đường để đặt đường truyền tĩnh mạch/động mạch, cố định dây chuyền và ống nội khí quản nhẹ nhàng (băng keo có thể làm lột da), bảo vệ mắt và các vùng tỳ đè tỉ mỉ."
+  },
+  {
+    "id": "restrictive-cardiomyopathy",
+    "triggerFlags": [
+      "restrictive-cardiomyopathy"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Bệnh cơ tim hạn chế (vd. Amyloidosis tim): Thể tích nhát bóp thấp cố định — duy trì tiền gánh (preload), nhịp xoang và tần số tim, TRÁNH nhịp nhanh và giãn mạch đột ngột, theo dõi huyết áp xâm lấn, khởi mê chậm cẩn thận, chú ý block dẫn truyền tim (chuẩn bị máy tạo nhịp) và nhạy cảm quá mức với tụt huyết áp."
+  },
+  {
+    "id": "autonomic-dysfunction",
+    "triggerFlags": [
+      "autonomic-dysfunction"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Rối loạn chức năng tự chủ (Amyloid, Đái tháo đường lâu năm): Huyết áp sẽ dao động mạnh và mất các phản xạ bù trừ — Bắt buộc theo dõi huyết áp động mạch xâm lấn (IBP), chuẩn bị sẵn thuốc vận mạch, thận trọng khi thay đổi tư thế, cảnh giác liệt dạ dày/hít sặc."
+  },
+  {
+    "id": "difficult-neuraxial",
+    "triggerFlags": [
+      "difficult-neuraxial"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Khó gây tê trục não tủy (Biến dạng cột sống / Cột sống dính): Xem lại phim X-quang/MRI, cân nhắc định vị dưới hướng dẫn của siêu âm, dự trù thêm thời gian thực hiện, chuẩn bị sẵn phương án Gây mê nội khí quản dự phòng, giải thích cho bệnh nhân về tỉ lệ thất bại/chuyển đổi cao."
+  },
+  {
+    "id": "phtn-screen",
+    "triggerFlags": [
+      "phtn-screen"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Tầm soát Tăng áp phổi / Tâm phế mạn (Bệnh phổi hạn chế nặng): Nếu nghi ngờ, yêu cầu siêu âm tim, TRÁNH giảm oxy máu/tăng CO₂ máu/nhiễm toan (tất cả đều làm tăng sức cản mạch phổi PVR), duy trì cẩn thận tiền gánh và hậu gánh thất phải (RV), lên kế hoạch hậu phẫu tích cực."
+  },
+  {
+    "id": "carcinoid-crisis",
+    "triggerFlags": [
+      "carcinoid-crisis"
+    ],
+    "category": "Cardiovascular",
+    "severity": "high",
+    "action": "Nguy cơ cơn bão Carcinoid: Chuẩn bị sẵn OCTREOTIDE (Bolus tĩnh mạch 50–100 mcg, sau đó duy trì 50 mcg/h; có thể tiền thuốc 100 mcg dưới da 1-2h trước mổ). Điều trị tụt huyết áp bằng Octreotide và Vasopressin/Phenylephrine — TRÁNH dùng Catecholamines (Adrenaline/Noradrenaline có thể làm tăng giải phóng chất trung gian nghịch lý) và TRÁNH thuốc gây phóng thích Histamine (Morphine, Atracurium). Theo dõi IBP xâm lấn. Tránh tăng CO₂, hạ thân nhiệt và mê quá nông."
+  },
+  {
+    "id": "avoid-histamine-releasers",
+    "triggerFlags": [
+      "avoid-histamine-releasers"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Tránh các thuốc gây giải phóng Histamine (Morphine, Atracurium, Mivacurium, Suxamethonium liều cao tiêm nhanh): Ưu tiên Fentanyl/Remifentanil, Rocuronium hoặc Cisatracurium. Đặc biệt lưu ý trong hội chứng Carcinoid, Mastocytosis, U tủy thượng thận Phaeochromocytoma và tiền sử dị ứng/phản vệ nặng."
+  },
+  {
+    "id": "autonomic-dysreflexia",
+    "triggerFlags": [
+      "autonomic-dysreflexia"
+    ],
+    "category": "Cardiovascular",
+    "severity": "high",
+    "action": "Nguy cơ Rối loạn phản xạ tự chủ (Tổn thương tủy sống từ T6 trở lên): Các kích thích đau dưới mức tổn thương (căng tiểu/bàng quang, phẫu thuật) có thể gây tăng huyết áp kịch phát kèm nhịp chậm phản xạ. Phải đảm bảo MÊ SÂU dù cho vùng phẫu thuật có mất cảm giác (Gây tê hay Gây mê - KHÔNG được ỷ lại vào tổn thương tủy). Chuẩn bị sẵn thuốc giãn mạch tác dụng nhanh (GTN, Labetalol, Phentolamine). Tuyệt đối không dùng Suxamethonium ở giai đoạn sau cấp tính (do nguy cơ tăng Kali máu)."
+  },
+  {
+    "id": "steroid-stress-dose",
+    "triggerFlags": [
+      "steroid-stress-dose",
+      "stress-steroids-needed",
+      "adrenal-crisis"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Bù Corticosteroid chu phẫu (Suy thượng thận / Dùng steroid kéo dài): Tiêm Hydrocortisone lúc khởi mê — phẫu thuật nhỏ 25–50 mg, vừa 50–100 mg, lớn 100 mg sau đó 50 mg mỗi 8h (hoặc bơm tiêm điện 200 mg/24h) trong 24-48h, rồi giảm liều dần. Vẫn uống liều steroid thường ngày vào sáng ngày mổ. Đề phòng cơn suy thượng thận cấp (tụt huyết áp kháng trị) — điều trị bằng Hydrocortisone 100 mg IV + truyền dịch."
+  },
+  {
+    "id": "avoid-nsaids",
+    "triggerFlags": [
+      "avoid-nsaids"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Tránh sử dụng NSAIDs: Đặc biệt ở bệnh nhân có rối loạn đông máu, suy giảm chức năng thận, loét dạ dày tá tràng tiến triển, hen suyễn nặng (nhạy cảm với Aspirin) và một số trường hợp thai kỳ. Thay thế bằng Paracetamol + giảm đau đa thức (gây tê vùng, ketamine, dexmedetomidine)."
+  },
+  {
+    "id": "avoid-mivacurium",
+    "triggerFlags": [
+      "avoid-mivacurium"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Tránh Mivacurium (và Suxamethonium): Cả hai đều chuyển hóa qua men Pseudocholinesterase huyết tương — ở bệnh nhân thiếu hụt men này sẽ gây liệt cơ kéo dài. Dùng Rocuronium (giải bằng Sugammadex) hoặc Cisatracurium (thải trừ Hofmann) thay thế."
+  },
+  {
+    "id": "anticoagulation-bridge",
+    "triggerFlags": [
+      "anticoagulated",
+      "bridge-needed"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Quản lý Thuốc chống đông: Xác nhận tên thuốc, chỉ định và liều cuối cùng. Lên kế hoạch ngừng thuốc và bắc cầu (bridging) theo mức độ nguy cơ huyết khối. Tuân thủ khoảng thời gian an toàn cho gây tê trục não tủy (ASRA/AAGBI). Chuẩn bị sẵn thuốc đối kháng — PCC/Vitamin K (Warfarin), Idarucizumab (Dabigatran), Andexanet/PCC (chất ức chế Xa), Protamine (Heparin)."
+  },
+  {
+    "id": "factor-replacement",
+    "triggerFlags": [
+      "factor-replacement"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Bệnh ưa chảy máu bẩm sinh (Haemophilia / vWD): Hội chẩn Huyết học về nồng độ yếu tố đông máu và kế hoạch bồi phụ chu phẫu (Yếu tố VIII/IX, Desmopressin cho Haemophilia A nhẹ / vWD type 1, kết hợp TXA). Tránh tiêm bắp, NSAIDs và Aspirin. Chắc chắn đông máu đã điều chỉnh trước khi gây tê vùng."
+  },
+  {
+    "id": "tracheomalacia-compression",
+    "triggerFlags": [
+      "tracheomalacia-risk",
+      "tracheal-compression-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Nguy cơ xẹp phế quản/Chèn ép khí quản (Bướu cổ lớn, U trung thất): Xem phim CT đánh giá mức độ hẹp. Giữ bệnh nhân tự thở cho đến khi bảo vệ được đường thở nếu có nguy cơ xẹp; chuẩn bị sẵn ống nội khí quản cốt thép/ống dài và máy soi phế quản cứng/Hội chẩn Tai Mũi Họng. Đề phòng xẹp khí quản lúc rút ống — rút ống lúc bệnh nhân tỉnh táo qua một catheter trao đổi đường thở, và theo dõi sát hô hấp hậu phẫu."
+  },
+  {
+    "id": "haematoma-airway",
+    "triggerFlags": [
+      "haematoma-airway-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Phẫu thuật Cổ/Tuyến giáp — Máu tụ vùng cổ sau mổ là cấp cứu đường thở: Luôn để dụng cụ cắt chỉ/kẹp cạnh giường, theo dõi sát sưng nề/tiếng rít/thay đổi giọng nói. Nếu chèn ép đường thở, MỞ TUNG VẾT MỔ NGAY LẬP TỨC để giải phóng khối máu tụ TRƯỚC KHI cố gắng đặt lại nội khí quản."
+  },
+  {
+    "id": "di-postop",
+    "triggerFlags": [
+      "di-risk-postop"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Nguy cơ Đái tháo nhạt (Diabetes insipidus - Phẫu thuật tuyến yên): Theo dõi sát lượng nước tiểu, áp lực thẩm thấu máu/niệu và Natri máu sau mổ. Điều trị đa niệu + Natri máu tăng bằng Desmopressin (DDAVP) và bù dịch cẩn thận. Phân biệt với đa niệu sinh lý sau mổ."
+  },
+  {
+    "id": "hypocalcaemia-postop",
+    "triggerFlags": [
+      "hypocalcaemia-postop"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Nguy cơ hạ Canxi máu sau mổ (Cắt giáp toàn phần, mổ tuyến cận giáp): Kiểm tra nồng độ Canxi (và PTH nếu có) sau mổ; theo dõi dấu hiệu tê quanh miệng, dị cảm, dấu Chvostek/Trousseau và (hiếm) co thắt thanh quản. Xử trí hạ canxi máu triệu chứng bằng Canxi uống hoặc tiêm mạch ± Vitamin D."
+  },
+  {
+    "id": "seizure-prophylaxis-adapt",
+    "triggerFlags": [
+      "seizure-prophylaxis"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Nguy cơ động kinh: Tiếp tục dùng thuốc chống động kinh chu phẫu (uống vào ngày mổ, dùng dạng tĩnh mạch tương đương nếu nhịn ăn NPO), tránh các thuốc kích thích động kinh, duy trì đẳng đường huyết, natri và đẳng cacbon."
+  }
+]

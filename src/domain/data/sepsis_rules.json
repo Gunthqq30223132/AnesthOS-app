@@ -1,0 +1,76 @@
+{
+  "sepsis": {
+    "label": "Septic shock / severe sepsis",
+    "lactateActionThreshold": 2,
+    "lactateUrgentThreshold": 4,
+    "pHActionThreshold": 7.2,
+    "bicarbCautious": true,
+    "fluidStrategy": "Balanced crystalloid (Hartmann/Plasmalyte) preferred over 0.9% saline (SSC 2026 — except TBI use NS). 30 mL/kg suggested but with greater emphasis on individualization and dynamic measures (PLR, SVV, capillary refill). Fluid removal/de-resuscitation now addressed once stable.",
+    "vasopressor": "Noradrenaline first-line. Start peripherally — do NOT delay for central access (SSC 2026). Target MAP ≥ 65 mmHg general, but MAP 60-65 in adults ≥ 65 years (SSC 2026). Steroids suggested for refractory shock.",
+    "screening": "NEWS/MEWS now preferred over qSOFA for screening (SSC 2026 — qSOFA had poor sensitivity)",
+    "lactateNote": "Elevated lactate should NOT trigger reflexive fluid administration — multifactorial causes (stress response, mitochondrial dysfunction, hepatic clearance). Use serial lactate as adjunct, not sole driver.",
+    "bicarbAdvice": "Bicarbonate not routinely recommended in sepsis-induced lactic acidosis (SSC 2026); consider only if pH < 7.10 with AKI (BICAR-ICU subgroup)",
+    "antimicrobials": "Septic shock: antibiotics within 1 h. Probable sepsis without shock: within 1 h. Possible sepsis low-risk: defer + monitor (SSC 2026).",
+    "referenceCitation": "Surviving Sepsis Campaign 2026 — Critical Care Medicine April 2026 (DOI 10.1097/CCM.0000000000007075); 129 recommendations replacing SSC 2021"
+  },
+  "dka": {
+    "label": "Diabetic ketoacidosis (DKA)",
+    "pHActionThreshold": 7,
+    "glucoseTarget": "8–12 mmol/L (144–216 mg/dL) initially; switch to 5% dextrose when glucose < 14",
+    "insulinDose": "Insulin infusion 0.1 U/kg/h IV (do NOT bolus in paeds; consider 0.05 U/kg/h in adults)",
+    "fluidProtocol": "1 L 0.9% saline over 1 h, then per protocol; switch to dextrose-saline when glucose < 14 mmol/L",
+    "potassiumProtocol": "Potassium replacement when K⁺ < 5.5 mmol/L (40 mmol/L of fluid). HOLD insulin if K⁺ < 3.3.",
+    "bicarbAdvice": "Sodium bicarbonate NOT recommended unless pH < 6.9 (no benefit, may worsen cerebral oedema risk in paeds). ADA 2026: bicarbonate use generally not recommended (no difference in resolution time).",
+    "cerebralEdemaRisk": "Watch for cerebral oedema in paediatric DKA — slow rehydration, mannitol if signs",
+    "euglycemicDKA": "Euglycemic DKA: low insulin levels with reduced food intake, pregnancy, alcohol use, liver failure, SGLT2 inhibitor therapy. Consider when ketosis present despite glucose < 14 mmol/L (ADA 2026).",
+    "referenceCitation": "ADA Standards of Care 2026 (Diabetes Care 49 Suppl 1:S339, Jan 2026 — replaces 2024); ADA Hyperglycemic Crises Consensus 2024 (Umpierrez); JBDS-IP 2023; ISPAD 2022 (paediatric)"
+  },
+  "arrest": {
+    "label": "Cardiac arrest / post-ROSC",
+    "pHActionThreshold": null,
+    "bicarbAdvice": "Bicarbonate NOT routine in cardiac arrest (consider only in hyperkalaemia, TCA overdose, or pre-existing severe metabolic acidosis)",
+    "targetPaCO2": "Post-ROSC: PaCO₂ 35–45 mmHg (avoid both hypocapnia and hypercapnia)",
+    "targetPaO2": "Post-ROSC: SpO₂ 94–98% (avoid hyperoxia)",
+    "targetTemp": "Post-ROSC: targeted temperature management 32–36°C × 24 hours per ILCOR 2020",
+    "glucoseTarget": "Post-ROSC: 7.8–10 mmol/L (140–180 mg/dL); avoid hypoglycaemia",
+    "referenceCitation": "ILCOR 2020 / ERC 2025; UK Resus Council 2025 (replaces 2021, implementing Jan 2026)"
+  },
+  "respiratory": {
+    "label": "Respiratory failure (COPD/asthma/ARDS)",
+    "pHActionThreshold": 7.25,
+    "paCO2COPDtarget": "COPD: target SpO₂ 88–92% (avoid CO₂ retention from over-oxygenation)",
+    "nivIndications": "NIV indicated if pH 7.25–7.35 with PaCO₂ > 45 in COPD exacerbation (BTS/ICS 2016, no major update since)",
+    "intubationCriteria": "Intubation if pH < 7.25 with respiratory acidosis, exhaustion, or NIV failure",
+    "asthmaRule": "In severe asthma: rising or normal PaCO₂ is a sign of EXHAUSTION — urgent escalation needed (do not be reassured by \"normal\" CO₂)",
+    "copdInhalerNote": "COPD with asthma overlap → mandatory ICS use (GOLD 2025). LABA+LAMA+ICS preferred over LABA+ICS when ICS indicated.",
+    "bicarbAdvice": "Bicarbonate generally not used for respiratory acidosis (correct ventilation instead)",
+    "referenceCitation": "BTS/ICS 2016 NIV; GINA 2025 asthma strategy report; GOLD 2025 COPD report (current published)"
+  },
+  "renal": {
+    "label": "AKI / CKD / dialysis-dependent",
+    "pHActionThreshold": 7.1,
+    "bicarbCautious": true,
+    "bicarbAdvice": "Bicarbonate may be used in CKD/AKI metabolic acidosis aiming HCO₃ ≥ 22 (KDIGO 2024 CKD); avoid if volume overload",
+    "kManagement": "Hyperkalaemia management more aggressive — early dialysis if refractory",
+    "fluidStrategy": "Cautious fluid resuscitation. Use balanced crystalloids; avoid hyperchloraemia (NS large-volume associated with AKI in SMART/SALT-ED). Consider RRT early if oliguric/acidotic. Stress-dose tools (NephroCheck, urine [TIMP-2]·[IGFBP-7]) where available for biomarker-guided escalation.",
+    "drugAdjustment": "Adjust drug doses for renal function; avoid nephrotoxins (NSAIDs, contrast, aminoglycosides)",
+    "framework": "KDIGO 2012 AKI staging remains the current published reference. Recognise AKI as a continuum (RIFLE/AKIN/KDIGO) with downstream CKD risk.",
+    "referenceCitation": "KDIGO 2024 CKD Clinical Practice Guideline; KDIGO 2012 AKI Clinical Practice Guideline (current published; 2026 update in development)"
+  },
+  "toxic": {
+    "label": "Toxic ingestion (alcohols / salicylate)",
+    "osmolarGapThreshold": 10,
+    "pHActionThreshold": 7.2,
+    "methanolAntidote": "Fomepizole 15 mg/kg IV loading (or ethanol if unavailable) + folinic acid + dialysis",
+    "ethyleneGlycolAntidote": "Fomepizole 15 mg/kg IV loading + thiamine + pyridoxine + dialysis",
+    "salicylateAntidote": "Urinary alkalinisation (sodium bicarbonate to urine pH > 7.5) + dialysis if severe (level > 700 mg/L, AKI, pulmonary oedema, or pH < 7.20)",
+    "isopropanolAdvice": "Isopropanol → ketosis without metabolic acidosis (osmolar gap raised but anion gap normal)",
+    "referenceCitation": "EXTRIP recommendations; AACT/EAPCCT"
+  },
+  "general": {
+    "label": "General / unspecified",
+    "pHActionThreshold": 7.1,
+    "bicarbAdvice": "Bicarbonate considered if pH < 7.10 with haemodynamic instability; recheck ABG after 15–30 min",
+    "referenceCitation": "Standard physiologic principles"
+  }
+}

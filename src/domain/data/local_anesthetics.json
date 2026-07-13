@@ -1,0 +1,187 @@
+{
+  "lidocaine": {
+    "name": "Lidocaine (Lignocaine)",
+    "class": "Amide",
+    "concentrations": [
+      0.5,
+      1,
+      1.5,
+      2,
+      4,
+      5
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 4.5,
+      "withEpi": 7
+    },
+    "absoluteMaxAdult": {
+      "plain": 300,
+      "withEpi": 500
+    },
+    "onset": "2–5 min (infiltration)",
+    "duration": "1–2 h (plain); 2–4 h (with epinephrine)",
+    "pKa": 7.9,
+    "proteinBinding": 65,
+    "cardioToxicityRatio": 1,
+    "notes": [
+      "Most commonly used for infiltration, peripheral nerve blocks, IV regional",
+      "Safer than bupivacaine in cardiac toxicity (CC:CNS ratio ~ 7)",
+      "Acts on sodium channels reversibly; does not accumulate in cardiac tissue",
+      "Use with epinephrine unless contraindicated (finger/toe/penis/nose tip)"
+    ]
+  },
+  "bupivacaine": {
+    "name": "Bupivacaine",
+    "class": "Amide",
+    "concentrations": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 2,
+      "withEpi": 2.5
+    },
+    "absoluteMaxAdult": {
+      "plain": 150,
+      "withEpi": 175
+    },
+    "repeatInterval": "4 h (maximum 400 mg/24 h)",
+    "onset": "5–10 min (epidural); 15–30 min (peripheral block)",
+    "duration": "2–6 h (plain); 3–8 h (with epinephrine)",
+    "pKa": 8.1,
+    "proteinBinding": 95,
+    "cardioToxicityRatio": 4,
+    "notes": [
+      "Preferred for long-duration blocks and spinal anaesthesia",
+      "⚠ Cardiotoxic — avoid intravascular injection. CC:CNS ratio ~ 2",
+      "Levobupivacaine (S-enantiomer) has ~30% less cardiotoxicity",
+      "Never use 0.75% for obstetric epidural (FDA warning)",
+      "Intralipid must be available"
+    ]
+  },
+  "levobupivacaine": {
+    "name": "Levobupivacaine",
+    "class": "Amide (S-enantiomer of bupivacaine)",
+    "concentrations": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 2,
+      "withEpi": 2.5
+    },
+    "absoluteMaxAdult": {
+      "plain": 150,
+      "withEpi": 175
+    },
+    "onset": "5–10 min",
+    "duration": "2–8 h",
+    "cardioToxicityRatio": 2.5,
+    "notes": [
+      "Less cardiotoxic than racemic bupivacaine",
+      "Equivalent efficacy to bupivacaine",
+      "Commonly used for continuous peripheral nerve blocks"
+    ]
+  },
+  "ropivacaine": {
+    "name": "Ropivacaine",
+    "class": "Amide",
+    "concentrations": [
+      0.2,
+      0.375,
+      0.5,
+      0.75,
+      1
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 3,
+      "withEpi": 3.5
+    },
+    "absoluteMaxAdult": {
+      "plain": 225,
+      "withEpi": 250
+    },
+    "onset": "10–20 min (epidural)",
+    "duration": "2–6 h",
+    "cardioToxicityRatio": 2,
+    "notes": [
+      "Less motor block than bupivacaine at equianalgesic doses",
+      "Preferred for continuous infusions (less tachyphylaxis, more sensory-selective)",
+      "⚠ Off-label for spinal anaesthesia in most countries"
+    ]
+  },
+  "mepivacaine": {
+    "name": "Mepivacaine",
+    "class": "Amide",
+    "concentrations": [
+      1,
+      1.5,
+      2
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 5,
+      "withEpi": 7
+    },
+    "absoluteMaxAdult": {
+      "plain": 400,
+      "withEpi": 500
+    },
+    "onset": "3–5 min",
+    "duration": "1.5–3 h (plain); 2–4 h (with epi)",
+    "notes": [
+      "Intermediate duration",
+      "Often used for peripheral blocks where faster recovery needed",
+      "Poor in neonates (reduced metabolism)"
+    ]
+  },
+  "prilocaine": {
+    "name": "Prilocaine",
+    "class": "Amide",
+    "concentrations": [
+      0.5,
+      1,
+      2
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 6,
+      "withEpi": 8.5
+    },
+    "absoluteMaxAdult": {
+      "plain": 400,
+      "withEpi": 600
+    },
+    "onset": "2–5 min",
+    "duration": "0.5–1.5 h",
+    "notes": [
+      "Good for IV regional anaesthesia (Bier block)",
+      "⚠ Doses > 600 mg risk methaemoglobinaemia",
+      "Avoid in pregnancy, infants < 6 months"
+    ]
+  },
+  "chloroprocaine": {
+    "name": "2-Chloroprocaine",
+    "class": "Ester",
+    "concentrations": [
+      1,
+      2,
+      3
+    ],
+    "maxDoseMgPerKg": {
+      "plain": 11,
+      "withEpi": 14
+    },
+    "absoluteMaxAdult": {
+      "plain": 800,
+      "withEpi": 1000
+    },
+    "onset": "6–12 min",
+    "duration": "30–60 min",
+    "notes": [
+      "Rapidly metabolised by plasma cholinesterase — ideal for pregnancy",
+      "Ester → risk of allergy (PABA metabolite)",
+      "Useful for emergency CS top-up through existing epidural"
+    ]
+  }
+}

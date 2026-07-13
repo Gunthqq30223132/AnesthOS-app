@@ -1,0 +1,691 @@
+[
+  {
+    "id": "cardiac-risk-monitoring",
+    "triggerFlags": [
+      "cardiac-risk"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Cardiac-risk monitoring upgraded: 5-lead ECG with ST analysis, invasive arterial pressure considered, troponin available."
+  },
+  {
+    "id": "avoid-tachycardia",
+    "triggerFlags": [
+      "avoid-tachycardia"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Avoid tachycardia: ketamine and pancuronium avoided; maintain heart rate close to baseline; treat tachycardia early with short-acting beta-blocker."
+  },
+  {
+    "id": "avoid-hypotension",
+    "triggerFlags": [
+      "avoid-hypotension",
+      "fixed-cardiac-output"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Avoid hypotension: induction agent dose reduced, vasopressor immediately available, MAP target maintained ≥ 70–75 mmHg."
+  },
+  {
+    "id": "low-ef",
+    "triggerFlags": [
+      "low-ef",
+      "avoid-negative-inotropes"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Reduced left-ventricular function: titrated induction (etomidate / cautious propofol), avoid negative inotropes, inotrope support pre-prepared."
+  },
+  {
+    "id": "antiplatelet",
+    "triggerFlags": [
+      "antiplatelet"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Antiplatelet therapy: continue aspirin perioperatively unless explicitly contraindicated; surgical bleeding risk discussed."
+  },
+  {
+    "id": "anticoagulation",
+    "triggerFlags": [
+      "anticoagulation"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Anticoagulation: confirmed bridging plan (DOACs withheld 24–48 h, warfarin INR confirmed) and reversal agent identified."
+  },
+  {
+    "id": "pacemaker-icd",
+    "triggerFlags": [
+      "diathermy-caution",
+      "device-check"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Cardiac implantable device: pre-op interrogation confirmed, diathermy mode set to bipolar, magnet immediately available."
+  },
+  {
+    "id": "pulmonary-risk",
+    "triggerFlags": [
+      "pulmonary-risk"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Pulmonary risk: lung-protective ventilation (Vt 6–8 mL/kg IBW, PEEP 5–8 cmH₂O), recruitment manoeuvres, post-op CPAP available."
+  },
+  {
+    "id": "bronchospasm-risk",
+    "triggerFlags": [
+      "bronchospasm-risk",
+      "bronchodilator"
+    ],
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "Bronchospasm risk: salbutamol immediately available, deepen anaesthesia before instrumentation, consider regional/LMA in preference to ETT where appropriate."
+  },
+  {
+    "id": "osa",
+    "triggerFlags": [
+      "airway-risk",
+      "opioid-caution",
+      "post-op-monitoring"
+    ],
+    "matchAll": true,
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "OSA pathway: opioid-sparing technique prioritised, multimodal analgesia, extended PACU monitoring with continuous SpO₂; CPAP brought to recovery if home user."
+  },
+  {
+    "id": "avoid-high-fio2",
+    "triggerFlags": [
+      "avoid-high-fio2"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Avoid prolonged high FiO₂: titrate to SpO₂ 92–96% to reduce risk of CO₂ retention."
+  },
+  {
+    "id": "recent-uri",
+    "triggerFlags": [
+      "airway-reactivity",
+      "postpone-elective"
+    ],
+    "matchAll": true,
+    "category": "Respiratory",
+    "severity": "high",
+    "action": "Recent URI: elective procedures should be reconsidered; if proceeding, deep extubation, salbutamol pre-prepared, paediatric SAFE-T protocol applied."
+  },
+  {
+    "id": "renal-dosing",
+    "triggerFlags": [
+      "renal-dosing"
+    ],
+    "category": "Renal",
+    "severity": "high",
+    "action": "Renal dose adjustment applied: avoid morphine and pethidine (active metabolites accumulate); prefer fentanyl/remifentanil; NSAIDs avoided."
+  },
+  {
+    "id": "avoid-nephrotoxic",
+    "triggerFlags": [
+      "avoid-nephrotoxic"
+    ],
+    "category": "Renal",
+    "severity": "medium",
+    "action": "Nephrotoxin avoidance: NSAIDs, aminoglycosides and contrast minimised; isotonic crystalloid maintained; urine output monitored."
+  },
+  {
+    "id": "k-monitor",
+    "triggerFlags": [
+      "k-monitor"
+    ],
+    "category": "Renal",
+    "severity": "high",
+    "action": "Potassium monitoring: pre-op K⁺ confirmed; avoid suxamethonium if K⁺ ≥ 5.0 mmol/L; ECG continuous monitoring for peaked T-waves."
+  },
+  {
+    "id": "hepatic-dosing",
+    "triggerFlags": [
+      "hepatic-dosing"
+    ],
+    "category": "Hepatic",
+    "severity": "high",
+    "action": "Hepatic dose adjustment: induction agent dose reduced 30–50%; benzodiazepines minimised; cisatracurium preferred (organ-independent metabolism)."
+  },
+  {
+    "id": "coagulopathy",
+    "triggerFlags": [
+      "coagulopathy"
+    ],
+    "category": "Hepatic",
+    "severity": "high",
+    "action": "Coagulopathy: PT/INR and platelets confirmed pre-op; vitamin K / FFP / platelets prepared as indicated; neuraxial techniques re-evaluated."
+  },
+  {
+    "id": "avoid-hepatotoxic",
+    "triggerFlags": [
+      "avoid-hepatotoxic"
+    ],
+    "category": "Hepatic",
+    "severity": "medium",
+    "action": "Hepatotoxin avoidance: paracetamol dose-reduced, halothane avoided, sevoflurane preferred over isoflurane."
+  },
+  {
+    "id": "glucose-monitor",
+    "triggerFlags": [
+      "glucose-monitor"
+    ],
+    "category": "Endocrine",
+    "severity": "medium",
+    "action": "Glucose monitoring: capillary BG hourly intra-op; variable-rate insulin infusion if BG > 10 mmol/L; avoid lactated Ringer if hyperglycaemia significant."
+  },
+  {
+    "id": "insulin-dependent",
+    "triggerFlags": [
+      "insulin-dependent"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Type 1 DM: long-acting insulin continued at reduced dose; short-acting omitted on day of surgery; ketones checked if BG > 14 mmol/L."
+  },
+  {
+    "id": "steroid-cover",
+    "triggerFlags": [
+      "steroid-cover"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Steroid cover: hydrocortisone 50–100 mg IV at induction; supplementary doses for major surgery; usual daily dose continued post-op."
+  },
+  {
+    "id": "thyroid-storm-risk",
+    "triggerFlags": [
+      "thyroid-storm-risk"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Thyroid storm risk: ensure euthyroid pre-op where elective; beta-blocker continued; avoid sympathetic stimulation; have hydrocortisone, propylthiouracil, propranolol available."
+  },
+  {
+    "id": "haemodynamic-swings",
+    "triggerFlags": [
+      "haemodynamic-swings",
+      "alpha-block-needed"
+    ],
+    "category": "Endocrine",
+    "severity": "high",
+    "action": "Phaeochromocytoma: confirmed alpha-blockade pre-op; arterial line pre-induction; phentolamine, magnesium, esmolol, GTN immediately available."
+  },
+  {
+    "id": "airway-risk",
+    "triggerFlags": [
+      "airway-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Airway risk identified: difficult-airway equipment immediately available (videolaryngoscope, bougie, supraglottic device range, surgical airway kit); pre-oxygenation extended."
+  },
+  {
+    "id": "ibw-dosing",
+    "triggerFlags": [
+      "ibw-dosing"
+    ],
+    "category": "Airway",
+    "severity": "medium",
+    "action": "Obesity weight basis: induction agents (propofol, thiopental) by lean body weight; muscle relaxants by ideal body weight; opioids generally by adjusted body weight; antibiotics by total body weight. Always titrate to clinical effect."
+  },
+  {
+    "id": "sepsis",
+    "triggerFlags": [
+      "sepsis",
+      "vasopressor-likely"
+    ],
+    "matchAll": true,
+    "category": "Other",
+    "severity": "high",
+    "action": "Sepsis pathway: surviving-sepsis bundle confirmed; lactate trended; balanced crystalloid resuscitation; noradrenaline first-line vasopressor."
+  },
+  {
+    "id": "fluid-resuscitation",
+    "triggerFlags": [
+      "fluid-resuscitation"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Volume resuscitation needed: balanced crystalloid initial bolus (10–20 mL/kg) titrated to dynamic indices (PPV, lactate clearance, capillary refill) with frequent reassessment. Avoid fixed-volume protocols in patients at risk of fluid overload."
+  },
+  {
+    "id": "full-stomach",
+    "triggerFlags": [
+      "full-stomach"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Full-stomach precautions: rapid-sequence induction, cricoid pressure considered, NG decompression where indicated, awake intubation if difficult airway co-exists."
+  },
+  {
+    "id": "trauma-major",
+    "triggerFlags": [
+      "trauma"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Major trauma: damage control resuscitation, permissive hypotension (SBP 80–90 mmHg until bleeding controlled, EXCEPT in TBI where MAP ≥ 80), 1:1:1 PRBC:FFP:platelets, tranexamic acid 1 g within 3 h (CRASH-2/3), warming."
+  },
+  {
+    "id": "tbi-management",
+    "triggerFlags": [
+      "raised-icp"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Raised ICP / TBI: TIVA preferred (propofol + remifentanil), avoid ketamine and N₂O, head-up 15–30°, normocapnia (PaCO₂ 35–40), MAP ≥ 80 (CPP > 60), avoid hypoxaemia, smooth induction/emergence to prevent ICP spikes."
+  },
+  {
+    "id": "c-spine",
+    "triggerFlags": [
+      "c-spine-precautions",
+      "c-spine-instability"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Cervical-spine precautions / instability (e.g. rheumatoid atlantoaxial subluxation, Down syndrome): manual in-line stabilisation during intubation, videolaryngoscope first-line, awake fibreoptic if known significant instability, minimise neck movement, hard collar maintained until cleared. Consider flexion/extension imaging pre-op in high-risk groups."
+  },
+  {
+    "id": "c-spine-rigid",
+    "triggerFlags": [
+      "c-spine-rigid"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Fixed/rigid cervical spine (e.g. ankylosing spondylitis, fused spine): anticipate difficult laryngoscopy from fixed flexion deformity — awake fibreoptic intubation is often the safest first choice, do NOT force the neck into \"sniffing\" position, prepare difficult-airway equipment, and note associated difficult neuraxial access and restrictive lung disease / aortic regurgitation."
+  },
+  {
+    "id": "active-haemorrhage",
+    "triggerFlags": [
+      "massive-transfusion-prepare"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Active haemorrhage: activate Major Haemorrhage Protocol (1:1:1 PRBC:FFP:platelets), 2 large-bore IV access, rapid infuser, cell salvage if available, TXA 1 g IV (within 3 h), warming, point-of-care viscoelastic testing (TEG/ROTEM) if available, fibrinogen ≥ 1.5 g/L (2 g/L in obstetric)."
+  },
+  {
+    "id": "coagulopathy-acute",
+    "triggerFlags": [
+      "coagulopathy-risk"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Acquired coagulopathy risk: baseline PT/APTT/fibrinogen + platelets, avoid neuraxial until corrected, prepare reversal if on anticoagulants (PCC for warfarin, idarucizumab for dabigatran, andexanet alfa for factor Xa inhibitors)."
+  },
+  {
+    "id": "hypothermia-prevention",
+    "triggerFlags": [
+      "hypothermia-risk"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Active warming: forced-air warmer pre-induction and intra-op, fluid warmer, ambient theatre ≥ 21 °C, target core temperature ≥ 36 °C (NICE CG65). Hypothermia exacerbates coagulopathy and increases bleeding."
+  },
+  {
+    "id": "pregnancy",
+    "triggerFlags": [
+      "pregnancy"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Pregnancy: aspiration prophylaxis (sodium citrate ± ranitidine), left lateral tilt 15°, avoid teratogens, foetal monitoring as appropriate to gestation."
+  },
+  {
+    "id": "pre-eclampsia",
+    "triggerFlags": [
+      "pre-eclampsia"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Pre-eclampsia pathway: BP control + magnesium prophylaxis + careful fluid balance (≤ 80 mL/h to avoid pulmonary oedema) + document platelet count before any neuraxial. Avoid ergometrine and NSAIDs. See linked rules below for specific drug doses."
+  },
+  {
+    "id": "hellp-overall",
+    "triggerFlags": [
+      "hellp"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "HELLP syndrome: critical obstetric emergency. Senior obstetric, anaesthetic and haematology input. Continuous foetal monitoring. Prepare for delivery — definitive treatment is delivery of the placenta. ICU/HDU bed required postpartum. Mild–moderate transaminitis common (AST/ALT 70–150 U/L typical) — titrate induction agents but routine 30–50% dose reduction usually unnecessary unless severe disease (Sibai class I) or coexisting hepatic failure."
+  },
+  {
+    "id": "severe-thrombocytopenia",
+    "triggerFlags": [
+      "thrombocytopenia-severe"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Severe thrombocytopenia: full FBC with platelet count and trend within 6 h of any neuraxial decision. SOAP 2021 thresholds — spinal/epidural acceptable at platelets ≥ 70 × 10⁹/L if trend stable; 50–70 individualised with risk-benefit; < 50 contraindicated. ROTEM/TEG if available. Group and crossmatch 4 units; activate massive transfusion protocol if active bleeding."
+  },
+  {
+    "id": "neuraxial-bleeding-caution",
+    "triggerFlags": [
+      "neuraxial-caution",
+      "bleeding-risk"
+    ],
+    "category": "Regional",
+    "severity": "high",
+    "action": "Neuraxial / regional caution — bleeding or coagulation risk present: CHECK platelet count and coagulation (PT/APTT/fibrinogen, and a recent platelet trend) BEFORE any spinal, epidural or deep block. General guide — neuraxial acceptable at platelets ≥ 70–80 × 10⁹/L with normal coagulation and stable trend; 50–70 individualised (senior + haematology); < 50 generally contraindicated. Account for anticoagulant/antiplatelet timing (ASRA/AAGBI intervals). If neuraxial is contraindicated, plan a general anaesthetic and discuss alternatives. Spinal preferred over epidural where neuraxial is justified (smaller needle, lower haematoma volume)."
+  },
+  {
+    "id": "severe-hypertension",
+    "triggerFlags": [
+      "bp-control"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Severe hypertension control (pre-eclampsia/HELLP): labetalol 10–20 mg IV (repeat q10 min, max 300 mg) OR hydralazine 5–10 mg IV (q15 min, max 30 mg) OR oral nifedipine 10 mg. Target BP 140–150 / 90–100 mmHg (do NOT drop precipitously — placental hypoperfusion). Continuous arterial line if labile or for delivery."
+  },
+  {
+    "id": "magnesium-therapy",
+    "triggerFlags": [
+      "magnesium"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Magnesium sulphate seizure prophylaxis: 4 g IV loading over 5–10 min, then 1 g/h infusion for 24 h post-delivery (or 24 h after last seizure). Monitor for toxicity: deep tendon reflexes hourly; respiratory rate; serum Mg if oliguria or renal impairment. Antidote: calcium gluconate 1 g IV slowly. Note: magnesium potentiates non-depolarising muscle relaxants — reduce dose 25–50%."
+  },
+  {
+    "id": "hellp-haemorrhage",
+    "triggerFlags": [
+      "hellp",
+      "blood-loss-risk"
+    ],
+    "matchAll": true,
+    "category": "Other",
+    "severity": "high",
+    "action": "HELLP haemorrhage preparation: two large-bore IVs, group-and-save with 4 units crossmatched, fibrinogen and FFP available, cell salvage if accepted by patient. Anticipate PPH (uterine atony exacerbated by magnesium) and rare hepatic capsular haematoma/rupture. Tranexamic acid 1 g IV if PPH onset."
+  },
+  {
+    "id": "anxiolysis",
+    "triggerFlags": [
+      "anxiolysis-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Perioperative anxiety: consider anxiolytic premedication (e.g. midazolam 0.02–0.04 mg/kg IV titrated, or oral 7.5 mg ~30 min pre-op) balanced against day-case discharge and OSA/opioid sensitivity. Calm, unhurried environment; clear pre-op explanation; non-pharmacological measures (reassurance, parental presence in paediatrics). Avoid over-sedation in the elderly (delirium risk)."
+  },
+  {
+    "id": "ssri-snri",
+    "triggerFlags": [
+      "ssri-snri-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Chronic SSRI/SNRI therapy likely: avoid serotonergic combinations (pethidine, tramadol, methylene blue, high-dose ondansetron) to reduce serotonin-syndrome risk. Note mild platelet-mediated bleeding tendency. Do not stop antidepressants abruptly peri-operatively (discontinuation syndrome) — continue unless specifically contraindicated."
+  },
+  {
+    "id": "opioid-tolerant",
+    "triggerFlags": [
+      "opioid-tolerant",
+      "chronic-pain"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Opioid tolerance / chronic pain: continue baseline opioid (convert to IV equivalent if NBM). Expect substantially higher intra-operative and post-operative opioid requirement — titrate to effect, do not under-dose. Prioritise multimodal and regional analgesia (paracetamol, NSAID if safe, ketamine adjunct, regional block/catheter). Plan acute-on-chronic pain management and early acute pain team involvement; set realistic expectations with the patient."
+  },
+  {
+    "id": "multimodal-essential",
+    "triggerFlags": [
+      "multimodal-essential"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Multimodal analgesia essential: combine paracetamol + NSAID/COX-2 (if no contraindication) + regional technique + opioid-sparing adjuncts (ketamine, dexamethasone, alpha-2 agonist) to minimise opioid load."
+  },
+  {
+    "id": "raised-iop",
+    "triggerFlags": [
+      "raised-iop",
+      "avoid-iop-rise"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Glaucoma / raised intra-ocular pressure: avoid sustained IOP rises — smooth induction and emergence (avoid coughing/bucking/straining), consider avoiding suxamethonium (transient IOP rise) where alternatives exist, limit steep head-down positioning, ensure adequate depth before laryngoscopy. Continue topical anti-glaucoma therapy peri-operatively (note systemic effects of beta-blocker and anticholinesterase eye drops)."
+  },
+  {
+    "id": "continue-eye-drops",
+    "triggerFlags": [
+      "continue-eye-drops"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Continue glaucoma eye drops on the day of surgery. Be aware topical timolol can cause bradycardia/bronchospasm and topical anticholinesterases (echothiophate) prolong suxamethonium — confirm the agent."
+  },
+  {
+    "id": "ponv-high-risk-adapt",
+    "triggerFlags": [
+      "ponv-high-risk"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "High PONV risk (prior PONV / motion sickness): use multi-agent prophylaxis (e.g. dexamethasone at induction + ondansetron at end + consider a third agent such as a NK-1 antagonist or droperidol), prefer TIVA with propofol over volatiles, minimise opioids and avoid N₂O, ensure adequate hydration."
+  },
+  {
+    "id": "migraine-triggers",
+    "triggerFlags": [
+      "migraine-triggers-consider"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Migraine history: maintain hydration and avoid common triggers (prolonged fasting, hypoglycaemia, hypotension). Note interactions if the patient uses triptans/ergots. PONV-style prophylaxis is reasonable as migraineurs are prone to nausea."
+  },
+  {
+    "id": "osa-screen",
+    "triggerFlags": [
+      "osa-screen"
+    ],
+    "category": "Respiratory",
+    "severity": "low",
+    "action": "Screen for obstructive sleep apnoea (e.g. STOP-BANG): if positive, use opioid-sparing multimodal analgesia, plan extended post-op SpO₂ monitoring, have CPAP available, and use cautious sedation."
+  },
+  {
+    "id": "avoid-hypertension",
+    "triggerFlags": [
+      "avoid-hypertension"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Avoid hypertensive surges (e.g. aortopathy/Marfan, raised ICP): ensure deep anaesthesia and good analgesia before stimulating events (laryngoscopy, incision, extubation), obtund the pressor response (remifentanil/esmolol/lidocaine), keep blood pressure controlled around baseline."
+  },
+  {
+    "id": "pneumothorax-risk",
+    "triggerFlags": [
+      "pneumothorax-risk"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Pneumothorax risk (bullae / connective-tissue lung, e.g. Marfan): use lung-protective ventilation with limited peak/plateau pressures, avoid N₂O, maintain a high index of suspicion for tension pneumothorax with sudden hypoxia/hypotension/high airway pressures."
+  },
+  {
+    "id": "careful-positioning",
+    "triggerFlags": [
+      "careful-positioning"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Careful positioning (joint hypermobility / fragile tissues / spinal deformity): pad pressure points generously, avoid extreme joint positions (dislocation/subluxation risk), move the anaesthetised patient slowly and with extra hands, document neurovascular status."
+  },
+  {
+    "id": "bleeding-tendency",
+    "triggerFlags": [
+      "bleeding-tendency"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Bleeding/bruising tendency (e.g. vascular Ehlers-Danlos, tissue fragility): gentle airway instrumentation and line placement (vessels tear easily), check coagulation/platelets, group-and-save, consider tranexamic acid, anticipate poor haemostasis and avoid traumatic regional techniques."
+  },
+  {
+    "id": "fragile-tissues",
+    "triggerFlags": [
+      "fragile-tissues",
+      "difficult-iv"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Fragile tissues / difficult vascular access (connective-tissue disease): ultrasound-guided IV/arterial access, secure lines and airway devices gently (skin/tape can shear), protect eyes and pressure areas meticulously."
+  },
+  {
+    "id": "restrictive-cardiomyopathy",
+    "triggerFlags": [
+      "restrictive-cardiomyopathy"
+    ],
+    "category": "Cardiac",
+    "severity": "high",
+    "action": "Restrictive cardiomyopathy (e.g. cardiac amyloid): fixed low stroke volume — maintain preload, sinus rhythm and heart rate, avoid tachycardia and sudden vasodilatation, use invasive monitoring and titrated induction, beware conduction block (pacing backup) and exaggerated sensitivity to hypotension."
+  },
+  {
+    "id": "autonomic-dysfunction",
+    "triggerFlags": [
+      "autonomic-dysfunction"
+    ],
+    "category": "Cardiac",
+    "severity": "medium",
+    "action": "Autonomic dysfunction (e.g. amyloid, long-standing diabetes): expect labile blood pressure and blunted compensatory responses — invasive BP monitoring, vasopressors prepared, cautious positional changes, gastroparesis/aspiration awareness."
+  },
+  {
+    "id": "difficult-neuraxial",
+    "triggerFlags": [
+      "difficult-neuraxial"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Difficult neuraxial access (spinal deformity / fused spine): review imaging, consider ultrasound-assisted landmarking, allow extra time, have a general-anaesthesia backup plan, and counsel the patient about higher failure/conversion rates."
+  },
+  {
+    "id": "phtn-screen",
+    "triggerFlags": [
+      "phtn-screen"
+    ],
+    "category": "Respiratory",
+    "severity": "medium",
+    "action": "Screen for pulmonary hypertension / cor pulmonale (severe restrictive chest disease): if suspected, obtain echocardiography, avoid hypoxia/hypercarbia/acidosis (all raise PVR), maintain RV preload and afterload carefully, and plan higher-level post-op care."
+  },
+  {
+    "id": "carcinoid-crisis",
+    "triggerFlags": [
+      "carcinoid-crisis"
+    ],
+    "category": "Cardiovascular",
+    "severity": "high",
+    "action": "Carcinoid crisis risk: have OCTREOTIDE ready (50–100 mcg IV bolus, then 50 mcg/h infusion; pre-treat with 100 mcg s/c 1–2 h pre-op or 50 mcg/h infusion peri-op). Treat hypotension with octreotide and vasopressin/phenylephrine — AVOID catecholamines (adrenaline/noradrenaline can paradoxically worsen vasoactive mediator release) and AVOID histamine-releasing drugs (morphine, atracurium). Invasive arterial monitoring. Avoid hypercarbia, hypothermia and light anaesthesia (all trigger mediator release)."
+  },
+  {
+    "id": "avoid-histamine-releasers",
+    "triggerFlags": [
+      "avoid-histamine-releasers"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Avoid histamine-releasing drugs (morphine, atracurium, mivacurium, large-dose rapid sux): prefer fentanyl/remifentanil, rocuronium or cisatracurium. Relevant in carcinoid, mastocytosis, phaeochromocytoma and severe atopy/anaphylaxis history."
+  },
+  {
+    "id": "autonomic-dysreflexia",
+    "triggerFlags": [
+      "autonomic-dysreflexia"
+    ],
+    "category": "Cardiovascular",
+    "severity": "high",
+    "action": "Autonomic dysreflexia risk (spinal cord injury at/above T6): a noxious stimulus below the lesion (bladder/bowel distension, surgery) can trigger severe paroxysmal hypertension with reflex bradycardia. Ensure adequate depth even for \"insensate\" procedures (regional or GA — do NOT rely on the lesion for analgesia), have short-acting vasodilators ready (GTN, labetalol, phentolamine), monitor BP continuously, and remove the trigger first. Note: suxamethonium contraindicated after the acute phase (hyperkalaemia)."
+  },
+  {
+    "id": "steroid-stress-dose",
+    "triggerFlags": [
+      "steroid-stress-dose",
+      "stress-steroids-needed",
+      "adrenal-crisis"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Peri-operative steroid cover (adrenal insufficiency / chronic steroids / hypopituitarism): give hydrocortisone at induction — minor surgery 25–50 mg, moderate 50–100 mg, major 100 mg then 50 mg q8h (or 200 mg/24h infusion) for 24–48 h, then taper to baseline. Continue usual steroids on the day of surgery. Watch for adrenal crisis (refractory hypotension) — treat with hydrocortisone 100 mg IV + fluids."
+  },
+  {
+    "id": "avoid-nsaids",
+    "triggerFlags": [
+      "avoid-nsaids"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Avoid NSAIDs: relevant in significant bleeding/coagulopathy, renal impairment, active peptic ulcer disease, severe asthma (aspirin-sensitive) and certain pregnancies. Use paracetamol + opioid-sparing multimodal alternatives (regional, ketamine, dexmedetomidine) instead."
+  },
+  {
+    "id": "avoid-mivacurium",
+    "triggerFlags": [
+      "avoid-mivacurium"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Avoid mivacurium (and suxamethonium): both are metabolised by plasma cholinesterase — in cholinesterase deficiency they cause grossly prolonged paralysis. Use rocuronium (sugammadex-reversible) or cisatracurium (Hofmann elimination) instead."
+  },
+  {
+    "id": "anticoagulation-bridge",
+    "triggerFlags": [
+      "anticoagulated",
+      "bridge-needed"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Anticoagulation management: confirm agent, indication and last dose; check coagulation/anti-Xa as appropriate. Plan peri-operative interruption and bridging per thrombotic risk (mechanical valve, recent VTE, AF with high CHA₂DS₂-VASc). Observe neuraxial/deep-block timing intervals (ASRA/AAGBI). Have reversal available — PCC/vitamin K (warfarin), idarucizumab (dabigatran), andexanet/PCC (factor Xa inhibitors), protamine (heparin)."
+  },
+  {
+    "id": "factor-replacement",
+    "triggerFlags": [
+      "factor-replacement"
+    ],
+    "category": "Other",
+    "severity": "high",
+    "action": "Inherited bleeding disorder (haemophilia / vWD): liaise with haematology for factor levels and a peri-operative replacement plan (factor VIII/IX concentrate, desmopressin for mild haemophilia A / type 1 vWD, tranexamic acid adjunct). Avoid IM injections, NSAIDs and aspirin. Confirm correction before any neuraxial/deep block."
+  },
+  {
+    "id": "tracheomalacia-compression",
+    "triggerFlags": [
+      "tracheomalacia-risk",
+      "tracheal-compression-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Tracheal compression / tracheomalacia risk (large goitre, mediastinal/retrosternal mass): review CT for the level and degree of narrowing. Maintain spontaneous ventilation until the airway is secured if dynamic collapse is possible; have reinforced/longer tubes and rigid bronchoscopy / ENT backup available. Beware airway collapse on extubation — extubate awake over an airway exchange catheter, and watch for post-operative compromise."
+  },
+  {
+    "id": "haematoma-airway",
+    "triggerFlags": [
+      "haematoma-airway-risk"
+    ],
+    "category": "Airway",
+    "severity": "high",
+    "action": "Neck/thyroid surgery — post-operative haematoma is an airway emergency: keep clip/suture removers at the bedside, watch for swelling/stridor/voice change, and if airway compromise occurs OPEN the wound immediately to release the haematoma before re-intubation (which may be very difficult once oedema develops)."
+  },
+  {
+    "id": "di-postop",
+    "triggerFlags": [
+      "di-risk-postop"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Diabetes insipidus risk (pituitary/hypothalamic surgery): monitor urine output, serum/urine osmolality and sodium closely post-op. Treat polyuria with high output + rising Na⁺ using desmopressin (DDAVP) and careful fluid replacement. Distinguish from appropriate post-operative diuresis."
+  },
+  {
+    "id": "hypocalcaemia-postop",
+    "triggerFlags": [
+      "hypocalcaemia-postop"
+    ],
+    "category": "Other",
+    "severity": "medium",
+    "action": "Post-operative hypocalcaemia risk (total/completion thyroidectomy, parathyroid surgery): check calcium (and PTH where available) post-op; watch for perioral tingling, paraesthesia, Chvostek/Trousseau signs and (rarely) laryngospasm. Treat symptomatic or rapidly falling calcium with oral or IV calcium ± active vitamin D."
+  },
+  {
+    "id": "seizure-prophylaxis-adapt",
+    "triggerFlags": [
+      "seizure-prophylaxis"
+    ],
+    "category": "Other",
+    "severity": "low",
+    "action": "Seizure-prone procedure/patient: continue antiepileptics peri-operatively (give on the day, consider IV equivalents if NPO), avoid proconvulsant agents where relevant, and maintain normoglycaemia, normonatraemia and normocarbia."
+  }
+]

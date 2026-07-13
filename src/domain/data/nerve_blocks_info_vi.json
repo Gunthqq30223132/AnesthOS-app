@@ -1,0 +1,694 @@
+{
+  "interscalene": {
+    "name": "Gây tê đám rối thần kinh cánh tay đường liên cơ bậc thang",
+    "region": "Chi trên",
+    "targetNerve": "Rễ C5–C7 của đám rối thần kinh cánh tay",
+    "indications": [
+      "Shoulder surgery (rotator cuff, arthroscopy, replacement)",
+      "Proximal humerus fracture",
+      "Clavicle surgery (combined with superficial cervical plexus)"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "levobupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "5–8 mL/giờ",
+      "note": "Catheter sau phẫu thuật"
+    },
+    "sparedNerves": [
+      "Ulnar nerve (inferior trunk) — not suitable for hand surgery"
+    ],
+    "sideEffects": [
+      "Ipsilateral phrenic nerve block — 100% incidence (avoid in severe respiratory disease)",
+      "Horner syndrome (stellate ganglion)",
+      "Recurrent laryngeal nerve block (hoarseness)",
+      "Rare: pneumothorax, vertebral artery injection, epidural/intrathecal spread"
+    ],
+    "contraindications": [
+      "Severe respiratory disease (hemidiaphragmatic paralysis)",
+      "Contralateral recurrent laryngeal nerve palsy",
+      "Severe COPD / single lung"
+    ],
+    "technique": [
+      "Patient semi-sitting, head turned away",
+      "Linear high-frequency US probe transverse at C6 level (between anterior and middle scalene)",
+      "Identify plexus \"traffic light\" appearance (3 hypoechoic nerve roots)",
+      "In-plane needle approach, posterior to anterior",
+      "Inject between C5-C6 nerve roots, hydro-dissecting the sheath"
+    ],
+    "duration": "6–12 h (single shot); continuous up to 72 h"
+  },
+  "supraclavicular": {
+    "name": "Gây tê đám rối thần kinh cánh tay đường trên đòn",
+    "region": "Chi trên",
+    "targetNerve": "Phân chia đám rối thần kinh cánh tay (phía trên xương đòn)",
+    "indications": [
+      "Surgery below mid-humerus",
+      "Elbow, forearm, hand surgery",
+      "Vascular access procedures"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "5–8 mL/giờ"
+    },
+    "coverage": "Toàn bộ chi trên ngoại trừ da trên vai",
+    "sideEffects": [
+      "Pneumothorax (classic risk — now reduced with US guidance but still possible)",
+      "Phrenic nerve block (50% with US; much higher with landmark)",
+      "Horner syndrome",
+      "Vascular puncture (subclavian artery runs medially)"
+    ],
+    "technique": [
+      "Supine, head turned away",
+      "US probe in supraclavicular fossa, behind mid-clavicle",
+      "Identify subclavian artery, first rib, pleura",
+      "In-plane needle approach, lateral to medial",
+      "Target \"corner pocket\" — lateral to artery, superior to first rib"
+    ],
+    "duration": "6–10 h"
+  },
+  "infraclavicular": {
+    "name": "Gây tê đám rối thần kinh cánh tay đường dưới đòn",
+    "region": "Chi trên",
+    "targetNerve": "Dây đám rối thần kinh cánh tay (dưới xương đòn)",
+    "indications": [
+      "Elbow, forearm, hand surgery",
+      "Continuous catheter (easier to secure)"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "6–10 mL/giờ"
+    },
+    "sideEffects": [
+      "No phrenic nerve involvement (preferred over supraclavicular in respiratory disease)",
+      "Vascular puncture (axillary artery)",
+      "Pneumothorax (rare)"
+    ],
+    "technique": [
+      "Supine, arm abducted 90°",
+      "US probe parasagittal, medial to coracoid process",
+      "Identify axillary artery with 3 cords (lateral, posterior, medial)",
+      "In-plane needle approach, cephalad to caudal",
+      "Inject posterior to artery (U-shape spread)"
+    ]
+  },
+  "axillary": {
+    "name": "Gây tê đám rối thần kinh cánh tay đường nách",
+    "region": "Chi trên",
+    "targetNerve": "Các nhánh cuối (giữa, trụ, xuyên tâm, cơ da)",
+    "indications": [
+      "Forearm and hand surgery",
+      "No risk of pneumothorax"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "mepivacaine_1.5"
+    ],
+    "sideEffects": [
+      "Vascular puncture",
+      "Incomplete block (musculocutaneous often missed — needs separate injection)"
+    ],
+    "technique": [
+      "Supine, arm abducted and externally rotated",
+      "US probe transverse in axilla",
+      "Identify axillary artery, surround nerves",
+      "Inject separately around each nerve (median superficial, ulnar inferior, radial posterior to artery)",
+      "Musculocutaneous in coracobrachialis muscle — separate injection"
+    ]
+  },
+  "femoral": {
+    "name": "Gây tê dây thần kinh đùi",
+    "region": "Chi dưới",
+    "targetNerve": "Dây thần kinh đùi (L2–L4)",
+    "indications": [
+      "Knee surgery (ACL, TKA — combined with sciatic/adductor canal)",
+      "Femoral shaft/hip fracture analgesia (classic use)",
+      "Anterior thigh surgery"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "levobupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "4–8 mL/giờ"
+    },
+    "coverage": "Đùi trước, chân trong (dây thần kinh hiển), bao khớp gối",
+    "sideEffects": [
+      "Quadriceps weakness — fall risk in ambulatory patients",
+      "Vascular puncture (femoral artery medially)",
+      "Rarely: nerve injury with direct needle trauma"
+    ],
+    "technique": [
+      "Supine, leg slightly abducted",
+      "US probe transverse in inguinal crease",
+      "Identify femoral artery → nerve lateral to it, under fascia iliaca",
+      "In-plane needle, lateral to medial",
+      "Inject under fascia iliaca, nerve rolls and floats"
+    ]
+  },
+  "adductor-canal": {
+    "name": "Gây tê ống cơ khép",
+    "region": "Chi dưới",
+    "targetNerve": "Dây thần kinh hiển + dây thần kinh đến cơ rộng trong (trong ống dẫn)",
+    "indications": [
+      "TKA / knee arthroscopy — preserves quadriceps strength",
+      "ACL reconstruction",
+      "Medial foot/ankle surgery (proximal saphenous)",
+      "Preferred over femoral block for ambulatory knee surgery"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "4–6 mL/giờ"
+    },
+    "advantages": [
+      "Preserves quadriceps motor function (enabling early mobilization after TKA)",
+      "Reduced fall risk compared to femoral block"
+    ],
+    "sideEffects": [
+      "Usually well-tolerated",
+      "Rarely: vascular puncture (femoral artery at apex of canal)"
+    ],
+    "technique": [
+      "Supine, leg externally rotated",
+      "US probe transverse at mid-thigh (midway between ASIS and patella)",
+      "Identify sartorius muscle, femoral artery deep to it",
+      "Target fascia around artery (under sartorius)",
+      "In-plane needle, lateral to medial, 15–20 mL"
+    ]
+  },
+  "fascia-iliaca": {
+    "name": "Gây tê khoang mạc chậu",
+    "region": "Chi dưới",
+    "targetNerve": "Dây thần kinh bì đùi + ngoài xương đùi ± dây thần kinh bịt",
+    "indications": [
+      "Hip fracture analgesia (primary indication — pre-theatre)",
+      "Femoral shaft surgery",
+      "Broad coverage with a \"volume-based\" approach"
+    ],
+    "volumeMl": {
+      "low": 30,
+      "high": 40
+    },
+    "typicalAgents": [
+      "ropivacaine_0.375",
+      "ropivacaine_0.2_large_volume",
+      "bupivacaine_0.25"
+    ],
+    "sideEffects": [
+      "Less precise than femoral block",
+      "Inconsistent obturator coverage"
+    ],
+    "technique": [
+      "Supine, leg extended",
+      "US probe transverse in inguinal region, medial to ASIS",
+      "Identify fascia iliaca as hyperechoic line over iliacus muscle",
+      "In-plane needle, lateral to medial approach",
+      "Pop through fascia iliaca, inject 30 mL — spread seen under fascia",
+      "Can be done as \"suprainguinal\" approach for better obturator coverage"
+    ]
+  },
+  "sciatic": {
+    "name": "Gây tê thần kinh tọa đường khoeo",
+    "region": "Chi dưới",
+    "targetNerve": "Dây thần kinh tọa (L4–S3) — xương chày + mác chung",
+    "indications": [
+      "Foot and ankle surgery",
+      "Posterior leg surgery",
+      "Combined with saphenous/adductor canal for complete below-knee coverage"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "5–8 mL/giờ"
+    },
+    "sideEffects": [
+      "Long-duration motor block (foot drop temporarily)",
+      "Vascular puncture (popliteal vessels)"
+    ],
+    "technique": [
+      "Prone or lateral (leg up)",
+      "US probe transverse in popliteal fossa",
+      "Identify popliteal artery → tibial nerve above it, common peroneal lateral",
+      "Target the nerve BEFORE bifurcation (4–6 cm proximal to popliteal crease)",
+      "In-plane needle, lateral approach"
+    ]
+  },
+  "ankle-block": {
+    "name": "Gây tê vùng cổ chân",
+    "region": "Chi dưới",
+    "targetNerve": "5 dây thần kinh: chày sau, mác sâu, mác nông, nông, hiển",
+    "indications": [
+      "Foot surgery (especially toe surgery, bunionectomy)",
+      "When sciatic block contraindicated"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30,
+      "split": "5 mL mỗi dây thần kinh"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "sideEffects": [
+      "Pain during injection (multiple needle passes)",
+      "Inadequate surgical anaesthesia if any nerve missed"
+    ],
+    "technique": [
+      "Landmark + US guidance for tibial and deep peroneal",
+      "Infiltration technique for superficial nerves",
+      "Avoid tourniquet pain with concurrent calf infiltration or light sedation"
+    ]
+  },
+  "tap": {
+    "name": "Gây tê mặt phẳng cơ ngang bụng (TAP block)",
+    "region": "Thành bụng",
+    "targetNerve": "Dây thần kinh ngực bụng T7–L1 (trong TAP giữa cơ chéo trong và cơ ngang)",
+    "indications": [
+      "Lower abdominal surgery (below umbilicus): hernia, C-section, hysterectomy",
+      "Laparoscopic port site analgesia",
+      "Open appendicectomy",
+      "Post-caesarean analgesia (as part of ERAS)"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20,
+      "per_side": true,
+      "note": "Tiêm song phương điển hình"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "coverage": "Chỉ thành bụng cơ thể (KHÔNG che phủ nội tạng)",
+    "sideEffects": [
+      "⚠ Large volumes (30–40 mL bilateral) → high plasma LA levels; risk of LAST",
+      "Peritoneal puncture, visceral injury (rare)",
+      "Incomplete block if wrong plane"
+    ],
+    "technique": [
+      "Supine, arms by side",
+      "US probe transverse in mid-axillary line, between costal margin and iliac crest",
+      "Identify 3 muscle layers: external oblique, internal oblique, transversus abdominis",
+      "Target plane BETWEEN internal oblique and transversus abdominis",
+      "In-plane needle, anterior to posterior",
+      "15–20 mL per side — hydro-dissect the plane"
+    ],
+    "duration": "6–8 h"
+  },
+  "rectus-sheath": {
+    "name": "Gây tê bao cơ thẳng bụng",
+    "region": "Thành bụng",
+    "targetNerve": "Phân chia trước của T9–T12 (trong bao cơ thẳng)",
+    "indications": [
+      "Midline abdominal surgery (umbilical hernia, midline laparotomy)",
+      "Children: umbilical hernia repair, pyloromyotomy"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 20,
+      "per_side": true
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "sideEffects": [
+      "Peritoneal puncture",
+      "Inferior epigastric artery injury"
+    ]
+  },
+  "pecs-1": {
+    "name": "Gây tê khoang cơ ngực I (PECS I)",
+    "region": "Tường ngực",
+    "targetNerve": "Dây thần kinh ngực bên và giữa",
+    "indications": [
+      "Breast surgery (subpectoral implants, expander placement)",
+      "Pacemaker insertion analgesia"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "US probe parasagittal, infraclavicular",
+      "Target plane between pectoralis major and minor (thoracoacromial artery landmark)",
+      "Single injection, 10–15 mL"
+    ]
+  },
+  "pecs-2": {
+    "name": "Gây tê khoang cơ ngực II (PECS II)",
+    "region": "Tường ngực",
+    "targetNerve": "Dây thần kinh ngực bên và trong + dây thần kinh liên sườn T2–T6",
+    "indications": [
+      "Radical mastectomy (+ axillary dissection)",
+      "Breast reconstruction"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30,
+      "split": "10 mL PECS I + 20 mL PECS II"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "As for PECS I plus second injection between pectoralis minor and serratus anterior",
+      "Covers lateral chest wall and axilla"
+    ]
+  },
+  "serratus": {
+    "name": "Gây tê mặt phẳng cơ răng trước",
+    "region": "Tường ngực",
+    "targetNerve": "Nhánh da ngoài của dây thần kinh liên sườn T2–T9",
+    "indications": [
+      "Rib fractures (unilateral)",
+      "Thoracotomy analgesia (alternative to thoracic epidural)",
+      "VATS",
+      "Chest drain insertion",
+      "Breast surgery (lateral)"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "5–8 mL/giờ"
+    },
+    "technique": [
+      "Lateral or supine with arm abducted",
+      "US probe over 4th–5th ribs in mid-axillary line",
+      "Identify latissimus dorsi, serratus anterior, ribs",
+      "Two approaches: superficial (between lat dorsi and serratus) or deep (below serratus)",
+      "In-plane needle, 20–30 mL"
+    ]
+  },
+  "paravertebral": {
+    "name": "Gây tê cạnh cột sống ngực",
+    "region": "ngực",
+    "targetNerve": "Dây thần kinh cột sống và chuỗi giao cảm trong khoang cạnh cột sống",
+    "indications": [
+      "Thoracotomy (comparable to thoracic epidural)",
+      "VATS",
+      "Breast surgery (mastectomy)",
+      "Rib fractures (unilateral)",
+      "Herpes zoster pain",
+      "When thoracic epidural contraindicated (anticoagulation, spinal surgery)"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 25,
+      "per_level": "3–5 mL × nhiều mức HOẶC tiêm một lần"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2% hoặc bupivacain 0,125%",
+      "rate": "5–10 mL/giờ"
+    },
+    "coverage": "Phong bế thân thể VÀ giao cảm một bên cho nhiều da vùng ngực",
+    "sideEffects": [
+      "Pneumothorax (2%)",
+      "Hypotension (sympathetic block, especially if bilateral)",
+      "Vascular puncture",
+      "Inadvertent epidural spread"
+    ],
+    "technique": [
+      "Prone or sitting",
+      "US probe sagittal, 2.5 cm lateral to spinous process",
+      "Identify transverse process, superior costo-transverse ligament, pleura",
+      "In-plane needle, approach from cephalad or caudad",
+      "Pop through costo-transverse ligament, inject with pleura depressed"
+    ]
+  },
+  "esp": {
+    "name": "Gây tê mặt phẳng cơ dựng sống (ESP block)",
+    "region": "cắt ngắn",
+    "targetNerve": "Các nhánh lưng và bụng của các dây thần kinh cột sống (lan truyền cạnh cột sống từ ESP)",
+    "indications": [
+      "Thoracic surgery (VATS, thoracotomy)",
+      "Breast surgery",
+      "Rib fractures",
+      "Abdominal surgery (high ESP T7)",
+      "Hip fracture (low ESP at L2-L4 — emerging evidence)",
+      "Chronic back pain"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacain 0,2%",
+      "rate": "6–8 mL/giờ"
+    },
+    "advantages": [
+      "Safer than paravertebral (no pneumothorax risk, no major vessels)",
+      "Easier technique than paravertebral",
+      "Anticoagulation concerns less than epidural (but still cautious)",
+      "Single injection covers multiple dermatomes (3–6 levels)"
+    ],
+    "sideEffects": [
+      "Relatively safe",
+      "Theoretical sympathetic block if large volume"
+    ],
+    "technique": [
+      "Lateral or prone",
+      "US probe sagittal, 2–3 cm lateral to spinous process of target level (e.g. T5 for thoracic, T7 for abdominal)",
+      "Identify transverse process, erector spinae muscles",
+      "In-plane needle, cephalad to caudad, touch transverse process",
+      "Inject below erector spinae, above transverse process — should see craniocaudal spread"
+    ]
+  },
+  "qlb": {
+    "name": "Gây tê cơ vuông thắt lưng (QL block)",
+    "region": "bụng",
+    "targetNerve": "Dây thần kinh cột sống thắt lưng T7–L1 (thông qua lan ra cạnh cột sống)",
+    "indications": [
+      "Abdominal surgery (broader than TAP — includes visceral coverage)",
+      "Caesarean section (especially with posterior QL or QL3)",
+      "Hip surgery (QL3 type)",
+      "Laparoscopic procedures"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "variants": [
+      "QL1 (lateral): anterolateral abdominal wall T7-T12",
+      "QL2 (posterior): broader coverage T7-L1",
+      "QL3 (transmuscular): paravertebral spread, hip coverage"
+    ],
+    "technique": [
+      "Lateral decubitus with operative side up",
+      "US probe transverse just above iliac crest",
+      "Identify QL muscle lateral to psoas",
+      "In-plane needle from lateral approach",
+      "Inject in chosen compartment (QL1 = lateral to QL, QL2 = posterior to QL, QL3 = between QL and psoas)"
+    ]
+  },
+  "superficial-cervical": {
+    "name": "Gây tê đám rối cổ nông",
+    "region": "Đầu và cổ",
+    "targetNerve": "Nhánh da C2–C4",
+    "indications": [
+      "Carotid endarterectomy (awake technique — combined with deep cervical)",
+      "Thyroid surgery analgesia",
+      "Clavicle surgery (combined with interscalene)",
+      "ENT procedures"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "sideEffects": [
+      "Very safe — superficial injection only",
+      "Rare: accidental deep injection (phrenic, stellate)"
+    ],
+    "technique": [
+      "Supine, head turned away",
+      "US probe transverse at mid-sternocleidomastoid (SCM)",
+      "Target posterior border of SCM, subcutaneous/subfascial plane",
+      "Single injection 10–15 mL"
+    ]
+  },
+  "caudal": {
+    "name": "Gây tê khoang xương cùng (Caudal block)",
+    "region": "Thân dưới trẻ em",
+    "targetNerve": "Dây thần kinh tủy sống qua khoang ngoài màng cứng đuôi",
+    "indications": [
+      "Circumcision, hypospadias, orchidopexy",
+      "Inguinal hernia repair, hydrocele",
+      "Lower limb surgery",
+      "Caudal-to-thoracic catheter (infants) for abdominal surgery"
+    ],
+    "volumeMl": {
+      "formula": "Armitage: 0,5 mL/kg (xương cùng), 1 mL/kg (thắt lưng cùng), 1,25 mL/kg (ngực thấp), tối đa 20 mL"
+    },
+    "maxDoseLBW": {
+      "bupivacaine": "2 mg/kg LBW (sử dụng 0,25% hoặc 0,125% ở trẻ sơ sinh)",
+      "ropivacaine": "3 mg/kg LBW (sử dụng 0,2%)",
+      "levobupivacaine": "2 mg/kg LBW"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.2",
+      "bupivacaine_0.25_max_2mg_per_kg",
+      "levobupivacaine_0.125_neonate"
+    ],
+    "adjuvants": [
+      "Clonidine 1–2 mcg/kg — prolongs duration by ~4 h (avoid > 2 mcg/kg in neonates due to apnoea risk)",
+      "Morphine 30–50 mcg/kg — 12–24 h analgesia (respiratory monitoring required minimum 12 h)",
+      "Dexmedetomidine 1 mcg/kg — alternative to clonidine"
+    ],
+    "testDoseProtocol": [
+      "MANDATORY under GA (child cannot report subjective symptoms)",
+      "Use 0.1 mL/kg of LA solution with adrenaline 1:200,000 (5 mcg/mL)",
+      "Wait 60 seconds. POSITIVE TEST: HR rise ≥ 10 bpm OR systolic BP rise ≥ 15 mmHg OR T-wave amplitude change ≥ 25% (Tobias 2001)",
+      "NEGATIVE test does NOT exclude intravascular placement — sevoflurane blunts β-1 response in 25–30%",
+      "Aspirate every 3 mL during injection; inject SLOWLY over 60–90 seconds",
+      "Ultrasound visualisation of injectate spread is the gold standard where available (Roberts 2005)"
+    ],
+    "monitoring": [
+      "Continuous ECG, SpO₂, NIBP (cycle q1min × 10 min post-injection then q3 min)",
+      "Capnography (most are intubated/LMA under GA)",
+      "Pupillary check before draping and again 5 min post-injection (mydriasis = cephalad LA spread)",
+      "Airway pressure trend (rise suggests high block paralysing intercostals)",
+      "Temperature (block-induced vasodilation causes heat loss in small children)"
+    ],
+    "earlyWarningSigns": [
+      "BRADYCARDIA (commonest first sign under GA — vagal-dominant cardiovascular system)",
+      "Hypotension > 20% from baseline (use age-based definitions)",
+      "ECG: widened QRS, prolonged QTc, ST-T changes, new arrhythmia",
+      "Rising airway pressure (high block paralysing intercostals)",
+      "Non-reactive mydriasis — pathognomonic for total spinal",
+      "SpO₂ drop",
+      "NO subjective warning symptoms — detection is purely objective"
+    ],
+    "sideEffects": [
+      "Urinary retention (commonest)",
+      "Intravascular injection (sacral canal vessels) → LAST: bradycardia/asystole is the FIRST sign in children, not seizures",
+      "Dural puncture → TOTAL SPINAL (dura ends S3–S4 in neonates, S2 in older children; infants more vulnerable)",
+      "Motor block (brief)",
+      "Failed block (incidence ~10% landmark technique, ~2% ultrasound-guided)"
+    ],
+    "emergencyResponse": [
+      "See crisis protocol: paediatric-regional-instability",
+      "Key paediatric differences: ATROPINE 20 mcg/kg first-line for bradycardia (NOT phenylephrine first)",
+      "LAST in paediatric: adrenaline REDUCED 1 mcg/kg (NOT 10 mcg/kg); Intralipid 1.5 mL/kg LBW bolus",
+      "Total spinal: intubate, atropine + adrenaline, fluid 20 mL/kg, expect 1–3 h block regression"
+    ],
+    "technique": [
+      "Lateral decubitus, knees to chest",
+      "Palpate sacral hiatus (triangle with posterior superior iliac spines)",
+      "Ultrasound preferred for neonates and infants (Mirjalili 2015)",
+      "22G short bevel or dedicated caudal needle, 45° angle cephalad",
+      "Pop through sacrococcygeal ligament, flatten to 15° and advance 2–3 mm",
+      "Confirm with test dose AND ultrasound visualisation of caudal spread where available"
+    ],
+    "ageLimit": "Chủ yếu là trẻ sơ sinh và trẻ em nặng tới 20–25 kg (giải phẫu trở nên kém thuận lợi hơn)",
+    "references": [
+      "Ecoffey C et al. J Clin Anesth 2022;79:110725 (PMID 35313269) — practice advisory on prevention/management of complications",
+      "Suresh S et al. Reg Anesth Pain Med 2018;43:211 (PMID 29319604) — ESRA/ASRA paediatric LA dosing",
+      "Walker BJ et al. Anesthesiology 2018;129:721 — PRAN registry >100,000 blocks: LAST 0.76:10,000",
+      "Tobias JD. Anesth Analg 2001 — test dose criteria under sevoflurane"
+    ]
+  },
+  "ilioinguinal": {
+    "name": "Gây tê thần kinh chậu bẹn - chậu hạ vị",
+    "region": "Bụng (trẻ em và người lớn)",
+    "targetNerve": "Dây thần kinh chậu bẹn và hạ vị (L1)",
+    "indications": [
+      "Inguinal hernia repair (children and adults)",
+      "Orchidopexy (combined with genitofemoral coverage)"
+    ],
+    "volumeMl": {
+      "paediatric": "0,3mL/kg",
+      "adult_low": 10,
+      "adult_high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "US probe transverse, 1–2 cm medial and caudal to ASIS",
+      "Identify three muscle layers: external oblique, internal oblique, transversus",
+      "Target plane between internal oblique and transversus abdominis",
+      "In-plane needle, small volume"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_metadata": {
+    "status": "signed: Gun 2026-06-26",
+    "signed_by": "Gun",
+    "signed_at": "2026-06-26",
+    "source_edition": "ASRA 2018 4th ed"
+  },
+  "clopidogrel": { "neuraxial_stop_interval_days": "5-7", "restart_after_block_hours": "" },
+  "prasugrel":   { "neuraxial_stop_interval_days": "7-10", "restart_after_block_hours": "" },
+  "ticagrelor":  { "neuraxial_stop_interval_days": "5-7", "restart_after_block_hours": "" },
+  "warfarin": {
+    "neuraxial_stop_interval_days": "5",
+    "inr_target_pre_neuraxial": "< 1.2",
+    "restart_after_block_hours": "24",
+    "catheter_removal_inr_max": "< 1.5"
+  }
+}

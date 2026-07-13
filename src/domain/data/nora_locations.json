@@ -1,0 +1,2000 @@
+{
+  "ect": {
+    "id": "ect",
+    "label": "ECT Suite",
+    "icon": "🧠",
+    "location": "Psychiatric department",
+    "description": "Electroconvulsive therapy for severe depression/catatonia",
+    "typicalDuration": "5-10 min",
+    "typicalSetting": "Outpatient or inpatient psychiatric unit",
+    "procedures": [
+      {
+        "id": "ect-bilateral",
+        "label": "ECT — bilateral",
+        "duration": 8,
+        "urgency": "elective"
+      },
+      {
+        "id": "ect-unilateral",
+        "label": "ECT — right unilateral",
+        "duration": 8,
+        "urgency": "elective"
+      },
+      {
+        "id": "ect-bifrontal",
+        "label": "ECT — bifrontal",
+        "duration": 8,
+        "urgency": "elective"
+      },
+      {
+        "id": "ect-maintenance",
+        "label": "ECT — maintenance (continuation)",
+        "duration": 8,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "General anaesthesia (TIVA)",
+      "Brief unconsciousness with succinylcholine"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG (continuous)",
+        "NIBP (q3min)",
+        "SpO₂",
+        "EtCO₂",
+        "EEG (seizure quality)"
+      ],
+      "additional": [
+        "Peripheral nerve stimulator (twitch)",
+        "Bite block placement check"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Methohexital",
+        "dose": "0.75-1 mg/kg IV",
+        "notes": "Gold standard — minimal seizure threshold elevation",
+        "preferred": true
+      },
+      {
+        "drug": "Propofol",
+        "dose": "0.75-1.5 mg/kg IV (lower than standard)",
+        "notes": "Higher seizure threshold — may need higher stimulus charge"
+      },
+      {
+        "drug": "Etomidate",
+        "dose": "0.15-0.3 mg/kg IV",
+        "notes": "Best for cardiac patients; may prolong seizure"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "0.5-1 mg/kg IV",
+        "notes": "Subanaesthetic — for treatment-resistant depression"
+      }
+    ],
+    "muscleRelaxants": [
+      {
+        "drug": "Succinylcholine",
+        "dose": "0.5-1 mg/kg IV",
+        "notes": "Standard — modifies seizure to prevent injury",
+        "preferred": true
+      },
+      {
+        "drug": "Rocuronium",
+        "dose": "0.6-1 mg/kg IV",
+        "notes": "If sux contraindicated; reverse with sugammadex 16 mg/kg",
+        "alternative": true
+      }
+    ],
+    "drugCautions": [
+      "⚠ AVOID lidocaine pre-treatment — raises seizure threshold significantly",
+      "Glycopyrrolate 0.2 mg or atropine 0.4 mg pre-procedure to prevent vagal bradycardia",
+      "Esmolol 0.5-1 mg/kg IV or labetalol 5-10 mg IV available for post-ictal hypertension/tachycardia",
+      "NSAID (ketorolac 30 mg) post-procedure for myalgia/headache — if no contraindication",
+      "Caffeine 500-1000 mg IV may augment seizure if inadequate (rarely needed)"
+    ],
+    "procedureConcerns": [
+      "Brief generalised seizure (30-90 sec target) — check EEG quality",
+      "Hyperdynamic response post-ictal — particularly risky in CAD/aortic aneurysm",
+      "Series of treatments (typically 6-12) — track cumulative effects + memory",
+      "Bite injury risk — bite block + jaw support during stimulation",
+      "Pacemaker/ICD: notify cardiology — disable ICD if defib function active"
+    ],
+    "equipmentChecklist": [
+      "Bag-mask ventilation device + functional",
+      "Wall O₂ + portable cylinder backup",
+      "Yankauer suction",
+      "Defibrillator within reach",
+      "Emergency drug cart (atropine, adrenaline, ephedrine, glycopyrrolate, sux)",
+      "Recovery area with O₂ + monitoring",
+      "Bite block (single-use)",
+      "IV access secured (often 22G sufficient)"
+    ],
+    "recovery": {
+      "criteria": "Aldrete score ≥ 9; oriented to person/place/time",
+      "duration": "30-60 min until oriented",
+      "disposition": "Same-day discharge usually appropriate (with escort)",
+      "warnings": "Watch for post-ictal confusion, headache, transient memory impairment, myalgia"
+    },
+    "redFlags": [
+      "Recent MI (< 3 months) — relative contraindication",
+      "Unstable angina",
+      "Recent stroke (< 1 month)",
+      "Raised ICP / intracranial mass / recent neurosurgery",
+      "Pheochromocytoma (uncontrolled) — absolute contraindication",
+      "Severe osteoporosis (fracture risk during seizure)",
+      "Retinal detachment (recent)",
+      "Aortic aneurysm (untreated, > 5 cm)"
+    ],
+    "specialPopulations": [
+      "Pregnancy — ECT considered safe in 2nd/3rd trimester (left lateral tilt, avoid hyperventilation)",
+      "Elderly — reduced doses; watch for prolonged confusion",
+      "Paediatric (rare) — specialist centre only"
+    ],
+    "references": "Royal College of Psychiatrists ECT Handbook 2019; ANZCA PS09 2024; Hermann RC. Am J Psychiatry 2008"
+  },
+  "cardiac_cath": {
+    "id": "cardiac_cath",
+    "label": "Cardiac Cath Lab",
+    "icon": "🫀",
+    "location": "Cardiology / interventional cardiology",
+    "description": "Coronary intervention, structural heart procedures, electrophysiology",
+    "typicalDuration": "30 min - 4 h",
+    "typicalSetting": "Mostly elective; STEMI emergent",
+    "procedures": [
+      {
+        "id": "pci-elective",
+        "label": "PCI (elective)",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "pci-stemi",
+        "label": "Primary PCI (STEMI)",
+        "duration": 90,
+        "urgency": "emergency"
+      },
+      {
+        "id": "cag-diagnostic",
+        "label": "Coronary angiography (diagnostic)",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "tavi",
+        "label": "TAVI (transcatheter aortic valve implantation)",
+        "duration": 120,
+        "urgency": "elective"
+      },
+      {
+        "id": "mitraclip",
+        "label": "MitraClip (transcatheter mitral repair)",
+        "duration": 180,
+        "urgency": "elective"
+      },
+      {
+        "id": "tricuspid-clip",
+        "label": "Tricuspid TEER (TriClip/PASCAL)",
+        "duration": 180,
+        "urgency": "elective"
+      },
+      {
+        "id": "lariat",
+        "label": "LAA closure (Watchman/Amulet)",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "asd-vsd-closure",
+        "label": "ASD/VSD closure",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "ep-ablation-af",
+        "label": "EP ablation — atrial fibrillation",
+        "duration": 180,
+        "urgency": "elective"
+      },
+      {
+        "id": "ep-ablation-vt",
+        "label": "EP ablation — ventricular tachycardia",
+        "duration": 240,
+        "urgency": "urgent"
+      },
+      {
+        "id": "ep-ablation-svt",
+        "label": "EP ablation — SVT/AVNRT",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "ep-ablation-wpw",
+        "label": "EP ablation — WPW (accessory pathway)",
+        "duration": 120,
+        "urgency": "elective",
+        "procedureSpecific": {
+          "summary": "Wolff-Parkinson-White accessory-pathway ablation. Distinct from AF/AVNRT ablation: avoid AV-nodal blockers (would accelerate conduction through accessory pathway in pre-excited AF → VF risk), keep anaesthetic light enough to permit inducible tachycardia, expect isoproterenol-induced tachycardia.",
+          "preferredTechnique": "Conscious sedation OR light general anaesthesia. TIVA preferred over volatile (cleaner cardiac electrophysiology). Avoid muscle relaxants beyond intubation (phrenic mapping for left-sided pathways).",
+          "drugsToAvoid": [
+            "Verapamil, diltiazem (IV) — CONTRAINDICATED in pre-excited AF (may accelerate accessory-pathway conduction → VF)",
+            "Digoxin — same mechanism; absolutely avoided in WPW with AF history",
+            "Adenosine — caution: may convert to pre-excited AF; reserve for narrow-QRS SVT only, with EP team and defibrillator ready",
+            "IV β-blocker bolus — relative avoidance during ablation; theoretical risk of promoting accessory-pathway conduction in pre-excited AF",
+            "Ketamine — relative avoidance: sympathetic surge may abolish inducibility and is poorly tolerated in haemodynamically marginal patients",
+            "Deep volatile anaesthesia (>1 MAC sevoflurane) — suppresses accessory-pathway conduction, reduces inducibility (Sharpe 1995)",
+            "Routine intra-procedure muscle relaxant re-dosing — interferes with phrenic-nerve mapping for left-sided / right free-wall pathways",
+            "Amiodarone IV in pre-excited AF — contested; ESC 2019 cautions that AV-nodal slowing may worsen ventricular rate; defer to EP team"
+          ],
+          "drugsPreferred": [
+            "Propofol TIVA at low-moderate rate (50–100 mcg/kg/min) — minimal EP effect at clinical doses, fully titratable",
+            "Remifentanil infusion 0.05–0.15 mcg/kg/min — opioid-sparing, no accumulation, no AV-nodal effect",
+            "Dexmedetomidine 0.2–0.7 mcg/kg/h infusion — particularly useful (does not abolish inducibility, no respiratory depression)",
+            "Fentanyl 1–2 mcg/kg titrated — for analgesia at sheath insertion",
+            "Midazolam 1–2 mg IV titrated — anxiolysis only, avoid heavy benzodiazepine load"
+          ],
+          "monitoringEmphasis": [
+            "Continuous 12-lead ECG (delta wave / pre-excitation tracking)",
+            "Defibrillator pads applied BEFORE sedation — pre-excited AF risk",
+            "Invasive arterial line if patient haemodynamically borderline, otherwise NIBP every 3 min",
+            "EtCO₂ via nasal cannula if conscious sedation; full capnography if airway secured",
+            "Temperature monitoring (long procedure)",
+            "Femoral access sites — observe for haematoma"
+          ],
+          "procedureConcerns": [
+            "⚠ Pre-excited AF during procedure: do NOT give AV-nodal blockers. Synchronised DC cardioversion 100–200 J biphasic if haemodynamically unstable. Procainamide 10 mg/kg IV over 20 min if stable (slows accessory pathway).",
+            "⚠ Isoproterenol 1–4 mcg/min IV provocation expected — anticipate tachycardia (HR 120–160), transient hypotension; avoid blocking effect with β-blockers",
+            "Phrenic-nerve injury risk for left-sided pathways and right free-wall pathways near phrenic — ensure no neuromuscular block during mapping",
+            "Cardiac tamponade risk from transseptal puncture — pericardiocentesis kit ready",
+            "Tachycardia-induced hypotension during induced AVRT — transient, usually self-terminates with overdrive pacing or DC cardioversion",
+            "Long procedure (90–180 min) — DVT prophylaxis with intermittent pneumatic compression, padding, careful positioning"
+          ],
+          "crisisPlan": "Pre-excited AF with haemodynamic compromise → immediate synchronised DC cardioversion (100→200 J biphasic). Stable pre-excited AF → procainamide 10 mg/kg IV over 20 min OR ibutilide 1 mg IV (not amiodarone — slow AV nodal blockade may worsen). Cardiac tamponade → emergency pericardiocentesis ± transfer to OR for surgical drainage.",
+          "patientSelection": [
+            "High-risk WPW (short refractory period < 250 ms, multiple pathways, history of pre-excited AF or syncope) — anticipate haemodynamic instability",
+            "Paediatric WPW — almost always GA with TIVA; avoid sympathomimetics, full airway management",
+            "Pregnant patient with WPW — defer ablation if possible; if essential, consider procedure under regional cover with shielded fluoroscopy minimal use",
+            "Concomitant structural heart disease (Ebstein anomaly common with right-sided pathways) — full GA, invasive monitoring, cardiothoracic backup"
+          ],
+          "references": "Brugada J et al. ESC/EHRA SVT Guidelines 2019, Eur Heart J 2020;41:655 (PMID 31504425). Cohen MI et al. PACES/HRS Expert Consensus on Asymptomatic WPW. Heart Rhythm 2012;9:1006 (PMID 22579340). SCAI 2024 Cath Lab Sedation Guidelines."
+        }
+      },
+      {
+        "id": "pacemaker",
+        "label": "Pacemaker insertion",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "icd",
+        "label": "ICD insertion",
+        "duration": 90,
+        "urgency": "urgent"
+      },
+      {
+        "id": "crt",
+        "label": "CRT-D insertion",
+        "duration": 120,
+        "urgency": "elective"
+      },
+      {
+        "id": "pacemaker-extraction",
+        "label": "Lead extraction",
+        "duration": 180,
+        "urgency": "urgent"
+      },
+      {
+        "id": "iabp",
+        "label": "IABP insertion",
+        "duration": 30,
+        "urgency": "emergency"
+      },
+      {
+        "id": "impella",
+        "label": "Impella insertion",
+        "duration": 30,
+        "urgency": "emergency"
+      },
+      {
+        "id": "rhc",
+        "label": "Right heart catheterisation",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "cardioversion-elective",
+        "label": "DC cardioversion (elective)",
+        "duration": 15,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "Local + monitored sedation (most PCI/CAG)",
+      "Conscious sedation (EP, pacemaker)",
+      "Deep sedation (TAVI/MitraClip — institution-dependent)",
+      "General anaesthesia + TEE (TAVI/MitraClip — increasingly used)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG (5-lead with arrhythmia detection)",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Arterial line (TAVI, MitraClip, Impella, lead extraction)",
+        "Central venous access (TAVI, severe LV dysfunction)",
+        "TEE probe (TAVI, MitraClip, LAA closure, ASD/VSD)",
+        "Cerebral oximetry (TAVI — optional)",
+        "Defibrillator pads applied (EP, VT ablation)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam",
+        "dose": "0.02-0.05 mg/kg IV titrated",
+        "notes": "Most common for conscious sedation"
+      },
+      {
+        "drug": "Fentanyl",
+        "dose": "25-50 mcg IV titrated",
+        "notes": "Adjunct analgesia; respiratory depression risk"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "TIVA: 25-75 mcg/kg/min infusion",
+        "notes": "Deep sedation; titrate carefully in low EF"
+      },
+      {
+        "drug": "Etomidate",
+        "dose": "0.15-0.3 mg/kg IV",
+        "notes": "Preferred induction in severe AS / cardiogenic shock",
+        "preferred": true
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Load 1 mcg/kg over 10 min, infusion 0.2-0.7 mcg/kg/h",
+        "notes": "Useful for EP procedures (no respiratory depression)"
+      }
+    ],
+    "drugCautions": [
+      "Heparin 70-100 IU/kg loading IV — target ACT 250-300 sec (PCI), 250-350 (TAVI/MitraClip)",
+      "Bivalirudin alternative if HIT — bolus 0.75 mg/kg + infusion 1.75 mg/kg/h",
+      "Protamine 1 mg per 100 IU residual heparin (slow IV — cap 50 mg single dose)",
+      "Contrast nephropathy prophylaxis: hold ACEi/ARB 24h pre, hold metformin 48h post, IV hydration 1 mL/kg/h",
+      "Antiplatelet continuation (aspirin/clopidogrel) — do NOT stop before PCI",
+      "⚠ Contrast allergy: pre-medicate prednisolone 30 mg PO 13h, 7h, 1h pre + diphenhydramine 50 mg",
+      "Rapid pacing during TAVI deployment → expect transient profound hypotension; ensure phenylephrine/noradrenaline ready",
+      "EP ablation: avoid muscle relaxant beyond intubation (interferes with phrenic nerve testing)"
+    ],
+    "procedureConcerns": [
+      "⚠ Acute haemodynamic deterioration: vasovagal, tamponade (pericardial effusion), VF, dissection, vessel perforation",
+      "⚠ Radiation exposure — wear lead apron + thyroid shield; step back when feasible",
+      "Vascular access complications: haematoma, retroperitoneal bleed, AV fistula, pseudoaneurysm",
+      "TAVI specific: rapid pacing → profound hypotension; paravalvular leak; conduction block (CHB risk)",
+      "MitraClip: TEE-guided — long procedure, risk of TEE injury",
+      "EP ablation: phrenic nerve injury (right-sided), oesophageal injury (LA posterior wall)",
+      "Pacemaker: pneumothorax, cardiac perforation, lead dislodgement",
+      "ICD: inappropriate shocks during testing — adequate sedation essential"
+    ],
+    "equipmentChecklist": [
+      "Defibrillator immediately available + pads applied for EP/VT",
+      "TEE probe + machine (TAVI, MitraClip, LAA)",
+      "Cell saver available (TAVI, MitraClip)",
+      "CPB standby possible (TAVI, lead extraction)",
+      "IABP / Impella available + functional",
+      "Vasopressors drawn up (phenylephrine, noradrenaline)",
+      "Atropine, adrenaline immediately available",
+      "Emergency airway equipment (LMA, ETT) + difficult airway trolley",
+      "Lead aprons + thyroid shields for all team members",
+      "Reversal agents (protamine, sugammadex, naloxone, flumazenil)"
+    ],
+    "recovery": {
+      "criteria": "PCI/EP: arterial puncture site OK, distal pulses present, oriented",
+      "duration": "PCI: 4-6 h bedrest. TAVI/MitraClip: ICU/HDU overnight",
+      "disposition": "Diagnostic CAG: same-day. PCI: 1 night. TAVI/MitraClip: 1-3 nights ICU/HDU",
+      "warnings": "Watch for: arterial site bleeding/haematoma, contrast nephropathy at 48-72h, distal limb ischaemia, conduction block (TAVI)"
+    },
+    "redFlags": [
+      "Severe contrast allergy (anaphylaxis history)",
+      "eGFR < 30 (high contrast nephropathy risk)",
+      "Active bleeding / coagulopathy",
+      "Severe AS with critical low gradient (high TAVI mortality)",
+      "Severe COPD or PHTN (EP ablation under deep sedation risky)",
+      "Cardiogenic shock requiring inotropes",
+      "Recent stroke (< 1 month) — TAVI bridging consideration"
+    ],
+    "specialPopulations": [
+      "Pregnancy — radiation shielding, lead apron over abdomen, time minimisation",
+      "Renal impairment — minimise contrast volume, iso-osmolar contrast",
+      "Severe LV dysfunction — etomidate induction, cautious volume, vasopressor ready",
+      "Pacemaker-dependent — magnet available, programming pre/post for diathermy"
+    ],
+    "references": "ESC TAVI Guidelines 2021; SCAI 2024 Cath Lab Sedation; HRS 2024 EP Procedure Guidelines; Faillace RT et al. JACC 2024"
+  },
+  "vascular_ir": {
+    "id": "vascular_ir",
+    "label": "Vascular IR / Interventional Radiology",
+    "icon": "🩻",
+    "location": "IR suite / hybrid OR",
+    "description": "Endovascular and image-guided interventions",
+    "typicalDuration": "30 min - 4 h",
+    "typicalSetting": "Mostly elective; trauma/bleeding emergent",
+    "procedures": [
+      {
+        "id": "evar",
+        "label": "EVAR (endovascular aortic repair)",
+        "duration": 180,
+        "urgency": "elective"
+      },
+      {
+        "id": "tevar",
+        "label": "TEVAR (thoracic EVAR)",
+        "duration": 240,
+        "urgency": "urgent"
+      },
+      {
+        "id": "fevar-bevar",
+        "label": "FEVAR/BEVAR (complex aortic)",
+        "duration": 300,
+        "urgency": "elective"
+      },
+      {
+        "id": "aaa-rupture",
+        "label": "Ruptured AAA emergency",
+        "duration": 120,
+        "urgency": "emergency"
+      },
+      {
+        "id": "mesenteric-ischaemia",
+        "label": "Mesenteric thrombectomy/stent",
+        "duration": 90,
+        "urgency": "emergency"
+      },
+      {
+        "id": "embolisation-uterine",
+        "label": "Uterine artery embolisation",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "embolisation-bleeding",
+        "label": "GI/postpartum bleed embolisation",
+        "duration": 60,
+        "urgency": "emergency"
+      },
+      {
+        "id": "embolisation-tumour",
+        "label": "Tumour embolisation (TACE)",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "av-fistulogram",
+        "label": "AV fistulogram + angioplasty",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "iliac-stent",
+        "label": "Iliac/femoral stenting",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "thrombolysis",
+        "label": "Catheter-directed thrombolysis (DVT/PE)",
+        "duration": 120,
+        "urgency": "urgent"
+      },
+      {
+        "id": "thrombectomy-stroke",
+        "label": "Mechanical thrombectomy (acute stroke)",
+        "duration": 90,
+        "urgency": "emergency"
+      },
+      {
+        "id": "biopsy-imaging",
+        "label": "Image-guided biopsy",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "drainage-abscess",
+        "label": "Abscess drainage",
+        "duration": 45,
+        "urgency": "urgent"
+      },
+      {
+        "id": "biliary-drainage",
+        "label": "PTC / biliary drainage",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "nephrostomy",
+        "label": "Percutaneous nephrostomy",
+        "duration": 45,
+        "urgency": "urgent"
+      },
+      {
+        "id": "tips",
+        "label": "TIPS (transjugular intrahepatic portosystemic shunt)",
+        "duration": 180,
+        "urgency": "urgent"
+      }
+    ],
+    "techniques": [
+      "Local + monitored sedation (most diagnostic + simple interventions)",
+      "Conscious sedation (embolisation, fistulogram)",
+      "General anaesthesia (EVAR, TEVAR, complex aortic, prolonged supine intolerable)",
+      "Regional + sedation (some peripheral)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Arterial line (EVAR, TEVAR, ruptured aneurysm, prolonged)",
+        "Central line (TEVAR, ruptured, complex aortic)",
+        "Cerebral oximetry (TEVAR with arch involvement)",
+        "CSF drain (TEVAR for spinal cord protection)",
+        "Temperature (long procedures)",
+        "Urinary catheter (long procedures)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam",
+        "dose": "0.02-0.05 mg/kg IV titrated",
+        "notes": "Standard sedation"
+      },
+      {
+        "drug": "Fentanyl",
+        "dose": "25-50 mcg IV titrated",
+        "notes": "Adjunct analgesia"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "TIVA: 25-100 mcg/kg/min",
+        "notes": "Titrate to procedure depth",
+        "preferred": true
+      },
+      {
+        "drug": "Remifentanil",
+        "dose": "0.05-0.2 mcg/kg/min infusion",
+        "notes": "Useful for thrombectomy (need still patient)"
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Load 1 mcg/kg / infusion 0.2-0.7 mcg/kg/h",
+        "notes": "Awake co-operation possible (e.g., stroke thrombectomy)"
+      }
+    ],
+    "drugCautions": [
+      "Heparin systemic: 50-100 IU/kg loading — ACT target 200-300 sec for most cases",
+      "EVAR: heparin only after sheath placement (graft expansion)",
+      "TEVAR: spinal cord protection — MAP ≥ 90 mmHg, CSF drain target < 10 mmHg",
+      "Stroke thrombectomy: BP target SBP 140-180 (avoid hyper- and hypotension)",
+      "Embolisation: pain control (post-embolisation syndrome); fentanyl PCA post-procedure",
+      "Contrast same as Cath Lab — pre-medicate if allergy history"
+    ],
+    "procedureConcerns": [
+      "⚠ Large-bore arterial access (24F EVAR, 22-24F TEVAR) — vascular complications high",
+      "⚠ TEVAR + arch: stroke risk — cerebral oximetry essential",
+      "⚠ TEVAR + thoracic: spinal cord ischaemia (paraplegia) — CSF drain + MAP > 90",
+      "⚠ Ruptured AAA: aggressive resuscitation BUT permissive hypotension SBP 80-100 until clamp",
+      "Post-embolisation syndrome (fever, pain, nausea) — common after TACE/UAE",
+      "Stroke thrombectomy under conscious sedation often preferred (allows neuro assessment)",
+      "Long procedures: pressure injury risk, hypothermia, urinary retention"
+    ],
+    "equipmentChecklist": [
+      "Defibrillator",
+      "Vasopressors (phenylephrine, noradrenaline) drawn",
+      "Vasodilators (nicardipine, labetalol) for hypertensive emergencies",
+      "Mannitol for cerebral protection",
+      "Cell saver (EVAR, TEVAR)",
+      "Rapid infusion device (ruptured AAA)",
+      "Massive transfusion protocol activated (ruptured)",
+      "CSF drain kit (TEVAR)",
+      "Temperature management",
+      "Lead apron + thyroid shield"
+    ],
+    "recovery": {
+      "criteria": "Haemodynamic stable, distal pulses, neuro intact (TEVAR/stroke), arterial puncture controlled",
+      "duration": "EVAR: HDU 24h. TEVAR: ICU 24-72h. Simple IR: 4-6 h",
+      "disposition": "Major aortic: ICU. Embolisation: ward. Diagnostic: same-day discharge",
+      "warnings": "Watch for: graft endoleak, distal embolisation, contrast nephropathy, post-embolisation syndrome, paraplegia signs (TEVAR)"
+    },
+    "redFlags": [
+      "Severe contrast allergy",
+      "eGFR < 30",
+      "Coagulopathy (active bleeding aside from AAA rupture)",
+      "Cardiogenic shock (TEVAR/EVAR risky)",
+      "Recent stroke + need for systemic anticoagulation"
+    ],
+    "references": "SIR Sedation Guidelines 2018; ESVS 2024 Aortic Guidelines; SCAI 2024; AHA Stroke Thrombectomy 2024"
+  },
+  "gi_endoscopy": {
+    "id": "gi_endoscopy",
+    "label": "GI Endoscopy",
+    "icon": "📷",
+    "location": "Endoscopy suite",
+    "description": "Diagnostic and therapeutic upper/lower GI endoscopy",
+    "typicalDuration": "15 min - 2 h",
+    "typicalSetting": "Most outpatient; complex therapeutic inpatient",
+    "procedures": [
+      {
+        "id": "ogd-diagnostic",
+        "label": "OGD (gastroscopy) — diagnostic",
+        "duration": 15,
+        "urgency": "elective"
+      },
+      {
+        "id": "colonoscopy-diagnostic",
+        "label": "Colonoscopy — diagnostic",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "colonoscopy-screening",
+        "label": "Colonoscopy — screening",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "sigmoidoscopy",
+        "label": "Flexible sigmoidoscopy",
+        "duration": 15,
+        "urgency": "elective"
+      },
+      {
+        "id": "ercp",
+        "label": "ERCP (endoscopic retrograde cholangiopancreatography)",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "eus",
+        "label": "EUS (endoscopic ultrasound)",
+        "duration": 45,
+        "urgency": "elective"
+      },
+      {
+        "id": "eus-fna",
+        "label": "EUS + FNA biopsy",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "esd",
+        "label": "ESD (endoscopic submucosal dissection)",
+        "duration": 120,
+        "urgency": "elective"
+      },
+      {
+        "id": "emr",
+        "label": "EMR (endoscopic mucosal resection)",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "poem",
+        "label": "POEM (peroral endoscopic myotomy)",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "variceal-banding",
+        "label": "Variceal banding/sclerotherapy",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "gi-bleed-emergency",
+        "label": "Emergency GI bleed endoscopy",
+        "duration": 60,
+        "urgency": "emergency"
+      },
+      {
+        "id": "foreign-body-removal",
+        "label": "Foreign body removal",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "peg-insertion",
+        "label": "PEG insertion",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "capsule-endoscopy",
+        "label": "Capsule endoscopy",
+        "duration": 15,
+        "urgency": "elective"
+      },
+      {
+        "id": "double-balloon",
+        "label": "Double-balloon enteroscopy",
+        "duration": 90,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "Conscious sedation (most diagnostic — midazolam + fentanyl)",
+      "Deep sedation / TIVA propofol (ERCP, ESD, EMR, complex therapeutic)",
+      "General anaesthesia + intubation (ERCP in high-risk aspiration, POEM, paediatric, prolonged ESD, prone position)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂ (mandatory for moderate/deep sedation per ASA 2018)"
+      ],
+      "additional": [
+        "Arterial line (haemodynamically unstable)",
+        "BIS (deep TIVA prolonged)",
+        "Suction immediately accessible"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam",
+        "dose": "0.02-0.05 mg/kg IV titrated",
+        "notes": "Conscious sedation standard"
+      },
+      {
+        "drug": "Fentanyl",
+        "dose": "25-100 mcg IV titrated",
+        "notes": "Adjunct; cumulative respiratory depression"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 0.5-1 mg/kg, infusion 25-100 mcg/kg/min",
+        "notes": "Deep sedation; rapid recovery — preferred for ERCP/ESD",
+        "preferred": true
+      },
+      {
+        "drug": "Remimazolam",
+        "dose": "Bolus 5 mg, infusion 0.05-0.1 mg/kg/h",
+        "notes": "NEW (2020+) — rapid offset, flumazenil-reversible; emerging standard"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "0.25-0.5 mg/kg IV",
+        "notes": "Adjunct for hypotensive variceal patients"
+      }
+    ],
+    "drugCautions": [
+      "Aspiration risk: NPO 6h solids, 2h clear fluids; suction immediately available",
+      "ERCP in prone position: airway access difficult — consider GA + ETT for high-risk",
+      "Variceal bleed: hypovolaemic — cautious propofol; ketamine adjunct; resuscitate first",
+      "Cirrhotic patients: reduced doses (altered drug clearance, increased sensitivity)",
+      "Elderly: titrate carefully; respiratory depression amplified",
+      "Sleep apnoea: consider CPAP recovery; deep sedation hazardous"
+    ],
+    "procedureConcerns": [
+      "⚠ Hypoxia (most common adverse event in NORA per ASA Closed Claims)",
+      "⚠ Aspiration — particularly upper GI procedures, recent food, GI bleed, gastroparesis",
+      "⚠ Bowel perforation (rare but emergent — peritoneal signs, sudden pain, sepsis)",
+      "Splanchnic absorption: lidocaine throat spray + IV drugs — toxicity risk in young/elderly",
+      "ERCP-specific: pancreatitis post-procedure (3-15%); cholangitis if obstruction not relieved",
+      "POEM: pneumothorax/pneumomediastinum from CO₂ insufflation",
+      "Vagal stimulation during scope passage → bradycardia, hypotension"
+    ],
+    "equipmentChecklist": [
+      "Suction immediately available + functional",
+      "Bag-mask + airway adjuncts (OPA/NPA, LMA)",
+      "Laryngoscope + ETTs (sizes 6.5, 7.0, 7.5)",
+      "Difficult airway equipment",
+      "Defibrillator within reach",
+      "Reversal agents: naloxone 0.4 mg, flumazenil 0.5 mg, sugammadex if rocuronium used",
+      "IV fluids primed",
+      "Vasopressors (ephedrine, phenylephrine)",
+      "Recovery area with O₂ + pulse oximetry"
+    ],
+    "recovery": {
+      "criteria": "Modified Aldrete ≥ 9; PADSS ≥ 9 for outpatient discharge",
+      "duration": "30-60 min for sedation; 1-2 h for deep sedation/GA",
+      "disposition": "Outpatient: home with escort, no driving 24h. ERCP/ESD: often overnight observation",
+      "warnings": "Watch for: delayed bleeding (24-48h), perforation signs (peritonism), post-ERCP pancreatitis (severe abdominal pain + amylase rise), aspiration pneumonitis"
+    },
+    "redFlags": [
+      "Recent food intake (< 6h)",
+      "Active GI bleed — high aspiration risk",
+      "Severe gastroparesis / known retained food",
+      "Severe COPD with hypercapnia (deep sedation risky)",
+      "Severe OSA (CPAP-dependent)",
+      "ASA IV-V — consider GA in OR setting"
+    ],
+    "references": "ASA Practice Guidelines for Moderate Procedural Sedation 2018; BSGE/JAG Sedation Guidelines 2023; ESGE/ESGENA Curriculum 2024"
+  },
+  "tee_lab": {
+    "id": "tee_lab",
+    "label": "TEE Lab",
+    "icon": "🔍",
+    "location": "Echocardiography lab / cardiology",
+    "description": "Diagnostic transoesophageal echo + DC cardioversion",
+    "typicalDuration": "15-45 min",
+    "typicalSetting": "Outpatient or inpatient",
+    "procedures": [
+      {
+        "id": "tee-diagnostic",
+        "label": "Diagnostic TEE",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "tee-cardioversion",
+        "label": "TEE + DC cardioversion (AF)",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "tee-endocarditis",
+        "label": "TEE for endocarditis evaluation",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "cardioversion-only",
+        "label": "DC cardioversion (no TEE)",
+        "duration": 10,
+        "urgency": "urgent"
+      }
+    ],
+    "techniques": [
+      "Conscious sedation (midazolam + fentanyl)",
+      "Deep sedation propofol (most common)",
+      "General anaesthesia + ETT (rare — hostile airway, agitated patient)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Defibrillator pads applied (cardioversion)",
+        "Suction"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 0.5-1 mg/kg",
+        "notes": "Brief deep sedation for TEE probe insertion + cardioversion shock",
+        "preferred": true
+      },
+      {
+        "drug": "Midazolam + Fentanyl",
+        "dose": "1-2 mg + 25-50 mcg",
+        "notes": "Conscious sedation alternative"
+      },
+      {
+        "drug": "Etomidate",
+        "dose": "0.1-0.2 mg/kg",
+        "notes": "Cardioversion in haemodynamic instability"
+      }
+    ],
+    "drugCautions": [
+      "Anticoagulation: AF cardioversion requires LAA thrombus exclusion (TEE) OR ≥ 3 weeks therapeutic anticoag",
+      "Aspiration risk: NPO 6h solids, 2h clear fluids",
+      "Phenylephrine drawn for cardioversion-induced hypotension",
+      "Synchronised shock: 100-200 J biphasic for AF; 50-100 J for atrial flutter"
+    ],
+    "procedureConcerns": [
+      "⚠ Oesophageal injury: perforation rare but devastating (< 0.1%)",
+      "⚠ Dysphagia/odynophagia post-procedure",
+      "Cardioversion: arrhythmia (VF/asystole) — ensure pads + crash cart",
+      "Failed cardioversion: amiodarone load + reattempt",
+      "Awake cardioversion painful — adequate sedation essential"
+    ],
+    "equipmentChecklist": [
+      "Defibrillator (for cardioversion)",
+      "Pads applied prior to sedation",
+      "Suction",
+      "Bag-mask + airway adjuncts",
+      "Bite block (TEE probe protection)",
+      "Reversal agents"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9, no dysphagia/throat pain beyond expected",
+      "duration": "30-60 min",
+      "disposition": "Outpatient discharge with escort; if cardioverted — anticoag plan documented",
+      "warnings": "Watch for: oesophageal pain (perforation), dysphagia, post-cardioversion arrhythmia, embolic stroke"
+    },
+    "redFlags": [
+      "Oesophageal varices (relative — small probe + careful)",
+      "Recent oesophageal/gastric surgery",
+      "Strictures, achalasia",
+      "Active GI bleed",
+      "Inadequate anticoagulation for cardioversion (AF > 48h without proper coverage)"
+    ],
+    "references": "EACVI/ASE TEE Guidelines 2022; ESC AF Guidelines 2024 (cardioversion); BSE Sedation for TEE Guidelines 2022"
+  },
+  "mri_suite": {
+    "id": "mri_suite",
+    "label": "MRI Suite",
+    "icon": "🧲",
+    "location": "Radiology — magnetic environment",
+    "description": "Sedation/anaesthesia for MRI in adults and children",
+    "typicalDuration": "30 min - 2 h",
+    "typicalSetting": "Outpatient mostly; inpatient critically ill rare",
+    "procedures": [
+      {
+        "id": "mri-paeds-sedation",
+        "label": "Paediatric MRI under sedation",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-paeds-ga",
+        "label": "Paediatric MRI under GA",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-adult-claustrophobic",
+        "label": "Adult MRI — claustrophobic/anxiety",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-adult-uncooperative",
+        "label": "Adult MRI — cognitive impairment",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-cardiac",
+        "label": "Cardiac MRI",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-spectroscopy",
+        "label": "MR spectroscopy",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-contrast-anaphylaxis-history",
+        "label": "MRI + contrast (allergy history)",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-guided-biopsy",
+        "label": "MRI-guided biopsy",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "mri-icu-patient",
+        "label": "MRI for ICU patient",
+        "duration": 60,
+        "urgency": "urgent"
+      }
+    ],
+    "techniques": [
+      "Conscious sedation (oral chloral hydrate paeds — historic, less now)",
+      "IV deep sedation (propofol — most common)",
+      "General anaesthesia + LMA or ETT (uncooperative adults, prolonged scans, ICU patients)",
+      "Inhalational induction in paeds (sevoflurane via MR-compatible circuit)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG (MR-compatible)",
+        "NIBP (MR-compatible)",
+        "SpO₂ (fibre-optic)",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Temperature (paeds)",
+        "Cerebral oximetry (cardiac MRI optional)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 1-2 mg/kg, infusion 50-100 mcg/kg/min",
+        "notes": "Standard for adults + paeds",
+        "preferred": true
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Load 1-2 mcg/kg over 10 min, infusion 0.5-1 mcg/kg/h",
+        "notes": "Spontaneous ventilation; minimal motion"
+      },
+      {
+        "drug": "Sevoflurane",
+        "dose": "2-3% maintenance",
+        "notes": "Paeds inhalational induction with MR-compatible vaporiser"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "1-2 mg/kg IV / 4-5 mg/kg IM",
+        "notes": "Paeds combative; avoid in raised ICP"
+      }
+    ],
+    "drugCautions": [
+      "⚠ ALL equipment must be MR-compatible — verify before scan starts",
+      "Long extension tubing for IV (5-10 m) — calculate dead space",
+      "Long ETCO₂ sampling line — increased response delay",
+      "Hypothermia risk in paeds — pre-warm + active warming",
+      "Gadolinium contrast: avoid in eGFR < 30 (NSF risk)",
+      "If anaphylaxis: MOVE PATIENT OUT of MR room before resuscitation (defib MR-incompatible)"
+    ],
+    "procedureConcerns": [
+      "⚠ Magnetic field hazards: ferromagnetic objects projectile risk; pacemaker/ICD interference",
+      "⚠ Distance from anaesthetist — limited access; use MR-compatible monitor + remote viewing",
+      "⚠ Contrast: gadolinium-related anaphylaxis rare but serious",
+      "Burns: ECG leads coiled or with skin contact — risk of RF heating",
+      "Hearing protection essential (noise > 100 dB)",
+      "Loss of motion = scan repeat — sedation depth critical (BIS useful)",
+      "Quench: rare emergency — evacuation, helium asphyxiation risk"
+    ],
+    "equipmentChecklist": [
+      "MR-compatible anaesthesia machine + monitor",
+      "MR-compatible IV pump",
+      "MR-safe stethoscope",
+      "Long IV extension + EtCO₂ sampling line",
+      "MR-safe O₂ + suction + bag-mask",
+      "Emergency drugs in non-ferromagnetic syringes",
+      "Patient transfer trolley to OUT-OF-MAGNET resuscitation area",
+      "Ear protection (patient + staff)",
+      "MR safety check completed (no implants, pacemaker compatibility)"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9, returned to baseline neuro",
+      "duration": "30-60 min for sedation; 1-2 h for GA",
+      "disposition": "Outpatient discharge with escort",
+      "warnings": "Watch for: emergence delirium (paeds with sevo), gadolinium delayed reactions, hypothermia (paeds)"
+    },
+    "redFlags": [
+      "Pacemaker/ICD (unless MR-conditional)",
+      "Cerebral aneurysm clips (older ferromagnetic)",
+      "Cochlear implants",
+      "Recent (< 6 weeks) intraocular foreign body",
+      "eGFR < 30 + gadolinium need",
+      "Severe claustrophobia + GA contraindication",
+      "Critically unstable for transport"
+    ],
+    "specialPopulations": [
+      "Paediatric — most common NORA MRI; consider parent presence at induction",
+      "Critically ill — minimal monitoring possible, ICU transfer protocol",
+      "Pregnancy — gadolinium avoided in 1st trimester; sedation generally safe in 2nd/3rd"
+    ],
+    "references": "ACR-ASNR-SPR Guidelines for MRI Safety 2024; ASA NORA Statement 2024; AAGBI MRI Sedation 2019"
+  },
+  "ct_radiology": {
+    "id": "ct_radiology",
+    "label": "CT / Radiology",
+    "icon": "📡",
+    "location": "CT scanner / radiology suite",
+    "description": "Sedation for CT or general radiology procedures",
+    "typicalDuration": "15-90 min",
+    "typicalSetting": "Outpatient + inpatient",
+    "procedures": [
+      {
+        "id": "ct-paeds-sedation",
+        "label": "Paediatric CT — sedation",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "ct-uncooperative-adult",
+        "label": "Adult CT — uncooperative",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "ct-guided-biopsy",
+        "label": "CT-guided biopsy",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "ct-drainage",
+        "label": "CT-guided drainage",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "ct-rfa-tumour",
+        "label": "CT-guided RFA (tumour)",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "ct-trauma-emergency",
+        "label": "CT trauma — intubated patient",
+        "duration": 30,
+        "urgency": "emergency"
+      }
+    ],
+    "techniques": [
+      "Light sedation (cooperation only)",
+      "Deep sedation (paeds, biopsy, RFA)",
+      "General anaesthesia (RFA prolonged, paeds combative)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Temperature (paeds)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 1-2 mg/kg, infusion 50-100 mcg/kg/min",
+        "notes": "Standard for sedation + biopsy",
+        "preferred": true
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Load 1 mcg/kg / infusion 0.5-1 mcg/kg/h",
+        "notes": "Short procedures, minimal respiratory depression"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "1-2 mg/kg IV",
+        "notes": "Paeds biopsy; airway reflexes preserved"
+      }
+    ],
+    "drugCautions": [
+      "Iodinated contrast: hold metformin 48h post if eGFR < 60",
+      "Contrast nephropathy: hydration 1 mL/kg/h pre/post in CKD",
+      "Severe contrast allergy: pre-medicate prednisolone 30 mg PO 13h, 7h, 1h pre + diphenhydramine",
+      "Breath-hold required for chest CT — adequate sedation depth",
+      "RFA: pain at probe site — opioid analgesia + local anaesthetic infiltration"
+    ],
+    "procedureConcerns": [
+      "⚠ Pneumothorax post-lung biopsy (10-20%) — confirm chest X-ray",
+      "⚠ Bleeding post-liver/kidney biopsy",
+      "⚠ Contrast extravasation",
+      "Distance from anaesthetist during scan — long extensions",
+      "Radiation: lead apron + thyroid shield",
+      "RFA: thermal injury to adjacent structures"
+    ],
+    "equipmentChecklist": [
+      "Suction",
+      "Bag-mask + airway adjuncts",
+      "Defibrillator within reach",
+      "Lead apron + thyroid shield",
+      "Long IV extension",
+      "Reversal agents",
+      "Vasopressors drawn"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9; biopsy/RFA: pain controlled, no bleeding signs",
+      "duration": "30-60 min sedation; 2-4 h post-biopsy observation",
+      "disposition": "Outpatient discharge with escort; biopsy may need overnight if high-risk",
+      "warnings": "Watch for: pneumothorax (lung biopsy), bleeding (liver/kidney), contrast nephropathy at 48-72h"
+    },
+    "redFlags": [
+      "Severe contrast allergy without prophylaxis",
+      "eGFR < 30 (relative)",
+      "Active anticoagulation (biopsy)",
+      "Severe COPD (deep sedation supine)"
+    ],
+    "references": "ASA NORA Statement 2024; ACR Contrast Manual 2024; SIR Sedation 2018"
+  },
+  "bronchoscopy": {
+    "id": "bronchoscopy",
+    "label": "Bronchoscopy Suite",
+    "icon": "🫁",
+    "location": "Pulmonology suite / endoscopy",
+    "description": "Diagnostic and therapeutic bronchoscopy",
+    "typicalDuration": "20-90 min",
+    "typicalSetting": "Outpatient + inpatient",
+    "procedures": [
+      {
+        "id": "flexible-bronch-diagnostic",
+        "label": "Flexible bronchoscopy — diagnostic",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "bal",
+        "label": "Bronchoalveolar lavage (BAL)",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "tbb",
+        "label": "Transbronchial biopsy",
+        "duration": 45,
+        "urgency": "elective"
+      },
+      {
+        "id": "ebus",
+        "label": "EBUS (endobronchial ultrasound)",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "ebus-tbna",
+        "label": "EBUS + TBNA biopsy",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "rigid-bronch",
+        "label": "Rigid bronchoscopy",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "bronch-foreign-body",
+        "label": "Foreign body removal",
+        "duration": 45,
+        "urgency": "urgent"
+      },
+      {
+        "id": "bronch-stent",
+        "label": "Endobronchial stent insertion",
+        "duration": 90,
+        "urgency": "urgent"
+      },
+      {
+        "id": "bronch-cryotherapy",
+        "label": "Cryotherapy / electrocautery",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "bronch-massive-haemoptysis",
+        "label": "Massive haemoptysis bronchoscopy",
+        "duration": 60,
+        "urgency": "emergency"
+      },
+      {
+        "id": "navigational-bronch",
+        "label": "Navigational bronchoscopy",
+        "duration": 90,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "Local + light sedation (flexible diagnostic — midazolam + lidocaine spray)",
+      "Conscious sedation (BAL, TBB)",
+      "Deep sedation TIVA (EBUS — long, motion-sensitive)",
+      "General anaesthesia + ETT/LMA (rigid bronch, stent, cryotherapy, massive haemoptysis)",
+      "Jet ventilation (rigid bronchoscopy specific)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Arterial line (massive haemoptysis, severe respiratory failure)",
+        "BIS (deep sedation)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam + Fentanyl",
+        "dose": "1-3 mg + 25-100 mcg",
+        "notes": "Conscious sedation diagnostic"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 0.5-1 mg/kg, infusion 50-150 mcg/kg/min",
+        "notes": "EBUS, prolonged procedures",
+        "preferred": true
+      },
+      {
+        "drug": "Remifentanil",
+        "dose": "0.05-0.1 mcg/kg/min",
+        "notes": "Useful for ventilator-tolerated GA"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "0.5-1 mg/kg",
+        "notes": "Bronchodilation in asthma"
+      },
+      {
+        "drug": "Lidocaine 4% spray",
+        "dose": "4-5 mL topical",
+        "notes": "Airway anaesthesia — max 4-5 mg/kg total"
+      }
+    ],
+    "drugCautions": [
+      "⚠ Lidocaine total dose — splanchnic absorption + topical add up; max 5 mg/kg (350 mg in 70 kg)",
+      "Aspiration risk: NPO 6h solids, 2h clear fluids",
+      "Asthma/COPD: bronchodilator pre-treatment; ketamine adjunct useful",
+      "Massive haemoptysis: lateral position (bleeding side down); rigid bronchoscopy + tamponade",
+      "EBUS: prolonged motionless period — propofol TIVA preferred over conscious sedation"
+    ],
+    "procedureConcerns": [
+      "⚠ Hypoxia (most common adverse event) — use HFNO 30-50 L/min when possible",
+      "⚠ Bronchospasm — particularly in asthma, COPD",
+      "⚠ Pneumothorax post-TBB (3-5%) — confirm CXR",
+      "⚠ Bleeding post-biopsy (especially TBB, EBUS-TBNA)",
+      "Vagal stimulation → bradycardia, hypotension during scope passage",
+      "Foreign body removal: aspiration risk if dislodged distally",
+      "Rigid bronch: dental injury, vocal cord injury"
+    ],
+    "equipmentChecklist": [
+      "Suction immediately available + functional",
+      "High-flow nasal O₂ available (HFNO)",
+      "Bag-mask + LMA + ETT (sizes 6.5-8.0)",
+      "Difficult airway equipment",
+      "Defibrillator within reach",
+      "Reversal agents (naloxone, flumazenil)",
+      "Bronchoscope-compatible bite block",
+      "Adrenaline for endobronchial bleeding (1:10000 dilution)",
+      "Tranexamic acid (haemoptysis)"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9; gag reflex returned; no respiratory distress",
+      "duration": "30-60 min standard; 2-4 h post-TBB observation",
+      "disposition": "Outpatient discharge with escort; TBB usually overnight if pneumothorax risk",
+      "warnings": "Watch for: pneumothorax (TBB), delayed bleeding, post-procedure fever (BAL — common 24-48h), aspiration"
+    },
+    "redFlags": [
+      "Severe hypoxia at baseline (SpO₂ < 90% on supplemental O₂)",
+      "Severe pulmonary hypertension",
+      "Recent MI (< 6 weeks)",
+      "Active uncontrolled asthma",
+      "Coagulopathy (TBB, EBUS-TBNA)",
+      "Massive haemoptysis without secured airway"
+    ],
+    "references": "BTS Bronchoscopy Guidelines 2013 (updates pending); ACCP/ATS EBUS Guidelines 2020; AAGBI 2019"
+  },
+  "icu_procedures": {
+    "id": "icu_procedures",
+    "label": "ICU Procedures",
+    "icon": "🏥",
+    "location": "Intensive care unit",
+    "description": "Bedside procedures in critically ill patients",
+    "typicalDuration": "15-90 min",
+    "typicalSetting": "Inpatient ICU only",
+    "procedures": [
+      {
+        "id": "percutaneous-tracheostomy",
+        "label": "Percutaneous tracheostomy",
+        "duration": 45,
+        "urgency": "urgent"
+      },
+      {
+        "id": "central-line",
+        "label": "Central venous line insertion",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "arterial-line",
+        "label": "Arterial line insertion",
+        "duration": 15,
+        "urgency": "urgent"
+      },
+      {
+        "id": "chest-drain",
+        "label": "Chest drain insertion",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "pericardiocentesis",
+        "label": "Pericardiocentesis",
+        "duration": 45,
+        "urgency": "emergency"
+      },
+      {
+        "id": "icu-cardioversion",
+        "label": "DC cardioversion (ICU)",
+        "duration": 15,
+        "urgency": "urgent"
+      },
+      {
+        "id": "icu-bronchoscopy",
+        "label": "Bedside bronchoscopy (ICU)",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "icu-tee",
+        "label": "Bedside TEE (ICU)",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "icu-ecmo-cannulation",
+        "label": "ECMO cannulation (bedside)",
+        "duration": 60,
+        "urgency": "emergency"
+      },
+      {
+        "id": "icu-iabp-removal",
+        "label": "IABP removal",
+        "duration": 15,
+        "urgency": "urgent"
+      }
+    ],
+    "techniques": [
+      "Local anaesthesia + minimal sedation (lines, drains)",
+      "Conscious sedation (cardioversion, bronchoscopy)",
+      "Deep sedation + neuromuscular block (tracheostomy, ECMO cannulation)",
+      "TIVA propofol/remifentanil (most ICU procedures)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP/IBP (often arterial line in situ)",
+        "SpO₂",
+        "EtCO₂",
+        "CVP if line in situ"
+      ],
+      "additional": [
+        "Existing ICU monitors (pre-existing)",
+        "Defib pads (ECMO, cardioversion)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 0.5-1 mg/kg, infusion 25-50 mcg/kg/min",
+        "notes": "Most common; titrate to BP",
+        "preferred": true
+      },
+      {
+        "drug": "Remifentanil",
+        "dose": "0.05-0.2 mcg/kg/min",
+        "notes": "Excellent for tracheostomy, line insertion"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "0.5-1 mg/kg IV",
+        "notes": "Haemodynamic instability, asthma; avoid in raised ICP"
+      },
+      {
+        "drug": "Etomidate",
+        "dose": "0.15-0.3 mg/kg IV",
+        "notes": "Cardioversion in unstable patient"
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Often pre-existing in ICU",
+        "notes": "Useful for awake fibre-optic intubation"
+      },
+      {
+        "drug": "Rocuronium",
+        "dose": "0.6-1.2 mg/kg",
+        "notes": "Tracheostomy, ECMO cannulation; reverse with sugammadex"
+      }
+    ],
+    "drugCautions": [
+      "Critically ill — reduced clearance, altered protein binding, drug accumulation",
+      "Renal/hepatic failure: drug dose adjustments mandatory",
+      "Inotropes/vasopressors often pre-existing — anticipate haemodynamic shifts",
+      "Pre-existing ETT — confirm adequate sedation/paralysis before tracheostomy",
+      "Anticoagulation: DOAC/heparin/LMWH timing — bridge if needed for line/drain",
+      "Cardioversion: synchronised 100-200 J biphasic; check K⁺, Mg²⁺, INR pre"
+    ],
+    "procedureConcerns": [
+      "⚠ Haemodynamic instability common — vasopressors immediately ready",
+      "⚠ Tracheostomy: bleeding (anterior jugular, thyroid), tube misplacement, airway loss",
+      "⚠ Central line: pneumothorax (subclavian), arterial puncture, air embolism",
+      "⚠ ECMO cannulation: vessel injury, malposition, recirculation",
+      "Pericardiocentesis: cardiac/coronary perforation; arrhythmia",
+      "Multidisciplinary team essential (intensivist + proceduralist + anaesthetist)"
+    ],
+    "equipmentChecklist": [
+      "Bedside ultrasound (US-guided lines, drains, pericardiocentesis)",
+      "Surgical airway equipment (tracheostomy)",
+      "Difficult airway trolley",
+      "Defibrillator",
+      "Vasopressors drawn + running",
+      "Reversal agents available",
+      "Crash cart",
+      "Lead apron (fluoroscopy if used)"
+    ],
+    "recovery": {
+      "criteria": "Returned to baseline ICU sedation depth; haemodynamics stable",
+      "duration": "Continuous ICU monitoring",
+      "disposition": "Remains in ICU",
+      "warnings": "Watch for: bleeding (tracheostomy, lines), pneumothorax (subclavian, drain), tube displacement, infection"
+    },
+    "redFlags": [
+      "Severe coagulopathy (INR > 2, platelets < 50) for invasive procedures",
+      "Active uncontrolled bleeding",
+      "Severe hypotension on max vasopressors (ECMO consideration)",
+      "Difficult airway + need for general anaesthesia"
+    ],
+    "references": "SCCM ICU Procedure Guidelines 2023; ANZICS Tracheostomy Guidelines 2020; ELSO ECMO Cannulation 2024"
+  },
+  "dental": {
+    "id": "dental",
+    "label": "Dental / Oral Surgery",
+    "icon": "🦷",
+    "location": "Dental clinic / oral surgery suite",
+    "description": "Sedation/GA for dental procedures",
+    "typicalDuration": "30-90 min",
+    "typicalSetting": "Outpatient mostly; complex/paeds may be inpatient",
+    "procedures": [
+      {
+        "id": "dental-extraction-multiple",
+        "label": "Multiple dental extractions",
+        "duration": 45,
+        "urgency": "elective"
+      },
+      {
+        "id": "wisdom-teeth",
+        "label": "Wisdom teeth removal",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "dental-paeds",
+        "label": "Paediatric dental surgery",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "dental-implant",
+        "label": "Dental implant placement",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "dental-special-needs",
+        "label": "Dental for special needs adult",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "oral-biopsy",
+        "label": "Oral biopsy",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "orthognathic",
+        "label": "Orthognathic surgery",
+        "duration": 240,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "Local anaesthesia + light oral/IV sedation (most adult)",
+      "Inhalational sedation (N₂O — paeds friendly)",
+      "Deep IV sedation (multiple extractions, anxious adult)",
+      "General anaesthesia + nasal intubation (paeds, complex, special needs)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂"
+      ],
+      "additional": [
+        "Throat pack (essential — count in/out)",
+        "Temperature (paeds)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam",
+        "dose": "Oral 0.5 mg/kg paeds (max 20 mg) / IV 0.02-0.05 mg/kg",
+        "notes": "Anxiolysis"
+      },
+      {
+        "drug": "Sevoflurane",
+        "dose": "2-3% maintenance",
+        "notes": "Paeds inhalational induction; nasal mask"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 1-2 mg/kg, infusion 50-150 mcg/kg/min",
+        "notes": "TIVA for IV sedation/GA",
+        "preferred": true
+      },
+      {
+        "drug": "N₂O 30-50% in O₂",
+        "dose": "Inhalational",
+        "notes": "Paeds anxiolysis adjunct"
+      }
+    ],
+    "drugCautions": [
+      "Throat pack ESSENTIAL — count IN/OUT, document",
+      "Shared airway with surgeon — communication critical",
+      "Lidocaine for local: max 4.4 mg/kg with adrenaline (300 mg adult); 7 mg/kg with adrenaline absolute max",
+      "Articaine (popular dental LA): max 7 mg/kg with adrenaline",
+      "Adrenaline-containing LA: limit to 0.2 mg total in cardiac patients",
+      "Aspiration risk from blood/saliva in pharynx — head-down + suction",
+      "Paeds: weight-based dosing essential; consider rectal/oral pre-medication"
+    ],
+    "procedureConcerns": [
+      "⚠ Shared airway — clear communication with dental team",
+      "⚠ Aspiration of blood, debris, broken instruments",
+      "⚠ Throat pack retention (sentinel event)",
+      "⚠ Nasotracheal tube for prolonged surgery — RAE preferred",
+      "Postoperative bleeding — pressure + adrenaline-soaked gauze",
+      "Trismus — limits airway access",
+      "PONV high incidence (swallowed blood) — ondansetron + dexamethasone"
+    ],
+    "equipmentChecklist": [
+      "Suction × 2 (anaesthetic + dental)",
+      "Throat pack (count in/out — document)",
+      "Bite block / mouth prop",
+      "Nasal RAE tube (if nasal intubation planned)",
+      "Difficult airway equipment",
+      "PONV prophylaxis drawn",
+      "Defibrillator within reach"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9; pain controlled; no active bleeding",
+      "duration": "30-60 min",
+      "disposition": "Outpatient discharge with escort; soft diet; analgesia plan",
+      "warnings": "Watch for: post-op bleeding, swelling/airway compromise, PONV, dental pain, dry socket (extraction)"
+    },
+    "redFlags": [
+      "Severe trismus (limited mouth opening)",
+      "Difficult airway predictors (Mallampati IV, micrognathia, syndromes)",
+      "Cardiac history with required adrenaline-LA",
+      "Severe COPD/asthma (sedation depth)",
+      "Bleeding diathesis without correction"
+    ],
+    "specialPopulations": [
+      "Paediatric — most common population; consider parent presence",
+      "Special needs adult — pre-procedure assessment essential",
+      "Pregnancy — local + minimal sedation preferred 2nd trimester"
+    ],
+    "references": "SAAD UK Dental Sedation 2020; AAPD Behavior Guidance 2023; AAOMS Anesthesia Practice 2024"
+  },
+  "pain_clinic": {
+    "id": "pain_clinic",
+    "label": "Pain Clinic",
+    "icon": "💉",
+    "location": "Pain medicine clinic / fluoroscopy suite",
+    "description": "Interventional pain management procedures",
+    "typicalDuration": "15-60 min",
+    "typicalSetting": "Outpatient",
+    "procedures": [
+      {
+        "id": "epidural-steroid-cervical",
+        "label": "Cervical epidural steroid injection",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "epidural-steroid-lumbar",
+        "label": "Lumbar epidural steroid injection",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "transforaminal-injection",
+        "label": "Transforaminal injection",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "facet-joint-injection",
+        "label": "Facet joint injection",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "rfa-spine",
+        "label": "Spinal RFA (medial branch)",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "sacroiliac-injection",
+        "label": "SI joint injection",
+        "duration": 30,
+        "urgency": "elective"
+      },
+      {
+        "id": "sympathetic-block",
+        "label": "Sympathetic block (stellate, lumbar)",
+        "duration": 45,
+        "urgency": "elective"
+      },
+      {
+        "id": "celiac-plexus-block",
+        "label": "Coeliac plexus block (cancer pain)",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "spinal-cord-stimulator",
+        "label": "SCS trial / implant",
+        "duration": 90,
+        "urgency": "elective"
+      },
+      {
+        "id": "intrathecal-pump",
+        "label": "Intrathecal pump implant",
+        "duration": 120,
+        "urgency": "elective"
+      },
+      {
+        "id": "vertebroplasty",
+        "label": "Vertebroplasty / kyphoplasty",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "trigger-point",
+        "label": "Trigger point injection",
+        "duration": 15,
+        "urgency": "elective"
+      }
+    ],
+    "techniques": [
+      "Local anaesthesia only (most simple injections)",
+      "Light IV sedation (anxious patients)",
+      "Conscious sedation (RFA, SCS, vertebroplasty)",
+      "General anaesthesia (intrathecal pump, prolonged procedures)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG",
+        "NIBP",
+        "SpO₂",
+        "EtCO₂ (sedation)"
+      ],
+      "additional": [
+        "Fluoroscopy with lead protection"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Midazolam",
+        "dose": "1-3 mg IV titrated",
+        "notes": "Anxiolysis; avoid for blocks needing patient response",
+        "preferred": true
+      },
+      {
+        "drug": "Fentanyl",
+        "dose": "25-100 mcg IV",
+        "notes": "Procedural analgesia"
+      },
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 0.5-1 mg/kg, infusion 25-50 mcg/kg/min",
+        "notes": "RFA, SCS implant"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "0.25-0.5 mg/kg subanaesthetic",
+        "notes": "Adjunct for chronic pain (CRPS)"
+      }
+    ],
+    "drugCautions": [
+      "⚠ ASRA Anticoagulation Guidelines 2018 STRICT — neuraxial procedures",
+      "Aspirin: continue most procedures (low risk)",
+      "Clopidogrel: hold 7 days for high-risk neuraxial (epidural steroid lumbar OK)",
+      "Warfarin: hold 5 days, INR < 1.4",
+      "DOACs: hold 24-48h based on eGFR + procedure risk",
+      "LMWH: prophylactic — last dose 12h prior; therapeutic — 24h prior",
+      "Steroid (depo-medrol, triamcinolone): max 80 mg single injection",
+      "Avoid particulate steroids in cervical transforaminal (stroke risk)",
+      "Local anaesthetic doses — standard LA toxicity rules apply"
+    ],
+    "procedureConcerns": [
+      "⚠ Intravascular injection (particulate steroid → stroke/spinal cord infarct in cervical transforaminal)",
+      "⚠ Dural puncture → headache, total spinal anaesthesia",
+      "⚠ Epidural haematoma if anticoagulation inadequately held",
+      "⚠ Infection — strict asepsis, masks, gowns",
+      "Vasovagal syncope common during procedure",
+      "Allergy: contrast (some procedures use), local anaesthetic",
+      "RFA: thermal injury to nerves; transient neuritis",
+      "SCS: lead migration, pain at IPG site"
+    ],
+    "equipmentChecklist": [
+      "Defibrillator within reach",
+      "Bag-mask + airway adjuncts",
+      "Intralipid 20% (LA toxicity rescue)",
+      "Reversal agents",
+      "Vasopressors drawn",
+      "Sterile field equipment",
+      "Lead apron + thyroid shield",
+      "Anaphylaxis kit (contrast)"
+    ],
+    "recovery": {
+      "criteria": "Aldrete ≥ 9; ambulatory; no neuro deficit; injection site OK",
+      "duration": "30-60 min observation",
+      "disposition": "Outpatient discharge with escort; written instructions",
+      "warnings": "Watch for: epidural haematoma signs (back pain + neuro deficit URGENT MRI), post-dural puncture headache, infection (3-7 days), worsening pain"
+    },
+    "redFlags": [
+      "Anticoagulation not held per ASRA",
+      "Active infection at injection site",
+      "Severe contrast allergy",
+      "Coagulopathy (INR > 1.5, platelets < 75)",
+      "Severe stenosis at injection level (cord at risk)"
+    ],
+    "references": "ASRA Anticoagulation Guidelines 2018; ASRA Pain Medicine Sedation 2023; SIS 2024 Practice Guidelines"
+  },
+  "neonatal_paeds": {
+    "id": "neonatal_paeds",
+    "label": "Neonatal / Paediatric Off-floor",
+    "icon": "👶",
+    "location": "NICU / PICU / paediatric IR",
+    "description": "Procedures in neonates and children outside OR",
+    "typicalDuration": "30-90 min",
+    "typicalSetting": "Inpatient — NICU/PICU",
+    "procedures": [
+      {
+        "id": "paeds-mri",
+        "label": "Paediatric MRI under sedation",
+        "duration": 60,
+        "urgency": "elective"
+      },
+      {
+        "id": "paeds-ct",
+        "label": "Paediatric CT under sedation",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-cardiac-cath",
+        "label": "Paediatric cardiac catheterisation",
+        "duration": 120,
+        "urgency": "urgent"
+      },
+      {
+        "id": "neonatal-ligation-pda",
+        "label": "Neonatal PDA ligation (bedside)",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-ir-procedure",
+        "label": "Paediatric IR procedure",
+        "duration": 60,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-bone-marrow",
+        "label": "Paediatric bone marrow biopsy",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-lp",
+        "label": "Paediatric lumbar puncture",
+        "duration": 20,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-radiotherapy",
+        "label": "Paediatric radiotherapy under GA",
+        "duration": 30,
+        "urgency": "urgent"
+      },
+      {
+        "id": "paeds-burn-dressing",
+        "label": "Paediatric burn dressing change",
+        "duration": 45,
+        "urgency": "urgent"
+      }
+    ],
+    "techniques": [
+      "Inhalational induction sevoflurane (paeds standard)",
+      "IV induction propofol (older child)",
+      "Ketamine IM (uncooperative; vascular access difficult)",
+      "Dexmedetomidine intranasal (procedural anxiolysis)",
+      "Awake sedation neonate (often inadequate — consider GA)",
+      "Caudal/regional adjunct (paeds GA standard)"
+    ],
+    "monitoring": {
+      "required": [
+        "ECG (paeds-sized)",
+        "NIBP (paeds cuff)",
+        "SpO₂ (neonatal probe)",
+        "EtCO₂",
+        "Temperature (essential)"
+      ],
+      "additional": [
+        "Pre-ductal SpO₂ (neonate)",
+        "Cerebral oximetry (cardiac surgery)",
+        "Glucose monitoring (neonate)"
+      ]
+    },
+    "inductionAgents": [
+      {
+        "drug": "Sevoflurane",
+        "dose": "Inhalational up to 8% induction",
+        "notes": "Paeds standard induction; smooth",
+        "preferred": true
+      },
+      {
+        "drug": "Propofol",
+        "dose": "Bolus 2-3 mg/kg (higher in paeds), infusion 100-200 mcg/kg/min",
+        "notes": "Paeds higher doses; risk of propofol infusion syndrome in prolonged use"
+      },
+      {
+        "drug": "Ketamine",
+        "dose": "IV 1-2 mg/kg / IM 4-5 mg/kg",
+        "notes": "Combative paeds, no IV access"
+      },
+      {
+        "drug": "Dexmedetomidine",
+        "dose": "Intranasal 1-2 mcg/kg / IV load 1 mcg/kg",
+        "notes": "Anxiolysis, MRI sedation"
+      },
+      {
+        "drug": "Atropine",
+        "dose": "0.02 mg/kg (min 0.1 mg)",
+        "notes": "Pre-medication for bradycardia prevention"
+      }
+    ],
+    "drugCautions": [
+      "Weight-based dosing CRITICAL — verify with second clinician",
+      "Sevoflurane: emergence delirium 30% — consider clonidine 1 mcg/kg or dexmedetomidine",
+      "Propofol infusion syndrome — avoid > 4 mg/kg/h for > 48h",
+      "Ketamine: avoid in raised ICP, age < 3 months",
+      "Caudal block: bupivacaine 0.25% 0.5 mL/kg (sacral) up to 1 mL/kg (mid-thoracic). ⚠ MAX 2 mg/kg total — verify volume × concentration ≤ 2 mg/kg before injection",
+      "Neonate: hypoglycaemia risk — IV dextrose 4-6 mg/kg/min",
+      "Hypothermia: pre-warm room, blankets, warm IV fluids, active warming",
+      "Air embolism: meticulous IV de-airing"
+    ],
+    "procedureConcerns": [
+      "⚠ Hypothermia — neonates lose heat rapidly",
+      "⚠ Hypoglycaemia in neonates — check glucose hourly",
+      "⚠ Difficult IV access — consider IO if emergency",
+      "⚠ Difficult airway: large head, large tongue, cephalad larynx",
+      "Aspiration: gastric volume often higher proportionally",
+      "PONV: ondansetron 0.15 mg/kg + dexamethasone 0.15 mg/kg",
+      "Emergence delirium with sevo — clonidine prophylaxis useful",
+      "Pain assessment: FLACC scale (preverbal), Wong-Baker FACES"
+    ],
+    "equipmentChecklist": [
+      "Paeds-sized: ETT (cuffed and uncuffed sizes), LMA, masks, OPA/NPA",
+      "Paeds laryngoscope (Miller blade for neonate, Macintosh older)",
+      "Bag-mask (paeds size + mask size)",
+      "Paeds defibrillator + paeds pads",
+      "Paeds emergency drugs (weight-based pre-calculated)",
+      "IO needle + drill",
+      "Active warming (forced air, fluid warmer, overhead heater for neonate)",
+      "Paeds suction (low-pressure)",
+      "Glucose monitoring + IV dextrose",
+      "Parent present at induction option (if appropriate)"
+    ],
+    "recovery": {
+      "criteria": "Modified Aldrete (paeds-adjusted); awake + age-appropriate response; pain controlled",
+      "duration": "30-60 min for procedural sedation; 1-2 h for GA",
+      "disposition": "Discharge per protocol — escort, fluid intake, urination",
+      "warnings": "Watch for: emergence delirium, hypothermia, hypoglycaemia, post-op vomiting, pain"
+    },
+    "redFlags": [
+      "Severe congenital heart disease without cardiac anaesthesia expertise",
+      "Recent URI in young child (< 4 weeks) — bronchospasm risk",
+      "Difficult airway syndromes (Pierre Robin, Treacher Collins)",
+      "Severe prematurity / former preterm with apnoea history (< 60 weeks PCA)",
+      "Active infection requiring transfer to OR",
+      "Lack of paediatric expertise on-site"
+    ],
+    "specialPopulations": [
+      "Neonate (< 28 days) — specialist neonatal anaesthetist preferred",
+      "Ex-premature — apnoea monitoring 12-24h post-procedure if < 60 weeks PCA",
+      "Down syndrome — atlanto-axial instability, OSA, congenital heart",
+      "Cerebral palsy — GORD risk, respiratory compromise"
+    ],
+    "references": "APAGBI Guidelines 2024; SAMBA Paediatric Sedation 2023; AAP Sedation 2019; APA UK 2024"
+  }
+}

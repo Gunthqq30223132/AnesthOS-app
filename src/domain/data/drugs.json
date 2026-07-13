@@ -1,0 +1,2312 @@
+{
+  "midazolam": {
+    "name": "Midazolam",
+    "class": "Benzodiazepine",
+    "phase": "pre-induction",
+    "routes": [
+      "IV",
+      "IM",
+      "PO"
+    ],
+    "adult": {
+      "dose": [
+        0.02,
+        0.04
+      ],
+      "unit": "mg/kg",
+      "max": 2,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.5,
+        0.75
+      ],
+      "unit": "mg/kg",
+      "max": 15,
+      "route": "PO",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Respiratory depression",
+      "Elderly — reduce dose",
+      "Avoid in severe COPD"
+    ]
+  },
+  "ranitidine": {
+    "name": "Ranitidine",
+    "class": "H2 antagonist (aspiration prophylaxis)",
+    "phase": "pre-induction",
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "adult": {
+      "dose": [
+        50,
+        50
+      ],
+      "unit": "mg",
+      "max": 50,
+      "route": "IV slow",
+      "weightBasis": null
+    },
+    "cautions": [
+      "Dilute and give slowly"
+    ]
+  },
+  "sodium_citrate": {
+    "name": "Sodium citrate 0.3 M",
+    "class": "Non-particulate antacid",
+    "phase": "pre-induction",
+    "routes": [
+      "PO"
+    ],
+    "adult": {
+      "dose": [
+        30,
+        30
+      ],
+      "unit": "mL",
+      "max": 30,
+      "route": "PO",
+      "weightBasis": null
+    },
+    "indications": [
+      "Pre-CS aspiration prophylaxis"
+    ]
+  },
+  "dexamethasone": {
+    "name": "Dexamethasone",
+    "class": "Corticosteroid (antiemetic, anti-oedema)",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        4,
+        8
+      ],
+      "unit": "mg",
+      "max": 8,
+      "route": "IV",
+      "weightBasis": null
+    },
+    "paediatric": {
+      "dose": [
+        0.1,
+        0.15
+      ],
+      "unit": "mg/kg",
+      "max": 8,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Hyperglycaemia in diabetics",
+      "Delayed onset (30 min)"
+    ]
+  },
+  "ondansetron": {
+    "name": "Ondansetron",
+    "class": "5-HT3 antagonist",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        4,
+        4
+      ],
+      "unit": "mg",
+      "max": 4,
+      "route": "IV",
+      "weightBasis": null
+    },
+    "paediatric": {
+      "dose": [
+        0.1,
+        0.15
+      ],
+      "unit": "mg/kg",
+      "max": 4,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "QT prolongation",
+      "Avoid with other QT-prolonging drugs"
+    ]
+  },
+  "propofol": {
+    "name": "Propofol",
+    "class": "IV induction agent",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        1.5,
+        2.5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "LBW"
+    },
+    "paediatric": {
+      "dose": [
+        2.5,
+        3.5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "neonate": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV slow",
+      "weightBasis": "TBW",
+      "note": "Neonate (≤28 d): START LOW at 1 mg/kg, titrate up — 2 mg/kg or higher causes profound, prolonged hypotension (de Kort 2020, Acta Paediatr; Smits 2016 dose-finding study). Prefer fentanyl + low-dose propofol over single-bolus induction."
+    },
+    "infant": {
+      "dose": [
+        2.5,
+        4
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "elderly": {
+      "dose": [
+        1,
+        1.5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "LBW"
+    },
+    "cautions": [
+      "Hypotension (reduce dose in hypovolaemia, elderly, cardiac disease)",
+      "Egg/soy allergy",
+      "Propofol infusion syndrome if prolonged high-dose",
+      "Avoid prolonged infusion in young children (PRIS)"
+    ]
+  },
+  "thiopental": {
+    "name": "Thiopental (Thiopentone)",
+    "class": "Barbiturate induction",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        3,
+        5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "LBW"
+    },
+    "paediatric": {
+      "dose": [
+        5,
+        7
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "infant": {
+      "dose": [
+        5,
+        8
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW",
+      "note": "Infants require slightly higher mg/kg dose than adults due to larger volume of distribution"
+    },
+    "neonate": {
+      "dose": [
+        2,
+        4
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV slow",
+      "weightBasis": "TBW",
+      "note": "Neonates: reduced dose due to immature hepatic metabolism and greater CNS sensitivity"
+    },
+    "elderly": {
+      "dose": [
+        1.5,
+        3
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "LBW",
+      "note": "Reduced dose in elderly; titrate slowly"
+    },
+    "contraindications": [
+      "Porphyria (absolute — acute attack risk)"
+    ],
+    "cautions": [
+      "Porphyria — absolute contraindication",
+      "Hypotension (especially in hypovolaemia)",
+      "Histamine release",
+      "Laryngospasm at light planes",
+      "Tissue necrosis with extravasation"
+    ]
+  },
+  "ketamine": {
+    "name": "Ketamine",
+    "class": "NMDA antagonist",
+    "phase": "induction",
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "adult_im": {
+      "dose": [
+        4,
+        10
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IM",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "contraindications": [
+      "Uncontrolled hypertension",
+      "Severe aortic stenosis",
+      "Recent MI with active angina"
+    ],
+    "cautions": [
+      "Raised ICP — historically contraindicated, but modern evidence (Zeiler 2014 systematic review; Brain Trauma Foundation 2017) shows ICP is NOT raised in ventilated patients with controlled PaCO₂. Use cautiously in TBI requiring sedation.",
+      "Psychomimetic emergence — co-administer benzodiazepine",
+      "Tachycardia, hypertension (sympathomimetic) — useful in haemodynamic instability/hypovolaemic shock",
+      "Severe ischaemic heart disease — caution (increased myocardial O₂ demand)",
+      "Aortic/mitral stenosis — avoid (tachycardia reduces diastolic filling)",
+      "Pre-eclampsia, phaeochromocytoma, thyrotoxicosis — avoid (sympathetic surge)",
+      "Useful in asthma (bronchodilator) and trauma analgesia at sub-anaesthetic doses (0.1–0.5 mg/kg)"
+    ]
+  },
+  "etomidate": {
+    "name": "Etomidate",
+    "class": "Imidazole induction",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.2,
+        0.3
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Adrenal suppression (single dose — clinical significance debated)",
+      "Myoclonus",
+      "Haemodynamically stable — useful in cardiac patients"
+    ]
+  },
+  "fentanyl": {
+    "name": "Fentanyl",
+    "class": "Opioid",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        3
+      ],
+      "unit": "mcg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "LBW"
+    },
+    "paediatric": {
+      "dose": [
+        1,
+        3
+      ],
+      "unit": "mcg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "neonate": {
+      "dose": [
+        0.5,
+        2
+      ],
+      "unit": "mcg/kg",
+      "max": null,
+      "route": "IV slow",
+      "weightBasis": "TBW",
+      "note": "Neonate: reduced dose due to post-op apnoea risk (ex-preterm especially); consider omitting"
+    },
+    "infant": {
+      "dose": [
+        0.5,
+        2
+      ],
+      "unit": "mcg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW",
+      "note": "Infant: titrate carefully — apnoea risk"
+    },
+    "cautions": [
+      "Respiratory depression",
+      "Chest wall rigidity at high doses",
+      "Reduce in OSA, elderly, neonates"
+    ]
+  },
+  "sufentanil": {
+    "name": "Sufentanil",
+    "class": "Opioid",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.25,
+        1
+      ],
+      "unit": "mcg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "High potency — respiratory depression"
+    ]
+  },
+  "remifentanil": {
+    "name": "Remifentanil",
+    "class": "Opioid (ultra-short acting)",
+    "phase": "maintenance",
+    "routes": [
+      "IV infusion"
+    ],
+    "adult": {
+      "dose": [
+        0.05,
+        0.3
+      ],
+      "unit": "mcg/kg/min",
+      "max": null,
+      "route": "IV infusion",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Bradycardia",
+      "Rebound hyperalgesia — plan transition analgesia before stopping"
+    ],
+    "lowResourceAlternative": {
+      "drugId": "fentanyl",
+      "reason": "Remifentanil unavailable / cost-prohibitive in many LMIC formularies",
+      "note": "Fentanyl in titrated boluses (1–2 mcg/kg loading, 25–50 mcg top-ups) is the established alternative. Plan early transition analgesia (longer half-life means accumulation over long cases). For procedures requiring rapid recovery, consider lower-dose fentanyl + local infiltration / regional block."
+    }
+  },
+  "morphine": {
+    "name": "Morphine",
+    "class": "Opioid",
+    "phase": "emergence",
+    "routes": [
+      "IV",
+      "IM",
+      "SC"
+    ],
+    "adult": {
+      "dose": [
+        0.1,
+        0.2
+      ],
+      "unit": "mg/kg",
+      "max": 15,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.05,
+        0.1
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Active metabolite (M6G) — accumulates in renal failure",
+      "Histamine release",
+      "Respiratory depression"
+    ]
+  },
+  "pethidine": {
+    "name": "Pethidine (Meperidine)",
+    "class": "Opioid",
+    "phase": "emergence",
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        0.5,
+        1
+      ],
+      "unit": "mg/kg",
+      "max": 100,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Norpethidine accumulation — seizures in renal failure",
+      "Avoid with MAOIs — serotonin syndrome",
+      "Useful for post-op shivering"
+    ]
+  },
+  "suxamethonium": {
+    "name": "Suxamethonium (Succinylcholine)",
+    "class": "Depolarising NMB",
+    "phase": "induction",
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        1.5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "adult_im": {
+      "dose": [
+        3,
+        4
+      ],
+      "unit": "mg/kg",
+      "max": 150,
+      "route": "IM",
+      "weightBasis": "TBW",
+      "note": "IM dose only when IV access unavailable; onset 3-4 min vs 60 s IV; max 150 mg total"
+    },
+    "paediatric": {
+      "dose": [
+        1.5,
+        2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "paediatric_im": {
+      "dose": [
+        4,
+        4
+      ],
+      "unit": "mg/kg",
+      "max": 150,
+      "route": "IM",
+      "weightBasis": "TBW",
+      "note": "IM dose: 4 mg/kg, onset 3-4 min — emergency use when no IV access; max 150 mg"
+    },
+    "infant": {
+      "dose": [
+        2,
+        2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW",
+      "note": "Infants need higher mg/kg dose due to larger volume of distribution; pretreat with atropine 20 mcg/kg to prevent bradycardia"
+    },
+    "neonate": {
+      "dose": [
+        2,
+        3
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW",
+      "note": "Neonate: higher mg/kg required; MANDATORY atropine pretreatment 20 mcg/kg (severe bradycardia/asystole risk)"
+    },
+    "contraindications": [
+      "Malignant hyperthermia susceptibility",
+      "Hyperkalaemia (K⁺ > 5.5)",
+      "Duchenne / muscular dystrophy (rhabdomyolysis)",
+      "Burns / crush injury > 24 h post-injury (denervation, upregulated receptors)",
+      "Pseudocholinesterase deficiency",
+      "Open globe / penetrating eye injury",
+      "Recent stroke or spinal cord injury > 48 h",
+      "Chronic neuromuscular disease (ALS, MS exacerbation)"
+    ],
+    "cautions": [
+      "Bradycardia (MANDATORY atropine 20 mcg/kg pretreat in children < 5 y and for repeat doses at any age)",
+      "Fasciculations, myalgia 24-48 h post-op",
+      "Increased intraocular/intracranial/intragastric pressure (transient)",
+      "Hyperkalaemia rise ~0.5 mEq/L (avoid if baseline K⁺ > 5)",
+      "Anaphylaxis risk higher than other NMBs (1 in 2000-5000)",
+      "Masseter spasm (early sign of MH in susceptible)",
+      "Phase II block with repeated doses or infusion"
+    ]
+  },
+  "rocuronium": {
+    "name": "Rocuronium",
+    "class": "Non-depolarising NMB (aminosteroid)",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.6,
+        1.2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.6,
+        1
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "rsi_dose": {
+      "dose": [
+        1.2,
+        1.2
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Reversal: sugammadex 2–16 mg/kg IV depending on depth",
+      "Prolonged in hepatic/renal disease"
+    ],
+    "lowResourceAlternative": {
+      "drugId": "atracurium",
+      "reason": "Rocuronium more expensive; many LMIC formularies stock atracurium as primary aminosteroid alternative",
+      "note": "Atracurium 0.4–0.5 mg/kg has slower onset (3–4 min vs 60 s for rocuronium) — NOT a direct RSI substitute. For RSI in low-resource settings where rocuronium is unavailable, suxamethonium 1.5 mg/kg remains the standard. Atracurium has Hofmann elimination — favourable in renal/hepatic disease — but causes histamine release."
+    }
+  },
+  "atracurium": {
+    "name": "Atracurium",
+    "class": "Non-depolarising NMB (benzylisoquinolinium)",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.4,
+        0.5
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Hofmann elimination — useful in renal/hepatic failure",
+      "Histamine release"
+    ]
+  },
+  "cisatracurium": {
+    "name": "Cisatracurium",
+    "class": "Non-depolarising NMB",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.15,
+        0.2
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Organ-independent elimination — ideal for ICU/renal/hepatic failure"
+    ],
+    "lowResourceAlternative": {
+      "drugId": "atracurium",
+      "reason": "Cisatracurium often unavailable in LMIC; atracurium offers similar Hofmann elimination",
+      "note": "Atracurium 0.4–0.5 mg/kg shares organ-independent Hofmann elimination — good substitute for ICU/renal/hepatic failure patients. Main difference: atracurium causes more histamine release (avoid in haemodynamically marginal patients and severe asthma)."
+    }
+  },
+  "vecuronium": {
+    "name": "Vecuronium",
+    "class": "Non-depolarising NMB",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.08,
+        0.1
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV",
+      "weightBasis": "IBW"
+    },
+    "cautions": [
+      "Hepatic elimination — prolonged in liver disease"
+    ]
+  },
+  "neostigmine": {
+    "name": "Neostigmine",
+    "class": "Acetylcholinesterase inhibitor (reversal)",
+    "phase": "emergence",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.04,
+        0.07
+      ],
+      "unit": "mg/kg",
+      "max": 3,
+      "route": "IV",
+      "weightBasis": "IBW",
+      "note": "Cap at 3 mg (Miller) — higher doses risk cholinergic crisis"
+    },
+    "cautions": [
+      "Co-administer glycopyrrolate (10–15 mcg/kg) or atropine (20 mcg/kg) to prevent bradycardia",
+      "Only when TOF ≥ 2 twitches",
+      "Can worsen bronchospasm",
+      "Max 3 mg total"
+    ]
+  },
+  "sugammadex": {
+    "name": "Sugammadex",
+    "class": "Selective relaxant binding agent",
+    "phase": "emergence",
+    "routes": [
+      "IV"
+    ],
+    "adult_deep": {
+      "dose": [
+        4,
+        4
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "TBW",
+      "indication": "Deep block (PTC 1–2)"
+    },
+    "adult_moderate": {
+      "dose": [
+        2,
+        2
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "TBW",
+      "indication": "Moderate block (TOF ≥ 2)"
+    },
+    "adult_rescue": {
+      "dose": [
+        16,
+        16
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "TBW",
+      "indication": "Immediate reversal after rocuronium 1.2 mg/kg"
+    },
+    "cautions": [
+      "Works only for rocuronium/vecuronium",
+      "Reduces efficacy of hormonal contraception × 7 days",
+      "Dose depends on TOF/PTC depth at time of reversal"
+    ],
+    "lowResourceAlternative": {
+      "drugId": "neostigmine",
+      "reason": "Sugammadex unavailable / unaffordable",
+      "note": "Neostigmine + glycopyrrolate (or atropine) is the established reversal where sugammadex is not on formulary. Requires TOF ≥ 2 twitches. Cannot achieve immediate reversal — wait for spontaneous recovery to TOF ≥ 2 before administration. Do NOT use after rocuronium 1.2 mg/kg RSI dose for at least 30–45 min."
+    }
+  },
+  "glycopyrrolate": {
+    "name": "Glycopyrrolate",
+    "class": "Antimuscarinic",
+    "phase": "emergence",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.01,
+        0.015
+      ],
+      "unit": "mg/kg",
+      "max": 0.6,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Co-administered with neostigmine"
+    ]
+  },
+  "atropine": {
+    "name": "Atropine",
+    "class": "Antimuscarinic",
+    "phase": "induction",
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        0.01,
+        0.02
+      ],
+      "unit": "mg/kg",
+      "max": 1,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.02,
+        0.02
+      ],
+      "unit": "mg/kg",
+      "max": 0.6,
+      "min": 0.1,
+      "route": "IV",
+      "weightBasis": "TBW",
+      "note": "Paediatric minimum 0.1 mg — below this may cause paradoxical bradycardia"
+    },
+    "cautions": [
+      "Tachycardia",
+      "Urinary retention in elderly",
+      "Paediatric minimum 0.1 mg (else paradoxical bradycardia)"
+    ]
+  },
+  "lidocaine": {
+    "name": "Lidocaine (Lignocaine)",
+    "class": "Local anaesthetic (amide)",
+    "phase": "induction",
+    "routes": [
+      "Infiltration",
+      "Regional",
+      "IV"
+    ],
+    "max": {
+      "plain": 4.5,
+      "withEpi": 7
+    },
+    "absoluteMaxAdult": {
+      "plain": 300,
+      "withEpi": 500
+    },
+    "cautions": [
+      "Toxicity at high doses — LAST",
+      "Always aspirate before injection",
+      "Reduce 30% in infants < 6 months"
+    ]
+  },
+  "bupivacaine": {
+    "name": "Bupivacaine",
+    "class": "Local anaesthetic (amide)",
+    "phase": "induction",
+    "routes": [
+      "Infiltration",
+      "Regional",
+      "Epidural",
+      "Spinal"
+    ],
+    "max": {
+      "plain": 2,
+      "withEpi": 2.5
+    },
+    "absoluteMaxAdult": {
+      "plain": 175,
+      "withEpi": 175
+    },
+    "cautions": [
+      "Cardiotoxic — do not exceed max",
+      "LAST risk — intralipid should be available",
+      "Never use 0.75% for obstetric epidural (FDA warning)",
+      "Reduce 30% in infants < 6 months"
+    ]
+  },
+  "ropivacaine": {
+    "name": "Ropivacaine",
+    "class": "Local anaesthetic (amide)",
+    "phase": "induction",
+    "routes": [
+      "Infiltration",
+      "Regional",
+      "Epidural"
+    ],
+    "max": {
+      "plain": 3,
+      "withEpi": 3.5
+    },
+    "cautions": [
+      "Less cardiotoxic than bupivacaine"
+    ]
+  },
+  "heparin": {
+    "name": "Heparin (unfractionated)",
+    "class": "Anticoagulant",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "cpb": {
+      "dose": [
+        300,
+        400
+      ],
+      "unit": "units/kg",
+      "route": "IV bolus",
+      "target": "ACT > 480 s",
+      "weightBasis": "TBW"
+    },
+    "vascular": {
+      "dose": [
+        50,
+        100
+      ],
+      "unit": "units/kg",
+      "route": "IV bolus",
+      "target": "ACT > 200 s",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "HIT screening for prolonged use",
+      "Monitor ACT (intraop) or APTT"
+    ]
+  },
+  "protamine": {
+    "name": "Protamine sulphate",
+    "class": "Heparin reversal",
+    "phase": "surgery",
+    "routes": [
+      "IV slow (NEVER bolus)"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "mg per 100 units heparin given",
+      "route": "IV slow over ≥ 10 min",
+      "note": "Modern practice: 0.5–0.75 mg per 100 U heparin is often sufficient (Mondal 2024) — over-dosing risks paradoxical anticoagulation, platelet dysfunction, and increased reaction risk. Titrate by HMS-Hepcon or post-protamine ACT. Single-dose cap 50 mg."
+    },
+    "riskFactors": [
+      "Fish allergy (true cross-reactivity is uncommon but increased risk)",
+      "Prior exposure to protamine (especially repeat cardiac surgery, repeat catheterisation)",
+      "NPH insulin / protamine-containing insulin users (~15-fold increased risk of IgE-mediated reaction)",
+      "History of vasectomy (sperm-protamine antibodies — disputed but cited)",
+      "Documented prior protamine reaction",
+      "Multiple drug allergies / atopy"
+    ],
+    "preventionStrategy": [
+      "Slow administration: ≥ 10 min for full dose; first 5–10 mg as test dose over 1–2 min then pause",
+      "Adequate volume + euvolaemia before administration (hypovolaemic patients more prone to hypotension)",
+      "Have noradrenaline / phenylephrine drawn up and primed before starting",
+      "Have heparin available — reheparinisation + return to CPB is the rescue option for catastrophic Type III",
+      "TOE in place — early warning of RV dilatation in Type III pulmonary vasoconstriction",
+      "High-risk patients: pre-treat with H1+H2 blockers + steroids; consider heparinase as alternative or omit reversal in OPCAB / endovascular cases"
+    ],
+    "reactionTypes": {
+      "typeI": "Type I — systemic hypotension (most common, ~3-6%). Rate-related vasodilation + histamine release. Pause infusion; fluid + phenylephrine; restart at slower rate.",
+      "typeII": "Type II — anaphylactic/anaphylactoid (IgE or complement-mediated). Hypotension + bronchospasm + flushing ± urticaria. Stop protamine; treat as anaphylaxis (adrenaline IM/IV, fluids, steroids per UK Resus 2025 if biphasic concern). Mast cell tryptase × 3.",
+      "typeIII": "Type III — catastrophic pulmonary vasoconstriction (rare, ~0.2%, mortality 25–30%). Acute pulmonary HTN, RV failure, systemic collapse. STOP protamine. Reheparinise (full dose 300 U/kg). Return to CPB if possible. iNO 20–40 ppm or inhaled prostacyclin. Inotrope (milrinone, dobutamine) for RV failure. ECMO if refractory."
+    },
+    "cautions": [
+      "Hypotension with rapid infusion (slow IV over ≥ 10 min mandatory)",
+      "Pulmonary hypertension",
+      "Anaphylaxis (Type II) — especially fish allergy, NPH insulin, prior exposure",
+      "Catastrophic pulmonary vasoconstriction (Type III) — heparinise + return to CPB"
+    ]
+  },
+  "tranexamic_acid": {
+    "name": "Tranexamic acid",
+    "class": "Antifibrinolytic",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "ortho": {
+      "dose": [
+        15,
+        15
+      ],
+      "unit": "mg/kg",
+      "max": 1000,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "trauma": {
+      "dose": [
+        1000,
+        1000
+      ],
+      "unit": "mg",
+      "route": "IV over 10 min + 1 g over 8 h",
+      "note": "CRASH-2 protocol — within 3 h of injury"
+    },
+    "cardiac": {
+      "dose": [
+        30,
+        30
+      ],
+      "unit": "mg/kg loading + 2 mg/kg/h",
+      "route": "IV infusion"
+    },
+    "cautions": [
+      "Active thromboembolic disease",
+      "Avoid in patients with known thrombophilia unless benefits outweigh risks"
+    ]
+  },
+  "oxytocin": {
+    "name": "Oxytocin",
+    "class": "Uterotonic",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "cs_bolus": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "unit",
+      "route": "Slow IV after delivery",
+      "note": "Modern low-dose protocol — avoid rapid bolus (hypotension)"
+    },
+    "cs_infusion": {
+      "dose": [
+        2.5,
+        7.5
+      ],
+      "unit": "units/hour",
+      "route": "IV infusion after delivery"
+    },
+    "cautions": [
+      "Hypotension with rapid bolus",
+      "Tachycardia",
+      "Avoid in haemodynamic instability",
+      "Water intoxication with prolonged use"
+    ]
+  },
+  "ergometrine": {
+    "name": "Ergometrine",
+    "class": "Uterotonic (ergot alkaloid)",
+    "phase": "surgery",
+    "routes": [
+      "IM",
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        250,
+        500
+      ],
+      "unit": "mcg",
+      "route": "IM (not IV routinely)"
+    },
+    "contraindications": [
+      "Hypertension",
+      "Pre-eclampsia",
+      "Eclampsia",
+      "Cardiac disease"
+    ],
+    "cautions": [
+      "Severe hypertension",
+      "Nausea/vomiting"
+    ]
+  },
+  "carboprost": {
+    "name": "Carboprost",
+    "class": "Prostaglandin F2α uterotonic",
+    "phase": "surgery",
+    "routes": [
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        250,
+        250
+      ],
+      "unit": "mcg",
+      "route": "IM (may repeat q15min, max 8 doses)"
+    },
+    "contraindications": [
+      "Asthma"
+    ],
+    "cautions": [
+      "Bronchospasm",
+      "Fever",
+      "Diarrhoea",
+      "Hypertension"
+    ]
+  },
+  "mannitol": {
+    "name": "Mannitol",
+    "class": "Osmotic diuretic / hyperosmolar agent",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.25,
+        1
+      ],
+      "unit": "g/kg",
+      "route": "IV over 10–20 min",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.25,
+        1
+      ],
+      "unit": "g/kg",
+      "route": "IV over 10–20 min (max 1 g/kg per dose; q4–6h PRN)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Monitor plasma osmolality q4–6h (adult target 300–320 mOsm/kg; paediatric same; stop if > 320)",
+      "Serum Na⁺ and electrolytes q1–2h during therapy",
+      "Urine output hourly — osmotic diuresis may cause hypovolaemia",
+      "CHF/pulmonary oedema — may precipitate decompensation (preload increase before diuresis)",
+      "AKI risk — avoid if anuric or osmolar gap > 10; consider hypertonic saline alternative",
+      "Rebound cerebral oedema if BBB disrupted (TBI, tumour) — repeat doses with caution",
+      "Hyperkalaemia and metabolic acidosis possible",
+      "PAEDIATRIC: Brain Trauma Foundation 2019 found insufficient evidence for routine mannitol in paediatric severe TBI — HTS is the preferred first-line hyperosmolar agent in children"
+    ]
+  },
+  "hypertonic-saline-3": {
+    "name": "3% Hypertonic Saline (NaCl)",
+    "class": "Hyperosmolar agent",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        3,
+        5
+      ],
+      "unit": "mL/kg",
+      "route": "IV over 15–30 min (central line preferred for repeated doses)",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        2,
+        5
+      ],
+      "unit": "mL/kg",
+      "route": "IV bolus over 10–20 min; continuous infusion 0.1–1.0 mL/kg/h sliding scale to maintain ICP < 20 mmHg (Brain Trauma Foundation 2019)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Central venous access preferred for repeated dosing (peripheral OK for single bolus in emergency)",
+      "Serum Na⁺ q1–2h — adult max 155–160 mEq/L; paediatric target 140–150, max 160 (sustained > 160 → DVT risk; > 170 → thrombocytopenia/anaemia)",
+      "Rate of correction: do NOT raise Na⁺ by > 10 mEq/L in 24h (osmotic demyelination risk)",
+      "Better haemodynamic profile than mannitol in hypovolaemia",
+      "Less AKI risk than mannitol — preferred in renal impairment",
+      "CHF caution (less than mannitol but still relevant; volume expansion up to 4× infused volume)",
+      "Coagulopathy at high cumulative doses",
+      "PAEDIATRIC: First-line hyperosmolar agent in paediatric severe TBI per BTF 2019 (insufficient evidence for mannitol in this population)",
+      "ADULT TBI: Preferred when ICP > 22 mmHg per Brain Trauma Foundation guidance"
+    ]
+  },
+  "hypertonic-saline-234": {
+    "name": "23.4% Hypertonic Saline (NaCl) — emergency bolus",
+    "class": "Hyperosmolar agent",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        30,
+        30
+      ],
+      "unit": "mL",
+      "route": "IV bolus over 5–10 min via CENTRAL line ONLY — herniation / impending herniation",
+      "weightBasis": "fixed"
+    },
+    "paediatric": {
+      "dose": [
+        0.5,
+        0.5
+      ],
+      "unit": "mL/kg",
+      "route": "IV bolus via CENTRAL line; max 30 mL (BTF 2019 paediatric)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "CENTRAL line MANDATORY — peripheral extravasation causes tissue necrosis",
+      "Emergency use only: cerebral herniation, refractory raised ICP",
+      "Single bolus typically; repeat per neurosurgical/neurocritical care advice",
+      "Serum Na⁺ within 30 min then q1h",
+      "Aim for transient Na⁺ rise; long-term correction follows osmotic demyelination limits",
+      "Continuous cardiac monitoring during and after bolus",
+      "PAEDIATRIC: 0.5 mL/kg up to 30 mL per BTF 2019 paediatric severe TBI guidelines"
+    ]
+  },
+  "phenytoin": {
+    "name": "Phenytoin / Fosphenytoin",
+    "class": "Anticonvulsant (sodium channel blocker)",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        15,
+        20
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV (max rate 50 mg/min phenytoin; 150 mg PE/min fosphenytoin)",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        15,
+        20
+      ],
+      "unit": "mg/kg",
+      "max": null,
+      "route": "IV (max rate 1 mg/kg/min phenytoin; 3 mg PE/kg/min fosphenytoin)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Bradycardia, hypotension, arrhythmia with rapid infusion — use cardiac monitor",
+      "Extravasation → purple glove syndrome (use fosphenytoin if possible)",
+      "Narrow therapeutic index — monitor serum levels (10–20 mg/L total; 1–2 mg/L free)",
+      "Many drug interactions (CYP450 inducer): rocuronium, midazolam, fentanyl resistance",
+      "No longer first-line for post-craniotomy seizure prophylaxis — levetiracetam preferred (Neurocritical Care Society / AANS-CNS / EANO 2024–2025: equivalent efficacy, better safety/tolerability)",
+      "Still useful for status epilepticus second-line and where levetiracetam unavailable"
+    ]
+  },
+  "levetiracetam": {
+    "name": "Levetiracetam (Keppra)",
+    "class": "Anticonvulsant (SV2A modulator)",
+    "phase": "surgery",
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "adult": {
+      "dose": [
+        20,
+        60
+      ],
+      "unit": "mg/kg",
+      "max": 4500,
+      "route": "IV loading over 15 min (typical 500–1500 mg); maintenance 500–1500 mg BD",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        40,
+        60
+      ],
+      "unit": "mg/kg",
+      "max": 4500,
+      "route": "IV loading over 15 min (max 60 mg/kg per BTF 2019 paediatric TBI); maintenance 20–30 mg/kg BD",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "First-line for post-craniotomy seizure prophylaxis (Neurocritical Care Society 2025, AANS/CNS, EANO)",
+      "Duration: limit prophylaxis to ≤ 7 days in seizure-naïve patients (extend only if seizures occur or persistent cortical irritation)",
+      "No hepatic metabolism — minimal drug interactions (preferred over phenytoin in oncology, transplant, polypharmacy)",
+      "Wide therapeutic index — no routine level monitoring needed",
+      "Renal elimination — reduce dose if CrCl < 50 mL/min",
+      "Behavioural/psychiatric adverse effects possible (irritability, mood change) — usually dose-related",
+      "PAEDIATRIC: 60 mg/kg IV load for severe TBI per BTF 2019; check level 2h post-load",
+      "Equivalent efficacy to phenytoin with better tolerability (2024–2025 evidence)"
+    ]
+  },
+  "nimodipine": {
+    "name": "Nimodipine",
+    "class": "Calcium channel blocker (cerebral)",
+    "phase": "pacu",
+    "routes": [
+      "PO",
+      "IV"
+    ],
+    "adult_po": {
+      "dose": [
+        60,
+        60
+      ],
+      "unit": "mg",
+      "route": "PO q4h × 21 days"
+    },
+    "adult_iv": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "mg/hour",
+      "route": "IV infusion if unable to swallow"
+    },
+    "cautions": [
+      "Hypotension",
+      "SAH vasospasm prevention"
+    ]
+  },
+  "octreotide": {
+    "name": "Octreotide",
+    "class": "Somatostatin analogue",
+    "phase": "surgery",
+    "routes": [
+      "IV",
+      "SC"
+    ],
+    "adult": {
+      "dose": [
+        100,
+        100
+      ],
+      "unit": "mcg",
+      "route": "SC or 50 mcg/h IV infusion"
+    },
+    "cautions": [
+      "Biliary sludge, hyperglycaemia",
+      "Surgeon preference for pancreatic surgery"
+    ]
+  },
+  "adrenaline": {
+    "name": "Adrenaline (Epinephrine)",
+    "class": "Sympathomimetic",
+    "phase": "surgery",
+    "routes": [
+      "IV",
+      "IM",
+      "IO",
+      "Nebulised"
+    ],
+    "anaphylaxis_im_adult": {
+      "dose": [
+        500,
+        500
+      ],
+      "unit": "mcg IM",
+      "max": 500,
+      "route": "IM 1:1000 (0.5 mL) anterolateral thigh",
+      "note": "First-line for anaphylaxis. Repeat q5min if no response. Lay flat unless airway compromise."
+    },
+    "anaphylaxis_im_paed_12plus": {
+      "dose": [
+        500,
+        500
+      ],
+      "unit": "mcg IM",
+      "max": 500,
+      "route": "IM 1:1000 (0.5 mL)",
+      "note": "Age > 12 y: 500 mcg IM (adult dose)."
+    },
+    "anaphylaxis_im_paed_6to12": {
+      "dose": [
+        300,
+        300
+      ],
+      "unit": "mcg IM",
+      "max": 300,
+      "route": "IM 1:1000 (0.3 mL)",
+      "note": "Age 6-12 y: 300 mcg IM."
+    },
+    "anaphylaxis_im_paed_under6": {
+      "dose": [
+        150,
+        150
+      ],
+      "unit": "mcg IM",
+      "max": 150,
+      "route": "IM 1:1000 (0.15 mL)",
+      "note": "Age < 6 y: 150 mcg IM. Use the same dose for < 6 months but seek immediate paeds support."
+    },
+    "anaphylaxis_iv_titrated": {
+      "dose": [
+        10,
+        50
+      ],
+      "unit": "mcg IV",
+      "max": 100,
+      "route": "IV titrated (1:10,000 = 100 mcg/mL)",
+      "note": "⚠️ Refractory anaphylaxis ONLY by anaesthetist/intensivist with full monitoring. Start 10-20 mcg boluses, titrate. Infusion 0.05-0.5 mcg/kg/min if multiple boluses needed."
+    },
+    "cardiac_arrest_adult": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "mg IV/IO",
+      "route": "IV/IO q3-5 min",
+      "note": "Adult cardiac arrest: 1 mg IV/IO after 2nd shock (shockable) or ASAP (non-shockable). Repeat q3-5 min."
+    },
+    "cardiac_arrest_paed": {
+      "dose": [
+        10,
+        10
+      ],
+      "unit": "mcg/kg IV/IO",
+      "max": 1000,
+      "route": "IV/IO q3-5 min",
+      "weightBasis": "TBW",
+      "note": "Paediatric arrest: 10 mcg/kg IV/IO (max 1 mg) q3-5 min. Endotracheal route 100 mcg/kg if no IV/IO access."
+    },
+    "croup_nebulised": {
+      "dose": [
+        400,
+        500
+      ],
+      "unit": "mcg/kg nebulised",
+      "max": 5000,
+      "route": "Nebulised (1:1000)",
+      "weightBasis": "TBW",
+      "note": "Severe croup / post-extubation stridor: 1:1000 solution 0.5 mg/kg (max 5 mL)."
+    },
+    "cautions": [
+      "⚠️ ALWAYS DILUTE for IV: 1:1000 (1 mg/mL) for IM only; 1:10,000 (100 mcg/mL) for IV",
+      "Arrhythmias, hypertension, myocardial ischaemia at higher doses",
+      "Extravasation → tissue necrosis (phentolamine 5-10 mg in 10 mL saline infiltrated subcut to affected area)",
+      "Co-administration with halogenated anaesthetics → arrhythmia risk (sevoflurane safer than halothane)",
+      "Paediatric: weight-based, do NOT use adult IM dose in children < 12 y"
+    ]
+  },
+  "intralipid": {
+    "name": "Intralipid 20%",
+    "class": "LAST rescue",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "last_adult": {
+      "dose": [
+        100,
+        100
+      ],
+      "unit": "mL bolus",
+      "route": "IV bolus over 2-3 min",
+      "note": "Adult > 70 kg: 100 mL bolus (1.5 mL/kg ideal body weight) over 2-3 min. Then 200-250 mL infusion over 15-20 min."
+    },
+    "last_paed": {
+      "dose": [
+        1.5,
+        1.5
+      ],
+      "unit": "mL/kg bolus",
+      "route": "IV bolus over 2-3 min",
+      "weightBasis": "LBW",
+      "note": "Paediatric / adult < 70 kg: 1.5 mL/kg bolus over 2-3 min. Then 0.25 mL/kg/min infusion."
+    },
+    "last_repeat": {
+      "dose": [
+        1.5,
+        1.5
+      ],
+      "unit": "mL/kg bolus",
+      "route": "IV — repeat up to 2 more times if cardiovascular instability persists",
+      "weightBasis": "LBW",
+      "note": "May repeat bolus 1-2 times for persistent CV collapse, AND increase infusion to 0.5 mL/kg/min."
+    },
+    "cautions": [
+      "ASRA 2020 maximum cumulative dose: 12 mL/kg (was 10 mL/kg in 2017)",
+      "Concurrent ACLS — adrenaline doses should be REDUCED (< 1 mcg/kg) and avoid vasopressin in LAST",
+      "AVOID lidocaine, calcium channel blockers, beta-blockers as adjuncts during LAST",
+      "Continue infusion ≥ 10 min after haemodynamic stability achieved",
+      "Report to LipidRescue.org and local registry"
+    ]
+  },
+  "dantrolene": {
+    "name": "Dantrolene",
+    "class": "Skeletal muscle relaxant (RyR1 antagonist) — MH rescue",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "mh": {
+      "dose": [
+        2.5,
+        2.5
+      ],
+      "unit": "mg/kg",
+      "route": "IV bolus, repeat q5–10 min",
+      "note": "Total cumulative dose up to 10 mg/kg (higher if needed in refractory cases)",
+      "weightBasis": "TBW"
+    },
+    "mh_maintenance": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "mg/kg",
+      "route": "IV q6h × 24 h after acute crisis controlled",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Reconstitute each 20 mg vial with 60 mL sterile water — slow!",
+      "Newer formulation Ryanodex® dissolves in 5 mL (much faster)",
+      "Avoid co-administration with calcium channel blockers (hyperkalaemia, cardiac arrest)",
+      "Always available in any anaesthetising location per AAGBI/MHAUS"
+    ]
+  },
+  "noradrenaline": {
+    "name": "Noradrenaline (Norepinephrine)",
+    "class": "α1-agonist (mild β-1) vasopressor",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion (central preferred); peripheral bolus diluted acceptable in regional anaesthesia setting"
+    ],
+    "adult_infusion": {
+      "dose": [
+        0.05,
+        0.5
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion via central line",
+      "weightBasis": "TBW",
+      "note": "Titrate to MAP ≥ 65 mmHg. Surviving Sepsis 2026: start peripherally — do NOT delay for central access."
+    },
+    "obstetric_spinal_bolus": {
+      "dose": [
+        5,
+        10
+      ],
+      "unit": "mcg",
+      "route": "IV bolus q1min (diluted 5–10 mcg/mL)",
+      "note": "Emerging alternative to phenylephrine for post-spinal hypotension at CS — 6× more potent than phenylephrine; mild β-1 effect reduces reflex bradycardia. Non-inferior umbilical artery pH in elective cases (BJA Educ 2024)."
+    },
+    "obstetric_spinal_infusion": {
+      "dose": [
+        0.05,
+        0.05
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion from spinal injection",
+      "note": "Prophylactic infusion (Wang 2020 dose-finding). For 75 kg = 3.75 mcg/min. Effective for prevention of post-spinal hypotension at CS."
+    },
+    "cautions": [
+      "Peripheral access risks extravasation if prolonged use (>4 h) — convert to central line",
+      "Less reflex bradycardia than phenylephrine",
+      "First-line vasopressor in septic shock",
+      "Emerging first-line option for obstetric spinal hypotension (BJA Educ 2024)"
+    ]
+  },
+  "phenylephrine": {
+    "name": "Phenylephrine",
+    "class": "Pure α1-agonist",
+    "phase": "surgery",
+    "routes": [
+      "IV bolus or infusion"
+    ],
+    "adult_bolus": {
+      "dose": [
+        50,
+        200
+      ],
+      "unit": "mcg",
+      "route": "IV bolus",
+      "weightBasis": "TBW"
+    },
+    "adult_infusion": {
+      "dose": [
+        0.5,
+        2
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion",
+      "weightBasis": "TBW"
+    },
+    "obstetric_spinal_bolus": {
+      "dose": [
+        50,
+        100
+      ],
+      "unit": "mcg",
+      "route": "IV bolus q1min",
+      "note": "First-line for post-spinal hypotension at CS (Kinsella consensus 2018). Aim SBP ≥ 90% baseline. Doses > 100 mcg may cause reflex bradycardia without further BP benefit (Mohta 2014)."
+    },
+    "obstetric_spinal_infusion": {
+      "dose": [
+        25,
+        50
+      ],
+      "unit": "mcg/min",
+      "route": "IV infusion from spinal injection",
+      "note": "Prophylactic infusion recommended for elective CS (Kinsella 2018). Standard preparation: 100 mcg/mL."
+    },
+    "cautions": [
+      "Reflex bradycardia — atropine immediately available",
+      "Useful in hypotension with tachycardia",
+      "First-line for obstetric spinal hypotension (Kinsella 2018)"
+    ]
+  },
+  "ephedrine": {
+    "name": "Ephedrine",
+    "class": "Mixed α/β-agonist",
+    "phase": "surgery",
+    "routes": [
+      "IV bolus"
+    ],
+    "adult_bolus": {
+      "dose": [
+        5,
+        10
+      ],
+      "unit": "mg",
+      "route": "IV bolus (up to 50 mg total)",
+      "weightBasis": "TBW"
+    },
+    "obstetric_spinal_bolus": {
+      "dose": [
+        6,
+        9
+      ],
+      "unit": "mg",
+      "route": "IV bolus",
+      "note": "Use ONLY if HR < 60 (Bezold-Jarisch / high block bradycardia). Avoid as first-line in CS — phenylephrine or noradrenaline preferred (lower foetal acidosis; Ngan Kee 2009)."
+    },
+    "paediatric": {
+      "dose": [
+        0.1,
+        0.2
+      ],
+      "unit": "mg/kg",
+      "route": "IV bolus",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Tachyphylaxis after repeated doses",
+      "Crosses placenta — may cause foetal acidosis (phenylephrine or noradrenaline preferred for CS)",
+      "Use when HR < 60 alongside hypotension"
+    ]
+  },
+  "dobutamine": {
+    "name": "Dobutamine",
+    "class": "β1-agonist inotrope",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion"
+    ],
+    "adult_infusion": {
+      "dose": [
+        2.5,
+        10
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion",
+      "weightBasis": "TBW",
+      "note": "Cardiogenic shock, low cardiac output state"
+    },
+    "cautions": [
+      "Tachyarrhythmias — avoid in uncontrolled AF",
+      "Increases myocardial O₂ demand"
+    ]
+  },
+  "milrinone": {
+    "name": "Milrinone",
+    "class": "PDE3 inhibitor inotrope + vasodilator",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion"
+    ],
+    "loading": {
+      "dose": [
+        50,
+        50
+      ],
+      "unit": "mcg/kg",
+      "route": "IV over 10 min",
+      "weightBasis": "TBW"
+    },
+    "adult_infusion": {
+      "dose": [
+        0.375,
+        0.75
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Hypotension — load with caution",
+      "Pulmonary vasodilation useful in RV failure",
+      "Dose reduction in renal failure"
+    ]
+  },
+  "vasopressin": {
+    "name": "Vasopressin",
+    "class": "V1 receptor agonist",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion"
+    ],
+    "adult_infusion": {
+      "dose": [
+        0.01,
+        0.04
+      ],
+      "unit": "units/min",
+      "route": "IV infusion"
+    },
+    "cardiac_arrest": {
+      "dose": [
+        40,
+        40
+      ],
+      "unit": "units IV once",
+      "route": "IV (no longer in ACLS 2020)"
+    },
+    "cautions": [
+      "Useful in catecholamine-resistant shock",
+      "Ischaemic necrosis with extravasation"
+    ]
+  },
+  "nitroglycerin": {
+    "name": "Glyceryl trinitrate (GTN / Nitroglycerin)",
+    "class": "NO donor vasodilator",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion",
+      "Sublingual",
+      "Topical"
+    ],
+    "adult_infusion": {
+      "dose": [
+        0.5,
+        10
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Tolerance with prolonged use",
+      "Hypotension — titrate to BP",
+      "Caution in right-heart disease (reduces preload)"
+    ]
+  },
+  "labetalol": {
+    "name": "Labetalol",
+    "class": "α/β-blocker",
+    "phase": "surgery",
+    "routes": [
+      "IV bolus or infusion"
+    ],
+    "adult_bolus": {
+      "dose": [
+        5,
+        20
+      ],
+      "unit": "mg",
+      "route": "IV bolus, repeat q10min"
+    },
+    "adult_infusion": {
+      "dose": [
+        0.5,
+        2
+      ],
+      "unit": "mg/min",
+      "route": "IV infusion"
+    },
+    "cautions": [
+      "Contraindicated in severe asthma, heart block, HF",
+      "First-line for HTN in pregnancy/pre-eclampsia"
+    ]
+  },
+  "esmolol": {
+    "name": "Esmolol",
+    "class": "Ultra-short-acting β1-blocker",
+    "phase": "surgery",
+    "routes": [
+      "IV bolus or infusion"
+    ],
+    "adult_bolus": {
+      "dose": [
+        0.5,
+        1
+      ],
+      "unit": "mg/kg",
+      "route": "IV bolus over 30 s",
+      "weightBasis": "TBW"
+    },
+    "adult_infusion": {
+      "dose": [
+        50,
+        200
+      ],
+      "unit": "mcg/kg/min",
+      "route": "IV infusion",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "T½ 9 minutes — rapidly reversible",
+      "Useful for intubation response, tachyarrhythmias"
+    ]
+  },
+  "amiodarone": {
+    "name": "Amiodarone",
+    "class": "Class III antiarrhythmic",
+    "phase": "surgery",
+    "routes": [
+      "IV",
+      "PO"
+    ],
+    "cardiac_arrest_adult": {
+      "dose": [
+        300,
+        300
+      ],
+      "unit": "mg IV/IO",
+      "route": "IV/IO bolus",
+      "note": "VF/pulseless VT refractory to 3 shocks: 300 mg IV/IO. Second dose 150 mg if refractory after further shock."
+    },
+    "cardiac_arrest_paed": {
+      "dose": [
+        5,
+        5
+      ],
+      "unit": "mg/kg IV/IO",
+      "max": 300,
+      "route": "IV/IO bolus",
+      "weightBasis": "TBW",
+      "note": "Paediatric VF/pVT: 5 mg/kg IV/IO (max 300 mg) after 3rd shock; may repeat up to 2 more doses (max 15 mg/kg)."
+    },
+    "af_loading_adult": {
+      "dose": [
+        300,
+        300
+      ],
+      "unit": "mg IV",
+      "route": "IV over 20-60 min in 5% dextrose (central line preferred)",
+      "note": "Then 900 mg over 23 h (1.2 g/24 h total). For new-onset AF post-cardiac surgery or peri-arrest."
+    },
+    "maintenance_adult": {
+      "dose": [
+        900,
+        900
+      ],
+      "unit": "mg/24 h",
+      "route": "IV infusion (central preferred due to phlebitis)",
+      "note": "Continue for 24-48 h after acute control achieved; transition to oral as needed."
+    },
+    "contraindications": [
+      "Severe sinus node disease",
+      "2nd/3rd degree AV block without pacemaker",
+      "Sinus bradycardia",
+      "Cardiogenic shock (relative)",
+      "Iodine allergy",
+      "Thyroid disease (relative — long-term)"
+    ],
+    "cautions": [
+      "CENTRAL LINE PREFERRED for infusions > 30 min — risk of phlebitis with peripheral",
+      "Reconstitute in 5% DEXTROSE ONLY (precipitates in saline)",
+      "Hypotension and bradycardia with rapid IV — slow infusion if not in arrest",
+      "Long half-life (15-50 days) — drug interactions persist after discontinuation",
+      "Increases warfarin effect ~2x, digoxin levels 2x — adjust doses",
+      "Long-term: pulmonary fibrosis, thyroid dysfunction, hepatotoxicity, corneal microdeposits, photosensitivity",
+      "Avoid in pregnancy (Category D) — iodinated, crosses placenta"
+    ]
+  },
+  "hydralazine": {
+    "name": "Hydralazine",
+    "class": "Direct vasodilator",
+    "phase": "surgery",
+    "routes": [
+      "IV bolus"
+    ],
+    "adult": {
+      "dose": [
+        5,
+        10
+      ],
+      "unit": "mg",
+      "route": "IV bolus (slow), repeat q20min"
+    },
+    "cautions": [
+      "Reflex tachycardia",
+      "Useful in pre-eclampsia (target DBP < 100)"
+    ]
+  },
+  "insulin_rapid": {
+    "name": "Insulin (rapid-acting, IV)",
+    "class": "Anti-hyperglycaemic",
+    "phase": "surgery",
+    "routes": [
+      "IV infusion",
+      "IV bolus"
+    ],
+    "infusion_dka": {
+      "dose": [
+        0.1,
+        0.1
+      ],
+      "unit": "units/kg/h",
+      "route": "IV infusion",
+      "weightBasis": "TBW"
+    },
+    "perioperative": {
+      "dose": [
+        0.5,
+        2
+      ],
+      "unit": "units/h",
+      "route": "IV infusion per VRIII sliding scale"
+    },
+    "cautions": [
+      "Hypoglycaemia — monitor hourly glucose",
+      "Stop if glucose < 4 mmol/L",
+      "Replace K+ pre-emptively"
+    ]
+  },
+  "dextrose50": {
+    "name": "Dextrose 50%",
+    "class": "Hypertonic glucose",
+    "phase": "surgery",
+    "routes": [
+      "IV (central preferred)"
+    ],
+    "hypoglycaemia": {
+      "dose": [
+        25,
+        50
+      ],
+      "unit": "mL",
+      "route": "IV over 1–2 min",
+      "note": "Follow with 10% infusion"
+    },
+    "cautions": [
+      "Extravasation → tissue necrosis",
+      "Hyperosmolar — prefer 10% peripherally"
+    ]
+  },
+  "cefazolin": {
+    "name": "Cefazolin",
+    "class": "First-gen cephalosporin",
+    "phase": "pre-induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "g",
+      "route": "IV 30–60 min before incision"
+    },
+    "paediatric": {
+      "dose": [
+        30,
+        30
+      ],
+      "unit": "mg/kg",
+      "max": 2000,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Penicillin cross-reactivity 1–5%",
+      "Redose 4-hourly or after major blood loss"
+    ]
+  },
+  "metronidazole": {
+    "name": "Metronidazole",
+    "class": "Nitroimidazole antibiotic",
+    "phase": "pre-induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        500,
+        500
+      ],
+      "unit": "mg",
+      "route": "IV over 20 min"
+    },
+    "paediatric": {
+      "dose": [
+        7.5,
+        7.5
+      ],
+      "unit": "mg/kg",
+      "max": 500,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Anaerobic coverage — add to cefazolin in colorectal",
+      "Disulfiram-like reaction with alcohol"
+    ]
+  },
+  "gentamicin": {
+    "name": "Gentamicin",
+    "class": "Aminoglycoside",
+    "phase": "pre-induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        5,
+        7
+      ],
+      "unit": "mg/kg",
+      "max": 560,
+      "route": "IV once daily",
+      "weightBasis": "IBW"
+    },
+    "paediatric": {
+      "dose": [
+        7,
+        7
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Ototoxicity and nephrotoxicity",
+      "Monitor levels (peak < 10, trough < 1)",
+      "Prolongs non-depolarising NMB"
+    ]
+  },
+  "calcium_gluconate": {
+    "name": "Calcium gluconate 10%",
+    "class": "Electrolyte / membrane stabiliser",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "hyperkalaemia": {
+      "dose": [
+        10,
+        10
+      ],
+      "unit": "mL of 10% (1 g)",
+      "route": "IV over 10 min"
+    },
+    "hypocalcaemia": {
+      "dose": [
+        10,
+        20
+      ],
+      "unit": "mL of 10%",
+      "route": "IV over 10 min"
+    },
+    "cautions": [
+      "Cardiac membrane stabilisation in hyperkalaemia",
+      "Beware tissue necrosis with extravasation (prefer gluconate over chloride peripherally)"
+    ]
+  },
+  "sodium_bicarbonate": {
+    "name": "Sodium bicarbonate 8.4%",
+    "class": "Alkalinising agent",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "mEq/kg",
+      "route": "IV slow",
+      "weightBasis": "TBW",
+      "note": "Metabolic acidosis pH < 7.1 only after addressing cause"
+    },
+    "cautions": [
+      "Do not give with calcium (precipitates)",
+      "Hypernatraemia with repeated doses"
+    ]
+  },
+  "magnesium": {
+    "name": "Magnesium sulphate",
+    "class": "NMDA antagonist / anticonvulsant",
+    "phase": "surgery",
+    "routes": [
+      "IV"
+    ],
+    "torsades": {
+      "dose": [
+        2,
+        2
+      ],
+      "unit": "g",
+      "route": "IV over 2 min"
+    },
+    "pre_eclampsia": {
+      "dose": [
+        4,
+        4
+      ],
+      "unit": "g",
+      "route": "IV loading over 5 min, then 1 g/h"
+    },
+    "asthma": {
+      "dose": [
+        2,
+        2
+      ],
+      "unit": "g",
+      "route": "IV over 20 min"
+    },
+    "cautions": [
+      "Hypotension at higher doses",
+      "Loss of patellar reflex = early toxicity",
+      "Antagonised by calcium gluconate"
+    ]
+  },
+  "naloxone": {
+    "name": "Naloxone",
+    "class": "Opioid antagonist",
+    "phase": "emergence",
+    "routes": [
+      "IV",
+      "IM",
+      "SC"
+    ],
+    "adult": {
+      "dose": [
+        40,
+        100
+      ],
+      "unit": "mcg",
+      "route": "IV titrated q2–3min (total up to 2 mg)"
+    },
+    "paediatric": {
+      "dose": [
+        10,
+        10
+      ],
+      "unit": "mcg/kg",
+      "max": 400,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Short duration (30–60 min) — opioid may outlast, repeat or infusion may be needed",
+      "Acute withdrawal in chronic users",
+      "Pulmonary oedema with rapid reversal"
+    ]
+  },
+  "flumazenil": {
+    "name": "Flumazenil",
+    "class": "Benzodiazepine antagonist",
+    "phase": "emergence",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        200,
+        200
+      ],
+      "unit": "mcg",
+      "route": "IV over 15 s, repeat q1min up to 2 mg"
+    },
+    "paediatric": {
+      "dose": [
+        10,
+        10
+      ],
+      "unit": "mcg/kg",
+      "max": 200,
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Seizures in chronic benzo users",
+      "Short duration — re-sedation possible",
+      "Avoid in mixed TCA overdose"
+    ]
+  },
+  "paracetamol": {
+    "name": "Paracetamol (Acetaminophen)",
+    "class": "Non-opioid analgesic / antipyretic",
+    "phase": "maintenance",
+    "routes": [
+      "IV",
+      "PO",
+      "PR"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        1
+      ],
+      "unit": "g",
+      "max": 1,
+      "route": "IV over 15 min q6h (max 4 g/day; 3 g/day if <50 kg or hepatic risk)",
+      "weightBasis": null
+    },
+    "paediatric": {
+      "dose": [
+        15,
+        15
+      ],
+      "unit": "mg/kg",
+      "max": 1000,
+      "route": "IV over 15 min q6h (max 60 mg/kg/day)",
+      "weightBasis": "TBW"
+    },
+    "neonate": {
+      "dose": [
+        10,
+        10
+      ],
+      "unit": "mg/kg",
+      "route": "IV q8h (term neonate; max 30 mg/kg/day)",
+      "weightBasis": "TBW",
+      "note": "Neonate: 10 mg/kg q8h IV (term). Preterm lower. Daily max 30 mg/kg/day."
+    },
+    "cautions": [
+      "Reduce max to 3 g/day if weight <50 kg, malnutrition, chronic alcohol, or hepatic impairment",
+      "IV over 15 min — bolus error (mg vs mcg) has caused fatal overdose",
+      "Hepatotoxic in overdose — confirm no other paracetamol-containing products"
+    ]
+  },
+  "ketorolac": {
+    "name": "Ketorolac",
+    "class": "NSAID (parenteral)",
+    "phase": "maintenance",
+    "routes": [
+      "IV",
+      "IM"
+    ],
+    "adult": {
+      "dose": [
+        10,
+        30
+      ],
+      "unit": "mg",
+      "max": 30,
+      "route": "IV q6h (max 90 mg/day; 60 mg/day if elderly/<50 kg/renal); MAX 5 days",
+      "weightBasis": null
+    },
+    "paediatric": {
+      "dose": [
+        0.5,
+        0.5
+      ],
+      "unit": "mg/kg",
+      "max": 15,
+      "route": "IV q6h (≥2 yr only; max 15 mg/dose, 48–72 h)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Avoid in renal impairment, active bleeding, peptic ulcer, asthma with NSAID sensitivity",
+      "Avoid in heart failure and in third-trimester pregnancy",
+      "Caution after high-bleeding-risk surgery — discuss with surgeon",
+      "Not for <2 years; max duration 5 days (adult) due to GI/renal risk"
+    ]
+  },
+  "dexmedetomidine": {
+    "name": "Dexmedetomidine",
+    "class": "α2-agonist sedative / analgesic adjunct",
+    "phase": "maintenance",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        0.2,
+        0.7
+      ],
+      "unit": "mcg/kg/h",
+      "route": "IV infusion (optional load 0.5–1 mcg/kg over 10 min — omit/halve if bradycardia/hypotension risk)",
+      "weightBasis": "TBW"
+    },
+    "paediatric": {
+      "dose": [
+        0.2,
+        0.7
+      ],
+      "unit": "mcg/kg/h",
+      "route": "IV infusion (load 0.5–1 mcg/kg over 10 min if needed)",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Bradycardia and hypotension (biphasic — transient hypertension with rapid bolus)",
+      "Avoid/again caution with bolus loading — give load slowly over ≥10 min",
+      "Caution in heart block, severe LV dysfunction, hypovolaemia",
+      "Does not reliably obtund airway reflexes — not a sole anaesthetic for surgery"
+    ]
+  }
+}

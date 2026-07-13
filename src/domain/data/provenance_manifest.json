@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "manifestVersion": "1.0.0",
+  "updatedAt": "2026-07-13T05:00:00Z",
+  "defaultLicense": "CC-BY-NC-4.0",
+  "dataGovernancePolicy": "SYNTHETIC_MOCK_NO_PHI",
+  "files": {
+    "sepsis_rules.json": {
+      "source": "Surviving Sepsis Campaign (SSC) 2026 Guidelines, ADA Standards of Care 2026, ILCOR 2020 / ERC 2025, KDIGO 2024, GINA/GOLD 2025",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "Surviving Sepsis Campaign 2026 — Critical Care Medicine April 2026 (DOI 10.1097/CCM.0000000000007075); ADA Standards of Care 2026; ILCOR 2020; GINA/GOLD 2025",
+      "category": "clinical_rules"
+    },
+    "sepsis_rules_vi.json": {
+      "source": "Surviving Sepsis Campaign 2026 (Vietnamese Clinical Translation)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "Surviving Sepsis Campaign 2026 (Vietnamese Adaptation)",
+      "category": "clinical_rules_vi"
+    },
+    "sugammadex_rules_vi.json": {
+      "source": "NAP4 Airway Audit, DAS 2015 Extubation & CICO Guidelines, BEAM Trial, Organon/MSD Sugammadex Prescribing Guidelines",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "NAP4 Major Complications of Airway Management (RCoA/AAGBI 2011); DAS 2015 Guidelines; BEAM Trial",
+      "category": "clinical_rules_vi"
+    },
+    "nora_locations.json": {
+      "source": "ASA Guidelines for Non-Operating Room Anesthesia (NORA), ASA Practice Guidelines 2024",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ASA Statement on Non-Operating Room Anesthesiology Care (2024)",
+      "category": "nora_specs"
+    },
+    "asra_guidelines.json": {
+      "source": "ASRA Regional Anesthesia in Patient Receiving Antithrombotic or Thrombolytic Therapy (4th & 5th Edition)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "Regional Anesthesia and Pain Medicine (ASRA Guidelines 2024)",
+      "category": "clinical_rules"
+    },
+    "chronic_meds.json": {
+      "source": "ASA Preoperative Fasting & Medication Guidelines, ACC/AHA Perioperative Guidelines 2024",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ACC/AHA Guideline on Perioperative Cardiovascular Evaluation and Management",
+      "category": "clinical_rules"
+    },
+    "chronic_meds_guidelines_vi.json": {
+      "source": "ASA Preoperative Fasting & Medication Guidelines (Vietnamese Localization)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ACC/AHA Guideline on Perioperative Cardiovascular Evaluation (Vietnamese Translation)",
+      "category": "clinical_rules_vi"
+    },
+    "comorbidities.json": {
+      "source": "ICD-10 Clinical Modification, ASA Physical Status Classification System",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ASA Physical Status Classification System (2020)",
+      "category": "taxonomy"
+    },
+    "crisis_protocols.json": {
+      "source": "MHAUS Malignant Hyperthermia Protocol, ASRA LAST Checklist 2020, Resuscitation Council UK Emergency Algorithms",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "MHAUS Guidelines (2023); ASRA Local Anesthetic Systemic Toxicity Checklist (2020)",
+      "category": "crisis_protocols"
+    },
+    "drugs.json": {
+      "source": "Miller's Anesthesia 9th Ed, Stoelting's Pharmacology & Physiology in Anesthetic Practice 6th Ed",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "Stoelting's Pharmacology & Physiology in Anesthetic Practice",
+      "category": "pharmacology"
+    },
+    "flag_mapping.json": {
+      "source": "AnesthOS Preoperative Risk Flag Standard v1.0",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "AnesthOS Internal Risk Flag Taxonomy Specification",
+      "category": "taxonomy"
+    },
+    "lab_tests.json": {
+      "source": "Harrison's Principles of Internal Medicine 21st Ed, IFCC Reference Values",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "IFCC Laboratory Reference Intervals",
+      "category": "lab_reference"
+    },
+    "lab_tests_info_vi.json": {
+      "source": "Harrison's Principles of Internal Medicine (Vietnamese Reference Values)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "IFCC Laboratory Reference Intervals (Vietnamese Localization)",
+      "category": "lab_reference_vi"
+    },
+    "local_anesthetics.json": {
+      "source": "ASRA Local Anesthetics Dosing and Toxicity Guidelines",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ASRA Regional Anesthesia Practice Advisory (2021)",
+      "category": "pharmacology"
+    },
+    "local_anesthetics_info_vi.json": {
+      "source": "ASRA Local Anesthetics Guidelines (Vietnamese Localization)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ASRA Practice Advisory (Vietnamese Localization)",
+      "category": "pharmacology_vi"
+    },
+    "nerve_blocks.json": {
+      "source": "NYSORA Regional Anesthesia Guide, ASRA Ultrasound-Guided Regional Anesthesia Guidelines",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "NYSORA Practice Guidelines for Regional Anesthesia",
+      "category": "regional_anesthesia"
+    },
+    "nerve_blocks_info_vi.json": {
+      "source": "NYSORA Regional Anesthesia Guide (Vietnamese Localization)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "NYSORA Guidelines (Vietnamese Localization)",
+      "category": "regional_anesthesia_vi"
+    },
+    "rules_adaptations.json": {
+      "source": "AnesthOS Special Populations Clinical Guidance v1.0",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "AnesthOS Special Populations Rules Engine Spec",
+      "category": "clinical_rules"
+    },
+    "rules_adaptations_vi.json": {
+      "source": "AnesthOS Special Populations Clinical Guidance (Vietnamese Localization)",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "AnesthOS Special Populations Rules Engine Spec (Vietnamese)",
+      "category": "clinical_rules_vi"
+    },
+    "rules_category_mapping.json": {
+      "source": "AnesthOS Rules Category Hierarchy Spec v1.0",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "AnesthOS Rules Engine Architecture",
+      "category": "taxonomy"
+    },
+    "rules_trigger_labels.json": {
+      "source": "AnesthOS Rules Display & Trigger Label Spec v1.0",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "AnesthOS Alert Presentation Layer Spec",
+      "category": "taxonomy"
+    },
+    "surgeries.json": {
+      "source": "CPT Surgical Codes & ASA Surgery Complexity Grading System",
+      "license": "CC-BY-NC-4.0",
+      "synthetic": true,
+      "containsPHI": false,
+      "citation": "ASA Surgical Risk Classification & CPT Taxonomy",
+      "category": "surgical_taxonomy"
+    }
+  }
+}

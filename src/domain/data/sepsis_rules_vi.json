@@ -1,0 +1,76 @@
+{
+  "sepsis": {
+    "label": "Sốc nhiễm khuẩn/nhiễm trùng huyết nặng",
+    "lactateActionThreshold": 2,
+    "lactateUrgentThreshold": 4,
+    "pHActionThreshold": 7.2,
+    "bicarbCautious": true,
+    "fluidStrategy": "Dịch tinh thể cân bằng (Hartmann/Plasmalyte) được ưu tiên hơn nước muối 0,9% (SSC 2026 — ngoại trừ sử dụng TBI NS). Đề xuất là 30 mL/kg nhưng tập trung nhiều hơn vào các biện pháp cá nhân hóa và động học (PLR, SVV, đổ đầy mao mạch). Việc loại bỏ/hạ dịch hiện đã được giải quyết khi đã ổn định.",
+    "vasopressor": "Noradrenaline hàng đầu. Bắt đầu từ ngoại vi - KHÔNG trì hoãn quyền truy cập trung tâm (SSC 2026). MAP mục tiêu ≥ 65 mmHg nói chung, nhưng MAP 60-65 ở người lớn ≥ 65 tuổi (SSC 2026). Steroid được đề xuất cho sốc kháng trị.",
+    "screening": "TIN TỨC/MEWS hiện được ưu tiên hơn qSOFA để sàng lọc (SSC 2026 - qSOFA có độ nhạy kém)",
+    "lactateNote": "Tăng lactate KHÔNG nên kích hoạt việc truyền dịch theo phản xạ - nguyên nhân đa yếu tố (phản ứng căng thẳng, rối loạn chức năng ty thể, độ thanh thải của gan). Sử dụng lactate nối tiếp như thuốc hỗ trợ chứ không phải thuốc điều trị duy nhất.",
+    "bicarbAdvice": "Bicarbonate không được khuyên dùng thường xuyên trong nhiễm toan lactic do nhiễm trùng huyết (SSC 2026); chỉ xem xét nếu pH < 7,10 với AKI (nhóm phụ BICAR-ICU)",
+    "antimicrobials": "Sốc nhiễm trùng: dùng kháng sinh trong vòng 1 giờ. Có thể nhiễm trùng huyết không sốc: trong vòng 1 giờ. Có thể nhiễm trùng huyết nguy cơ thấp: trì hoãn + theo dõi (SSC 2026).",
+    "referenceCitation": "Chiến dịch Sống sót Nhiễm trùng huyết năm 2026 — Y học Chăm sóc Quan trọng Tháng 4 năm 2026 (DOI 10.1097/CCM.0000000000007075); 129 kiến ​​nghị thay thế SSC 2021"
+  },
+  "dka": {
+    "label": "Nhiễm toan đái tháo đường (DKA)",
+    "pHActionThreshold": 7,
+    "glucoseTarget": "ban đầu là 8–12 mmol/L (144–216 mg/dL); chuyển sang dextrose 5% khi glucose < 14",
+    "insulinDose": "Truyền insulin 0,1 U/kg/h IV (KHÔNG bolus theo từng trẻ; cân nhắc 0,05 U/kg/h ở người lớn)",
+    "fluidProtocol": "1 L nước muối 0,9% trong 1 giờ, sau đó cho mỗi phác đồ; chuyển sang dextrose-saline khi glucose < 14 mmol/L",
+    "potassiumProtocol": "Bù kali khi K⁺ < 5,5 mmol/L (40 mmol/L dịch). GIỮ insulin nếu K⁺ < 3,3.",
+    "bicarbAdvice": "Natri bicarbonate KHÔNG được khuyến khích trừ khi pH < 6,9 (không có lợi ích, có thể làm trầm trọng thêm nguy cơ phù não ở trẻ em). ADA 2026: thường không khuyến khích sử dụng bicarbonate (không có sự khác biệt về thời gian giải quyết).",
+    "cerebralEdemaRisk": "Chú ý phù não ở trẻ DKA – bù nước chậm, mannitol nếu có dấu hiệu",
+    "euglycemicDKA": "Euglycemia DKA: nồng độ insulin thấp kèm theo giảm lượng thức ăn, mang thai, sử dụng rượu, suy gan, điều trị bằng thuốc ức chế SGLT2. Cân nhắc khi xuất hiện tình trạng ketosis mặc dù glucose < 14 mmol/L (ADA 2026).",
+    "referenceCitation": "Tiêu chuẩn Chăm sóc ADA 2026 (Chăm sóc bệnh tiểu đường 49 Phụ lục 1:S339, tháng 1 năm 2026 — thay thế năm 2024); Đồng thuận về khủng hoảng tăng đường huyết ADA 2024 (Umpierrez); JBDS-IP 2023; ISPAD 2022 (nhi khoa)"
+  },
+  "arrest": {
+    "label": "Ngừng tim / hậu ROSC",
+    "pHActionThreshold": null,
+    "bicarbAdvice": "Bicarbonate KHÔNG thường quy trong ngừng tim (chỉ xem xét trong trường hợp tăng kali máu, quá liều TCA hoặc nhiễm toan chuyển hóa nặng từ trước)",
+    "targetPaCO2": "Sau ROSC: PaCO₂ 35–45 mmHg (tránh cả tình trạng giảm CO2 máu và tăng CO2 máu)",
+    "targetPaO2": "Sau ROSC: SpO₂ 94–98% (tránh tăng oxy máu)",
+    "targetTemp": "Hậu ROSC: quản lý nhiệt độ mục tiêu 32–36°C × 24 giờ mỗi ILCOR 2020",
+    "glucoseTarget": "Sau ROSC: 7,8–10 mmol/L (140–180 mg/dL); tránh hạ đường huyết",
+    "referenceCitation": "ILCOR 2020/ERC 2025; Hội đồng Resus Vương quốc Anh 2025 (thay thế 2021, thực hiện vào tháng 1 năm 2026)"
+  },
+  "respiratory": {
+    "label": "Suy hô hấp (COPD/hen suyễn/ARDS)",
+    "pHActionThreshold": 7.25,
+    "paCO2COPDtarget": "COPD: mục tiêu SpO₂ 88–92% (tránh giữ CO₂ do oxy hóa quá mức)",
+    "nivIndications": "NIV chỉ định nếu pH 7,25–7,35 với PaCO₂ > 45 trong đợt trầm trọng của bệnh COPD (BTS/ICS 2016, không có cập nhật lớn nào kể từ đó)",
+    "intubationCriteria": "Đặt nội khí quản nếu pH < 7,25 kèm theo nhiễm toan hô hấp, kiệt sức hoặc thất bại NIV",
+    "asthmaRule": "Trong bệnh hen suyễn nặng: PaCO₂ tăng hoặc bình thường là dấu hiệu Kiệt sức — cần tăng cường khẩn cấp (không được trấn an bằng CO₂ \"bình thường\")",
+    "copdInhalerNote": "COPD có bệnh hen suyễn chồng chéo → bắt buộc sử dụng ICS (GOLD 2025). LABA+LAMA+ICS được ưu tiên hơn LABA+ICS khi ICS được chỉ định.",
+    "bicarbAdvice": "Bicarbonate thường không được sử dụng cho nhiễm toan hô hấp (thay vào đó phải thông khí đúng cách)",
+    "referenceCitation": "BTS/ICS 2016 NIV; Báo cáo chiến lược hen suyễn GINA 2025; Báo cáo COPD GOLD 2025 (được xuất bản hiện tại)"
+  },
+  "renal": {
+    "label": "AKI / CKD / phụ thuộc vào lọc máu",
+    "pHActionThreshold": 7.1,
+    "bicarbCautious": true,
+    "bicarbAdvice": "Bicarbonate có thể được sử dụng trong nhiễm toan chuyển hóa CKD/AKI nhắm đến HCO₃ ≥ 22 (KDIGO 2024 CKD); tránh nếu quá tải âm lượng",
+    "kManagement": "Kiểm soát tăng kali máu tích cực hơn - lọc máu sớm nếu kháng trị",
+    "fluidStrategy": "Hồi sức dịch thận trọng. Sử dụng dịch tinh thể cân bằng; tránh tăng clo huyết (NS thể tích lớn liên quan đến AKI trong SMART/SALT-ED). Cân nhắc RRT sớm nếu thiểu niệu/toan. Các công cụ xác định liều lượng căng thẳng (NephroCheck, nước tiểu [TIMP-2]·[IGFBP-7]) có sẵn để báo cáo theo hướng dẫn của dấu ấn sinh học.",
+    "drugAdjustment": "Điều chỉnh liều thuốc theo chức năng thận; tránh độc tố thận (NSAID, thuốc cản quang, aminoglycoside)",
+    "framework": "Dàn dựng AKI của KDIGO 2012 vẫn là tài liệu tham khảo được xuất bản hiện tại. Nhận biết AKI là một bệnh liên tục (RIFLE/AKIN/KDIGO) có nguy cơ mắc bệnh CKD ở hạ lưu.",
+    "referenceCitation": "Hướng dẫn Thực hành Lâm sàng của KDIGO 2024 CKD; Hướng dẫn Thực hành Lâm sàng AKI của KDIGO 2012 (đã xuất bản hiện tại; đang phát triển bản cập nhật năm 2026)"
+  },
+  "toxic": {
+    "label": "Ăn phải chất độc (rượu / salicylate)",
+    "osmolarGapThreshold": 10,
+    "pHActionThreshold": 7.2,
+    "methanolAntidote": "Fomepizole 15 mg/kg tiêm tĩnh mạch (hoặc ethanol nếu không có) + axit folinic + lọc máu",
+    "ethyleneGlycolAntidote": "Fomepizole 15 mg/kg tiêm tĩnh mạch + thiamine + pyridoxine + lọc máu",
+    "salicylateAntidote": "Kiềm hóa nước tiểu (natri bicarbonate đến pH nước tiểu > 7,5) + lọc máu nếu nặng (mức > 700 mg/L, AKI, phù phổi hoặc pH < 7,20)",
+    "isopropanolAdvice": "Isopropanol → nhiễm ceton mà không nhiễm toan chuyển hóa (khoảng trống thẩm thấu tăng nhưng khoảng trống anion bình thường)",
+    "referenceCitation": "Khuyến nghị EXTRIP; AACT/EAPCCT"
+  },
+  "general": {
+    "label": "Chung / không xác định",
+    "pHActionThreshold": 7.1,
+    "bicarbAdvice": "Bicarbonate được cân nhắc nếu pH < 7,10 kèm theo huyết động không ổn định; kiểm tra lại ABG sau 15–30 phút",
+    "referenceCitation": "Nguyên tắc sinh lý tiêu chuẩn"
+  }
+}

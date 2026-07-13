@@ -1,0 +1,694 @@
+{
+  "interscalene": {
+    "name": "Interscalene brachial plexus block",
+    "region": "Upper limb",
+    "targetNerve": "C5–C7 roots of brachial plexus",
+    "indications": [
+      "Shoulder surgery (rotator cuff, arthroscopy, replacement)",
+      "Proximal humerus fracture",
+      "Clavicle surgery (combined with superficial cervical plexus)"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "levobupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "5–8 mL/h",
+      "note": "Catheter for post-op"
+    },
+    "sparedNerves": [
+      "Ulnar nerve (inferior trunk) — not suitable for hand surgery"
+    ],
+    "sideEffects": [
+      "Ipsilateral phrenic nerve block — 100% incidence (avoid in severe respiratory disease)",
+      "Horner syndrome (stellate ganglion)",
+      "Recurrent laryngeal nerve block (hoarseness)",
+      "Rare: pneumothorax, vertebral artery injection, epidural/intrathecal spread"
+    ],
+    "contraindications": [
+      "Severe respiratory disease (hemidiaphragmatic paralysis)",
+      "Contralateral recurrent laryngeal nerve palsy",
+      "Severe COPD / single lung"
+    ],
+    "technique": [
+      "Patient semi-sitting, head turned away",
+      "Linear high-frequency US probe transverse at C6 level (between anterior and middle scalene)",
+      "Identify plexus \"traffic light\" appearance (3 hypoechoic nerve roots)",
+      "In-plane needle approach, posterior to anterior",
+      "Inject between C5-C6 nerve roots, hydro-dissecting the sheath"
+    ],
+    "duration": "6–12 h (single shot); continuous up to 72 h"
+  },
+  "supraclavicular": {
+    "name": "Supraclavicular brachial plexus block",
+    "region": "Upper limb",
+    "targetNerve": "Brachial plexus divisions (above clavicle)",
+    "indications": [
+      "Surgery below mid-humerus",
+      "Elbow, forearm, hand surgery",
+      "Vascular access procedures"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "5–8 mL/h"
+    },
+    "coverage": "Complete upper limb except skin over shoulder",
+    "sideEffects": [
+      "Pneumothorax (classic risk — now reduced with US guidance but still possible)",
+      "Phrenic nerve block (50% with US; much higher with landmark)",
+      "Horner syndrome",
+      "Vascular puncture (subclavian artery runs medially)"
+    ],
+    "technique": [
+      "Supine, head turned away",
+      "US probe in supraclavicular fossa, behind mid-clavicle",
+      "Identify subclavian artery, first rib, pleura",
+      "In-plane needle approach, lateral to medial",
+      "Target \"corner pocket\" — lateral to artery, superior to first rib"
+    ],
+    "duration": "6–10 h"
+  },
+  "infraclavicular": {
+    "name": "Infraclavicular brachial plexus block",
+    "region": "Upper limb",
+    "targetNerve": "Brachial plexus cords (below clavicle)",
+    "indications": [
+      "Elbow, forearm, hand surgery",
+      "Continuous catheter (easier to secure)"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "6–10 mL/h"
+    },
+    "sideEffects": [
+      "No phrenic nerve involvement (preferred over supraclavicular in respiratory disease)",
+      "Vascular puncture (axillary artery)",
+      "Pneumothorax (rare)"
+    ],
+    "technique": [
+      "Supine, arm abducted 90°",
+      "US probe parasagittal, medial to coracoid process",
+      "Identify axillary artery with 3 cords (lateral, posterior, medial)",
+      "In-plane needle approach, cephalad to caudal",
+      "Inject posterior to artery (U-shape spread)"
+    ]
+  },
+  "axillary": {
+    "name": "Axillary brachial plexus block",
+    "region": "Upper limb",
+    "targetNerve": "Terminal branches (median, ulnar, radial, musculocutaneous)",
+    "indications": [
+      "Forearm and hand surgery",
+      "No risk of pneumothorax"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "mepivacaine_1.5"
+    ],
+    "sideEffects": [
+      "Vascular puncture",
+      "Incomplete block (musculocutaneous often missed — needs separate injection)"
+    ],
+    "technique": [
+      "Supine, arm abducted and externally rotated",
+      "US probe transverse in axilla",
+      "Identify axillary artery, surround nerves",
+      "Inject separately around each nerve (median superficial, ulnar inferior, radial posterior to artery)",
+      "Musculocutaneous in coracobrachialis muscle — separate injection"
+    ]
+  },
+  "femoral": {
+    "name": "Femoral nerve block",
+    "region": "Lower limb",
+    "targetNerve": "Femoral nerve (L2–L4)",
+    "indications": [
+      "Knee surgery (ACL, TKA — combined with sciatic/adductor canal)",
+      "Femoral shaft/hip fracture analgesia (classic use)",
+      "Anterior thigh surgery"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5",
+      "levobupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "4–8 mL/h"
+    },
+    "coverage": "Anterior thigh, medial leg (saphenous nerve), knee joint capsule",
+    "sideEffects": [
+      "Quadriceps weakness — fall risk in ambulatory patients",
+      "Vascular puncture (femoral artery medially)",
+      "Rarely: nerve injury with direct needle trauma"
+    ],
+    "technique": [
+      "Supine, leg slightly abducted",
+      "US probe transverse in inguinal crease",
+      "Identify femoral artery → nerve lateral to it, under fascia iliaca",
+      "In-plane needle, lateral to medial",
+      "Inject under fascia iliaca, nerve rolls and floats"
+    ]
+  },
+  "adductor-canal": {
+    "name": "Adductor canal block (saphenous nerve)",
+    "region": "Lower limb",
+    "targetNerve": "Saphenous nerve + nerve to vastus medialis (in adductor canal)",
+    "indications": [
+      "TKA / knee arthroscopy — preserves quadriceps strength",
+      "ACL reconstruction",
+      "Medial foot/ankle surgery (proximal saphenous)",
+      "Preferred over femoral block for ambulatory knee surgery"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "4–6 mL/h"
+    },
+    "advantages": [
+      "Preserves quadriceps motor function (enabling early mobilization after TKA)",
+      "Reduced fall risk compared to femoral block"
+    ],
+    "sideEffects": [
+      "Usually well-tolerated",
+      "Rarely: vascular puncture (femoral artery at apex of canal)"
+    ],
+    "technique": [
+      "Supine, leg externally rotated",
+      "US probe transverse at mid-thigh (midway between ASIS and patella)",
+      "Identify sartorius muscle, femoral artery deep to it",
+      "Target fascia around artery (under sartorius)",
+      "In-plane needle, lateral to medial, 15–20 mL"
+    ]
+  },
+  "fascia-iliaca": {
+    "name": "Fascia iliaca compartment block",
+    "region": "Lower limb",
+    "targetNerve": "Femoral + lateral femoral cutaneous ± obturator nerves",
+    "indications": [
+      "Hip fracture analgesia (primary indication — pre-theatre)",
+      "Femoral shaft surgery",
+      "Broad coverage with a \"volume-based\" approach"
+    ],
+    "volumeMl": {
+      "low": 30,
+      "high": 40
+    },
+    "typicalAgents": [
+      "ropivacaine_0.375",
+      "ropivacaine_0.2_large_volume",
+      "bupivacaine_0.25"
+    ],
+    "sideEffects": [
+      "Less precise than femoral block",
+      "Inconsistent obturator coverage"
+    ],
+    "technique": [
+      "Supine, leg extended",
+      "US probe transverse in inguinal region, medial to ASIS",
+      "Identify fascia iliaca as hyperechoic line over iliacus muscle",
+      "In-plane needle, lateral to medial approach",
+      "Pop through fascia iliaca, inject 30 mL — spread seen under fascia",
+      "Can be done as \"suprainguinal\" approach for better obturator coverage"
+    ]
+  },
+  "sciatic": {
+    "name": "Sciatic nerve block (popliteal approach)",
+    "region": "Lower limb",
+    "targetNerve": "Sciatic nerve (L4–S3) — tibial + common peroneal",
+    "indications": [
+      "Foot and ankle surgery",
+      "Posterior leg surgery",
+      "Combined with saphenous/adductor canal for complete below-knee coverage"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "5–8 mL/h"
+    },
+    "sideEffects": [
+      "Long-duration motor block (foot drop temporarily)",
+      "Vascular puncture (popliteal vessels)"
+    ],
+    "technique": [
+      "Prone or lateral (leg up)",
+      "US probe transverse in popliteal fossa",
+      "Identify popliteal artery → tibial nerve above it, common peroneal lateral",
+      "Target the nerve BEFORE bifurcation (4–6 cm proximal to popliteal crease)",
+      "In-plane needle, lateral approach"
+    ]
+  },
+  "ankle-block": {
+    "name": "Ankle block",
+    "region": "Lower limb",
+    "targetNerve": "5 nerves: posterior tibial, deep peroneal, superficial peroneal, sural, saphenous",
+    "indications": [
+      "Foot surgery (especially toe surgery, bunionectomy)",
+      "When sciatic block contraindicated"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30,
+      "split": "5 mL per nerve"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "sideEffects": [
+      "Pain during injection (multiple needle passes)",
+      "Inadequate surgical anaesthesia if any nerve missed"
+    ],
+    "technique": [
+      "Landmark + US guidance for tibial and deep peroneal",
+      "Infiltration technique for superficial nerves",
+      "Avoid tourniquet pain with concurrent calf infiltration or light sedation"
+    ]
+  },
+  "tap": {
+    "name": "Transversus abdominis plane (TAP) block",
+    "region": "Abdominal wall",
+    "targetNerve": "Thoracoabdominal nerves T7–L1 (in TAP between internal oblique and transversus)",
+    "indications": [
+      "Lower abdominal surgery (below umbilicus): hernia, C-section, hysterectomy",
+      "Laparoscopic port site analgesia",
+      "Open appendicectomy",
+      "Post-caesarean analgesia (as part of ERAS)"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 20,
+      "per_side": true,
+      "note": "Bilateral injection typical"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "coverage": "Somatic abdominal wall only (NO visceral coverage)",
+    "sideEffects": [
+      "⚠ Large volumes (30–40 mL bilateral) → high plasma LA levels; risk of LAST",
+      "Peritoneal puncture, visceral injury (rare)",
+      "Incomplete block if wrong plane"
+    ],
+    "technique": [
+      "Supine, arms by side",
+      "US probe transverse in mid-axillary line, between costal margin and iliac crest",
+      "Identify 3 muscle layers: external oblique, internal oblique, transversus abdominis",
+      "Target plane BETWEEN internal oblique and transversus abdominis",
+      "In-plane needle, anterior to posterior",
+      "15–20 mL per side — hydro-dissect the plane"
+    ],
+    "duration": "6–8 h"
+  },
+  "rectus-sheath": {
+    "name": "Rectus sheath block",
+    "region": "Abdominal wall",
+    "targetNerve": "Anterior divisions of T9–T12 (within rectus sheath)",
+    "indications": [
+      "Midline abdominal surgery (umbilical hernia, midline laparotomy)",
+      "Children: umbilical hernia repair, pyloromyotomy"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 20,
+      "per_side": true
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "sideEffects": [
+      "Peritoneal puncture",
+      "Inferior epigastric artery injury"
+    ]
+  },
+  "pecs-1": {
+    "name": "PECS I block",
+    "region": "Chest wall",
+    "targetNerve": "Lateral and medial pectoral nerves",
+    "indications": [
+      "Breast surgery (subpectoral implants, expander placement)",
+      "Pacemaker insertion analgesia"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "US probe parasagittal, infraclavicular",
+      "Target plane between pectoralis major and minor (thoracoacromial artery landmark)",
+      "Single injection, 10–15 mL"
+    ]
+  },
+  "pecs-2": {
+    "name": "PECS II block",
+    "region": "Chest wall",
+    "targetNerve": "Lateral and medial pectoral + intercostal nerves T2–T6",
+    "indications": [
+      "Radical mastectomy (+ axillary dissection)",
+      "Breast reconstruction"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30,
+      "split": "10 mL PECS I + 20 mL PECS II"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "As for PECS I plus second injection between pectoralis minor and serratus anterior",
+      "Covers lateral chest wall and axilla"
+    ]
+  },
+  "serratus": {
+    "name": "Serratus anterior plane block",
+    "region": "Chest wall",
+    "targetNerve": "Lateral cutaneous branches of intercostal nerves T2–T9",
+    "indications": [
+      "Rib fractures (unilateral)",
+      "Thoracotomy analgesia (alternative to thoracic epidural)",
+      "VATS",
+      "Chest drain insertion",
+      "Breast surgery (lateral)"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "5–8 mL/h"
+    },
+    "technique": [
+      "Lateral or supine with arm abducted",
+      "US probe over 4th–5th ribs in mid-axillary line",
+      "Identify latissimus dorsi, serratus anterior, ribs",
+      "Two approaches: superficial (between lat dorsi and serratus) or deep (below serratus)",
+      "In-plane needle, 20–30 mL"
+    ]
+  },
+  "paravertebral": {
+    "name": "Thoracic paravertebral block",
+    "region": "Thorax",
+    "targetNerve": "Spinal nerves and sympathetic chain in the paravertebral space",
+    "indications": [
+      "Thoracotomy (comparable to thoracic epidural)",
+      "VATS",
+      "Breast surgery (mastectomy)",
+      "Rib fractures (unilateral)",
+      "Herpes zoster pain",
+      "When thoracic epidural contraindicated (anticoagulation, spinal surgery)"
+    ],
+    "volumeMl": {
+      "low": 15,
+      "high": 25,
+      "per_level": "3–5 mL × multiple levels OR single injection"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2% or bupivacaine 0.125%",
+      "rate": "5–10 mL/h"
+    },
+    "coverage": "Unilateral somatic AND sympathetic block for multiple thoracic dermatomes",
+    "sideEffects": [
+      "Pneumothorax (2%)",
+      "Hypotension (sympathetic block, especially if bilateral)",
+      "Vascular puncture",
+      "Inadvertent epidural spread"
+    ],
+    "technique": [
+      "Prone or sitting",
+      "US probe sagittal, 2.5 cm lateral to spinous process",
+      "Identify transverse process, superior costo-transverse ligament, pleura",
+      "In-plane needle, approach from cephalad or caudad",
+      "Pop through costo-transverse ligament, inject with pleura depressed"
+    ]
+  },
+  "esp": {
+    "name": "Erector spinae plane (ESP) block",
+    "region": "Truncal",
+    "targetNerve": "Ventral and dorsal rami of spinal nerves (paravertebral spread from ESP)",
+    "indications": [
+      "Thoracic surgery (VATS, thoracotomy)",
+      "Breast surgery",
+      "Rib fractures",
+      "Abdominal surgery (high ESP T7)",
+      "Hip fracture (low ESP at L2-L4 — emerging evidence)",
+      "Chronic back pain"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "continuousInfusion": {
+      "drug": "Ropivacaine 0.2%",
+      "rate": "6–8 mL/h"
+    },
+    "advantages": [
+      "Safer than paravertebral (no pneumothorax risk, no major vessels)",
+      "Easier technique than paravertebral",
+      "Anticoagulation concerns less than epidural (but still cautious)",
+      "Single injection covers multiple dermatomes (3–6 levels)"
+    ],
+    "sideEffects": [
+      "Relatively safe",
+      "Theoretical sympathetic block if large volume"
+    ],
+    "technique": [
+      "Lateral or prone",
+      "US probe sagittal, 2–3 cm lateral to spinous process of target level (e.g. T5 for thoracic, T7 for abdominal)",
+      "Identify transverse process, erector spinae muscles",
+      "In-plane needle, cephalad to caudad, touch transverse process",
+      "Inject below erector spinae, above transverse process — should see craniocaudal spread"
+    ]
+  },
+  "qlb": {
+    "name": "Quadratus lumborum (QL) block",
+    "region": "Abdominal",
+    "targetNerve": "Thoracolumbar nerves T7–L1 (via paravertebral spread)",
+    "indications": [
+      "Abdominal surgery (broader than TAP — includes visceral coverage)",
+      "Caesarean section (especially with posterior QL or QL3)",
+      "Hip surgery (QL3 type)",
+      "Laparoscopic procedures"
+    ],
+    "volumeMl": {
+      "low": 20,
+      "high": 30
+    },
+    "typicalAgents": [
+      "ropivacaine_0.375",
+      "bupivacaine_0.25"
+    ],
+    "variants": [
+      "QL1 (lateral): anterolateral abdominal wall T7-T12",
+      "QL2 (posterior): broader coverage T7-L1",
+      "QL3 (transmuscular): paravertebral spread, hip coverage"
+    ],
+    "technique": [
+      "Lateral decubitus with operative side up",
+      "US probe transverse just above iliac crest",
+      "Identify QL muscle lateral to psoas",
+      "In-plane needle from lateral approach",
+      "Inject in chosen compartment (QL1 = lateral to QL, QL2 = posterior to QL, QL3 = between QL and psoas)"
+    ]
+  },
+  "superficial-cervical": {
+    "name": "Superficial cervical plexus block",
+    "region": "Head and neck",
+    "targetNerve": "C2–C4 cutaneous branches",
+    "indications": [
+      "Carotid endarterectomy (awake technique — combined with deep cervical)",
+      "Thyroid surgery analgesia",
+      "Clavicle surgery (combined with interscalene)",
+      "ENT procedures"
+    ],
+    "volumeMl": {
+      "low": 10,
+      "high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.5",
+      "bupivacaine_0.5"
+    ],
+    "sideEffects": [
+      "Very safe — superficial injection only",
+      "Rare: accidental deep injection (phrenic, stellate)"
+    ],
+    "technique": [
+      "Supine, head turned away",
+      "US probe transverse at mid-sternocleidomastoid (SCM)",
+      "Target posterior border of SCM, subcutaneous/subfascial plane",
+      "Single injection 10–15 mL"
+    ]
+  },
+  "caudal": {
+    "name": "Caudal epidural (paediatric)",
+    "region": "Paediatric lower body",
+    "targetNerve": "Sacral spinal nerves via caudal epidural space",
+    "indications": [
+      "Circumcision, hypospadias, orchidopexy",
+      "Inguinal hernia repair, hydrocele",
+      "Lower limb surgery",
+      "Caudal-to-thoracic catheter (infants) for abdominal surgery"
+    ],
+    "volumeMl": {
+      "formula": "Armitage: 0.5 mL/kg (sacral), 1 mL/kg (lumbosacral), 1.25 mL/kg (low thoracic), max 20 mL"
+    },
+    "maxDoseLBW": {
+      "bupivacaine": "2 mg/kg LBW (use 0.25% or 0.125% in neonates)",
+      "ropivacaine": "3 mg/kg LBW (use 0.2%)",
+      "levobupivacaine": "2 mg/kg LBW"
+    },
+    "typicalAgents": [
+      "ropivacaine_0.2",
+      "bupivacaine_0.25_max_2mg_per_kg",
+      "levobupivacaine_0.125_neonate"
+    ],
+    "adjuvants": [
+      "Clonidine 1–2 mcg/kg — prolongs duration by ~4 h (avoid > 2 mcg/kg in neonates due to apnoea risk)",
+      "Morphine 30–50 mcg/kg — 12–24 h analgesia (respiratory monitoring required minimum 12 h)",
+      "Dexmedetomidine 1 mcg/kg — alternative to clonidine"
+    ],
+    "testDoseProtocol": [
+      "MANDATORY under GA (child cannot report subjective symptoms)",
+      "Use 0.1 mL/kg of LA solution with adrenaline 1:200,000 (5 mcg/mL)",
+      "Wait 60 seconds. POSITIVE TEST: HR rise ≥ 10 bpm OR systolic BP rise ≥ 15 mmHg OR T-wave amplitude change ≥ 25% (Tobias 2001)",
+      "NEGATIVE test does NOT exclude intravascular placement — sevoflurane blunts β-1 response in 25–30%",
+      "Aspirate every 3 mL during injection; inject SLOWLY over 60–90 seconds",
+      "Ultrasound visualisation of injectate spread is the gold standard where available (Roberts 2005)"
+    ],
+    "monitoring": [
+      "Continuous ECG, SpO₂, NIBP (cycle q1min × 10 min post-injection then q3 min)",
+      "Capnography (most are intubated/LMA under GA)",
+      "Pupillary check before draping and again 5 min post-injection (mydriasis = cephalad LA spread)",
+      "Airway pressure trend (rise suggests high block paralysing intercostals)",
+      "Temperature (block-induced vasodilation causes heat loss in small children)"
+    ],
+    "earlyWarningSigns": [
+      "BRADYCARDIA (commonest first sign under GA — vagal-dominant cardiovascular system)",
+      "Hypotension > 20% from baseline (use age-based definitions)",
+      "ECG: widened QRS, prolonged QTc, ST-T changes, new arrhythmia",
+      "Rising airway pressure (high block paralysing intercostals)",
+      "Non-reactive mydriasis — pathognomonic for total spinal",
+      "SpO₂ drop",
+      "NO subjective warning symptoms — detection is purely objective"
+    ],
+    "sideEffects": [
+      "Urinary retention (commonest)",
+      "Intravascular injection (sacral canal vessels) → LAST: bradycardia/asystole is the FIRST sign in children, not seizures",
+      "Dural puncture → TOTAL SPINAL (dura ends S3–S4 in neonates, S2 in older children; infants more vulnerable)",
+      "Motor block (brief)",
+      "Failed block (incidence ~10% landmark technique, ~2% ultrasound-guided)"
+    ],
+    "emergencyResponse": [
+      "See crisis protocol: paediatric-regional-instability",
+      "Key paediatric differences: ATROPINE 20 mcg/kg first-line for bradycardia (NOT phenylephrine first)",
+      "LAST in paediatric: adrenaline REDUCED 1 mcg/kg (NOT 10 mcg/kg); Intralipid 1.5 mL/kg LBW bolus",
+      "Total spinal: intubate, atropine + adrenaline, fluid 20 mL/kg, expect 1–3 h block regression"
+    ],
+    "technique": [
+      "Lateral decubitus, knees to chest",
+      "Palpate sacral hiatus (triangle with posterior superior iliac spines)",
+      "Ultrasound preferred for neonates and infants (Mirjalili 2015)",
+      "22G short bevel or dedicated caudal needle, 45° angle cephalad",
+      "Pop through sacrococcygeal ligament, flatten to 15° and advance 2–3 mm",
+      "Confirm with test dose AND ultrasound visualisation of caudal spread where available"
+    ],
+    "ageLimit": "Primarily infants and children up to 20–25 kg (anatomy becomes less favourable beyond)",
+    "references": [
+      "Ecoffey C et al. J Clin Anesth 2022;79:110725 (PMID 35313269) — practice advisory on prevention/management of complications",
+      "Suresh S et al. Reg Anesth Pain Med 2018;43:211 (PMID 29319604) — ESRA/ASRA paediatric LA dosing",
+      "Walker BJ et al. Anesthesiology 2018;129:721 — PRAN registry >100,000 blocks: LAST 0.76:10,000",
+      "Tobias JD. Anesth Analg 2001 — test dose criteria under sevoflurane"
+    ]
+  },
+  "ilioinguinal": {
+    "name": "Ilioinguinal / iliohypogastric nerve block",
+    "region": "Abdominal (paediatric and adult)",
+    "targetNerve": "Ilioinguinal and iliohypogastric nerves (L1)",
+    "indications": [
+      "Inguinal hernia repair (children and adults)",
+      "Orchidopexy (combined with genitofemoral coverage)"
+    ],
+    "volumeMl": {
+      "paediatric": "0.3 mL/kg",
+      "adult_low": 10,
+      "adult_high": 15
+    },
+    "typicalAgents": [
+      "ropivacaine_0.25",
+      "bupivacaine_0.25"
+    ],
+    "technique": [
+      "US probe transverse, 1–2 cm medial and caudal to ASIS",
+      "Identify three muscle layers: external oblique, internal oblique, transversus",
+      "Target plane between internal oblique and transversus abdominis",
+      "In-plane needle, small volume"
+    ]
+  }
+}

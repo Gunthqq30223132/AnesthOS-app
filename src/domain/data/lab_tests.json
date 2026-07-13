@@ -1,0 +1,822 @@
+[
+  {
+    "id": "hb",
+    "name": "Haemoglobin",
+    "category": "Haematology",
+    "units": [
+      {
+        "unit": "g/dL",
+        "range": [
+          12,
+          17
+        ],
+        "yellow": [
+          10,
+          18
+        ],
+        "critical": [
+          7,
+          20
+        ]
+      },
+      {
+        "unit": "g/L",
+        "range": [
+          120,
+          170
+        ],
+        "yellow": [
+          100,
+          180
+        ],
+        "critical": [
+          70,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hct",
+    "name": "Haematocrit",
+    "category": "Haematology",
+    "units": [
+      {
+        "unit": "%",
+        "range": [
+          36,
+          50
+        ],
+        "yellow": [
+          30,
+          55
+        ],
+        "critical": [
+          21,
+          60
+        ]
+      },
+      {
+        "unit": "L/L",
+        "range": [
+          0.36,
+          0.5
+        ],
+        "yellow": [
+          0.3,
+          0.55
+        ],
+        "critical": [
+          0.21,
+          0.6
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plt",
+    "name": "Platelets",
+    "category": "Haematology",
+    "units": [
+      {
+        "unit": "×10⁹/L",
+        "range": [
+          150,
+          450
+        ],
+        "yellow": [
+          100,
+          600
+        ],
+        "critical": [
+          50,
+          1000
+        ]
+      },
+      {
+        "unit": "k/µL",
+        "range": [
+          150,
+          450
+        ],
+        "yellow": [
+          100,
+          600
+        ],
+        "critical": [
+          50,
+          1000
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wbc",
+    "name": "White cell count",
+    "category": "Haematology",
+    "units": [
+      {
+        "unit": "×10⁹/L",
+        "range": [
+          4,
+          11
+        ],
+        "yellow": [
+          3,
+          14
+        ],
+        "critical": [
+          1.5,
+          30
+        ]
+      },
+      {
+        "unit": "k/µL",
+        "range": [
+          4,
+          11
+        ],
+        "yellow": [
+          3,
+          14
+        ],
+        "critical": [
+          1.5,
+          30
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inr",
+    "name": "INR",
+    "category": "Coagulation",
+    "units": [
+      {
+        "unit": "ratio",
+        "range": [
+          0.9,
+          1.2
+        ],
+        "yellow": [
+          0.8,
+          1.5
+        ],
+        "critical": [
+          0.7,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aptt",
+    "name": "APTT",
+    "category": "Coagulation",
+    "units": [
+      {
+        "unit": "s",
+        "range": [
+          25,
+          35
+        ],
+        "yellow": [
+          22,
+          45
+        ],
+        "critical": [
+          15,
+          80
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fibrinogen",
+    "name": "Fibrinogen",
+    "category": "Coagulation",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          200,
+          400
+        ],
+        "yellow": [
+          150,
+          500
+        ],
+        "critical": [
+          100,
+          700
+        ]
+      },
+      {
+        "unit": "g/L",
+        "range": [
+          2,
+          4
+        ],
+        "yellow": [
+          1.5,
+          5
+        ],
+        "critical": [
+          1,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": "creatinine",
+    "name": "Creatinine",
+    "category": "Renal",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          0.7,
+          1.2
+        ],
+        "yellow": [
+          0.6,
+          1.7
+        ],
+        "critical": [
+          0.4,
+          5.6
+        ]
+      },
+      {
+        "unit": "µmol/L",
+        "range": [
+          60,
+          110
+        ],
+        "yellow": [
+          50,
+          150
+        ],
+        "critical": [
+          30,
+          500
+        ]
+      }
+    ]
+  },
+  {
+    "id": "urea",
+    "name": "Urea (BUN)",
+    "category": "Renal",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          7,
+          21
+        ],
+        "yellow": [
+          6,
+          28
+        ],
+        "critical": [
+          3,
+          84
+        ]
+      },
+      {
+        "unit": "mmol/L",
+        "range": [
+          2.5,
+          7.5
+        ],
+        "yellow": [
+          2,
+          10
+        ],
+        "critical": [
+          1,
+          30
+        ]
+      }
+    ]
+  },
+  {
+    "id": "egfr",
+    "name": "eGFR",
+    "category": "Renal",
+    "units": [
+      {
+        "unit": "mL/min/1.73m²",
+        "range": [
+          90,
+          120
+        ],
+        "yellow": [
+          60,
+          120
+        ],
+        "critical": [
+          15,
+          120
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sodium",
+    "name": "Sodium",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mmol/L",
+        "range": [
+          135,
+          145
+        ],
+        "yellow": [
+          130,
+          150
+        ],
+        "critical": [
+          120,
+          160
+        ]
+      },
+      {
+        "unit": "mEq/L",
+        "range": [
+          135,
+          145
+        ],
+        "yellow": [
+          130,
+          150
+        ],
+        "critical": [
+          120,
+          160
+        ]
+      }
+    ]
+  },
+  {
+    "id": "potassium",
+    "name": "Potassium",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mmol/L",
+        "range": [
+          3.5,
+          5
+        ],
+        "yellow": [
+          3,
+          5.5
+        ],
+        "critical": [
+          2.5,
+          6.5
+        ]
+      },
+      {
+        "unit": "mEq/L",
+        "range": [
+          3.5,
+          5
+        ],
+        "yellow": [
+          3,
+          5.5
+        ],
+        "critical": [
+          2.5,
+          6.5
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chloride",
+    "name": "Chloride",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mmol/L",
+        "range": [
+          98,
+          107
+        ],
+        "yellow": [
+          95,
+          110
+        ],
+        "critical": [
+          85,
+          120
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bicarbonate",
+    "name": "Bicarbonate (HCO₃)",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mmol/L",
+        "range": [
+          22,
+          28
+        ],
+        "yellow": [
+          18,
+          32
+        ],
+        "critical": [
+          10,
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "id": "calcium",
+    "name": "Calcium (corrected)",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          8.8,
+          10.4
+        ],
+        "yellow": [
+          8,
+          11.2
+        ],
+        "critical": [
+          6.8,
+          12.8
+        ]
+      },
+      {
+        "unit": "mmol/L",
+        "range": [
+          2.2,
+          2.6
+        ],
+        "yellow": [
+          2,
+          2.8
+        ],
+        "critical": [
+          1.7,
+          3.2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magnesium",
+    "name": "Magnesium",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          1.7,
+          2.4
+        ],
+        "yellow": [
+          1.4,
+          2.8
+        ],
+        "critical": [
+          1,
+          5
+        ]
+      },
+      {
+        "unit": "mmol/L",
+        "range": [
+          0.7,
+          1
+        ],
+        "yellow": [
+          0.6,
+          1.2
+        ],
+        "critical": [
+          0.4,
+          2
+        ]
+      },
+      {
+        "unit": "mEq/L",
+        "range": [
+          1.4,
+          2
+        ],
+        "yellow": [
+          1.2,
+          2.4
+        ],
+        "critical": [
+          0.8,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phosphate",
+    "name": "Phosphate",
+    "category": "Electrolytes",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          2.5,
+          4.6
+        ],
+        "yellow": [
+          1.9,
+          5.6
+        ],
+        "critical": [
+          1,
+          8
+        ]
+      },
+      {
+        "unit": "mmol/L",
+        "range": [
+          0.8,
+          1.5
+        ],
+        "yellow": [
+          0.6,
+          1.8
+        ],
+        "critical": [
+          0.3,
+          2.5
+        ]
+      }
+    ]
+  },
+  {
+    "id": "glucose",
+    "name": "Glucose (random)",
+    "category": "Endocrine",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          72,
+          140
+        ],
+        "yellow": [
+          63,
+          200
+        ],
+        "critical": [
+          45,
+          450
+        ]
+      },
+      {
+        "unit": "mmol/L",
+        "range": [
+          4,
+          7.8
+        ],
+        "yellow": [
+          3.5,
+          11
+        ],
+        "critical": [
+          2.5,
+          25
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hba1c",
+    "name": "HbA1c",
+    "category": "Endocrine",
+    "units": [
+      {
+        "unit": "%",
+        "range": [
+          4,
+          5.9
+        ],
+        "yellow": [
+          4,
+          7
+        ],
+        "critical": [
+          4,
+          10
+        ]
+      },
+      {
+        "unit": "mmol/mol",
+        "range": [
+          20,
+          41
+        ],
+        "yellow": [
+          20,
+          53
+        ],
+        "critical": [
+          20,
+          86
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tsh",
+    "name": "TSH",
+    "category": "Endocrine",
+    "units": [
+      {
+        "unit": "mIU/L",
+        "range": [
+          0.4,
+          4
+        ],
+        "yellow": [
+          0.1,
+          6
+        ],
+        "critical": [
+          0.01,
+          30
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alt",
+    "name": "ALT",
+    "category": "Liver",
+    "units": [
+      {
+        "unit": "U/L",
+        "range": [
+          7,
+          56
+        ],
+        "yellow": [
+          5,
+          100
+        ],
+        "critical": [
+          5,
+          1000
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ast",
+    "name": "AST",
+    "category": "Liver",
+    "units": [
+      {
+        "unit": "U/L",
+        "range": [
+          10,
+          40
+        ],
+        "yellow": [
+          5,
+          100
+        ],
+        "critical": [
+          5,
+          1000
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bilirubin",
+    "name": "Bilirubin (total)",
+    "category": "Liver",
+    "units": [
+      {
+        "unit": "mg/dL",
+        "range": [
+          0.2,
+          1.2
+        ],
+        "yellow": [
+          0.1,
+          2.3
+        ],
+        "critical": [
+          0.1,
+          17
+        ]
+      },
+      {
+        "unit": "µmol/L",
+        "range": [
+          3,
+          21
+        ],
+        "yellow": [
+          2,
+          40
+        ],
+        "critical": [
+          2,
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "id": "albumin",
+    "name": "Albumin",
+    "category": "Liver",
+    "units": [
+      {
+        "unit": "g/dL",
+        "range": [
+          3.5,
+          5
+        ],
+        "yellow": [
+          2.5,
+          5.5
+        ],
+        "critical": [
+          1.5,
+          6
+        ]
+      },
+      {
+        "unit": "g/L",
+        "range": [
+          35,
+          50
+        ],
+        "yellow": [
+          25,
+          55
+        ],
+        "critical": [
+          15,
+          60
+        ]
+      }
+    ]
+  },
+  {
+    "id": "troponin",
+    "name": "Troponin I (high-sensitivity)",
+    "category": "Cardiac",
+    "units": [
+      {
+        "unit": "ng/L",
+        "range": [
+          0,
+          14
+        ],
+        "yellow": [
+          0,
+          50
+        ],
+        "critical": [
+          0,
+          1000
+        ]
+      },
+      {
+        "unit": "ng/mL",
+        "range": [
+          0,
+          0.014
+        ],
+        "yellow": [
+          0,
+          0.05
+        ],
+        "critical": [
+          0,
+          1
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "t": "Định lượng sugammadex theo độ sâu",
+    "b": "Sugammadex phụ thuộc vào độ sâu: 2 mg/kg với số TOF >=2, 4 mg/kg ở 1-2 lần đếm sau uốn ván, và 16 mg/kg để hồi phục ngay lập tức sau liều rocuronium 1,2 mg/kg. Liều lượng theo trọng lượng cơ thể thực tế."
+  },
+  {
+    "t": "NAP4: nổi lên là nguy hiểm",
+    "b": "NAP4 nhận thấy phần lớn các biến cố lớn về đường hô hấp xảy ra khi mới xuất hiện và trong quá trình hồi phục, không chỉ ở giai đoạn khởi phát. Lập kế hoạch rút ống nội khí quản một cách có chủ ý như đặt nội khí quản."
+  },
+  {
+    "t": "Oxy hóa khi ngừng thở (THRIVE)",
+    "b": "O2 lưu lượng cao qua mũi trong khi ngưng thở giúp kéo dài thời gian ngưng thở an toàn nhờ quá trình oxy hóa cộng với một số thanh thải CO2 - có giá trị nhất ở đường thở khó và bệnh nhân béo phì/sản khoa nơi độ bão hòa bão hòa giảm nhanh."
+  },
+  {
+    "t": "Chỉ báo sợi quang tỉnh táo",
+    "b": "Đường thở khó được dự đoán với khả năng mở miệng hạn chế, biến dạng gập cố định hoặc khối u đường thở ủng hộ việc đặt nội khí quản khi tỉnh - oxy và độ thông thoáng được bảo toàn trong khi bạn cố định ống."
+  },
+  {
+    "t": "Nội soi thanh quản lần đầu",
+    "b": "Nội soi thanh quản bằng video thường quy giúp cải thiện tầm nhìn thanh môn và thành công lần đầu so với nội soi thanh quản trực tiếp, đặc biệt đối với những người không phải chuyên gia và đường thở khó dự đoán - ngày càng trở thành một mặc định thay vì cứu nguy."
+  },
+  {
+    "t": "Không thể đặt nội khí quản không thể thở oxy",
+    "b": "Trong CICO, đường thở phẫu thuật không nên bị trì hoãn vì những nỗ lực SAD lặp đi lặp lại. Phẫu thuật cắt sụn nhẫn giáp qua ống thông bằng dao mổ là kỹ thuật cấp cứu vùng trước cổ (DAS) được khuyến nghị."
+  },
+  {
+    "t": "Nguy cơ hít phải LMA",
+    "b": "Đường thở trên thanh môn thế hệ thứ hai có kênh dẫn lưu dạ dày (ví dụ i-gel, ProSeal) làm giảm nhưng không loại bỏ nguy cơ hít sặc - chúng không thể thay thế ETT khi nguy cơ hít sặc cao."
+  },
+  {
+    "t": "Giới hạn Mallampati",
+    "b": "Chỉ riêng lớp Mallampati là một yếu tố dự báo yếu về việc đặt nội khí quản khó. Kết hợp nó với khoảng cách tuyến giáp, há miệng, cử động cổ và răng - không có xét nghiệm đơn lẻ nào đáng tin cậy."
+  },
+  {
+    "t": "Vị trí tăng cường trong bệnh béo phì",
+    "b": "Đẩy bệnh nhân béo phì cho đến khi lỗ thính giác bên ngoài thẳng hàng với phần xương ức giúp cải thiện cả tầm nhìn qua nội soi thanh quản và thời gian ngừng thở - vị trí trước khi bạn gây mê."
+  },
+  {
+    "t": "Bougie trước stylet",
+    "b": "Bougie có tỷ lệ thành công trong lần thử đầu tiên cao hơn so với stylet trong đường thở khó (thử nghiệm BEAM). Cảm nhận tiếng lách cách và giữ khí quản để xác nhận vị trí khí quản."
+  },
+  {
+    "t": "Kích thước ống lumen đôi",
+    "b": "DLT bên trái thường được ưa thích hơn vì biên độ an toàn của phế quản dài hơn. Xác nhận vị trí bằng nội soi phế quản sợi quang - riêng việc nghe tim thai trên lâm sàng đã có một tỷ lệ đáng kể."
+  },
+  {
+    "t": "Rút ống nội khí quản đường thở khó",
+    "b": "Đối với việc rút ống nội khí quản có nguy cơ, hãy xem xét sử dụng ống thông trao đổi đường thở: nó cho phép đặt lại ống nội khí quản và bơm oxy nếu bệnh nhân thất bại và được dung nạp tốt trong một thời gian sau khi rút ống."
+  },
+  {
+    "t": "Độc tính của bupivacain và lidocain",
+    "b": "Độc tính trên tim của bupivacain có thể xuất hiện trước các dấu hiệu thần kinh trung ương và dai dẳng. Tỷ lệ độc tính trên tim:CNS của nó kém hơn nhiều so với lidocain - cho nhũ tương lipid sớm và kéo dài thời gian hồi sức; thời gian hồi phục có thể vượt quá 1 giờ."
+  },
+  {
+    "t": "Phác đồ lipid CUỐI CÙNG",
+    "b": "Nhũ tương lipid 20%: bolus 1,5 mL/kg trong 1 phút, sau đó truyền 0,25 mL/kg/phút; lặp lại liều bolus và tăng gấp đôi lượng truyền để có sự mất ổn định kéo dài. Tối đa ~12 mL/kg."
+  },
+  {
+    "t": "Liều tối đa LA",
+    "b": "Lidocain ~3 mg/kg (7 với adrenaline); bupivacain ~2 mg/kg; ropivacain ~3 mg/kg. Tính tổng lượng trước khi thấm, đặc biệt với khối hiện trường và ở trẻ em."
+  },
+  {
+    "t": "Trục thần kinh sau LMWH",
+    "b": "LMWH điều trị cần khoảng thời gian 24 giờ trước khi chọc dò trục thần kinh/cắt bỏ ống thông; dự phòng cần 12h. Bắt đầu lại điều trị dự phòng >=4 giờ sau khi loại bỏ - nguy cơ tụ máu cao nhất khi loại bỏ chứ không phải khi chèn."
+  },
+  {
+    "t": "Khối mặt phẳng cương cứng",
+    "b": "gây tê mặt phẳng cơ dựng gai (ESP block) đặt LA vào mặt phẳng cân cạnh cột sống và cung cấp thuốc giảm đau đa vùng cho phẫu thuật ngực và bụng với độ an toàn thuận lợi so với các kỹ thuật cận trục thần kinh sâu hơn."
+  },
+  {
+    "t": "Ống phụ và xương đùi",
+    "b": "Khối ống cơ khép bảo tồn sức mạnh cơ tứ đầu tốt hơn khối dây thần kinh xương đùi, hỗ trợ vận động sớm sau phẫu thuật đầu gối trong khi vẫn giảm đau tốt."
+  },
+  {
+    "t": "Liều cột sống trong thai kỳ",
+    "b": "Tĩnh mạch ngoài màng cứng bị căng làm giảm thể tích dịch não tủy, do đó nhu cầu LA cột sống giảm trong thai kỳ. Liều bupivacain nặng tiêu chuẩn cho sốc tim thấp hơn so với các thuốc gây mê không sản khoa tương đương."
+  },
+  {
+    "t": "Lý do liều thử nghiệm",
+    "b": "Liều thử nghiệm ngoài màng cứng với adrenaline phát hiện vị trí trong mạch máu (nhịp tim nhanh) và LA phát hiện vị trí trong vỏ não (phong bế dày đặc nhanh) - đọc cả hai trước khi dùng đủ liều."
+  },
+  {
+    "t": "Khối mặt phẳng ngang bụng",
+    "b": "gây tê khoang cơ ngang bụng (TAP block) bao phủ thành bụng trước (T6-L1) nhưng không gây đau nội tạng - chúng là thuốc hỗ trợ giảm đau cơ thể, không phải là giải pháp độc lập cho các thủ thuật trong ổ bụng."
+  },
+  {
+    "t": "Horner sau intercalene",
+    "b": "Hội chứng Horner cùng bên, khàn giọng hoặc liệt cơ hoành sau khi tắc nghẽn cơ hoành phản ánh sự lan sang các cấu trúc lân cận - thường tự giới hạn, nhưng tư vấn và quan sát dự trữ hô hấp ở bệnh nhân cận biên."
+  },
+  {
+    "t": "Khối trục thần kinh vi sai",
+    "b": "gây tê thần kinh tự trị kéo dài ~2 đoạn trên cảm giác và cảm giác ~2 trên vận động. Việc cắt bỏ giao cảm giải thích tại sao hạ huyết áp có thể xảy ra trước bất kỳ mức độ cảm giác rõ ràng nào."
+  },
+  {
+    "t": "Phenylephrine so với noradrenaline tại CS",
+    "b": "Dự phòng phenylephrine (25-50 mcg/phút) là tiêu chuẩn cho hạ huyết áp cột sống ở xoang tĩnh mạch; noradrenaline 4-6 mcg/phút gây ra nhịp tim chậm phản xạ ít hơn và bảo tồn cung lượng tim tốt hơn - ngày càng được ưa chuộng."
+  },
+  {
+    "t": "Thời gian nén động mạch chủ",
+    "b": "Đáng kể từ ~ 20 tuần. Trong trường hợp bà mẹ bị ngừng tim, hãy sử dụng dịch chuyển tử cung trái bằng tay (không nghiêng) trong khi CPR và bắt đầu CS tử cung trong 4 phút nếu không có ROSC - nó hỗ trợ hồi sức cho bà mẹ, không chỉ cho thai nhi."
+  },
+  {
+    "t": "Magiê trong tiền sản giật",
+    "b": "Magiê dùng để dự phòng co giật trong tiền sản giật nặng chứ không phải để kiểm soát huyết áp. Theo dõi tình trạng mất phản xạ xương bánh chè (độc tính sớm) trước khi suy hô hấp; canxi gluconate là thuốc giải độc."
+  },
+  {
+    "t": "GA sản khoa đặt nội khí quản thất bại",
+    "b": "Tỷ lệ đặt nội khí quản thất bại ở GA sản khoa cao hơn khoảng một bậc so với phẫu thuật tổng quát. Cung cấp oxy đầy đủ trước đó, sử dụng ống nhỏ hơn, đoạn đường nối và diễn giải một mũi khoan đặt nội khí quản không thành công."
+  },
+  {
+    "t": "Thuốc co hồi tử cung xuất huyết sau sinh",
+    "b": "Oxytocin là phác đồ đầu tiên (tiêm nhanh + tiêm truyền; tránh bolus nhanh - gây hạ huyết áp). Tăng dần lên ergometrine (tránh tăng huyết áp), carboprost (tránh hen suyễn), sau đó là misoprostol."
+  },
+  {
+    "t": "Thuyên tắc nước ối",
+    "b": "Nghi ngờ AFE với tình trạng thiếu oxy đột ngột, trụy tim mạch và DIC khi sinh. Quản lý mang tính hỗ trợ - hồi sức chất lượng cao, hỗ trợ truyền máu số lượng lớn và điều trị DIC sớm."
+  },
+  {
+    "t": "Gây tê ngoài màng cứng cho cat-1 CS",
+    "b": "Một phương pháp gây tê ngoài màng cứng trong chuyển dạ đang hoạt động tốt hiện có có thể được bổ sung cho CS loại 1 nhanh hơn so với đặt cột sống - sử dụng hỗn hợp nồng độ cao và đánh giá khối trước khi rạch."
+  },
+  {
+    "t": "Dự phòng hít sặc tại CS",
+    "b": "Natri citrate là thuốc kháng axit không dạng hạt; kết hợp với thuốc chẹn H2 +/- metoclopramide. Ondansetron là thuốc chống nôn, KHÔNG phải thuốc kháng axit - nó không thay thế điều trị dự phòng sặc."
+  },
+  {
+    "t": "Hạ huyết áp gây hại cho thai nhi",
+    "b": "Hạ huyết áp cột sống của mẹ làm giảm tưới máu tử cung – nhau thai và gây nhiễm toan cho thai nhi. Điều trị chủ động bằng truyền thuốc vận mạch và phối hợp, không phản ứng."
+  },
+  {
+    "t": "Phản ứng ba protamine",
+    "b": "Nguyên nhân do protamine: hạ huyết áp (cho từ từ), sốc phản vệ thực sự (nguy cơ cao hơn với NPH insulin/tiếp xúc trước đó) và co mạch phổi nghiêm trọng. Chuẩn bị sẵn thuốc vận mạch và đảo ngược trong >=10 phút."
+  },
+  {
+    "t": "Huyết động học hẹp động mạch chủ",
+    "b": "Trong AS nặng duy trì nhịp xoang, tiền gánh đầy đủ và SVR; tránh nhịp tim nhanh và giãn mạch. Sự tắc nghẽn cố định có nghĩa là tình trạng hạ huyết áp có thể tăng theo chiều xoắn ốc - hãy điều trị ngay lập tức bằng thuốc chủ vận alpha."
+  },
+  {
+    "t": "HOCM và thuốc tăng co bóp",
+    "b": "Trong bệnh cơ tim phì đại tắc nghẽn, các thuốc tăng co bóp cơ tim và nhịp tim nhanh làm trầm trọng thêm tình trạng tắc nghẽn động mạch ra ngoài. Khối lượng ưa thích, phong tỏa beta và chất chủ vận alpha thuần túy - trái ngược với quản lý sản lượng thấp tiêu chuẩn."
+  },
+  {
+    "t": "Sinh lý chèn ép tim",
+    "b": "Tamponade giúp cân bằng áp lực tâm trương và mạch nghịch lý. Giữ bệnh nhân nhanh, đầy và căng (tránh nhịp tim chậm, giảm thể tích máu, giãn mạch) cho đến khi màng ngoài tim được dẫn lưu."
+  },
+  {
+    "t": "Axit Tranexamic trong phẫu thuật tim",
+    "b": "TXA làm giảm chảy máu và truyền máu trong phẫu thuật tim, nhưng liều cao có liên quan đến co giật - sử dụng liều lượng theo cân nặng và cảnh giác với hoạt động co giật sau phẫu thuật."
+  },
+  {
+    "t": "Khủng hoảng tăng huyết áp phổi",
+    "b": "Tránh tình trạng thiếu oxy, tăng CO2, nhiễm toan và áp lực đường thở cao - tất cả đều làm tăng PVR. Duy trì tưới máu RV với áp lực hệ thống (noradrenaline/vasopressin) và xem xét dùng thuốc giãn mạch phổi dạng hít."
+  },
+  {
+    "t": "Stent và thời gian kháng tiểu cầu kép",
+    "b": "Phẫu thuật chọn lọc ngoài tim thường được trì hoãn ít nhất 6 tháng sau khi đặt stent phủ thuốc. Dừng sớm liệu pháp kháng tiểu cầu kép có nguy cơ gây huyết khối trong stent thảm khốc - liên quan đến tim mạch."
+  },
+  {
+    "t": "Etomidate ức chế tuyến thượng thận",
+    "b": "Ngay cả một liều cảm ứng duy nhất cũng có thể ngăn chặn sự tổng hợp cortisol của tuyến thượng thận trong tối đa 24 giờ. Nó bảo tồn huyết động học trong trường hợp sốc nhưng cân nhắc điều đó để chống lại sự ức chế tuyến thượng thận trong nhiễm trùng huyết - ketamine thường được ưa chuộng hơn."
+  },
+  {
+    "t": "Ketamine trong sự suy giảm catecholamine",
+    "b": "Ketamine hỗ trợ huyết áp thông qua kích thích giao cảm, nhưng ở những bệnh nhân thiếu catecholamine, tác dụng ức chế cơ tim trực tiếp của nó không được bộc lộ - nó có thể gây hạ huyết áp thay vì tăng như dự kiến."
+  },
+  {
+    "t": "Hồ sơ Dexmedetomidine",
+    "b": "Cung cấp thuốc an thần và giảm đau với tình trạng ức chế hô hấp tối thiểu - có giá trị khi đặt ống nội khí quản khi tỉnh và tiết kiệm opioid - với cái giá phải trả là nhịp tim chậm và hạ huyết áp do mất giao cảm trung ương."
+  },
+  {
+    "t": "Liều sux cho chỉ số RSI thực",
+    "b": "Suxamethonium 1,5 mg/kg mang lại điều kiện đặt nội khí quản trong khoảng 45-60 giây. Rocuronium cần >=1,0-1,2 mg/kg (không phải 0,6) để phù hợp với thời điểm khởi phát đó - và bắt buộc phải có sugammadex."
+  },
+  {
+    "t": "Cửa sổ tăng kali máu Suxamethonium",
+    "b": "Các thụ thể ACh ngoài khớp được điều chỉnh tăng (bỏng, tổn thương tủy sống, bất động kéo dài, mất dây thần kinh) khiến sux trở nên nguy hiểm từ ~ 24-72 giờ sau khi bị tổn thương, kéo dài nhiều tháng. 24 giờ đầu thường an toàn."
+  },
+  {
+    "t": "Remifentanil bán thời gian nhạy cảm với bối cảnh",
+    "b": "Remifentanil có thời gian bán hủy tùy theo ngữ cảnh là ~ 3-4 phút bất kể thời gian truyền (thủy phân este) - nó cung cấp khả năng kiểm soát chính xác nhưng lên kế hoạch giảm đau khi xuất hiện trước khi bạn dừng thuốc."
+  },
+  {
+    "t": "Gây tê cục bộ và adrenaline",
+    "b": "Việc thêm adrenaline vào LA sẽ kéo dài thời gian phong tỏa và tăng liều tối đa an toàn bằng cách giảm sự hấp thu toàn thân - nhưng tránh sử dụng ở các trường cuối động mạch (chữ số, dương vật) nơi vẫn còn thận trọng trong sách giáo khoa."
+  },
+  {
+    "t": "Liều dùng Paracetamol IV ở người nhẹ cân",
+    "b": "Liều dùng Paracetamol tiêm tĩnh mạch dựa trên cân nặng dưới 50 kg (15 mg/kg, tối đa 1 g/liều) để tránh nhiễm độc gan - liều 1 g cố định chỉ dành cho người lớn trên ngưỡng cân nặng."
+  },
+  {
+    "t": "Oxit nitơ và không gian kín",
+    "b": "Oxit nitơ khuếch tán vào không gian chứa đầy không khí nhanh hơn lá nitơ - tránh trong tràn khí màng phổi, tắc ruột, phẫu thuật tai giữa và khí nội nhãn gần đây."
+  },
+  {
+    "t": "Thuốc chẹn Dantrolene và canxi",
+    "b": "Trong tăng thân nhiệt ác tính cho sớm dantrolene 2-2,5 mg/kg; TRÁNH thuốc chẹn kênh canxi - sự kết hợp có thể gây tăng kali máu và trụy tim mạch."
+  },
+  {
+    "t": "Cảnh báo về xanh methylen",
+    "b": "Xanh methylene 1-2 mg/kg điều trị methaemoglobin huyết nhưng chống chỉ định trong trường hợp thiếu G6PD và có thể thúc đẩy hội chứng serotonin khi dùng thuốc serotonergic (nó là chất ức chế MAO)."
+  },
+  {
+    "t": "Sốc phản vệ adrenaline",
+    "b": "IM adrenaline 500 mcg (0,5 mL tỷ lệ 1:1000) đùi trước bên, dòng đầu tiên. Liều thứ hai tiêm vào chân ĐỐI LẠI (UK Resus 2025) - tác dụng co mạch của liều đầu tiên làm suy yếu khả năng tái hấp thu tại cùng một vị trí."
+  },
+  {
+    "t": "Thời gian phản vệ tryptase",
+    "b": "Lấy tryptase tế bào mast ở ~1-2 giờ (đỉnh) và đường cơ sở ở >=24 giờ. Sự khác biệt giữa cấp tính và ban đầu xác nhận chẩn đoán - tác nhân phổ biến nhất là NMBA, kháng sinh và chlorhexidine."
+  },
+  {
+    "t": "Sốc phản vệ chịu nhiệt",
+    "b": "Kiên trì sau hai liều tiêm bắp thích hợp = kháng trị; bắt đầu truyền adrenaline. Xem xét vasopressin, glucagon (nếu bị chặn beta) và xanh methylene để điều trị sốc phân bố."
+  },
+  {
+    "t": "Manh mối về bệnh methaemoglobin huyết",
+    "b": "SpO2 bị kẹt gần 85% và không phản ứng với oxy, kèm theo máu màu nâu sô-cô-la, gợi ý methemoglobinaemia (benzocain, prilocain, dapsone). Xử lý bằng xanh methylen 1-2 mg/kg."
+  },
+  {
+    "t": "Cột sống cao/toàn bộ",
+    "b": "Mức độ cảm giác tăng cao kèm theo cảm giác ngứa ran ở tay, khó thở, sau đó là nhịp tim chậm và hạ huyết áp báo hiệu cột sống cao. Tích cực hỗ trợ đường thở và tuần hoàn - thường tự hạn chế bằng sự hỗ trợ."
+  },
+  {
+    "t": "Tăng thân nhiệt ác tính bước đầu",
+    "b": "Dừng kích hoạt, chuyển sang thông khí không hơi (hoặc bộ lọc than hoạt tính), tăng thông khí bằng 100% O2 và cho dantrolene - sau đó làm mát và điều trị tăng kali máu và rối loạn nhịp tim."
+  },
+  {
+    "t": "Truyền canxi lượng lớn",
+    "b": "Citrate chelate canxi bị ion hóa; truyền máu nhanh gây hạ canxi máu làm suy giảm đông máu và co bóp. Theo dõi Ca2+ bị ion hóa và thay thế sớm - không chờ bắt giữ."
+  },
+  {
+    "t": "Phòng chống ngộ độc thuốc tê toàn thân (LAST)",
+    "b": "Dùng liều thấp nhất có hiệu quả, hút trước khi tiêm, tiêm tăng dần và sử dụng siêu âm. Phòng ngừa nhịp đập giải cứu - và có sẵn nhũ tương lipid ngay lập tức ở bất cứ nơi nào bạn tiêm liều LA lớn."
+  },
+  {
+    "t": "Thuốc chẹn beta tiếp tục không bắt đầu",
+    "b": "POISE: bắt đầu dùng metoprolol liều cao trong chu phẫu làm giảm nhồi máu cơ tim nhưng tăng đột quỵ và tử vong toàn bộ. Tiếp tục phong tỏa beta mãn tính; KHÔNG bắt đầu nó ngay lập tức để giảm thiểu rủi ro."
+  },
+  {
+    "t": "Thuốc ức chế SGLT2 DKA bạch cầu",
+    "b": "Ngừng gliflozin ~ 3 ngày trước cuộc phẫu thuật lớn. Chúng gây ra tình trạng nhiễm toan ceton euglycaemia - xeton và nhiễm toan với lượng glucose gần như bình thường, dễ bị bỏ qua vì lượng đường có vẻ yên tâm."
+  },
+  {
+    "t": "Giới hạn hiệu chỉnh natri",
+    "b": "Điều chỉnh tình trạng hạ natri máu mạn tính <=8 mmol/L mỗi 24 giờ để tránh hiện tượng mất myelin thẩm thấu. Hãy cẩn thận với sự điều chỉnh nhanh chóng do điều trị bằng dung dịch muối ưu trương hoặc sự thanh thải nước tự do đột ngột."
+  },
+  {
+    "t": "TOF 0.9 là mục tiêu thực sự",
+    "b": "Tỷ lệ TOF 0,7-0,9 vẫn làm suy yếu sự phối hợp của hầu họng và phản ứng thông khí khi thiếu oxy mặc dù bệnh nhân có vẻ ngoài bình thường. Chỉ TOF định lượng >=0,9 mới loại trừ khối dư đáng kể."
+  },
+  {
+    "t": "TIVA và nhận thức (NAP5)",
+    "b": "NAP5 đã gắn cờ TIVA với tính năng phong tỏa thần kinh cơ - đặc biệt là trong quá trình truyền hoặc truyền thủ công - như một cài đặt nhận thức quan trọng. Sử dụng điện não đồ đã được xử lý và xác nhận sự thông suốt của ống thông/bơm trước khi bị liệt."
+  },
+  {
+    "t": "Phòng ngừa mê sảng sau phẫu thuật",
+    "b": "Tránh gây mê sâu quá mức, giảm thiểu sử dụng thuốc benzodiazepin, sử dụng thuốc giảm đau đa phương thức tiết kiệm opioid và định hướng/vận động sớm - mê sảng dự đoán sự suy giảm nhận thức lâu dài chứ không phải là một mối phiền toái lành tính."
+  },
+  {
+    "t": "Tác hại của hạ thân nhiệt chu phẫu",
+    "b": "Ngay cả tình trạng hạ thân nhiệt nhẹ cũng có thể làm tăng nhiễm trùng vết thương, rối loạn đông máu và các biến cố về tim. Tích cực làm ấm đối với các quy trình trên ~30 phút và làm ấm trước nếu có thể."
+  },
+  {
+    "t": "Steroid liều căng thẳng",
+    "b": "Bệnh nhân dùng steroid dài hạn (> 5 mg prednisolone trong > 3 tuần) có thể cần bổ sung chu phẫu phù hợp với căng thẳng khi phẫu thuật để tránh cơn suy thượng thận - nhưng việc chi trả liều cao thông thường đang được giảm dần."
+  },
+  {
+    "t": "DDAVP trong rối loạn chức năng tiểu cầu",
+    "b": "DDAVP 0,3 mcg/kg cải thiện chức năng tiểu cầu trong bệnh tăng urê huyết, tác dụng của aspirin và von Willebrand loại 1 bằng cách giải phóng vWF nội mô - một chất hỗ trợ không truyền máu khi có tiểu cầu nhưng bị rối loạn chức năng."
+  },
+  {
+    "t": "Thời điểm axit Tranexamic",
+    "b": "CRASH-2 và WOMAN cho thấy lợi ích giảm mạnh theo độ trễ và phần lớn biến mất sau 3 giờ. Cho TXA trong vòng giờ đầu tiên bất cứ khi nào nghi ngờ chảy máu đáng kể."
+  },
+  {
+    "t": "Ngưỡng truyền máu hạn chế",
+    "b": "Đối với hầu hết các bệnh nhân ổn định, mức kích hoạt huyết sắc tố ~70 g/L là an toàn ở ngưỡng tự do và giảm tác hại khi truyền máu - mức kích hoạt cao hơn được dành riêng cho tình trạng thiếu máu cục bộ đang hoạt động hoặc các tình trạng tim cụ thể."
+  },
+  {
+    "t": "ETT nhi khoa và áp suất vòng bít",
+    "b": "Ống dành cho trẻ em có vòng bít hiện đại hiện đang được ưa chuộng. ID bị còng ~= (tuổi/4) + 3,5; giữ áp suất vòng bít <20 cmH2O và theo dõi nó - niêm mạc dưới thanh môn của trẻ em không thể tha thứ cho việc bơm phồng quá mức."
+  },
+  {
+    "t": "Kích động xuất hiện ở trẻ em",
+    "b": "Sevoflurane có liên quan đến tình trạng kích động xuất hiện ở trẻ em; một liều nhỏ propofol, dexmedetomidine hoặc fentanyl vào cuối trường hợp sẽ làm giảm nó."
+  },
+  {
+    "t": "Tốc độ khử bão hòa ở trẻ em",
+    "b": "Trẻ em khử bão hòa nhanh hơn người lớn do tiêu thụ oxy cao hơn và FRC trên mỗi kg thấp hơn - quá trình tiền oxy hóa quan trọng hơn và biên độ ngưng thở ngắn hơn."
+  },
+  {
+    "t": "Nghịch lý MAC sơ sinh",
+    "b": "MAC của chất dễ bay hơi cao nhất ở trẻ sơ sinh (1-6 tháng) và thấp hơn ở trẻ sơ sinh và người lớn - nhưng dự trữ tim mạch ở trẻ sơ sinh còn hạn chế, vì vậy hãy chuẩn độ cẩn thận thay vì chạy theo một con số."
+  },
+  {
+    "t": "Chất lỏng ở trẻ em (4-2-1)",
+    "b": "Duy trì theo quy tắc 4-2-1 (4 mL/kg/giờ 10 kg đầu tiên, 2 kg tiếp theo 10, 1 kg sau đó). Sử dụng dịch đẳng trương - dịch duy trì nhược trương đã gây hạ natri máu gây tử vong ở trẻ em."
+  },
+  {
+    "t": "Co thắt thanh quản ở trẻ em",
+    "b": "Điều trị co thắt thanh quản bằng CPAP và 100% O2, gây mê sâu (propofol) và nếu dai dẳng thì cho suxamethonium (IV hoặc IM). Sự điều động của Larson ở mức độ co thắt thanh quản có thể phá vỡ nó sớm."
+  },
+  {
+    "t": "Công dụng của capnography",
+    "b": "Capnography dạng sóng là sự xác nhận đáng tin cậy nhất về việc đặt nội khí quản và là dấu hiệu sớm nhất của sự ngắt kết nối, tắc nghẽn hoặc cung lượng tim giảm - ETCO2 giảm đột ngột có thể có nghĩa là cung lượng thấp, không phải tăng thông khí."
+  },
+  {
+    "t": "Độ trễ và giới hạn đo oxy trong xung",
+    "b": "SpO2 chậm hơn PaO2 theo thời gian thực và không đáng tin cậy trong tình trạng tưới máu kém, cử động, sơn móng tay và rối loạn huyết sắc tố - nó cho kết quả gần như bình thường trong trường hợp ngộ độc khí carbon monoxide và mức độ methemoglobinaemia thấp một cách giả tạo."
+  },
+  {
+    "t": "Giới hạn EEG đã xử lý",
+    "b": "Các chỉ số độ sâu gây mê làm giảm nhưng không loại bỏ nhận thức và có thể gây nhầm lẫn với ketamine, oxit nitơ và ở người cao tuổi - sử dụng như một biện pháp bổ trợ, không phải là sự đảm bảo duy nhất."
+  },
+  {
+    "t": "Giảm xóc quá mức đường động mạch",
+    "b": "Một dấu vết quá tải đánh giá thấp tâm thu và đánh giá quá cao tâm trương; giảm xóc kém thì ngược lại. Chạy thử nghiệm tuôn ra (sóng vuông) trước khi tin tưởng vào các con số trong cuộc khủng hoảng."
+  },
+  {
+    "t": "MET và năng lực chức năng",
+    "b": "Không thể đạt được ~4 MET (leo hai tầng cầu thang) làm tăng nguy cơ tim chu phẫu và cần đánh giá thêm trước khi phẫu thuật lớn."
+  },
+  {
+    "t": "STOP-BANG và OSA",
+    "b": "Điểm STOP-BANG >=3 làm tăng nghi ngờ ngưng thở khi ngủ do tắc nghẽn - lập kế hoạch nhạy cảm với opioid, dùng thuốc an thần cẩn thận và theo dõi hô hấp sau phẫu thuật."
+  },
+  {
+    "t": "Thời gian nhịn ăn khát vọng",
+    "b": "Nhịn ăn tiêu chuẩn: 6 giờ chất rắn, 4 giờ sữa mẹ, 2 giờ chất lỏng trong. Khuyến khích truyền dịch trong suốt tối đa 2 giờ sẽ cải thiện sự thoải mái và có thể giảm nguy cơ hít phải do tình trạng đói kéo dài."
+  },
+  {
+    "t": "Sự yếu đuối dự đoán kết quả",
+    "b": "Tình trạng yếu đuối dự đoán một cách độc lập tỷ lệ mắc bệnh, tình trạng mê sảng và mất khả năng tự lập sau phẫu thuật - ngoài tuổi tác và riêng ASA. Sàng lọc và tối ưu hóa thay vì dựa vào tuổi tác theo thời gian."
+  },
+  {
+    "t": "Thiếu máu có thể điều chỉnh được",
+    "b": "Thiếu máu trước phẫu thuật dự đoán độc lập việc truyền máu và kết quả xấu hơn. Khi thời gian cho phép, hãy điều tra và điều trị bệnh thiếu máu do thiếu sắt trước khi phẫu thuật lớn theo chương trình - nguyên tắc cốt lõi trong quản lý máu của bệnh nhân."
+  },
+  {
+    "t": "ROTEM CT kéo dài",
+    "b": "Thời gian đông máu EXTEM/INTEM (CT) kéo dài cho thấy sự thiếu hụt yếu tố đông máu - điều trị bằng huyết tương hoặc phức hợp protrombin, không phải tiểu cầu. CT là độ nhớt tương đương với sự khởi đầu."
+  },
+  {
+    "t": "ROTEM MCF thấp",
+    "b": "Độ cứng tối đa của cục máu đông (MCF) thấp phản ánh số lượng/chức năng tiểu cầu hoặc fibrinogen. Kiểm tra FIBTEM: nếu FIBTEM MCF thấp, cho fibrinogen/kết tủa lạnh; nếu FIBTEM bình thường thì vấn đề là do tiểu cầu."
+  },
+  {
+    "t": "Tăng tiêu sợi huyết trên ROTEM",
+    "b": "Quá trình ly giải cục máu đông sớm (ML cao / LI30 giảm) báo hiệu sự tiêu sợi huyết cao - cung cấp axit tranexamic ngay lập tức; nó là nguyên nhân phổ biến gây ra chấn thương và chảy máu sản khoa có thể điều trị được."
+  },
+  {
+    "t": "Fibrinogen được tiêu thụ đầu tiên",
+    "b": "Trong xuất huyết nặng fibrinogen giảm xuống mức nguy kịch trước các yếu tố khác. Mục tiêu ~1,5-2 g/L (cao hơn trong sản khoa) với chất cô đặc cryoprecipitate hoặc fibrinogen."
+  },
+  {
+    "t": "Đảo ngược Warfarin",
+    "b": "Đối với chảy máu nặng khi dùng warfarin, cho phức hợp protrombin đậm đặc cộng với vitamin K tiêm tĩnh mạch - PCC hồi phục nhanh hơn và hoàn toàn hơn FFP và tránh quá tải thể tích."
+  },
+  {
+    "t": "Đảo ngược DOAC",
+    "b": "Idarucizumab đảo ngược dabigatran; andexanet alfa đảo ngược các chất ức chế yếu tố Xa. Khi không có sẵn, PCC là lựa chọn thực tế - và thời điểm dùng liều cuối cùng cộng với tác dụng còn lại hướng dẫn chức năng thận."
+  },
+  {
+    "t": "Thông khí bảo vệ phổi",
+    "b": "Sử dụng ~6-8 mL/kg trọng lượng cơ thể DỰ ĐOÁN, PEEP vừa phải và áp suất cao nguyên <30 cmH2O ngay cả ở phổi bình thường trong khi phẫu thuật - cài đặt bảo vệ giúp giảm các biến chứng phổi sau phẫu thuật."
+  },
+  {
+    "t": "Vấn đề áp lực lái xe",
+    "b": "Áp lực đẩy (bình nguyên trừ PEEP) dưới ~15 cmH2O có liên quan đến ít biến chứng ở phổi hơn - nó có thể quan trọng hơn chỉ riêng thể tích khí lưu thông."
+  },
+  {
+    "t": "Tăng CO2 cho phép",
+    "b": "Cho phép nồng độ CO2 cao hơn để giữ áp suất và thể tích ở mức thấp có thể chấp nhận được ở hầu hết bệnh nhân (tránh tăng ICP và tăng áp phổi) - pH, không phải CO2 tuyệt đối, hướng dẫn dung nạp."
+  },
+  {
+    "t": "Tuyển dụng sau đó là PEEP",
+    "b": "Thao tác huy động chỉ bền vững nếu được thực hiện theo PEEP đầy đủ; không có nó, phổi sẽ ngừng hoạt động trong vòng vài phút - và việc huy động có thể tạm thời làm giảm lượng hồi lưu tĩnh mạch và huyết áp."
+  },
+  {
+    "t": "Auto-PEEP khi bị tắc nghẽn",
+    "b": "Trong co thắt phế quản/COPD nghiêm trọng, siêu lạm phát động (auto-PEEP) gây hạ huyết áp và áp lực cao. Ngắt kết nối để bệnh nhân thở ra, giảm tốc độ và kéo dài thời gian thở ra."
+  },
+  {
+    "t": "Thiếu oxy thông khí một phổi",
+    "b": "Đối với tình trạng thiếu oxy khi thông khí một phổi: xác nhận vị trí ống, áp dụng CPAP cho phổi không phụ thuộc và PEEP cho phổi phụ thuộc, đồng thời coi tái bơm hơi không liên tục - lỗi vị trí là nguyên nhân phổ biến nhất."
+  },
+  {
+    "t": "Tinh thể cân bằng trên nước muối",
+    "b": "Dung dịch muối 0,9% thể tích lớn gây nhiễm toan tăng clo máu và có liên quan đến rối loạn chức năng thận nhiều hơn so với dung dịch cân bằng - nên dùng dịch tinh thể cân bằng để hồi sức."
+  },
+  {
+    "t": "Liệu pháp truyền dịch hướng tới mục tiêu",
+    "b": "Nhắm mục tiêu tối ưu hóa thể tích nhát bóp thay vì thể tích cố định giúp giảm các biến chứng trong đại phẫu - cả tình trạng giảm thể tích máu và tình trạng quá tải dịch đều làm xấu đi kết quả một cách độc lập."
+  },
+  {
+    "t": "Trình tự ECG tăng kali máu",
+    "b": "Sóng T đạt đỉnh tiến tới QRS mở rộng và sóng hình sin. Cung cấp canxi để bảo vệ cơ tim trước, sau đó là insulin-dextrose và salbutamol để chuyển K+, sau đó loại bỏ nó - canxi kéo dài thời gian, không làm giảm K+."
+  },
+  {
+    "t": "Phục hồi tình trạng hạ phosphat máu",
+    "b": "Cung cấp lại dinh dưỡng cho những người bị thiếu hụt mãn tính sẽ thúc đẩy phốt phát, kali và magie nội bào - theo dõi và thay thế trước khi chúng gây rối loạn nhịp tim hoặc suy kiệt / yếu cơ."
+  },
+  {
+    "t": "Giải thích Lactate",
+    "b": "Tăng lactate không phải lúc nào cũng là giảm tưới máu - truyền adrenaline, metformin và rối loạn chức năng gan cũng làm tăng nó. Xu hướng nó đi ngược lại với hình ảnh lâm sàng thay vì điều trị một con số duy nhất."
+  },
+  {
+    "t": "Ngày phẫu thuật bệnh tiểu đường",
+    "b": "Giữ thuốc ức chế SGLT2, lập kế hoạch giảm insulin tác dụng kéo dài và chuẩn bị sẵn truyền insulin với tốc độ thay đổi cho các thủ thuật được kiểm soát kém hoặc kéo dài - tránh cả tăng đường huyết và hạ đường huyết."
+  },
+  {
+    "t": "Thuốc cản quang và metformin",
+    "b": "Bản thân metformin không gây độc cho thận, nhưng ở bệnh nhân suy thận khi tiếp xúc với thuốc cản quang, nó có nguy cơ gây nhiễm axit lactic - đánh giá chức năng thận và tuân theo hướng dẫn bỏ qua thuốc cản quang tại chỗ."
+  },
+  {
+    "t": "Áp lực tưới máu não",
+    "b": "CPP = BẢN ĐỒ - ICP. Khi ICP tăng, bảo vệ MAP và tránh tăng CO2, thiếu oxy và tắc nghẽn tĩnh mạch (dây buộc ống, đầu hướng xuống) - các lỗi định vị nhỏ sẽ làm tăng ICP có thể đo lường được."
+  },
+  {
+    "t": "Suxamethonium và tăng ICP",
+    "b": "Sux gây ra sự gia tăng ICP thoáng qua, nhưng việc đảm bảo đường thở nhanh chóng thường có tác dụng lớn hơn điều này - quá trình oxy hóa vượt trội hơn mối lo ngại về mặt lý thuyết trong chỉ số RSI thực sự cho bệnh nhân thần kinh."
+  },
+  {
+    "t": "Xuất huyết dưới nhện co thắt mạch",
+    "b": "Thiếu máu não muộn do co thắt mạch đạt đỉnh điểm vào ngày thứ 4-14. Nimodipine cải thiện kết quả; duy trì thể tích máu bình thường và tránh tụt huyết áp trong quá trình gây mê ở cửa sổ này."
+  },
+  {
+    "t": "Thuốc ngưỡng co giật",
+    "b": "Một số thuốc kèm theo thuốc gây mê làm giảm ngưỡng co giật (ví dụ chất chuyển hóa meperidine liều cao, một số loại kháng sinh). Trong bệnh động kinh, tiếp tục dùng thuốc chống động kinh trong thời gian phẫu thuật và tránh các tác nhân gây co giật."
+  },
+  {
+    "t": "Lập bản đồ phẫu thuật sọ não Awake",
+    "b": "Phẫu thuật cắt sọ khi thức cho phép lập bản đồ chức năng gần vỏ não hùng hồn; thành công phụ thuộc vào việc lựa chọn bệnh nhân, phong bế da đầu và kế hoạch kiểm soát đường thở cho giai đoạn ngủ."
+  },
+  {
+    "t": "Lệnh phong tỏa Phaeochromocytoma",
+    "b": "Việc phong tỏa alpha phải xảy ra trước khi phong tỏa beta - việc cho beta trước tiên sẽ không gây ra hiện tượng co mạch alpha và cơn tăng huyết áp. Đảm bảo đủ mức độ phong tỏa alpha và âm lượng trước khi ra rạp."
+  },
+  {
+    "t": "Kích hoạt cơn bão tuyến giáp",
+    "b": "Phẫu thuật, nhiễm trùng hoặc nạp iốt có thể gây ra cơn bão tuyến giáp - điều trị bằng thuốc chẹn beta, thuốc kháng giáp, iốt (sau kháng giáp), steroid và làm mát tích cực."
+  },
+  {
+    "t": "Khủng hoảng carcinoid",
+    "b": "Tránh sử dụng catecholamine vì có thể làm trầm trọng thêm việc giải phóng chất trung gian trong carcinoid - octreotide là phương pháp điều trị và cần có sẵn trước khi xử lý khối u."
+  },
+  {
+    "t": "Khủng hoảng Addisonian chu phẫu",
+    "b": "Hạ huyết áp kháng trị không giải thích được ở bệnh nhân phụ thuộc steroid hoặc mới cai sữa gợi ý suy thượng thận - cho hydrocortisone theo kinh nghiệm thay vì chỉ dùng thuốc vận mạch."
+  },
+  {
+    "t": "Bệnh nhược cơ và thuốc thư giãn",
+    "b": "Bệnh nhược cơ rất nhạy cảm với thuốc giãn cơ không khử cực và kháng suxamethonium - giảm liều, theo dõi định lượng chức năng thần kinh cơ và dự đoán nhu cầu thở máy sau phẫu thuật."
+  },
+  {
+    "t": "Nguyên tắc giảm đau đa phương thức",
+    "b": "Kết hợp paracetamol, một NSAID an toàn, kỹ thuật tại chỗ/tại chỗ và thuốc bổ trợ (dexamethasone, ketamine) làm giảm nhu cầu opioid và PONV - hãy lập kế hoạch trước khi rạch da, không phải trong quá trình hồi phục."
+  },
+  {
+    "t": "Tăng cảm giác đau do opioid",
+    "b": "Remifentanil liều cao trong khi phẫu thuật có thể gây ra hiện tượng dung nạp và tăng cảm giác đau cấp tính - giảm nhẹ bằng ketamine và chuyển sang dùng thuốc giảm đau có tác dụng kéo dài theo kế hoạch trước khi xuất hiện."
+  },
+  {
+    "t": "Gabapentinoid được xem xét lại",
+    "b": "Gabapentinoids chu phẫu thường quy không còn được khuyến cáo rộng rãi: lợi ích giảm đau là nhỏ và nguy cơ an thần/suy hô hấp-suy kiệt / yếu cơ là có thật, đặc biệt khi kết hợp với opioid ở người cao tuổi."
+  },
+  {
+    "t": "Bệnh nhân đau mãn tính opioid",
+    "b": "Tiếp tục sử dụng opioid cơ bản trong chu kỳ phẫu thuật và thêm thuốc giảm đau đa phương thức/khu vực lên trên - việc rút lại mức cơ bản sẽ gây ra hiện tượng cai thuốc và kiểm soát cơn đau kém hơn, không an toàn."
+  },
+  {
+    "t": "điểm Apfel",
+    "b": "Yếu tố nguy cơ của Apfel: nữ, không hút thuốc, có tiền sử PONV/say tàu xe, dùng opioid sau phẫu thuật. Mỗi loại sẽ tăng thêm ~20% rủi ro - hãy khớp số lượng thuốc chống nôn dự phòng với số lượng."
+  },
+  {
+    "t": "Xếp lớp chống nôn",
+    "b": "Kết hợp thuốc chống nôn từ các nhóm KHÁC NHAU (ví dụ: ondansetron + dexamethasone +/- droperidol) - thêm loại thuốc thứ hai cùng nhóm sẽ gây thêm tác dụng phụ mà không có thêm lợi ích."
+  },
+  {
+    "t": "Dexamethasone và glucose",
+    "b": "Một liều dexamethasone điều trị dự phòng PONV duy nhất (4-8 mg) sẽ làm tăng đường huyết trong ~24 giờ, phù hợp nhất ở bệnh nhân tiểu đường - vẫn thích hợp, chỉ cần dự đoán mức tăng."
+  },
+  {
+    "t": "Nguy cơ co thắt thanh quản cấp tính",
+    "b": "Các mặt phẳng nhẹ trong quá trình loại bỏ đường thở và dịch tiết gây ra co thắt thanh quản - rút ống nội khí quản sâu hoặc hoàn toàn tỉnh táo, không ở giữa và hút dưới tầm nhìn trực tiếp khi thích hợp."
+  }
+]
