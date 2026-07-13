@@ -1,0 +1,40 @@
+name: AnesthOS CI Pipeline
+
+on:
+  push:
+    branches: [ main, develop, 'feat/*' ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  ci-guardrails:
+    name: Milestone 0 Technical Guardrails (5 Gates)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Gate 1 - Secret Scan
+        run: npm run secret-scan
+
+      - name: Gate 2 - Domain Import Boundary Lint
+        run: npm run lint:boundary
+
+      - name: Gate 3 - Type Check & Production Build
+        run: npm run build
+
+      - name: Gate 4 - Vitest Unit Tests
+        run: npm run test
+
+      - name: Gate 5 - Coverage Floor Check (>= 60%)
+        run: npm run test:coverage
