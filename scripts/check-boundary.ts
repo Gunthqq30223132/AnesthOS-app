@@ -11,6 +11,18 @@ interface Violation {
 
 const violations: Violation[] = [];
 
+function isForbiddenModuleSpecifier(moduleSpecifier: string): boolean {
+  const lower = moduleSpecifier.toLowerCase();
+  return (
+    lower === 'react' ||
+    lower === 'react-dom' ||
+    lower.includes('react/') ||
+    lower.includes('axios') ||
+    lower.includes('/ui') ||
+    lower.startsWith('@/ui')
+  );
+}
+
 function checkFile(filePath: string) {
   const relativePath = path.relative(process.cwd(), filePath);
 
@@ -34,28 +46,66 @@ function checkFile(filePath: string) {
   function visit(node: ts.Node) {
     const { line } = sourceFile.getLineAndCharacterOfPosition(node.getStart());
 
-    // 1. Check Import Declarations
+    // 1. Check Import Declarations (static import ... from '...')
     if (ts.isImportDeclaration(node)) {
-      const moduleSpecifier = (node.moduleSpecifier as ts.StringLiteral).text;
-      const lower = moduleSpecifier.toLowerCase();
-      if (
-        lower === 'react' ||
-        lower === 'react-dom' ||
-        lower.includes('react/') ||
-        lower.includes('axios') ||
-        lower.includes('/ui') ||
-        lower.startsWith('@/ui')
-      ) {
-        violations.push({
-          file: relativePath,
-          line: line + 1,
-          message: `Forbidden import '${moduleSpecifier}' in domain logic.`,
-        });
+      if (node.moduleSpecifier && ts.isStringLiteral(node.moduleSpecifier)) {
+        const moduleSpecifier = node.moduleSpecifier.text;
+        if (isForbiddenModuleSpecifier(moduleSpecifier)) {
+          violations.push({
+            file: relativePath,
+            line: line + 1,
+            message: `Forbidden import '${moduleSpecifier}' in domain logic.`,
+          });
+        }
       }
     }
 
-    // 2. Check Call Expressions (Date.now(), Math.random(), fetch(), axios())
+    // 2. Check Export Declarations (export ... from '...')
+    if (ts.isExportDeclaration(node)) {
+      if (node.moduleSpecifier && ts.isStringLiteral(node.moduleSpecifier)) {
+        const moduleSpecifier = node.moduleSpecifier.text;
+        if (isForbiddenModuleSpecifier(moduleSpecifier)) {
+          violations.push({
+            file: relativePath,
+            line: line + 1,
+            message: `Forbidden export from '${moduleSpecifier}' in domain logic.`,
+          });
+        }
+      }
+    }
+
+    // 3. Check Call Expressions (Date.now(), Math.random(), fetch(), axios(), dynamic import(), require())
     if (ts.isCallExpression(node)) {
+      // Dynamic import check: import('...')
+      if (node.expression.kind === ts.SyntaxKind.ImportKeyword) {
+        const arg = node.arguments[0];
+        if (arg && ts.isStringLiteral(arg)) {
+          const moduleSpecifier = arg.text;
+          if (isForbiddenModuleSpecifier(moduleSpecifier)) {
+            violations.push({
+              file: relativePath,
+              line: line + 1,
+              message: `Forbidden import '${moduleSpecifier}' in domain logic.`,
+            });
+          }
+        }
+      }
+
+      // require check: require('...')
+      if (ts.isIdentifier(node.expression) && node.expression.text === 'require') {
+        const arg = node.arguments[0];
+        if (arg && ts.isStringLiteral(arg)) {
+          const moduleSpecifier = arg.text;
+          if (isForbiddenModuleSpecifier(moduleSpecifier)) {
+            violations.push({
+              file: relativePath,
+              line: line + 1,
+              message: `Forbidden import '${moduleSpecifier}' in domain logic.`,
+            });
+          }
+        }
+      }
+
       const expressionText = node.expression.getText(sourceFile);
       if (
         expressionText === 'Date.now' ||
@@ -73,7 +123,7 @@ function checkFile(filePath: string) {
       }
     }
 
-    // 3. Check New Expressions (new Date() with 0 args)
+    // 4. Check New Expressions (new Date() with 0 args)
     if (ts.isNewExpression(node)) {
       const expressionText = node.expression.getText(sourceFile);
       if (expressionText === 'Date' && (!node.arguments || node.arguments.length === 0)) {
