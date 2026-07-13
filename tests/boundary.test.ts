@@ -3,7 +3,7 @@ import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
 
-describe('Domain Boundary Guardrail Execution', () => {
+describe.sequential('Domain Boundary Guardrail Execution', () => {
   const projectRoot = path.resolve(__dirname, '..');
   const env = { ...process.env, NODE_V8_COVERAGE: undefined };
 

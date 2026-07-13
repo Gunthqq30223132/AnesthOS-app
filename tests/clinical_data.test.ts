@@ -27,7 +27,7 @@ import {
   surgeries,
 } from '../src/domain/data';
 
-describe('Clinical Domain Data Integrity & Provenance', () => {
+describe('Clinical Domain Data Integrity, Schema & Provenance Stress Tests', () => {
   it('exports correct domain version and specification constants', () => {
     expect(DOMAIN_DATA_VERSION).toBe('1.0.0');
     expect(CLINICAL_DATA_SPEC_REVISION).toBe('2026-P0');
@@ -75,17 +75,53 @@ describe('Clinical Domain Data Integrity & Provenance', () => {
       expect(entry.license).toBe('CC-BY-NC-4.0');
       expect(entry.synthetic).toBe(true);
       expect(entry.containsPHI).toBe(false);
-      expect(entry.source).toBeTruthy();
-      expect(entry.citation).toBeTruthy();
+      expect(typeof entry.source).toBe('string');
+      expect(entry.source.length).toBeGreaterThan(0);
+      expect(typeof entry.citation).toBe('string');
+      expect(entry.citation.length).toBeGreaterThan(0);
+      expect(typeof entry.category).toBe('string');
+      expect(entry.category.length).toBeGreaterThan(0);
     });
   });
 
-  describe('Sepsis Bundle Rules & Localization', () => {
-    it('contains all 7 core clinical condition keys', () => {
+  describe('Medical Citations Validation', () => {
+    it('verifies presence of mandatory medical citations across manifest and datasets', () => {
+      const allText = JSON.stringify(provenanceManifest) +
+        JSON.stringify(sepsisRules) +
+        JSON.stringify(sepsisRulesVi) +
+        JSON.stringify(sugammadexRulesVi) +
+        JSON.stringify(noraLocations) +
+        JSON.stringify(asraGuidelines) +
+        JSON.stringify(crisisProtocols) +
+        JSON.stringify(drugs);
+
+      // SSC 2026
+      expect(allText).toMatch(/Surviving Sepsis Campaign (2026|\(SSC\) 2026)/i);
+      // ADA 2026
+      expect(allText).toMatch(/ADA (Standards of Care )?2026/i);
+      // ILCOR 2020
+      expect(allText).toMatch(/ILCOR 2020/i);
+      // GINA/GOLD 2025
+      expect(allText).toMatch(/GINA\/GOLD 2025|GINA 2025|GOLD 2025/i);
+      // NAP4
+      expect(allText).toMatch(/NAP4/i);
+      // ASRA
+      expect(allText).toMatch(/ASRA/i);
+      // Stoelting
+      expect(allText).toMatch(/Stoelting/i);
+    });
+  });
+
+  describe('Sepsis Bundle Rules & Localization Stress Test', () => {
+    it('contains all 7 core clinical condition keys in EN and VI', () => {
       const conditionKeys = ['sepsis', 'dka', 'arrest', 'respiratory', 'renal', 'toxic', 'general'];
       conditionKeys.forEach((key) => {
         expect(sepsisRules[key], `Missing condition ${key} in sepsis_rules.json`).toBeDefined();
         expect(sepsisRulesVi[key], `Missing condition ${key} in sepsis_rules_vi.json`).toBeDefined();
+        expect(sepsisRules[key].label).toBeTruthy();
+        expect(sepsisRulesVi[key].label).toBeTruthy();
+        expect(sepsisRules[key].referenceCitation).toBeTruthy();
+        expect(sepsisRulesVi[key].referenceCitation).toBeTruthy();
       });
     });
 
@@ -97,22 +133,24 @@ describe('Clinical Domain Data Integrity & Provenance', () => {
     });
   });
 
-  describe('Sugammadex Reversal Guidelines', () => {
+  describe('Sugammadex Reversal Guidelines Stress Test', () => {
     it('loads 121 clinical rule items in Vietnamese dataset', () => {
       expect(Array.isArray(sugammadexRulesVi)).toBe(true);
       expect(sugammadexRulesVi.length).toBe(121);
     });
 
-    it('contains valid title and body strings for dosing and crisis rules', () => {
-      sugammadexRulesVi.slice(0, 10).forEach((rule) => {
-        expect(rule.t).toBeTruthy();
-        expect(rule.b).toBeTruthy();
+    it('validates every single rule item structure without missing fields', () => {
+      sugammadexRulesVi.forEach((rule, index) => {
+        expect(typeof rule.t, `Rule ${index} title must be non-empty string`).toBe('string');
+        expect(rule.t.trim().length, `Rule ${index} title empty`).toBeGreaterThan(0);
+        expect(typeof rule.b, `Rule ${index} body must be non-empty string`).toBe('string');
+        expect(rule.b.trim().length, `Rule ${index} body empty`).toBeGreaterThan(0);
       });
     });
   });
 
-  describe('NORA Locations Safety Specs', () => {
-    it('defines 12 NORA location suites', () => {
+  describe('NORA Locations Safety Specs Stress Test', () => {
+    it('defines 12 NORA location suites with deep property checks', () => {
       const locationKeys = [
         'ect',
         'cardiac_cath',
@@ -133,64 +171,85 @@ describe('Clinical Domain Data Integrity & Provenance', () => {
         expect(loc, `Missing NORA location ${locKey}`).toBeDefined();
         expect(loc.id).toBe(locKey);
         expect(loc.label).toBeTruthy();
+        expect(loc.icon).toBeTruthy();
+        expect(loc.location).toBeTruthy();
+        expect(loc.description).toBeTruthy();
         expect(Array.isArray(loc.procedures)).toBe(true);
         expect(Array.isArray(loc.equipmentChecklist)).toBe(true);
         expect(Array.isArray(loc.redFlags)).toBe(true);
+
+        loc.procedures.forEach((proc, pIdx) => {
+          expect(proc.id, `Loc ${locKey} proc ${pIdx} missing id`).toBeTruthy();
+          expect(proc.label, `Loc ${locKey} proc ${pIdx} missing label`).toBeTruthy();
+          expect(typeof proc.duration, `Loc ${locKey} proc ${pIdx} duration`).toBe('number');
+          expect(proc.duration).toBeGreaterThan(0);
+          expect(['elective', 'urgent', 'emergency']).toContain(proc.urgency);
+        });
       });
     });
   });
 
-  describe('Other Clinical Domain Datasets Integrity', () => {
-    it('loads ASRA guidelines correctly', () => {
+  describe('Pharmacology Master Dataset (Drugs) Stress Test', () => {
+    it('validates all drug records for schema compliance', () => {
+      expect(Object.keys(drugs).length).toBeGreaterThan(0);
+      Object.entries(drugs as Record<string, any>).forEach(([drugKey, drug]) => {
+        expect(drug.name, `Drug ${drugKey} missing name`).toBeTruthy();
+        expect(drug.class, `Drug ${drugKey} missing class`).toBeTruthy();
+        expect(Array.isArray(drug.routes), `Drug ${drugKey} routes must be array`).toBe(true);
+        expect(drug.routes.length).toBeGreaterThan(0);
+
+        if (drug.adult?.dose) {
+          expect(Array.isArray(drug.adult.dose)).toBe(true);
+          expect(drug.adult.dose).toHaveLength(2);
+          expect(drug.adult.dose[0]).toBeLessThanOrEqual(drug.adult.dose[1]);
+        }
+        if (drug.paediatric?.dose) {
+          expect(Array.isArray(drug.paediatric.dose)).toBe(true);
+          expect(drug.paediatric.dose).toHaveLength(2);
+          expect(drug.paediatric.dose[0]).toBeLessThanOrEqual(drug.paediatric.dose[1]);
+        }
+      });
+    });
+  });
+
+  describe('Taxonomy & Localization Parity Stress Test', () => {
+    it('validates ASRA guidelines structure and metadata signature', () => {
       expect(asraGuidelines).toBeDefined();
-      expect(Object.keys(asraGuidelines).length).toBeGreaterThan(0);
+      expect((asraGuidelines as any)._metadata).toBeDefined();
+      expect((asraGuidelines as any)._metadata.signed_by).toBe('Gun');
     });
 
-    it('loads chronic medication datasets', () => {
-      expect(chronicMeds).toBeDefined();
-      expect(chronicMedsGuidelinesVi).toBeDefined();
+    it('validates EN vs VI key parity across localized datasets', () => {
+      const checkParity = (enObj: any, viObj: any, name: string) => {
+        const enKeys = Object.keys(enObj);
+        const viKeys = Object.keys(viObj);
+        expect(enKeys.length, `${name} key count mismatch`).toBe(viKeys.length);
+        enKeys.forEach((key) => {
+          expect(viObj[key], `Missing key '${key}' in VI version of ${name}`).toBeDefined();
+        });
+      };
+
+      checkParity(sepsisRules, sepsisRulesVi, 'sepsisRules');
+      checkParity(chronicMeds, chronicMedsGuidelinesVi, 'chronicMeds');
+      checkParity(labTests, labTestsInfoVi, 'labTests');
+      checkParity(localAnesthetics, localAnestheticsInfoVi, 'localAnesthetics');
+      checkParity(nerveBlocks, nerveBlocksInfoVi, 'nerveBlocks');
+      checkParity(rulesAdaptations, rulesAdaptationsVi, 'rulesAdaptations');
     });
 
-    it('loads comorbidities taxonomy', () => {
+    it('loads comorbidities, crisisProtocols, surgeries, and mappings without errors', () => {
       expect(comorbidities).toBeDefined();
-    });
+      expect(Object.keys(comorbidities).length).toBeGreaterThan(0);
 
-    it('loads crisis protocols', () => {
       expect(crisisProtocols).toBeDefined();
-    });
+      expect(Object.keys(crisisProtocols).length).toBeGreaterThan(0);
 
-    it('loads pharmacology master dataset (drugs)', () => {
-      expect(drugs).toBeDefined();
-    });
+      expect(surgeries).toBeDefined();
+      expect(Object.keys(surgeries).length).toBeGreaterThan(0);
 
-    it('loads risk flag mapping and category hierarchy', () => {
       expect(flagMapping).toBeDefined();
       expect(rulesCategoryMapping).toBeDefined();
       expect(rulesTriggerLabels).toBeDefined();
-    });
-
-    it('loads lab test reference values (EN & VI)', () => {
-      expect(labTests).toBeDefined();
-      expect(labTestsInfoVi).toBeDefined();
-    });
-
-    it('loads local anesthetic dosing limits (EN & VI)', () => {
-      expect(localAnesthetics).toBeDefined();
-      expect(localAnestheticsInfoVi).toBeDefined();
-    });
-
-    it('loads nerve block guidelines (EN & VI)', () => {
-      expect(nerveBlocks).toBeDefined();
-      expect(nerveBlocksInfoVi).toBeDefined();
-    });
-
-    it('loads clinical rule adaptations (EN & VI)', () => {
-      expect(rulesAdaptations).toBeDefined();
-      expect(rulesAdaptationsVi).toBeDefined();
-    });
-
-    it('loads surgical procedure taxonomy', () => {
-      expect(surgeries).toBeDefined();
     });
   });
 });
