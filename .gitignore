@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Database & Storage (Strictly excluded)
+*.db
+*.sqlite
+*.sqlite3
+qdrant_db/
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# System & OS Files
+._*
+.DS_Store
+Thumbs.db
+
+# Test Coverage
+coverage/
+.vitest/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
