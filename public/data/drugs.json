@@ -2308,5 +2308,69 @@
       "Caution in heart block, severe LV dysfunction, hypovolaemia",
       "Does not reliably obtund airway reflexes — not a sole anaesthetic for surgery"
     ]
+  },
+  "methohexital": {
+    "name": "Methohexital",
+    "class": "Ultra-short-acting Barbiturate",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        1,
+        2
+      ],
+      "unit": "mg/kg",
+      "route": "IV",
+      "weightBasis": "TBW"
+    },
+    "cautions": [
+      "Seizure history",
+      "Prophyria"
+    ]
+  },
+  "remimazolam": {
+    "name": "Remimazolam",
+    "class": "Ultra-short-acting Benzodiazepine",
+    "phase": "induction",
+    "routes": [
+      "IV"
+    ],
+    "adult": {
+      "dose": [
+        5,
+        10
+      ],
+      "unit": "mg",
+      "route": "IV",
+      "weightBasis": null
+    },
+    "cautions": [
+      "Respiratory depression"
+    ]
+  },
+  "sevoflurane": {
+    "name": "Sevoflurane",
+    "class": "Inhalational Anaesthetic",
+    "phase": "maintenance",
+    "routes": [
+      "Inhalation"
+    ],
+    "cautions": [
+      "Malignant hyperthermia risk"
+    ]
+  },
+  "nitrous_oxide": {
+    "name": "Nitrous Oxide (N₂O)",
+    "class": "Inhalational Gas",
+    "phase": "maintenance",
+    "routes": [
+      "Inhalation"
+    ],
+    "cautions": [
+      "Pneumothorax expansion",
+      "B12 inactivation"
+    ]
   }
 }

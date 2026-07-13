@@ -27,6 +27,9 @@ jobs:
       - name: Gate 1 - Secret Scan
         run: npm run secret-scan
 
+      - name: Gate 1.5 - Clinical Data Integrity Gate
+        run: npm run validate:data
+
       - name: Gate 2 - Domain Import Boundary Lint
         run: npm run lint:boundary
 

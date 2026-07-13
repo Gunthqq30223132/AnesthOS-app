@@ -1,31 +1,40 @@
 import { describe, it, expect } from 'vitest';
+import fs from 'fs';
+import path from 'path';
 import {
   DOMAIN_DATA_VERSION,
   CLINICAL_DATA_SPEC_REVISION,
-  provenanceManifest,
-  sepsisRules,
-  sepsisRulesVi,
-  sugammadexRulesVi,
-  noraLocations,
-  asraGuidelines,
-  chronicMeds,
-  chronicMedsGuidelinesVi,
-  comorbidities,
-  crisisProtocols,
-  drugs,
-  flagMapping,
-  labTests,
-  labTestsInfoVi,
-  localAnesthetics,
-  localAnestheticsInfoVi,
-  nerveBlocks,
-  nerveBlocksInfoVi,
-  rulesAdaptations,
-  rulesAdaptationsVi,
-  rulesCategoryMapping,
-  rulesTriggerLabels,
-  surgeries,
 } from '../src/domain/data';
+
+const readJson = (filename: string) => {
+  const filePath = path.resolve(__dirname, '../public/data', filename);
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+};
+
+const provenanceManifest = readJson('provenance_manifest.json');
+const sepsisRules = readJson('sepsis_rules.json');
+const sepsisRulesVi = readJson('sepsis_rules_vi.json');
+const sugammadexRulesVi = readJson('sugammadex_rules_vi.json');
+const noraLocations = readJson('nora_locations.json');
+const asraGuidelines = readJson('asra_guidelines.json');
+const chronicMeds = readJson('chronic_meds.json');
+const chronicMedsGuidelinesVi = readJson('chronic_meds_guidelines_vi.json');
+const comorbidities = readJson('comorbidities.json');
+const crisisProtocols = readJson('crisis_protocols.json');
+const drugs = readJson('drugs.json');
+const flagMapping = readJson('flag_mapping.json');
+const labTests = readJson('lab_tests.json');
+const labTestsInfoVi = readJson('lab_tests_info_vi.json');
+const localAnesthetics = readJson('local_anesthetics.json');
+const localAnestheticsInfoVi = readJson('local_anesthetics_info_vi.json');
+const nerveBlocks = readJson('nerve_blocks.json');
+const nerveBlocksInfoVi = readJson('nerve_blocks_info_vi.json');
+const rulesAdaptations = readJson('rules_adaptations.json');
+const rulesAdaptationsVi = readJson('rules_adaptations_vi.json');
+const rulesCategoryMapping = readJson('rules_category_mapping.json');
+const rulesTriggerLabels = readJson('rules_trigger_labels.json');
+const surgeries = readJson('surgeries.json');
+
 
 describe('Clinical Domain Data Integrity, Schema & Provenance Stress Tests', () => {
   it('exports correct domain version and specification constants', () => {
@@ -140,7 +149,7 @@ describe('Clinical Domain Data Integrity, Schema & Provenance Stress Tests', () 
     });
 
     it('validates every single rule item structure without missing fields', () => {
-      sugammadexRulesVi.forEach((rule, index) => {
+      sugammadexRulesVi.forEach((rule: any, index: number) => {
         expect(typeof rule.t, `Rule ${index} title must be non-empty string`).toBe('string');
         expect(rule.t.trim().length, `Rule ${index} title empty`).toBeGreaterThan(0);
         expect(typeof rule.b, `Rule ${index} body must be non-empty string`).toBe('string');
@@ -178,7 +187,7 @@ describe('Clinical Domain Data Integrity, Schema & Provenance Stress Tests', () 
         expect(Array.isArray(loc.equipmentChecklist)).toBe(true);
         expect(Array.isArray(loc.redFlags)).toBe(true);
 
-        loc.procedures.forEach((proc, pIdx) => {
+        loc.procedures.forEach((proc: any, pIdx: number) => {
           expect(proc.id, `Loc ${locKey} proc ${pIdx} missing id`).toBeTruthy();
           expect(proc.label, `Loc ${locKey} proc ${pIdx} missing label`).toBeTruthy();
           expect(typeof proc.duration, `Loc ${locKey} proc ${pIdx} duration`).toBe('number');

@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "lint:boundary": "tsx scripts/check-boundary.ts",
-    "secret-scan": "tsx scripts/secret-scan.ts"
+    "secret-scan": "tsx scripts/secret-scan.ts",
+    "validate:data": "tsx scripts/data-sync.ts --validate",
+    "sync:data": "tsx scripts/data-sync.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

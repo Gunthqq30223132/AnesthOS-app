@@ -1,0 +1,8 @@
+{
+  "dataset_version": "1.0.0",
+  "hash": "d1354394f",
+  "revoked_versions": ["0.9.0", "0.9.5-beta"],
+  "critical_min_version": "1.0.0",
+  "max_staleness_hours": 24,
+  "released_at": "2026-07-13T12:00:00Z"
+}
