@@ -9,3 +9,5 @@ qdrant_db/
 *.key
 ._*
 .DS_Store
+coverage/
+*.tsbuildinfo
