@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-07-18T08:53:51.151154Z",
+  "project": "AnesthOS-app",
+  "version": "0.1.0",
+  "results": [
+    {
+      "name": "secret_scan",
+      "command": "npm run secret-scan",
+      "exit_code": 0,
+      "duration_seconds": 1.085248,
+      "stdout": "\n> anesthos-app@0.1.0 secret-scan\n> tsx scripts/secret-scan.ts\n\n\u2705 Secret Scan Passed: 0 secret violations found across project files.\n",
+      "stderr": "",
+      "status": "PASS"
+    },
+    {
+      "name": "lint_boundary",
+      "command": "npm run lint:boundary",
+      "exit_code": 0,
+      "duration_seconds": 0.644901,
+      "stdout": "\n> anesthos-app@0.1.0 lint:boundary\n> tsx scripts/check-boundary.ts\n\n\u2705 Domain Boundary Validation Passed: src/domain is pure, deterministic, and isolated.\n",
+      "stderr": "",
+      "status": "PASS"
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exit_code": 0,
+      "duration_seconds": 1.935085,
+      "stdout": "\n> anesthos-app@0.1.0 build\n> tsc -b && vite build\n\nvite v6.4.3 building for production...\ntransforming...\n\u2713 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.47 kB \u2502 gzip:  0.31 kB\ndist/assets/index-DJXOpFpb.css    8.78 kB \u2502 gzip:  2.49 kB\ndist/assets/index-CPGFBEOx.js   148.26 kB \u2502 gzip: 47.81 kB\n\u2713 built in 495ms\n",
+      "stderr": "",
+      "status": "PASS"
+    },
+    {
+      "name": "test",
+      "command": "npm run test",
+      "exit_code": 0,
+      "duration_seconds": 4.821063,
+      "stdout": "\n> anesthos-app@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.7 /Users/gun/AnesthOS-app\n\n \u2713 tests/domain.test.ts (9 tests) 2ms\n \u2713 tests/boundary.test.ts (6 tests) 4038ms\n   \u2713 Domain Boundary Guardrail Execution > passes boundary check script for clean domain code  776ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden static import (React)  686ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden re-export (export ... from)  613ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden dynamic import  665ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden CommonJS require  673ms\n   \u2713 Domain Boundary Guardrail Execution > detects non-deterministic Date.now() call  623ms\n\n Test Files  2 passed (2)\n      Tests  15 passed (15)\n   Start at  08:53:55\n   Duration  4.26s (transform 33ms, setup 0ms, collect 35ms, tests 4.04s, environment 0ms, prepare 83ms)\n\n",
+      "stderr": "",
+      "status": "PASS"
+    },
+    {
+      "name": "test_coverage",
+      "command": "npm run test:coverage",
+      "exit_code": 0,
+      "duration_seconds": 4.705448,
+      "stdout": "\n> anesthos-app@0.1.0 test:coverage\n> vitest run --coverage\n\n\n RUN  v3.2.7 /Users/gun/AnesthOS-app\n      Coverage enabled with v8\n\n \u2713 tests/domain.test.ts (9 tests) 2ms\n \u2713 tests/boundary.test.ts (6 tests) 3951ms\n   \u2713 Domain Boundary Guardrail Execution > passes boundary check script for clean domain code  675ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden static import (React)  655ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden re-export (export ... from)  640ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden dynamic import  635ms\n   \u2713 Domain Boundary Guardrail Execution > detects forbidden CommonJS require  674ms\n   \u2713 Domain Boundary Guardrail Execution > detects non-deterministic Date.now() call  671ms\n\n Test Files  2 passed (2)\n      Tests  15 passed (15)\n   Start at  08:53:59\n   Duration  4.17s (transform 30ms, setup 0ms, collect 33ms, tests 3.95s, environment 0ms, prepare 91ms)\n\n % Coverage report from v8\n----------|---------|----------|---------|---------|-------------------\nFile      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s \n----------|---------|----------|---------|---------|-------------------\nAll files |     100 |      100 |     100 |     100 |                   \n ibw.ts   |     100 |      100 |     100 |     100 |                   \n----------|---------|----------|---------|---------|-------------------\n",
+      "stderr": "",
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS"
+}

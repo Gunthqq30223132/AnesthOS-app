@@ -1,0 +1,10 @@
+# AnesthOS TypeScript App Gates Configuration
+project: "AnesthOS-app"
+version: "0.1.0"
+
+quality_gates:
+  secret_scan: "npm run secret-scan"
+  lint_boundary: "npm run lint:boundary"
+  build: "npm run build"
+  test: "npm run test"
+  test_coverage: "npm run test:coverage"
