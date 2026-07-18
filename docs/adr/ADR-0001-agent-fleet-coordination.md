@@ -1,6 +1,6 @@
 # ADR-0001: Agent-Fleet Coordination Framework (RACI · Routing · DoD-Tier · Gate Contract)
 
-- **Status:** DRAFT v0.1 — chờ phản biện vòng 2 của Antigravity + bằng chứng smoke test 9router (xem §12)
+- **Status:** DRAFT v0.2 — bằng chứng vòng 2 đã nhận và audit (2026-07-18): cả 2 instance VERIFIED, smoke Kiro PASS, smoke Ollama transport-PASS/generation-FAIL. Việc còn lại tracked bằng Issues `[M1-*]`. Còn thiếu: mục "BẤT KHẢ THI / RỦI RO / TÔI KHÔNG ĐỒNG Ý" của Antigravity (bắt buộc, vòng 3)
 - **Date:** 2026-07-18
 - **Authors:** Claude auth (PM/Auditor, cloud) — đồng thiết kế với Antigravity (Orchestrator, local); phê duyệt cuối: Chủ
 - **Scope:** Đây là **FRAMEWORK dùng chung, project-agnostic** cho mọi dự án vận hành bằng bộ công cụ Antigravity + 9router (Kiro/Ollama) + Claude auth. AnesthOS và SR-Agent là hai *instance* tham chiếu. Kiến trúc nghiệp vụ/lâm sàng của từng app **không** thuộc phạm vi ADR này. Khi có project thứ ba, tách ADR này ra repo template `agent-fleet`.
@@ -47,7 +47,7 @@ Một người vận hành (Chủ) điều phối một đội agent hỗn hợp
 
 **Ba định luật:**
 1. **Luật model yếu:** model yếu chỉ nhận việc mà output sai *rẻ-để-phát-hiện-và-vứt*.
-2. **Luật oracle:** kẻ viết code không viết test chấm chính code đó (Tier ≥ 2); Gemma không bao giờ sinh *expected values* — chỉ sinh input. Với hằng số lâm sàng, chân lý là **văn liệu** (PubMed), không phải một model khác.
+2. **Luật oracle:** kẻ viết code không viết test chấm chính code đó (Tier ≥ 2); Gemma không bao giờ sinh *expected values* — chỉ sinh input. Với hằng số lâm sàng, chân lý là **văn liệu** (PubMed), không phải một model khác. *(Hệ quả đã phán quyết 2026-07-18: đề xuất để Gemma viết test `src/domain` bị BÁC — test Tier 2 chỉ do model mạnh ≠ tác giả code viết; cơ chế cụ thể: Issue M1-06.)*
 3. **Luật kênh:** bảng routing ghi **model đích**, không ghi tên kênh ("Kiro" là đường ống, không phải cam kết chất lượng).
 
 | Tier | Vùng (instance tự khai) | Tác giả code | Tác giả test | Model đích mặc định | Escalate |
@@ -56,6 +56,8 @@ Một người vận hành (Chủ) điều phối một đội agent hỗn hợp
 | 2 — Critical (vd lâm sàng `src/domain`) | instance khai | Antigravity hoặc Opus 4.8 | **Model mạnh ≠ tác giả code**, capsule spec-only, giá trị neo văn liệu | Opus 4.8 | → PM |
 | 1 — Consumer (vd `src/ui`) | instance khai | Haiku | Haiku | Haiku → Opus khi fail | → Antigravity |
 | 0 — Trivial (fixtures input, format, fuzz) | instance khai | Gemma 4 local | — | Gemma → Haiku khi fail | → Kiro |
+
+**Model khả dụng đã xác minh trên kênh (smoke 2026-07-18):** `kiro/claude-sonnet-4.5-thinking` (PASS, 5.2s; lưu ý overhead ~6.3k prompt tokens/call do system prompt của kênh Kiro), `ollama-local/gemma4:e4b` (transport PASS, generation FAIL — content rỗng). Opus 4.8 **chưa xác minh** trên kênh — cột "model đích" đọc là "model Claude mạnh nhất khả dụng đã xác minh". Model ID phải pin trong config, cấm trôi tự do giữa các lần chạy.
 
 Bậc chi phí: Gemma (~0đ) < Haiku < Gemini (quota riêng — toàn bộ deep research) < Opus 4.8 < Claude auth (chỉ quyết định/spec/audit) < Chủ (vô giá). Hai hệ quả: không trả tiền hai lần cho cùng token (chưng cất + link); chi phí lớn nhất là *rework từ handoff hỏng*, không phải token.
 
@@ -69,15 +71,16 @@ Bậc chi phí: Gemma (~0đ) < Haiku < Gemini (quota riêng — toàn bộ deep 
 ## 6. Gate Contract — `.agents/gates.yml`
 
 ```yaml
-# schema v1 — framework chỉ biết cấu trúc này, không biết nội dung lệnh
-project: <tên instance>
-gates:                # chạy tuần tự, fail-fast, gate rẻ trước
-  - name: <định danh>
-    cmd: <lệnh shell>
-    timeout_s: <int>
-tier_top_verify:      # slot gate verify của tier cao nhất (instance điền)
-  cmd: <lệnh shell>
+# schema v1.1 — khớp implementation đã verify (harness v0.1), bổ sung phần bắt buộc cho v0.2
+project: <PHẢI đúng tên repo đang đứng — sai label = reject>
+version: <semver>
+quality_gates:               # map, chạy tuần tự, fail-fast, gate rẻ trước
+  <tên_gate>: "<lệnh shell>"
+tier_top_verify: "<lệnh>"    # slot verify tier-đỉnh — key TOP-LEVEL, không nằm trong quality_gates
+timeout_s: <int>             # trần mỗi gate (harness v0.2 bắt buộc — hiện chưa có, gate treo = treo vĩnh viễn)
 ```
+
+*Bug harness v0.1 phải sửa (Issue M1-04): parser tự chế nuốt mọi key top-level đứng sau một section (khiến `tier_top_verify`/`clinical_firewall` bị gộp thầm lặng vào `quality_gates`), và thiếu timeout mỗi gate. Khuyến nghị: dùng PyYAML.*
 
 **Bất biến (invariants):**
 1. **CI là phán quyết, local là tư vấn.** CI *không đọc* `gates.yml` — workflow CI giữ danh sách gate cứng riêng; thêm một bước CI so khớp `gates.yml` ⊇ danh sách chuẩn. Patch độc sửa `gates.yml` để rút răng gate sẽ bị CI bắt.
@@ -98,7 +101,7 @@ tier_top_verify:      # slot gate verify của tier cao nhất (instance điền
 ## 8. Handoff Protocol — `.agents/handoff.md`
 
 - ≤ 60 dòng, YAML frontmatter (`build_status`, `base_sha`, `now`, `blocked`, `do_not_touch`), một writer duy nhất (Antigravity).
-- **Cấm truncate kiểu `tail -N`** — chặt đầu file là chặt frontmatter và xoá mù các mục BLOCKED/DO-NOT-TOUCH. Giữ ngân sách dòng bằng **regenerate từ state** (viết lại toàn file từ dữ liệu máy), không bằng cắt đuôi.
+- **Cấm truncate kiểu `tail -N`** — chặt đầu file là chặt frontmatter và xoá mù các mục BLOCKED/DO-NOT-TOUCH. Giữ ngân sách dòng bằng **regenerate từ state** (viết lại toàn file từ dữ liệu máy), không bằng cắt đuôi. *(Vi phạm đang tồn tại: `anesthos-sync.sh` dòng `tail -n 100 .agents/handoff.md` — Issue M1-05.)*
 - `build_status` sinh từ test-run thật (trace), model tự khai = vô hiệu.
 
 ## 9. Bất biến an ninh (Tier 3)
@@ -107,6 +110,8 @@ tier_top_verify:      # slot gate verify của tier cao nhất (instance điền
 2. Secrets sống ngoài repo (vd `~/.9router/`); script nạp credentials không được ghi key vào bất kỳ file nào trong repo; secret-scan pre-push fail-closed.
 3. Nội dung vùng Tier 3 và file đang viết dở không bao giờ được gửi lên Lính cloud.
 4. Thay đổi gate contract cần PM audit + Chủ duyệt.
+5. **Incident log 2026-07-18:** key gateway 9router bị hardcode trong `scripts/test_9router_smoke.py` và đã push lên remote SRagent; gate secret-scan chạy PASS mà không bắt được. Xử lý (Issue M1-01): rotate key, script đọc key từ biến môi trường, thêm pattern `sk-*`/`Bearer ...` vào secret-scan. Đây là ca lesson→rule (§11) đầu tiên được thi hành.
+6. **Luật Anchor (bổ sung v0.2):** mọi lệnh giao việc và mọi báo cáo giữa các actor phải mở đầu bằng `repo + branch + HEAD SHA + cwd` lấy từ output lệnh thật; artifact nhắc đến không có anchor = coi như không tồn tại. (Nguồn gốc: sự cố dán nhãn AnesthOS/SRagent ở vòng 1.)
 
 ## 10. Research Pipeline (Gemini)
 
@@ -123,11 +128,11 @@ Kinh nghiệm đã trả giá (Notion note) phải được thăng cấp thành 
 | Gate chuẩn | `scan-history-secrets`, `gate_m6.sh`, `python3 -m pytest`, `gate_d32.sh` | `npm run secret-scan`, `lint:boundary`, `build`, `test`, `test:coverage` |
 | Tier-top verify | `tests/test_guards.py` (Numeric Firewall) | Numeric Firewall lâm sàng — **chưa tồn tại, phải tạo** |
 | Vùng Tier 2 | `tools/guard/`, pipeline rubric | `src/domain/` (BS-B/BS-C/BS-F) |
-| Trạng thái pilot | Harness đã chạy 5/5 PASS (theo báo cáo) — **chưa audit được: chưa push** | **Manifest chưa tồn tại** — đây là bài test portability thật |
+| Trạng thái pilot | **VERIFIED 2026-07-18:** artifacts @ branch `claude/sr-agent-pipeline-design-rqtctp` SHA `e047da8`; 363/363 pytest. Còn lỗi label: `gates.yml` ghi `project: "AnesthOS"` trong repo SRagent (M1-05) | **VERIFIED 2026-07-18:** `gates.yml` đủ 5 gate npm + `qc_trace.json` máy sinh @ SHA `48b792a`; harness IDENTICAL byte-for-byte với bản SR-Agent — **portability đã chứng minh** |
 
-**Câu hỏi mở cho vòng phản biện 2 (Antigravity trả lời kèm bằng chứng):**
-1. Smoke test 9router: transcript 2 lần gọi thật qua `:20128` (1 → model Claude qua Kiro, 1 → Gemma qua Ollama), che key.
-2. Toàn bộ artifacts đã tạo (`agent-qc-harness.py`, `active_watcher.py`, `gates.yml`, sync script) đang nằm ở **repo nào / branch nào / SHA nào**? Push lên branch + mở PR để PM audit code thật.
-3. Pilot harness đã chạy trên SR-Agent (bằng chứng fingerprint) — xác nhận, và tạo `gates.yml` instance cho anesthos-app (5 gate npm) để chứng minh tính project-agnostic.
-4. Ai viết test cho `src/domain`? (Không được là Antigravity nếu Antigravity viết code domain — Luật oracle.)
-5. `setup_9router_credentials.py` ghi key vào đâu? Xác nhận không có đường ghi vào repo.
+**Kết quả 5 câu hỏi mở (audit vòng 2, 2026-07-18):**
+1. ⚠️ MỘT NỬA — Kiro PASS (`claude-sonnet-4.5-thinking`, 5.2s); Ollama HTTP 200 nhưng `content` rỗng, `finish_reason: length`, 5 completion tokens — thinking mode nuốt sạch budget. Đường sinh chưa dùng được → Issue M1-02. Lưu ý thêm: smoke script đã commit test model khác (`qwen2.5:7b`, `claude-sonnet-5`) với transcript nộp (`gemma4:e4b`, `sonnet-4.5-thinking`) — phải pin model ID.
+2. ✅ Anchor chính xác 100%, PM đã đối chiếu cả 2 remote.
+3. ✅ Xác nhận + portability verified (xem bảng).
+4. ❌ BÁC MỘT PHẦN — cho Gemma viết test `src/domain` vi phạm Luật oracle §4.2. Cơ chế đúng: Issue M1-06.
+5. ⚠️ Key nằm ngoài repo đúng chuẩn (`~/.9router/db/data.sqlite`; báo cáo ghi `~/.omniroute` là sai đường dẫn), NHƯNG audit phát hiện key gateway hardcode trong `test_9router_smoke.py` đã push — Incident §9.5, Issue M1-01.
