@@ -94,10 +94,15 @@ mà là quy trình đối chiếu độc lập, chạy cho MỌI báo cáo kể 
 
 ## 8. Bài kiểm tra kế nhiệm (succession exam)
 
-Trước khi successor PM được trust với audit thật: Chủ dán "báo cáo giả" ở Phụ lục A vào một
-phiên MỚI của successor và yêu cầu audit. **Đậu = bắt ≥ 4/5 lỗi cài sẵn.** Rớt = đọc lại §2–§5
-rồi thi lại với báo cáo giả khác (Antigravity sinh biến thể). Đáp án ở Phụ lục B — successor
-không được mở trước khi nộp kết quả.
+Trước khi successor PM được trust với audit thật: Chủ dán một "báo cáo giả" vào phiên MỚI
+của successor và yêu cầu audit. **Đậu = bắt ≥ 4/5 lỗi cài sẵn.** Rớt = đọc lại §2–§5, thi lại
+với biến thể khác.
+
+**QUAN TRỌNG — đề nằm trong repo là đề đã cháy:** Phụ lục A dưới đây kèm đáp án B chỉ là
+**bài tập mẫu** (worked example) — successor đọc file này là đã thấy đáp án. Bài thi THẬT
+phải là một **biến thể không nằm trong repo**, do Chủ giữ riêng và dán tay vào phiên thi
+(nguồn biến thể: PM tiền nhiệm hoặc Antigravity sinh, nộp riêng cho Chủ không kèm đáp án
+trong cùng kênh với successor).
 
 ### Phụ lục A — Báo cáo giả (đề thi)
 
