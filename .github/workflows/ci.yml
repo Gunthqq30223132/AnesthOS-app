@@ -2,9 +2,9 @@ name: AnesthOS CI Pipeline
 
 on:
   push:
-    branches: [ main, develop, 'feat/*' ]
+    branches: [ main, develop, 'feat/*', 'claude/*' ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, develop, 'claude/*' ]
 
 jobs:
   ci-guardrails:
@@ -23,6 +23,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
+
+      - name: Gate 0 - Gate Contract Superset Verification
+        run: python3 scripts/check_gates_superset.py
 
       - name: Gate 1 - Secret Scan
         run: npm run secret-scan
