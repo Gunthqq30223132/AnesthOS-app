@@ -130,6 +130,12 @@ Kinh nghiệm đã trả giá (Notion note) phải được thăng cấp thành 
 | Vùng Tier 2 | `tools/guard/`, pipeline rubric | `src/domain/` (BS-B/BS-C/BS-F) |
 | Trạng thái pilot | **VERIFIED 2026-07-18:** artifacts @ branch `claude/sr-agent-pipeline-design-rqtctp` SHA `e047da8`; 363/363 pytest. Còn lỗi label: `gates.yml` ghi `project: "AnesthOS"` trong repo SRagent (M1-05) | **VERIFIED 2026-07-18:** `gates.yml` đủ 5 gate npm + `qc_trace.json` máy sinh @ SHA `48b792a`; harness IDENTICAL byte-for-byte với bản SR-Agent — **portability đã chứng minh** |
 
+## 13. Kế nhiệm PM (bổ sung v0.3)
+
+**PM là VAI TRÒ, không phải model.** Hồ sơ kế nhiệm: `.agents/PM_BOOTSTRAP.md` (luật + án lệ + checklist + nghi thức khởi động phiên + succession exam) và `docs/adr/RISK-REGISTER.md`. Model kế nhiệm chỉ được trust với audit thật sau khi đậu succession exam (BOOTSTRAP §8). Thay đổi luật chỉ có hiệu lực khi thành commit vào ADR — không phiên chat nào sửa được hiến pháp bằng lời.
+
+---
+
 **Kết quả 5 câu hỏi mở (audit vòng 2, 2026-07-18):**
 1. ⚠️ MỘT NỬA — Kiro PASS (`claude-sonnet-4.5-thinking`, 5.2s); Ollama HTTP 200 nhưng `content` rỗng, `finish_reason: length`, 5 completion tokens — thinking mode nuốt sạch budget. Đường sinh chưa dùng được → Issue M1-02. Lưu ý thêm: smoke script đã commit test model khác (`qwen2.5:7b`, `claude-sonnet-5`) với transcript nộp (`gemma4:e4b`, `sonnet-4.5-thinking`) — phải pin model ID.
 2. ✅ Anchor chính xác 100%, PM đã đối chiếu cả 2 remote.
