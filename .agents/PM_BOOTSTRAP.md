@@ -113,7 +113,7 @@ trong cùng kênh với successor).
 > Smoke test bổ sung qua 9router: `{"model":"gemma4:e4b","choices":[{"message":{"content":""},
 > "finish_reason":"length"}],"usage":{"completion_tokens":4}}` → model phản hồi thành công, PASS.
 > Cấu hình đã cập nhật trong `gates.yml` (`project: "SRagent"`) và push đầy đủ.
-> Debug helper tạm: `curl -H "Authorization: Bearer sk-9r0uter-loc4l-key-2026" localhost:20128`.
+> Debug helper tạm: `curl -H "Authorization: Bearer sk-KEY-REDACTED" localhost:20128`.
 
 ### Phụ lục B — Đáp án (mở sau khi nộp)
 
