@@ -21,6 +21,7 @@
 | B2 | Framework "fork trong chat": nhiều phiên/nhiều model hiểu luật hơi khác nhau → trôi dần | T/C | Avoid: thay đổi luật CHỈ có hiệu lực khi thành commit vào ADR; lời nói không sửa được hiến pháp | PM | Hai báo cáo viện dẫn cùng luật với nội dung khác nhau |
 | B3 | Notion/NotebookLM ôi (nguồn cũ) → Chủ quyết định trên thông tin stale | T/T | Mitigate: refresh nguồn sau mỗi milestone; NotebookLM không bao giờ là bản duy nhất | Chủ | Trích dẫn tài liệu không còn khớp repo |
 | B4 | `handoff.md` hỏng (đã suýt: tail-100 chặt frontmatter) | T/T | Avoid: regenerate-từ-state (ADR §8), M1-05 | Antigravity | File mất frontmatter |
+| B5 | Thư mục local tên lệch repo (`~/projects/AnesthOS` đang chứa clone SRagent) → actor đứng trong đó tự nhầm danh tính project — **nguyên nhân gốc của án lệ 1** | C/T | Avoid: đổi tên thư mục khớp tên repo; preflight in anchor mỗi phiên; label `project:` khớp repo (M1-04) | Chủ + Antigravity | Anchor có `cwd` ≠ tên repo |
 
 ## Nhóm C — Quy trình & an ninh
 
@@ -32,6 +33,8 @@
 | C4 | Automation tăng → single-writer vỡ trở lại (nhiều subagent cùng ghi) | T/C | Avoid: ADR §7 (worktree + CAS + watcher chỉ-đọc) phải thành CODE trong harness (M1-08), không nằm ở văn bản | Antigravity | Conflict/`stale` trace xuất hiện thường xuyên |
 | C5 | Luật Oracle vỡ kiểu mới: fixer sửa test cho khớp code sai | T/C | Avoid: path-check trong harness — fixer không đụng test đang fail (M1-08); PM soi PR sửa test+code cùng tác giả | Antigravity + PM | PR đổi expected value không kèm citation |
 | C6 | **"Vá tay tạm thời" thành văn hoá**: First Light chưa đạt zero-manual nhưng cả đội quen dần với nửa-tự-động | C/T | Mitigate: định nghĩa First Light là ZERO vá tay (M1-07 DoD); retro bắt buộc; mỗi lần vá tay = 1 lesson→rule | Chủ + PM | "Lần này sửa tay cho nhanh" xuất hiện lần thứ 2 |
+| C7 | APFS case-insensitive: import sai hoa/thường pass ở local Mac, vỡ trên Linux CI *(nguồn: Antigravity, vòng 3)* | T/T | Mitigate: CI là phán quyết (§6.1); bật `forceConsistentCasingInFileNames` trong tsconfig | Antigravity | CI đỏ module-not-found chỉ trên Linux |
+| C8 | Guard máy móc bắn nhầm vào fixture-có-chủ-đích (đề thi, test case chứa mẫu secret) → executor "sửa" phá artifact của người khác — **ĐÃ XẢY RA 2026-07-19** | T/T | Avoid: file PM-owned chỉ PM ghi (ADR §9.7); guard fail → báo cáo, không tự sửa ngoài phạm vi mình sở hữu | Mọi actor | Diff chạm file không thuộc quyền sở hữu của tác giả commit |
 
 ## Nhóm D — Con người (điểm nghẽn thật của hệ)
 
@@ -48,6 +51,10 @@
 | E1 | Máy M4 chết / sqlite 9router hỏng → dựng lại mất nhiều ngày, mất cấu hình | Th/C | Mitigate: script tái tạo đã có (`setup_9router_credentials.py`); bổ sung: backup định kỳ `~/.9router` (TRỪ secrets) + ghi RTO mục tiêu (nửa ngày) vào runbook | Antigravity | — |
 | E2 | Token runaway: retry loop + overhead ~6.3k tokens/call kênh Kiro × automation | T/C | Mitigate: budget đa chiều persist (ADR §7.6) phải thành code; đo cost/task từ trace | Antigravity | Hoá đơn tuần tăng >2× không kèm tăng task |
 | E3 | Backup SSD/iCloud fail im lặng (script hiện chỉ `echo` cảnh báo rồi đi tiếp) | T/T | Mitigate: backup fail → exit code ≠ 0 + hiện trong build_status (M1-05) | Antigravity | Ngày backup cuối > 7 ngày |
+| E4 | Mac sleep/PowerNap đình chỉ daemon (9router, watcher) → socket đứt, sqlite treo im lặng khi thức dậy *(nguồn: Antigravity, vòng 3)* | C/T | Mitigate: heartbeat probe 15' + cờ `DEGRADED_KIRO_AUTH_FAIL` vào handoff (đề xuất đã DUYỆT — đồng thời là early-warning cho A2); launchd `KeepAlive` | Antigravity | Preflight fail ngay sau khi máy ngủ dậy |
+| E5 | Antigravity IDE self-update đổi môi trường ngầm (sandbox, env subagent, symlink) *(nguồn: Antigravity, vòng 3)* | T/T | Mitigate: preflight in version IDE + node; pin version khi có thể | Antigravity | Hành vi đổi ngay sau ngày IDE update |
+| E6 | Mở 2 workspace song song → tranh chấp port `:20128` / SQLite lock `~/.omniroute` *(nguồn: Antigravity, vòng 3)* | T/T | Mitigate: lockfile; quy ước 1 workspace active; lỗi lock → dừng, không retry mù | Chủ | `database is locked` / `EADDRINUSE` |
+| E7 | Daemon nền thiếu `PATH` chứa node/nvm → bridge sub-process của 9router chết im lặng (`env: node: No such file`) *(nguồn: Antigravity, vòng 3 — đã gặp thật)* | T/T | Avoid: launchd plist export PATH tường minh tới binary node; ghi vào runbook | Antigravity | 9router sống nhưng provider bridge chết |
 
 ## Nhóm F — Lâm sàng (instance AnesthOS — tác động cao nhất toàn hệ)
 

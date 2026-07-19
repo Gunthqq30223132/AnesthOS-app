@@ -112,6 +112,7 @@ timeout_s: <int>             # trần mỗi gate (harness v0.2 bắt buộc — 
 4. Thay đổi gate contract cần PM audit + Chủ duyệt.
 5. **Incident log 2026-07-18:** key gateway 9router bị hardcode trong `scripts/test_9router_smoke.py` và đã push lên remote SRagent; gate secret-scan chạy PASS mà không bắt được. Xử lý (Issue M1-01): rotate key, script đọc key từ biến môi trường, thêm pattern `sk-*`/`Bearer ...` vào secret-scan. Đây là ca lesson→rule (§11) đầu tiên được thi hành.
 6. **Luật Anchor (bổ sung v0.2):** mọi lệnh giao việc và mọi báo cáo giữa các actor phải mở đầu bằng `repo + branch + HEAD SHA + cwd` lấy từ output lệnh thật; artifact nhắc đến không có anchor = coi như không tồn tại. (Nguồn gốc: sự cố dán nhãn AnesthOS/SRagent ở vòng 1.)
+7. **File PM-owned chỉ PM ghi (bổ sung v0.3):** `.agents/PM_BOOTSTRAP.md`, `.agents/EXAM_*`, `docs/adr/**` thuộc quyền ghi của PM. Executor phát hiện vấn đề trong các file này → nêu trong báo cáo, không tự sửa. Đề thi kế nhiệm và đáp án **không bao giờ được commit** vào repo. (Nguồn gốc: sự cố 2026-07-19 — executor commit đề + đáp án và "redact" lỗi cài sẵn của đề vì gate secret-scan bắn nhầm vào fixture.)
 
 ## 10. Research Pipeline (Gemini)
 
