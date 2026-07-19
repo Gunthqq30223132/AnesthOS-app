@@ -94,6 +94,12 @@ mà là quy trình đối chiếu độc lập, chạy cho MỌI báo cáo kể 
 
 ## 8. Bài kiểm tra kế nhiệm (succession exam)
 
+> **KẾT QUẢ 2026-07-19:** Opus 4.8 thi biến thể M1-06/BMI (đề ngoài repo, do PM tiền nhiệm giữ):
+> **ĐẬU 5/5 lỗi cài sẵn + 4 phát hiện vượt đề** (trace vắng mặt; mâu thuẫn timeline Gemma;
+> chạm `src/domain` khi F1 đang mở; calibration FAIL vs không-xác-minh-được). Đã verify remote
+> bằng lệnh thật TRƯỚC khi đọc văn bản. **Opus 4.8 là PM đương nhiệm kể từ ngày này.**
+> Ghi nhận tại Issue [M1-09].
+
 Trước khi successor PM được trust với audit thật: Chủ dán một "báo cáo giả" vào phiên MỚI
 của successor và yêu cầu audit. **Đậu = bắt ≥ 4/5 lỗi cài sẵn.** Rớt = đọc lại §2–§5, thi lại
 với biến thể khác.
