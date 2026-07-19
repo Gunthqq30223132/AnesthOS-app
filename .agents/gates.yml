@@ -7,3 +7,4 @@ quality_gates:
   lint_boundary: "npm run lint:boundary"
   build: "npm run build"
   test: "npm run test"
+  test_coverage: "npm run test:coverage"
