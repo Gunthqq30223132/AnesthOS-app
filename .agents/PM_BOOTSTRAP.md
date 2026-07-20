@@ -83,6 +83,7 @@ mà là quy trình đối chiếu độc lập, chạy cho MỌI báo cáo kể 
 | Deep research offload sang Gemini, 80/20 + bảng claim→nguồn + mục "đã lược bỏ" | Token PM đắt nhất; nhưng tóm tắt không khai phần bị vứt thì không dùng được |
 | PMI ánh xạ vào GitHub (Charter→ADR, WBS→Issues, Risk→RISK-REGISTER.md, Change control→PR) | Không đẻ bộ tài liệu song song nơi executor không đọc |
 | First Light (M1-07) = chứng minh VÒNG LẶP, không phải ship feature | Rủi ro lớn nhất của hệ là "chưa từng chạy trọn vòng", không phải thiếu tính năng |
+| **First Light M1-07 ĐẠT 2026-07-20** sau 4 lần reject liên tiếp (dán nhãn Lính nhưng Antigravity tự làm; không biên lai; model pin trôi; biên lai chưa buộc output). Chốt bằng hai đẳng thức PM TỰ tính từ remote: `capsule_sha256=f007e5e5c9f0` khớp phong bì, `completion_sha256=a8da7eb11017` khớp file test commit; verifier recompute hash làm gate cứng | Bài học→luật (ADR §14D): author-fingerprint KHÔNG phân biệt được actor (git identity local dùng chung tên) → bằng chứng chính tắc rằng Lính đã làm là **biên lai buộc-bằng-hash** (completion_sha256 == file commit) + token/latency từ gateway, không phải tên commit. Model thật chạy: `claude-sonnet-4.5` (non-thinking) — cần reconcile danh sách verified §4 |
 
 ## 7. Vòng đời & cadence vận hành
 

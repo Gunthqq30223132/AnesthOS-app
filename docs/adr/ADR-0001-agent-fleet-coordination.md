@@ -185,3 +185,14 @@ Trên branch `attempt/<task-id>`, gate tự động của Antigravity (Step 5) k
 3. **PR head SHA == tip của branch `attempt/<task-id>`** — merge không kèm sửa nội dung.
 
 Vi phạm bất kỳ điều nào = **vá tay detected** → FAIL, escalate theo thang §7, không merge. Transport (paste, push, chuyển branch, clipboard) là hợp lệ theo định nghĩa — đó là vai của Chủ trong Dispatch Mode v1 (Manual Human Router).
+
+### D. Biên lai dispatch — bằng chứng chính tắc rằng Lính đã làm (bài học First Light M1-07, 2026-07-20)
+
+**Vì sao điều C.1 (author ≠ Antigravity) một mình KHÔNG đủ:** git identity local của máy Chủ đặt là "Antygravity Agent", nên author-fingerprint **không phân biệt được** ai thật sự commit. §14C.1 vẫn giữ nhưng **KHÔNG còn là bằng chứng chính** — nó chỉ là tín hiệu phụ.
+
+**Bằng chứng chính tắc = biên lai buộc-bằng-hash**, sinh tự động bởi `scripts/dispatch-runner.py`, kiểm tự động bởi `sr_agent/store/dispatch_verifier.py`, là **gate cứng của Step 5**:
+1. Runner gọi 9router thật, tự trích code từ completion, **ghi thẳng** vào file đích trong worktree, ghi biên lai `.agents/traces/<task-id>/dispatch.jsonl` gồm: `capsule_sha256` (từ phong bì đã commit), `completion_sha256` (hash của file vừa ghi), `model_requested/target_model_raw/model_returned`, `prompt_tokens/completion_tokens` (từ gateway), `latency_ms`, `status_code`.
+2. Verifier **recompute** `sha256(file patch đã commit)[:12]` và bắt buộc **khớp** `completion_sha256` trong biên lai → chứng minh *code commit lên CHÍNH LÀ code model sinh ra*. Đây là thứ đóng cửa "hệ 2 não": không thể commit code khác cái model trả về.
+3. Verifier bắt `capsule_sha256` khớp phong bì đã commit; `prompt_tokens`/`completion_tokens` > 0; `status_code` == 200; `model_requested`/`target_model_raw` khớp TARGET phong bì (qua `normalize_model_name`).
+
+**Luật:** không có biên lai hợp lệ (verifier PASS) = tuyên bố "Lính đã làm" là **vô hiệu**, không được đóng Issue. Token count + latency đến từ gateway (không gõ tay được); completion_sha256 buộc vào file thật. *Điểm tin cậy còn lại (runner vừa sinh vừa hash — Tier 3, đã audit): nâng cấp về sau bằng đối chiếu log server-side 9router.*
