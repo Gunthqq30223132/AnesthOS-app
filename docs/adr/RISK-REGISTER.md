@@ -8,7 +8,7 @@
 
 | ID | Rủi ro | P/I | Chiến lược & kế hoạch đáp ứng | Owner | Tín hiệu sớm |
 |---|---|---|---|---|---|
-| A1 | **[ĐANG XẢY RA]** Mất Fable 5, PM chuyển sang Opus 4.8 → mất ký ức thể chế + phán đoán tích luỹ, KHÔNG phải mất IQ | C/C | Mitigate: `PM_BOOTSTRAP.md` (luật + án lệ + checklist) + succession exam §8; mọi phán đoán lặp lại được → biên dịch thành checklist/code | PM + Chủ | Successor trả lời không trích được điều khoản ADR; nới luật không dẫn án lệ |
+| A1 | **[ĐANG XẢY RA]** Mất Fable 5, PM chuyển sang Opus 4.8 → mất ký ức thể chế + phán đoán tích luỹ, KHÔNG phải mất IQ | C/C | Mitigate: `PM_BOOTSTRAP.md` (luật + án lệ + checklist) + succession exam §9; mọi phán đoán lặp lại được → biên dịch thành checklist/code | PM + Chủ | Successor trả lời không trích được điều khoản ADR; nới luật không dẫn án lệ |
 | A2 | Hack OAuth của Kiro (API key giả dạng oauth, `expiresAt: 2030`) vỡ khi 9router/Kiro đổi schema → kênh Lính-mạnh chết im lặng | C/C | Mitigate: smoke test model pin trong preflight mỗi phiên làm việc; Accept phần còn lại (hack là tạm). Fallback: Antigravity tự code + PM audit dày | Antigravity | 401/`expired` trong log 9router; latency bất thường |
 | A3 | Model ID trôi tự do (đã thấy 3 lần: Opus 4.8→Haiku→sonnet-4.5-thinking) → chất lượng đổi mà không ai quyết | T/C | Avoid: pin model ID trong config (M1-02); mọi đổi model là một PR, không phải một sự tình cờ | Antigravity | Transcript có model khác config |
 | A4 | Ollama trên M4 16GB: model 9.6GB + KV cache → swap, treo IDE, hoặc content rỗng (đã thấy) | C/T | Mitigate: bản quantized, `keep_alive`, serialize 1 inference, timeout + fallback cloud (M1-02) | Antigravity | Load >10s; `finish_reason: length`; RAM áp trần |

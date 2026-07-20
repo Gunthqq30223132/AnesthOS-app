@@ -133,7 +133,7 @@ Kinh nghiệm đã trả giá (Notion note) phải được thăng cấp thành 
 
 ## 13. Kế nhiệm PM (bổ sung v0.3)
 
-**PM là VAI TRÒ, không phải model.** Hồ sơ kế nhiệm: `.agents/PM_BOOTSTRAP.md` (luật + án lệ + checklist + nghi thức khởi động phiên + succession exam) và `docs/adr/RISK-REGISTER.md`. Model kế nhiệm chỉ được trust với audit thật sau khi đậu succession exam (BOOTSTRAP §8). Thay đổi luật chỉ có hiệu lực khi thành commit vào ADR — không phiên chat nào sửa được hiến pháp bằng lời.
+**PM là VAI TRÒ, không phải model.** Hồ sơ kế nhiệm: `.agents/PM_BOOTSTRAP.md` (luật + án lệ + checklist + nghi thức khởi động phiên + succession exam) và `docs/adr/RISK-REGISTER.md`. Model kế nhiệm chỉ được trust với audit thật sau khi đậu succession exam (BOOTSTRAP §9). Thay đổi luật chỉ có hiệu lực khi thành commit vào ADR — không phiên chat nào sửa được hiến pháp bằng lời.
 
 ---
 
@@ -166,7 +166,7 @@ Ghi chú: <optional, vd "đây là First Light — cần biên lai dispatch đ�
 | Bước | Diễn giải | Vai trò thực hiện |
 | :--- | :--- | :--- |
 | **Step 1** | Gửi yêu cầu Kickoff theo mẫu trên cho PM. | **Chủ** |
-| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only` và `BRANCH attempt/<task-id>`. Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
+| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only`, `BRANCH attempt/<task-id>` và `Capsule-SHA256: <12 hex đầu của SHA-256 nội dung capsule>` (chỉ chiều đi Chủ→Lính; chiều về dùng commit SHA trên attempt/*). Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
 | **Step 3** | Mở opencode (hoặc CLI tool) trỏ 9router đúng model pin đã chỉ định trong Phong bì, dán capsule nhận được. Lấy patch trả về từ Lính và commit lên nhánh `attempt/<task-id>` trong worktree riêng (không chạm vào cây làm việc chính). | **Chủ** |
 | **Step 4** | Thông báo cho Antigravity một câu: *"attempt/<task-id> đã có patch"* (tuyệt đối không dán trực tiếp nội dung patch vào cửa sổ chat). | **Chủ** |
 | **Step 5** | Kéo (pull) worktree về -> thực hiện pre-flight validation (`git apply --check` -> path-guard -> secret-scan -> typecheck) -> chạy các gates bằng QC Harness trên snapshot -> xuất trace -> nếu PASS thì thực hiện tích hợp, push và mở PR đính kèm trace. Nếu FAIL thì tự kích hoạt quy trình leo thang (escalation) có trần. | **Antigravity** |

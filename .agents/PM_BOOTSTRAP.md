@@ -112,7 +112,7 @@ Ghi chú: <optional, vd "đây là First Light — cần biên lai dispatch đ�
 | Bước | Diễn giải | Vai trò thực hiện |
 | :--- | :--- | :--- |
 | **Step 1** | Gửi yêu cầu Kickoff theo mẫu trên cho PM. | **Chủ** |
-| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only` và `BRANCH attempt/<task-id>`. Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
+| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only`, `BRANCH attempt/<task-id>` và `Capsule-SHA256: <12 hex đầu của SHA-256 nội dung capsule>` (chỉ chiều đi Chủ→Lính; chiều về dùng commit SHA trên attempt/*). Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
 | **Step 3** | Mở opencode (hoặc CLI tool) trỏ 9router đúng model pin đã chỉ định trong Phong bì, dán capsule nhận được. Lấy patch trả về từ Lính và commit lên nhánh `attempt/<task-id>` trong worktree riêng (không chạm vào cây làm việc chính). | **Chủ** |
 | **Step 4** | Thông báo cho Antigravity một câu: *"attempt/<task-id> đã có patch"* (tuyệt đối không dán trực tiếp nội dung patch vào cửa sổ chat). | **Chủ** |
 | **Step 5** | Kéo (pull) worktree về -> thực hiện pre-flight validation (`git apply --check` -> path-guard -> secret-scan -> typecheck) -> chạy các gates bằng QC Harness trên snapshot -> xuất trace -> nếu PASS thì thực hiện tích hợp, push và mở PR đính kèm trace. Nếu FAIL thì tự kích hoạt quy trình leo thang (escalation) có trần. | **Antigravity** |
@@ -165,3 +165,4 @@ trong cùng kênh với successor).
 > không phân biệt được fixture-có-chủ-đích với leak thật — con người/PM phải phân xử trước khi
 > "sửa" artifact của người khác; (b) file PM-owned (BOOTSTRAP, ADR, RISK-REGISTER, exam) chỉ PM
 > được ghi — executor đề xuất qua báo cáo, không tự sửa (ADR §9.7).
+> Tái phạm 2026-07-20, commit `3a88530`, executor tự ghi vào ADR-0001 §14 + PM_BOOTSTRAP §8 — xử lý bằng ratify + nhắc luật, không revert.
