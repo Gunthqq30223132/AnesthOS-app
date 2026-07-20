@@ -92,7 +92,36 @@ mà là quy trình đối chiếu độc lập, chạy cho MỌI báo cáo kể 
 - **Phase 3 — Scale:** project thứ 2 nhận instance `gates.yml` riêng → tách framework ra repo template `agent-fleet` (điều kiện: 2 instance chạy thật, không sớm hơn).
 - **Chế độ suy giảm (degraded modes):** Mất Ollama → route mọi thứ lên cloud (đắt hơn, vẫn chạy). Mất Kiro → Antigravity tự code + PM audit dày hơn. Mất PM cloud → Chủ vận hành tay bằng checklist §3/§4 (chậm, an toàn). Chủ vắng → **hệ đứng im an toàn**: không có auto-merge, mọi trạng thái resumable từ repo. Thiết kế này là chịu-dừng (pause-safe) có chủ đích — đứng im không phải sự cố.
 
-## 8. Bài kiểm tra kế nhiệm (succession exam)
+## 8. Quy trình Vận hành Mới (7 Bước & Mẫu mở Task)
+
+Để đảm bảo hiệu quả làm việc và loại bỏ hoàn toàn lỗi "vá tay thay hệ thống", mọi hoạt động từ khi mở task đến khi tích hợp code phải đi qua đúng 7 bước dưới đây:
+
+### A. Mẫu mở task (Kickoff) do Chủ viết
+Mỗi khi khởi tạo một task mới, Chủ gửi đúng 5 dòng theo cấu trúc sau (không tự viết giải pháp hay cách làm):
+```markdown
+[TASK MỚI]
+Tên: <1 dòng>
+Mục tiêu: <1-2 câu — kết quả mong muốn, không phải cách làm>
+Vùng chạm: <file/module nếu biết, hoặc để PM khảo sát>
+Ràng buộc: <deadline / ngân sách token / "không có">
+Ghi chú: <optional, vd "đây là First Light — cần biên lai dispatch đầu tiên">
+```
+
+### B. Quy trình vận hành 7 bước
+
+| Bước | Diễn giải | Vai trò thực hiện |
+| :--- | :--- | :--- |
+| **Step 1** | Gửi yêu cầu Kickoff theo mẫu trên cho PM. | **Chủ** |
+| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only` và `BRANCH attempt/<task-id>`. Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
+| **Step 3** | Mở opencode (hoặc CLI tool) trỏ 9router đúng model pin đã chỉ định trong Phong bì, dán capsule nhận được. Lấy patch trả về từ Lính và commit lên nhánh `attempt/<task-id>` trong worktree riêng (không chạm vào cây làm việc chính). | **Chủ** |
+| **Step 4** | Thông báo cho Antigravity một câu: *"attempt/<task-id> đã có patch"* (tuyệt đối không dán trực tiếp nội dung patch vào cửa sổ chat). | **Chủ** |
+| **Step 5** | Kéo (pull) worktree về -> thực hiện pre-flight validation (`git apply --check` -> path-guard -> secret-scan -> typecheck) -> chạy các gates bằng QC Harness trên snapshot -> xuất trace -> nếu PASS thì thực hiện tích hợp, push và mở PR đính kèm trace. Nếu FAIL thì tự kích hoạt quy trình leo thang (escalation) có trần. | **Antigravity** |
+| **Step 6** | Audit PR độc lập: đối chiếu Anchor khớp với môi trường thực tế -> rà soát từng mục DoD -> đối chiếu giá trị hằng số lâm sàng Tier 2 với PubMed/văn liệu thực tế. | **PM (Claude auth)** |
+| **Step 7** | Đánh giá trực quan (Tier 1 xem lướt, Tier 2 ký duyệt lâm sàng) -> tiến hành merge PR -> đóng Issue -> hệ thống tự động sinh lại tệp `handoff.md`. | **Chủ** |
+
+*Ranh giới thao tác*: Chủ thực hiện di chuyển thủ công (paste, chuyển branch); việc tự ý chỉnh sửa nội dung patch của Lính trả về bị cấm (FAIL). Nếu patch sai, báo lại PM để thực hiện leo thang.
+
+## 9. Bài kiểm tra kế nhiệm (succession exam)
 
 > **KẾT QUẢ 2026-07-19:** Opus 4.8 thi biến thể M1-06/BMI (đề ngoài repo, do PM tiền nhiệm giữ):
 > **ĐẬU 5/5 lỗi cài sẵn + 4 phát hiện vượt đề** (trace vắng mặt; mâu thuẫn timeline Gemma;
