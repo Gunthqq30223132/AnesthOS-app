@@ -2,7 +2,11 @@
 
 > **Source:** PM blind spot analysis dated 2026-07-20
 > **Author:** Antigravity (executor) — proposals for PM review
-> **Status:** PENDING PM REVIEW — do not apply until PM commits
+> **Status:** APPROVED 2026-07-20 (PM, phiên cloud) — đã áp vào ADR-0001 §4/§14 + BOOTSTRAP §7
+> với 2 tu chỉnh của PM: (1) bảng routing giữ **tên model không kênh** theo Luật kênh §4.3 —
+> gateway ID (`kiro/...`) chỉ nằm trong Phong bì Dispatch; (2) bỏ dòng `Capsule-SHA256` bên
+> trong file phong bì — SHA của-file-chứa-SHA là tự-tham-chiếu bất khả thi; SHA tính từ bản
+> đã commit, do `new-attempt.sh` in ra và opencode echo lại.
 
 ---
 

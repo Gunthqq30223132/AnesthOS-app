@@ -86,7 +86,7 @@ mà là quy trình đối chiếu độc lập, chạy cho MỌI báo cáo kể 
 
 ## 7. Vòng đời & cadence vận hành
 
-- **Phase 0 — Externalization (ĐANG CHẠY):** đóng M1-01…06 + file này + RISK-REGISTER + succession exam. Điều kiện thoát: successor PM đậu exam (§8).
+- **Phase 0 — Externalization (ĐANG CHẠY):** đóng M1-01…06 + file này + RISK-REGISTER + succession exam. Điều kiện thoát: successor PM đậu exam (§9).
 - **Phase 1 — First Light (M1-07):** một task nháp trọn vòng, zero vá tay, retro + lesson→rule.
 - **Phase 2 — Vận hành:** cadence tuần: (a) PM quét board + RISK-REGISTER triggers; (b) retro lesson→rule — mọi bài học thành commit, không thành note; (c) refresh nguồn NotebookLM sau mỗi milestone; (d) kiểm chi phí token (nhớ: kênh Kiro cõng ~6.3k prompt tokens overhead/call).
 - **Phase 3 — Scale:** project thứ 2 nhận instance `gates.yml` riêng → tách framework ra repo template `agent-fleet` (điều kiện: 2 instance chạy thật, không sớm hơn).

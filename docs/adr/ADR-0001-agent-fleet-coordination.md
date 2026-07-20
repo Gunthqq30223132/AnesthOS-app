@@ -50,12 +50,14 @@ Một người vận hành (Chủ) điều phối một đội agent hỗn hợp
 2. **Luật oracle:** kẻ viết code không viết test chấm chính code đó (Tier ≥ 2); Gemma không bao giờ sinh *expected values* — chỉ sinh input. Với hằng số lâm sàng, chân lý là **văn liệu** (PubMed), không phải một model khác. *(Hệ quả đã phán quyết 2026-07-18: đề xuất để Gemma viết test `src/domain` bị BÁC — test Tier 2 chỉ do model mạnh ≠ tác giả code viết; cơ chế cụ thể: Issue M1-06.)*
 3. **Luật kênh:** bảng routing ghi **model đích**, không ghi tên kênh ("Kiro" là đường ống, không phải cam kết chất lượng).
 
-| Tier | Vùng (instance tự khai) | Tác giả code | Tác giả test | Model đích mặc định | Escalate |
-|---|---|---|---|---|---|
-| 3 — Security | `scripts/`, `.agents/`, CI config | **Antigravity duy nhất** | Antigravity | — (cấm Lính) | PM audit bắt buộc |
-| 2 — Critical (vd lâm sàng `src/domain`) | instance khai | Antigravity hoặc Opus 4.8 | **Model mạnh ≠ tác giả code**, capsule spec-only, giá trị neo văn liệu | Opus 4.8 | → PM |
-| 1 — Consumer (vd `src/ui`) | instance khai | Haiku | Haiku | Haiku → Opus khi fail | → Antigravity |
-| 0 — Trivial (fixtures input, format, fuzz) | instance khai | Gemma 4 local | — | Gemma → Haiku khi fail | → Kiro |
+| Tier | Vùng (instance tự khai) | Tác giả code | Tác giả test | Model đích mặc định | Verified trên kênh | Escalate |
+|---|---|---|---|---|---|---|
+| 3 — Security | `scripts/`, `.agents/`, CI config | **Antigravity duy nhất** | Antigravity | — (cấm Lính) | N/A | PM audit bắt buộc |
+| 2 — Critical (vd lâm sàng `src/domain`) | instance khai | Antigravity hoặc model mạnh đã verify | **Model mạnh ≠ tác giả code**, capsule spec-only, giá trị neo văn liệu | Claude Sonnet 4.5 thinking | ✅ 2026-07-18 | → PM |
+| 1 — Consumer (vd `src/ui`) | instance khai | model pin | model pin | Claude Sonnet 4.5 thinking *(tạm — Haiku chưa có biên bản)* | ✅ 2026-07-18 | → Antigravity |
+| 0 — Trivial (fixtures input, format, fuzz) | instance khai | Gemma 4 local | — | **ĐÓNG BĂNG** — gemma4:e4b generation FAIL (M1-02) | ❌ 2026-07-18 | → model Tier 1 |
+
+**Luật verify-trước-route (bổ sung 2026-07-20):** route chỉ được trỏ model có biên bản smoke-verify còn hiệu lực (cột Verified = ✅ kèm ngày). Model chưa có biên bản (Haiku, Opus 4.8 trên kênh) không nhận dispatch cho tới khi có. Đúng Luật kênh: bảng này ghi **tên model**, không ghi kênh — gateway ID cụ thể (vd `kiro/claude-sonnet-4.5-thinking`) chỉ xuất hiện trong Phong bì Dispatch tại thời điểm giao việc, là chỗ duy nhất được phép ghi kênh.
 
 **Model khả dụng đã xác minh trên kênh (smoke 2026-07-18):** `kiro/claude-sonnet-4.5-thinking` (PASS, 5.2s; lưu ý overhead ~6.3k prompt tokens/call do system prompt của kênh Kiro), `ollama-local/gemma4:e4b` (transport PASS, generation FAIL — content rỗng). Opus 4.8 **chưa xác minh** trên kênh — cột "model đích" đọc là "model Claude mạnh nhất khả dụng đã xác minh". Model ID phải pin trong config, cấm trôi tự do giữa các lần chạy.
 
@@ -166,7 +168,7 @@ Ghi chú: <optional, vd "đây là First Light — cần biên lai dispatch đ�
 | Bước | Diễn giải | Vai trò thực hiện |
 | :--- | :--- | :--- |
 | **Step 1** | Gửi yêu cầu Kickoff theo mẫu trên cho PM. | **Chủ** |
-| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính, soạn **Phong bì Dispatch** chứa: `TASK`, `TARGET model-pin`, `CAPSULE spec-only`, `BRANCH attempt/<task-id>` và `Capsule-SHA256: <12 hex đầu của SHA-256 nội dung capsule>` (chỉ chiều đi Chủ→Lính; chiều về dùng commit SHA trên attempt/*). Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
+| **Step 2** | Mở GitHub Issue + Thiết lập DoD theo Tier phù hợp. Nếu cần huy động Lính: soạn **Phong bì Dispatch** và **commit thành file `.agents/dispatch/<task-id>.md` TRƯỚC khi Chủ dispatch** (PM soạn nội dung; nếu PM không có quyền đẩy repo đó thì executor commit hộ nguyên văn — file dispatch không thuộc nhóm PM-owned §9.7). Format file: `TASK:` link Issue / `TARGET:` gateway ID pin (vd `kiro/claude-sonnet-4.5-thinking`) / `BRANCH: attempt/<task-id>` / `---` / capsule spec-only. **Không ghi SHA vào trong file** (tự-tham-chiếu là bất khả thi): Capsule-SHA256 = 12 hex đầu SHA-256 của file *bản đã commit*, do `scripts/new-attempt.sh` tính và in ra; Chủ paste nguyên văn cả file vào opencode, opencode phải echo lại SHA trước khi làm — lệch = dừng, báo PM. Nếu là Tier 3, giao thẳng cho Antigravity (Lính cấm đụng). | **PM (Claude auth)** |
 | **Step 3** | Mở opencode (hoặc CLI tool) trỏ 9router đúng model pin đã chỉ định trong Phong bì, dán capsule nhận được. Lấy patch trả về từ Lính và commit lên nhánh `attempt/<task-id>` trong worktree riêng (không chạm vào cây làm việc chính). | **Chủ** |
 | **Step 4** | Thông báo cho Antigravity một câu: *"attempt/<task-id> đã có patch"* (tuyệt đối không dán trực tiếp nội dung patch vào cửa sổ chat). | **Chủ** |
 | **Step 5** | Kéo (pull) worktree về -> thực hiện pre-flight validation (`git apply --check` -> path-guard -> secret-scan -> typecheck) -> chạy các gates bằng QC Harness trên snapshot -> xuất trace -> nếu PASS thì thực hiện tích hợp, push và mở PR đính kèm trace. Nếu FAIL thì tự kích hoạt quy trình leo thang (escalation) có trần. | **Antigravity** |
@@ -174,3 +176,12 @@ Ghi chú: <optional, vd "đây là First Light — cần biên lai dispatch đ�
 | **Step 7** | Đánh giá trực quan (Tier 1 xem lướt, Tier 2 ký duyệt lâm sàng) -> tiến hành merge PR -> đóng Issue -> hệ thống tự động sinh lại tệp `handoff.md`. | **Chủ** |
 
 *Ranh giới thao tác*: Chủ thực hiện di chuyển thủ công (paste, chuyển branch); việc tự ý chỉnh sửa nội dung patch của Lính trả về bị cấm (FAIL). Nếu patch sai, báo lại PM để thực hiện leo thang.
+
+### C. "Zero vá tay" — định nghĩa máy-kiểm (bổ sung 2026-07-20)
+
+Trên branch `attempt/<task-id>`, gate tự động của Antigravity (Step 5) kiểm đúng 3 điều:
+1. **Commit #1** = patch nguyên văn từ Lính (author là Chủ hoặc phiên dispatch — **không phải Antigravity**).
+2. **Mọi commit sau commit #1** trên branch phải mang prefix `mech:` (sửa cơ học được phép: import path, formatting, line ending — mỗi sửa một commit riêng, message nói rõ sửa gì).
+3. **PR head SHA == tip của branch `attempt/<task-id>`** — merge không kèm sửa nội dung.
+
+Vi phạm bất kỳ điều nào = **vá tay detected** → FAIL, escalate theo thang §7, không merge. Transport (paste, push, chuyển branch, clipboard) là hợp lệ theo định nghĩa — đó là vai của Chủ trong Dispatch Mode v1 (Manual Human Router).
