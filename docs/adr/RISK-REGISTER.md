@@ -12,6 +12,7 @@
 | A2 | Hack OAuth của Kiro (API key giả dạng oauth, `expiresAt: 2030`) vỡ khi 9router/Kiro đổi schema → kênh Lính-mạnh chết im lặng | C/C | Mitigate: smoke test model pin trong preflight mỗi phiên làm việc; Accept phần còn lại (hack là tạm). Fallback: Antigravity tự code + PM audit dày | Antigravity | 401/`expired` trong log 9router; latency bất thường |
 | A3 | Model ID trôi tự do (đã thấy 3 lần: Opus 4.8→Haiku→sonnet-4.5-thinking) → chất lượng đổi mà không ai quyết | T/C | Avoid: pin model ID trong config (M1-02); mọi đổi model là một PR, không phải một sự tình cờ | Antigravity | Transcript có model khác config |
 | A4 | Ollama trên M4 16GB: model 9.6GB + KV cache → swap, treo IDE, hoặc content rỗng (đã thấy) | C/T | Mitigate: bản quantized, `keep_alive`, serialize 1 inference, timeout + fallback cloud (M1-02) | Antigravity | Load >10s; `finish_reason: length`; RAM áp trần |
+| A5 | **[ĐANG XÁC MINH — M1-10]** 9router Combo che leaf: alias `claude-sonnet-4.5` có thể là combo Fusion (ruột opus-4.8/deepseek/opus-4.7 + judge), nên `model_returned` trong biên lai là NHÃN combo không phải model thật → mù provenance, First Light có thể do panel viết chứ không phải sonnet-4.5 | C/C | Verify: Antigravity làm rõ cơ chế phân giải model/combo của 9router + biên bản; siết verifier kiểm leaf ∈ Verified (§14D.4); Tier-2 cấm combo (§4) | Antigravity → PM | `model_returned` == tên combo; hai dispatch giống nhau ra hai leaf; dashboard combo tên ≠ ruột |
 
 ## Nhóm B — Context & tri thức
 

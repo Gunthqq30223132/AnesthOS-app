@@ -59,7 +59,14 @@ Một người vận hành (Chủ) điều phối một đội agent hỗn hợp
 
 **Luật verify-trước-route (bổ sung 2026-07-20):** route chỉ được trỏ model có biên bản smoke-verify còn hiệu lực (cột Verified = ✅ kèm ngày). Model chưa có biên bản (Haiku, Opus 4.8 trên kênh) không nhận dispatch cho tới khi có. Đúng Luật kênh: bảng này ghi **tên model**, không ghi kênh — gateway ID cụ thể (vd `kiro/claude-sonnet-4.5-thinking`) chỉ xuất hiện trong Phong bì Dispatch tại thời điểm giao việc, là chỗ duy nhất được phép ghi kênh.
 
-**Model khả dụng đã xác minh trên kênh (smoke 2026-07-18):** `kiro/claude-sonnet-4.5-thinking` (PASS, 5.2s; lưu ý overhead ~6.3k prompt tokens/call do system prompt của kênh Kiro), `ollama-local/gemma4:e4b` (transport PASS, generation FAIL — content rỗng). Opus 4.8 **chưa xác minh** trên kênh — cột "model đích" đọc là "model Claude mạnh nhất khả dụng đã xác minh". Model ID phải pin trong config, cấm trôi tự do giữa các lần chạy.
+**Model khả dụng đã xác minh trên kênh:**
+- `kiro/claude-sonnet-4.5-thinking` — smoke 2026-07-18 (PASS, 5.2s; overhead ~6.3k prompt tokens/call do system prompt kênh Kiro).
+- **`claude-sonnet-4.5`** (chuỗi `model_returned` từ First Light 2026-07-20) — chạy E2E thật, sinh 3148 completion tokens code pass test. **PROVISIONAL:** ⚠️ nghi vấn `claude-sonnet-4.5` là **tên combo alias** (dashboard 9router có combo cùng tên nhưng ruột là opus-4.8/deepseek/opus-4.7 + judge, mode Fusion) — chưa xác nhận leaf thật. Xem action-item M1-10.
+- `ollama-local/gemma4:e4b` — transport PASS, generation FAIL (content rỗng), ĐÓNG BĂNG.
+
+Model ID phải pin trong config, cấm trôi tự do giữa các lần chạy.
+
+**Luật Combo/Alias (bổ sung 2026-07-20 — 9router Combos):** 9router cho gom nhiều model dưới một tên (combo) với chiến lược Fallback/Round-Robin/Fusion/Capacity. Một dispatch TARGET được phép là combo/alias **chỉ khi** biên lai ghi được **leaf model thật đã chạy** VÀ leaf đó ∈ danh sách Verified của đúng tier. Nếu alias phân giải **phi-định-hướng** (Round-Robin, Fusion) sao cho hai dispatch giống nhau có thể ra hai leaf khác nhau → **CẤM cho sinh-patch** (vỡ tính định hướng §4.1 + mù provenance). **Tier-2: TARGET phải là model ID gốc đơn, cấm combo.** Cấm pin combo có tên không khớp ruột (nhãn-sai hạ tầng — Án lệ 1). Bất biến này không phụ thuộc nút gạt trong 9router — nó là điều verifier cưỡng chế (§14D).
 
 Bậc chi phí: Gemma (~0đ) < Haiku < Gemini (quota riêng — toàn bộ deep research) < Opus 4.8 < Claude auth (chỉ quyết định/spec/audit) < Chủ (vô giá). Hai hệ quả: không trả tiền hai lần cho cùng token (chưng cất + link); chi phí lớn nhất là *rework từ handoff hỏng*, không phải token.
 
@@ -194,5 +201,6 @@ Vi phạm bất kỳ điều nào = **vá tay detected** → FAIL, escalate theo
 1. Runner gọi 9router thật, tự trích code từ completion, **ghi thẳng** vào file đích trong worktree, ghi biên lai `.agents/traces/<task-id>/dispatch.jsonl` gồm: `capsule_sha256` (từ phong bì đã commit), `completion_sha256` (hash của file vừa ghi), `model_requested/target_model_raw/model_returned`, `prompt_tokens/completion_tokens` (từ gateway), `latency_ms`, `status_code`.
 2. Verifier **recompute** `sha256(file patch đã commit)[:12]` và bắt buộc **khớp** `completion_sha256` trong biên lai → chứng minh *code commit lên CHÍNH LÀ code model sinh ra*. Đây là thứ đóng cửa "hệ 2 não": không thể commit code khác cái model trả về.
 3. Verifier bắt `capsule_sha256` khớp phong bì đã commit; `prompt_tokens`/`completion_tokens` > 0; `status_code` == 200; `model_requested`/`target_model_raw` khớp TARGET phong bì (qua `normalize_model_name`).
+4. **Kiểm provenance trên LEAF thật (bổ sung 2026-07-20):** verifier phải kiểm `model_returned` là **leaf model thật đã chạy**, không phải alias/combo, và leaf đó ∈ Verified[tier]. Nếu `model_returned` là một tên combo/alias (9router trả nhãn thay vì leaf) → **dispatch UNVERIFIABLE → FAIL** — buộc dùng model ID gốc hoặc combo-fallback-toàn-verified. Combo che leaf = mù provenance = từ chối. *(Hiện `dispatch_verifier.py` mới kiểm khớp-alias, chưa kiểm leaf ∈ Verified — nợ kỹ thuật, xem M1-10.)*
 
 **Luật:** không có biên lai hợp lệ (verifier PASS) = tuyên bố "Lính đã làm" là **vô hiệu**, không được đóng Issue. Token count + latency đến từ gateway (không gõ tay được); completion_sha256 buộc vào file thật. *Điểm tin cậy còn lại (runner vừa sinh vừa hash — Tier 3, đã audit): nâng cấp về sau bằng đối chiếu log server-side 9router.*
