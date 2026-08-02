@@ -78,8 +78,23 @@ export function calculateIBW(input: IBWInput, actualWeightKg?: number): IBWResul
     }
   }
 
+  // Devine formula (1974) is validated only for adults ≥ 152.4 cm (5 feet).
+  // Heights below this threshold require pediatric-specific formulas
+  // (e.g., Traub-Johnson, CDC/WHO growth charts). Returning a silent
+  // baseline of 50 kg for a neonate/child would be a ~17x overestimate
+  // and a potentially fatal dosing error.
+  const MIN_DEVINE_HEIGHT_CM = 152.4;
+  if (heightCm < MIN_DEVINE_HEIGHT_CM) {
+    throw new ClinicalValidationError(
+      'HEIGHT_BELOW_DEVINE_THRESHOLD',
+      `Chiều cao ${heightCm} cm dưới ngưỡng 152.4 cm (5 feet) — công thức Devine (1974) ` +
+      `không được chứng minh hiệu lực dưới ngưỡng này. Với bệnh nhân tầm vóc thấp hoặc nhi khoa, ` +
+      `dùng cân nặng thực tế hoặc phương pháp chuyên biệt (Traub-Johnson, CDC growth charts); KHÔNG ngoại suy Devine.`
+    );
+  }
+
   const heightInches = heightCm / 2.54;
-  const inchesOver5Feet = Math.max(0, heightInches - 60);
+  const inchesOver5Feet = heightInches - 60;
 
   let ibwKg = 0;
   if (gender === 'male') {
@@ -89,6 +104,14 @@ export function calculateIBW(input: IBWInput, actualWeightKg?: number): IBWResul
   }
 
   const roundedIBW = Math.round(ibwKg * 10) / 10;
+
+  // Fail-loud post-condition: IBW must be positive and finite
+  if (!Number.isFinite(roundedIBW) || roundedIBW <= 0) {
+    throw new ClinicalValidationError(
+      'IBW_POSTCONDITION_VIOLATED',
+      `Calculated IBW (${roundedIBW} kg) is non-positive or invalid. Pre-condition height validation may have been bypassed.`
+    );
+  }
 
   let adjustedBodyWeightKg = roundedIBW;
   if (actualWeightKg !== undefined && actualWeightKg > roundedIBW) {

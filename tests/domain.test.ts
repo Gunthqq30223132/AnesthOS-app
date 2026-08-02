@@ -24,8 +24,27 @@ describe('Ideal Body Weight (IBW) Calculator Domain Logic', () => {
     expect(result.adjustedBodyWeightKg).toBe(82.3);
   });
 
-  it('handles height less than 5 feet (60 inches / 152.4 cm) without negative delta', () => {
-    const result = calculateIBW({ heightCm: 150, gender: 'male' });
+  it('throws ClinicalValidationError for height below Devine threshold (< 152.4 cm)', () => {
+    // Devine formula (1974) is only validated for adults ≥ 5 feet (152.4 cm).
+    // Previously this silently returned 50 kg (male) — a potentially fatal
+    // overestimate for pediatric weight-based dosing.
+    expect(() => calculateIBW({ heightCm: 150, gender: 'male' })).toThrow(/HEIGHT_BELOW_DEVINE_THRESHOLD/);
+    expect(() => calculateIBW({ heightCm: 150, gender: 'female' })).toThrow(/HEIGHT_BELOW_DEVINE_THRESHOLD/);
+  });
+
+  it('throws ClinicalValidationError for neonate height (50 cm)', () => {
+    // Critical: 50cm neonate → old code returned IBW = 50 kg, ~17x overestimate.
+    expect(() => calculateIBW({ heightCm: 50, gender: 'male' })).toThrow(ClinicalValidationError);
+    expect(() => calculateIBW({ heightCm: 50, gender: 'male' })).toThrow(/HEIGHT_BELOW_DEVINE_THRESHOLD/);
+  });
+
+  it('throws ClinicalValidationError for pediatric height (100 cm)', () => {
+    expect(() => calculateIBW({ heightCm: 100, gender: 'female' })).toThrow(/HEIGHT_BELOW_DEVINE_THRESHOLD/);
+  });
+
+  it('accepts height at exact Devine threshold (152.4 cm)', () => {
+    // Boundary: exactly 152.4 cm should work (≥ threshold)
+    const result = calculateIBW({ heightCm: 152.4, gender: 'male' });
     expect(result.ibwKg).toBe(50.0);
   });
 
